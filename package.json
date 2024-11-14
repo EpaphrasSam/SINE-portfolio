@@ -1,0 +1,42 @@
+{
+  "name": "sine-portfolio",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "npm run generate-search && next build",
+    "start": "next start",
+    "lint": "next lint",
+    "generate-search": "ts-node --project tsconfig.node.json scripts/generateSearchData.ts"
+  },
+  "dependencies": {
+    "@babel/parser": "^7.26.2",
+    "@babel/traverse": "^7.25.9",
+    "@babel/types": "^7.26.0",
+    "@headlessui/react": "^2.2.0",
+    "@nextui-org/react": "^2.2.9",
+    "@types/lodash": "^4.17.13",
+    "framer-motion": "^10.18.0",
+    "lodash": "^4.17.21",
+    "next": "14.0.4",
+    "react": "^18",
+    "react-dom": "^18"
+  },
+  "devDependencies": {
+    "@types/babel__traverse": "^7.20.6",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "autoprefixer": "^10.0.1",
+    "eslint": "^8",
+    "eslint-config-next": "14.0.4",
+    "postcss": "^8",
+    "tailwindcss": "^3.3.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5"
+  },
+  "main": "next.config.js",
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
