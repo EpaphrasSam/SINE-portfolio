@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { TextHighlight } from "../../components/TextHighlight";
 import { projects } from "../../data/projects";
 import { getProjectImages } from "../../utils/getProjectImages";
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, useCallback } from "react";
 import Image from "next/image";
 
 const container = {
@@ -30,10 +30,14 @@ export default function Projects() {
     logo: string;
     hasLogo: boolean;
   }>({ images: [], logo: '', hasLogo: false });
+  const [isImageLoading, setIsImageLoading] = useState(false);
 
   // Refs for carousel scrolling
   const webProjectsRef = useRef<HTMLDivElement>(null);
   const mobileProjectsRef = useRef<HTMLDivElement>(null);
+  const mainContainerRef = useRef<HTMLDivElement>(null);
+  const lastScrollPositionRef = useRef(0);
+  const isScrollingRef = useRef(false);
 
   const scroll = (direction: 'left' | 'right', ref: React.RefObject<HTMLDivElement>) => {
     if (ref.current) {
@@ -41,6 +45,46 @@ export default function Projects() {
       ref.current.scrollBy({ left: scrollAmount, behavior: 'smooth' });
     }
   };
+
+  // Save scroll position before any state updates
+  const handleScroll = useCallback(() => {
+    if (mainContainerRef.current && !isScrollingRef.current) {
+      lastScrollPositionRef.current = mainContainerRef.current.scrollTop;
+    }
+  }, []);
+
+  useEffect(() => {
+    const container = mainContainerRef.current;
+    if (container) {
+      container.addEventListener('scroll', handleScroll);
+      return () => container.removeEventListener('scroll', handleScroll);
+    }
+  }, [handleScroll]);
+
+  // Restore scroll position after state updates
+  useEffect(() => {
+    if (mainContainerRef.current && lastScrollPositionRef.current > 0) {
+      isScrollingRef.current = true;
+      const container = mainContainerRef.current;
+      
+      // Use requestAnimationFrame to ensure the scroll happens after the render
+      requestAnimationFrame(() => {
+        container.scrollTop = lastScrollPositionRef.current;
+        // Add a small delay before allowing new scroll positions to be saved
+        setTimeout(() => {
+          isScrollingRef.current = false;
+        }, 100);
+      });
+    }
+  }, [selectedProject, projectImages]);
+
+  const handleProjectClick = useCallback((projectId: string) => {
+    // Save the current scroll position before updating state
+    if (mainContainerRef.current) {
+      lastScrollPositionRef.current = mainContainerRef.current.scrollTop;
+    }
+    setSelectedProject(projectId);
+  }, []);
 
   useEffect(() => {
     // Handle URL hash for direct navigation
@@ -70,15 +114,21 @@ export default function Projects() {
   const currentProject = projects.find(p => p.id === selectedProject);
 
   const nextImage = () => {
+    setIsImageLoading(true);
     setCurrentImageIndex((prev) => 
       prev === projectImages.images.length - 1 ? 0 : prev + 1
     );
   };
 
   const previousImage = () => {
+    setIsImageLoading(true);
     setCurrentImageIndex((prev) => 
       prev === 0 ? projectImages.images.length - 1 : prev - 1
     );
+  };
+
+  const handleImageLoad = () => {
+    setIsImageLoading(false);
   };
 
   const ProjectSection = ({ title, projects, carouselRef }: { 
@@ -103,7 +153,7 @@ export default function Projects() {
                     ? 'bg-violet-500 dark:bg-violet-600 text-white'
                     : 'bg-white dark:bg-zinc-800/50 border border-gray-200 dark:border-zinc-700 hover:border-violet-500/50 dark:hover:border-violet-500/50'
                 }`}
-                onClick={() => setSelectedProject(project.id)}
+                onClick={() => handleProjectClick(project.id)}
                 whileHover={{ scale: 1.02 }}
                 transition={{ type: "spring", stiffness: 300 }}
               >
@@ -157,8 +207,8 @@ export default function Projects() {
 
   return (
     <div className="bg-white dark:bg-zinc-950">
-      <div className="max-w-7xl mx-auto px-4 py-20">
-      <motion.div
+      <div ref={mainContainerRef} className="max-w-7xl mx-auto px-4 py-20">
+        <motion.div
           initial={{ x: -100, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
@@ -210,11 +260,19 @@ export default function Projects() {
                       transition={{ duration: 0.3 }}
                       className="relative w-full h-full"
                     >
+                      {isImageLoading && (
+                        <div className="absolute inset-0 flex items-center justify-center bg-gray-100 dark:bg-zinc-800">
+                          <div className="w-10 h-10 border-4 border-violet-500 border-t-transparent rounded-full animate-spin"></div>
+                        </div>
+                      )}
                       <Image
                         src={projectImages.images[currentImageIndex]}
                         alt={`${currentProject?.title} screenshot`}
                         fill
-                        className={`${currentProject?.type === 'web' ? 'object-fit' : 'object-contain'}`}
+                        className={`${currentProject?.type === 'web' ? 'object-fit' : 'object-contain'} ${
+                          isImageLoading ? 'opacity-0' : 'opacity-100'
+                        }`}
+                        onLoad={handleImageLoad}
                       />
                     </motion.div>
                     {projectImages.images.length > 1 && (
@@ -222,6 +280,7 @@ export default function Projects() {
                         <button
                           onClick={previousImage}
                           className="absolute left-4 top-1/2 -translate-y-1/2 p-2 rounded-full bg-black/50 text-white hover:bg-black/70 transition-colors"
+                          disabled={isImageLoading}
                         >
                           <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
@@ -230,6 +289,7 @@ export default function Projects() {
                         <button
                           onClick={nextImage}
                           className="absolute right-4 top-1/2 -translate-y-1/2 p-2 rounded-full bg-black/50 text-white hover:bg-black/70 transition-colors"
+                          disabled={isImageLoading}
                         >
                           <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
