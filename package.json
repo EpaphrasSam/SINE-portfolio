@@ -3,11 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "npm run generate-search && next build",
+    "dev": "npm run generate-all && next dev",
+    "build": "npm run generate-all && next build",
     "start": "next start",
     "lint": "next lint",
-    "generate-search": "ts-node --project tsconfig.node.json scripts/generateSearchData.ts"
+    "generate-all": "npm run generate-data && npm run generate-search",
+    "generate-data": "ts-node --project tsconfig.node.json scripts/generateProjectData.ts",
+    "generate-search": "ts-node --project tsconfig.node.json scripts/generateSearchData.ts",
+    "generate-images": "node scripts/generateImageMap.js"
   },
   "dependencies": {
     "@babel/parser": "^7.26.2",

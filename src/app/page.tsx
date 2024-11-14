@@ -7,7 +7,7 @@ import { TechStackCarousel } from "../components/TechStackCarousel";
 import { TypewriterText } from "../components/TypewriterText";
 import { SectionHeader } from "../components/SectionHeader";
 import Image from 'next/image';
-import { projects } from "../lib/projects";
+import { projects } from "../data/projects";
 import { getProjectImages } from "../utils/getProjectImages";
 import { Project } from "../types/project";
 import { useState, useEffect } from "react";

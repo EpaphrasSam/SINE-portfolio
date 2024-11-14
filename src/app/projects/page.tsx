@@ -2,11 +2,10 @@
 
 import { motion } from "framer-motion";
 import { TextHighlight } from "../../components/TextHighlight";
-import { projects } from "../../lib/projects";
+import { projects } from "../../data/projects";
 import { getProjectImages } from "../../utils/getProjectImages";
 import { useState, useEffect } from "react";
 import Image from "next/image";
-import Link from "next/link";
 
 const container = {
   hidden: { opacity: 0 },
@@ -35,12 +34,27 @@ export default function Projects() {
   const currentProject = projects.find(p => p.id === selectedProject)!;
 
   useEffect(() => {
+    const hash = window.location.hash.slice(1);
+    if (hash && projects.some(p => p.id === hash)) {
+      setSelectedProject(hash);
+      if (document.referrer !== '') {
+        const element = document.getElementById(hash);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      }
+    }
+  }, []);
+
+  useEffect(() => {
     async function loadImages() {
       const images = await getProjectImages(selectedProject);
       setProjectImages(images);
       setCurrentImageIndex(0);
     }
     loadImages();
+
+    window.history.pushState(null, '', `#${selectedProject}`);
   }, [selectedProject]);
 
   const nextImage = () => {
@@ -132,6 +146,7 @@ export default function Projects() {
                     ? 'bg-violet-500 dark:bg-violet-600 text-white'
                     : 'bg-white dark:bg-zinc-800/50 border border-gray-200 dark:border-zinc-700 hover:border-violet-500/50 dark:hover:border-violet-500/50'
                 }`}
+                id={project.id}
               >
                 <div className="flex items-start gap-4">
                   <div className={`w-12 h-12 rounded-lg flex items-center justify-center ${

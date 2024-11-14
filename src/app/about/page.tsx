@@ -48,14 +48,14 @@ const experiences = [
   },
   {
     id: "experience-intern",
-    title: "Software Engineer Intern",
-    company: "Amalitech",
-    period: "Aug 2022 - Nov 2022",
+    title: "Software Engineer Intern, Frontend Developer",
+    company: "BSystems Limited",
+    period: "Oct 2022 - Jan 2023",
     responsibilities: [
-      "Collaborated with the backend team to design and consume REST APIs",
-      "Implemented responsive user interfaces using React and Material-UI",
-      "Participated in code reviews and agile development processes",
-      "Developed and maintained documentation for codebase and APIs"
+      "Developed and enhanced features for the admin dashboard of the PeoplesPay app, improving user interface and experience",
+      "Implemented user authentication, verification, and various admin functionalities including managing admins, customers, transactions, and e-levy records, ensuring data security and integrity",
+      "Redesigned UI components to enhance usability and visual appeal, leading to a more intuitive and engaging user experience",
+      "Created detailed technical documentation for the web application, facilitating better understanding and maintenance for future developers",
     ]
   }
 ];

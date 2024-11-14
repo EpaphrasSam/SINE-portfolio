@@ -54,74 +54,174 @@ function extractSearchableContent(code: string): SearchResult[] {
   const results: SearchResult[] = [];
   const seenContent = new Set<string>();
 
-  function addSearchResult(content: string, elementId?: string) {
-    // Skip very short content or duplicates
-    content = content.trim();
-    if (content.length < 10 || seenContent.has(content)) return;
-    seenContent.add(content);
+  function addSearchResult(title: string, preview: string, elementId?: string) {
+    const key = `${title}:${preview}`;
+    if (seenContent.has(key)) return;
+    seenContent.add(key);
 
     results.push({
-      title: content.slice(0, 100),
-      preview: content,
+      title,
+      preview,
       path: '',  // Will be set later
       type: 'content',
       elementId
     });
   }
 
-  // Helper to extract text from object literals
-  function extractFromObjectLiteral(node: t.ObjectExpression) {
-    const properties = new Map<string, string>();
-    
-    node.properties.forEach(prop => {
-      if (!t.isObjectProperty(prop) || !t.isIdentifier(prop.key)) return;
-      
-      const key = prop.key.name;
-      
-      if (t.isStringLiteral(prop.value)) {
-        properties.set(key, prop.value.value);
-      } else if (t.isArrayExpression(prop.value)) {
-        const values = prop.value.elements
-          .filter((el): el is t.StringLiteral => t.isStringLiteral(el))
-          .map(el => el.value);
-        if (values.length > 0) {
-          properties.set(key, values.join('. '));
-        }
-      }
-    });
-
-    return properties;
-  }
-
   traverse(ast, {
-    // Extract text from TextHighlight components
+    // Handle arrays of objects (skills, experiences, projects, etc.)
+    VariableDeclarator(path) {
+      if (!t.isIdentifier(path.node.id)) return;
+      const name = path.node.id.name;
+      
+      if (name === 'experiences' && t.isArrayExpression(path.node.init)) {
+        // Process experiences
+        path.node.init.elements.forEach(element => {
+          if (t.isObjectExpression(element)) {
+            let id = '', title = '', company = '', period = '';
+            const responsibilities: string[] = [];
+
+            element.properties.forEach(prop => {
+              if (!t.isObjectProperty(prop) || !t.isIdentifier(prop.key)) return;
+
+              if (prop.key.name === 'id' && t.isStringLiteral(prop.value)) {
+                id = prop.value.value;
+              }
+              if (prop.key.name === 'title' && t.isStringLiteral(prop.value)) {
+                title = prop.value.value;
+              }
+              if (prop.key.name === 'company' && t.isStringLiteral(prop.value)) {
+                company = prop.value.value;
+              }
+              if (prop.key.name === 'period' && t.isStringLiteral(prop.value)) {
+                period = prop.value.value;
+              }
+              if (prop.key.name === 'responsibilities' && t.isArrayExpression(prop.value)) {
+                prop.value.elements.forEach(resp => {
+                  if (t.isStringLiteral(resp)) {
+                    responsibilities.push(resp.value);
+                  }
+                });
+              }
+            });
+
+            if (title && company) {
+              // Create a comprehensive preview with all information
+              const preview = [
+                `${title} at ${company}`,
+                `Period: ${period}`,
+                'Responsibilities:',
+                ...responsibilities.map(r => `• ${r}`)
+              ].join('\n');
+
+              // Add a single comprehensive entry that can be found by company or title
+              addSearchResult(
+                `${title} at ${company}`,
+                preview,
+                id
+              );
+
+              // Add alternative search entry for company name
+              if (!title.toLowerCase().includes(company.toLowerCase())) {
+                addSearchResult(
+                  company,
+                  preview,
+                  id
+                );
+              }
+            }
+          }
+        });
+      }
+      
+      if (name === 'skills' && t.isArrayExpression(path.node.init)) {
+        // Process skills
+        path.node.init.elements.forEach(element => {
+          if (t.isObjectExpression(element)) {
+            let id = '', title = '';
+            const items: { name: string, description: string }[] = [];
+
+            element.properties.forEach(prop => {
+              if (!t.isObjectProperty(prop) || !t.isIdentifier(prop.key)) return;
+
+              if (prop.key.name === 'id' && t.isStringLiteral(prop.value)) {
+                id = prop.value.value;
+              }
+              if (prop.key.name === 'title' && t.isStringLiteral(prop.value)) {
+                title = prop.value.value;
+              }
+              if (prop.key.name === 'items' && t.isArrayExpression(prop.value)) {
+                prop.value.elements.forEach(item => {
+                  if (t.isObjectExpression(item)) {
+                    let name = '', description = '';
+                    item.properties.forEach(itemProp => {
+                      if (!t.isObjectProperty(itemProp) || !t.isIdentifier(itemProp.key)) return;
+                      if (itemProp.key.name === 'name' && t.isStringLiteral(itemProp.value)) {
+                        name = itemProp.value.value;
+                      }
+                      if (itemProp.key.name === 'description' && t.isStringLiteral(itemProp.value)) {
+                        description = itemProp.value.value;
+                      }
+                    });
+                    if (name && description) {
+                      items.push({ name, description });
+                    }
+                  }
+                });
+              }
+            });
+
+            if (title && items.length > 0) {
+              // Add single entry for the skill category with all items
+              const preview = `${title}:\n${items.map(item => `${item.name} - ${item.description}`).join('\n')}`;
+              addSearchResult(title, preview, id);
+
+              // Add individual skill entries that point back to the category
+              items.forEach(item => {
+                addSearchResult(
+                  item.name,
+                  `${item.name} - ${item.description} (${title})`,
+                  id
+                );
+              });
+            }
+          }
+        });
+      }
+
+      if (name === 'navigationCards' && t.isArrayExpression(path.node.init)) {
+        // Process navigation cards
+        path.node.init.elements.forEach(element => {
+          if (t.isObjectExpression(element)) {
+            let title = '', description = '', path = '';
+
+            element.properties.forEach(prop => {
+              if (!t.isObjectProperty(prop) || !t.isIdentifier(prop.key)) return;
+
+              if (prop.key.name === 'title' && t.isStringLiteral(prop.value)) {
+                title = prop.value.value;
+              }
+              if (prop.key.name === 'description' && t.isStringLiteral(prop.value)) {
+                description = prop.value.value;
+              }
+              if (prop.key.name === 'path' && t.isStringLiteral(prop.value)) {
+                path = prop.value.value;
+              }
+            });
+
+            if (title && description) {
+              addSearchResult(title, description);
+            }
+          }
+        });
+      }
+    },
+
+    // Handle TextHighlight components
     JSXElement(path) {
       if (!t.isJSXElement(path.node)) return;
       const element = path.node;
 
-      // Find the closest parent element with an id
-      let currentPath = path;
-      let parentId = '';
-
-      while (currentPath.parentPath) {
-        const parent = currentPath.parentPath.node;
-        if (t.isJSXElement(parent)) {
-          const idAttr = parent.openingElement.attributes.find(attr => 
-            t.isJSXAttribute(attr) && 
-            t.isJSXIdentifier(attr.name) && 
-            attr.name.name === 'id'
-          );
-
-          if (idAttr && t.isJSXAttribute(idAttr) && t.isStringLiteral(idAttr.value)) {
-            parentId = idAttr.value.value;
-            break;
-          }
-        }
-        // @ts-ignore
-        currentPath = currentPath.parentPath;
-      }
-
-      // Handle TextHighlight components
       if (t.isJSXIdentifier(element.openingElement.name) && 
           element.openingElement.name.name === 'TextHighlight') {
         const textAttr = element.openingElement.attributes.find(attr => 
@@ -130,87 +230,10 @@ function extractSearchableContent(code: string): SearchResult[] {
           attr.name.name === 'text'
         );
 
-        if (textAttr && t.isJSXAttribute(textAttr) && textAttr.value) {
-          if (t.isStringLiteral(textAttr.value)) {
-            addSearchResult(textAttr.value.value, parentId);
-          } else if (t.isJSXExpressionContainer(textAttr.value) && 
-                     t.isMemberExpression(textAttr.value.expression)) {
-            // Handle dynamic text from objects (e.g., skill.name)
-            const expr = textAttr.value.expression;
-            if (t.isIdentifier(expr.object) && t.isIdentifier(expr.property)) {
-              const variableName = expr.object.name;
-              const propertyName = expr.property.name;
-              
-              // Find the variable declaration
-              let scope = path.scope;
-              while (scope) {
-                const binding = scope.getBinding(variableName);
-                if (binding && binding.path.node) {
-                  const declaration = binding.path.node;
-                  if (t.isVariableDeclarator(declaration) && 
-                      t.isObjectExpression(declaration.init)) {
-                    const props = extractFromObjectLiteral(declaration.init);
-                    const value = props.get(propertyName);
-                    if (value) {
-                      addSearchResult(value, parentId);
-                    }
-                  }
-                }
-                scope = scope.parent;
-              }
-            }
-          }
+        if (textAttr && t.isJSXAttribute(textAttr) && t.isStringLiteral(textAttr.value)) {
+          const text = textAttr.value.value;
+          addSearchResult(text, text);
         }
-      }
-    },
-
-    // Extract from array/object declarations
-    VariableDeclarator(path) {
-      if (!t.isIdentifier(path.node.id)) return;
-      const name = path.node.id.name;
-      
-      // Handle arrays of objects (like skills array)
-      if (t.isArrayExpression(path.node.init)) {
-        path.node.init.elements.forEach(element => {
-          if (t.isObjectExpression(element)) {
-            const props = extractFromObjectLiteral(element);
-            const id = props.get('id');
-            
-            // Extract text from common properties
-            ['title', 'name', 'description', 'responsibilities', 'text'].forEach(key => {
-              const value = props.get(key);
-              if (value) {
-                if (key === 'responsibilities') {
-                  // Split responsibilities into individual items
-                  value.split('. ').forEach(item => {
-                    addSearchResult(item, id);
-                  });
-                } else {
-                  addSearchResult(value, id);
-                }
-              }
-            });
-
-            // Handle nested items array
-            const items = element.properties.find(prop => 
-              t.isObjectProperty(prop) && 
-              t.isIdentifier(prop.key) && 
-              prop.key.name === 'items'
-            );
-
-            if (items && t.isObjectProperty(items) && t.isArrayExpression(items.value)) {
-              items.value.elements.forEach(item => {
-                if (t.isObjectExpression(item)) {
-                  const itemProps = extractFromObjectLiteral(item);
-                  ['name', 'description', 'text'].forEach(key => {
-                    const value = itemProps.get(key);
-                    if (value) addSearchResult(value, id);
-                  });
-                }
-              });
-            }
-          }
-        });
       }
     }
   });
@@ -221,6 +244,97 @@ function extractSearchableContent(code: string): SearchResult[] {
 async function generateSearchData() {
   const pagesDir = path.join(process.cwd(), 'src', 'app');
   const searchResults: SearchResult[] = [...pages];
+
+  // Add projects to search results
+  try {
+    const projectsFile = path.join(process.cwd(), 'src', 'data', 'projects.tsx');
+    const projectsCode = fs.readFileSync(projectsFile, 'utf-8');
+    const ast = parse(projectsCode, {
+      sourceType: 'module',
+      plugins: ['jsx', 'typescript'],
+    });
+
+    traverse(ast, {
+      VariableDeclarator(path) {
+        if (
+          t.isIdentifier(path.node.id, { name: 'projects' }) &&
+          t.isArrayExpression(path.node.init)
+        ) {
+          path.node.init.elements.forEach((element) => {
+            if (t.isObjectExpression(element)) {
+              let id = '';
+              let title = '';
+              let preview = '';
+              let description: string[] = [];
+              let tech: string[] = [];
+
+              element.properties.forEach((prop) => {
+                if (
+                  t.isObjectProperty(prop) &&
+                  t.isIdentifier(prop.key)
+                ) {
+                  if (prop.key.name === 'id' && t.isStringLiteral(prop.value)) {
+                    id = prop.value.value;
+                  }
+                  if (prop.key.name === 'title' && t.isStringLiteral(prop.value)) {
+                    title = prop.value.value;
+                  }
+                  if (prop.key.name === 'preview' && t.isStringLiteral(prop.value)) {
+                    preview = prop.value.value;
+                  }
+                  if (prop.key.name === 'description' && t.isArrayExpression(prop.value)) {
+                    description = prop.value.elements
+                      .filter((el): el is t.StringLiteral => t.isStringLiteral(el))
+                      .map(el => el.value);
+                  }
+                  if (prop.key.name === 'tech' && t.isArrayExpression(prop.value)) {
+                    tech = prop.value.elements
+                      .filter((el): el is t.StringLiteral => t.isStringLiteral(el))
+                      .map(el => el.value);
+                  }
+                }
+              });
+
+              if (id && title) {
+                // Add main project entry
+                searchResults.push({
+                  title,
+                  path: '/projects',
+                  type: 'content',
+                  preview: `${preview} (Technologies: ${tech.join(', ')})`,
+                  elementId: id
+                });
+
+                // Add each description paragraph
+                description.forEach(desc => {
+                  searchResults.push({
+                    title: `${title} - Details`,
+                    path: '/projects',
+                    type: 'content',
+                    preview: desc,
+                    elementId: id
+                  });
+                });
+
+                // Add technology-specific entries
+                tech.forEach(techItem => {
+                  searchResults.push({
+                    title: `${techItem} Project: ${title}`,
+                    path: '/projects',
+                    type: 'content',
+                    preview: `${title} - Built with ${techItem}. ${preview}`,
+                    elementId: id
+                  });
+                });
+              }
+            }
+          });
+        }
+      }
+    });
+  } catch (error) {
+    console.error('Error processing projects:', error);
+  }
 
   function processDirectory(dirPath: string, urlPath: string = '') {
     const entries = fs.readdirSync(dirPath);
@@ -256,7 +370,8 @@ async function generateSearchData() {
 
   // Write the search data to a file
   const outputPath = path.join(process.cwd(), 'src', 'data', 'generatedSearchData.ts');
-  const outputContent = `export type SearchResultType = {
+  const outputContent = `// This file is auto-generated. Do not edit manually.
+export type SearchResultType = {
   title: string;
   path: string;
   type: 'page' | 'content';
@@ -272,29 +387,68 @@ export function searchContent(query: string): SearchResultType[] {
   const searchTerms = query.toLowerCase().split(' ').filter(Boolean);
   if (searchTerms.length === 0) return [];
 
-  return searchData
-    .map(item => {
-      // For pages, only search in title
-      const searchableText = item.type === 'page' 
-        ? item.title.toLowerCase()
-        : [item.title, item.preview].join(' ').toLowerCase();
-      
-      // Check if all search terms are present
-      const matches = searchTerms.every(term => searchableText.includes(term));
-      if (!matches) return null;
+  type ScoredResult = SearchResultType & { score: number };
+  const uniqueResults = new Map<string, ScoredResult>();
 
-      return item;
-    })
-    .filter((item): item is SearchResultType => item !== null)
-    .sort((a, b) => {
-      // Pages always come first
-      if (a.type !== b.type) {
-        return a.type === 'page' ? -1 : 1;
-      }
+  const scoredResults = searchData
+    .map(item => {
+      const titleText = item.title.toLowerCase();
+      const previewText = item.preview.toLowerCase();
       
-      // Then sort by length (shorter matches first)
-      return a.preview.length - b.preview.length;
-    });
+      // Calculate match scores
+      let score = 0;
+      let matchedTerms = 0;
+
+      // Check for matches
+      searchTerms.forEach(term => {
+        const titleMatch = titleText.includes(term);
+        const previewMatch = previewText.includes(term);
+
+        if (titleMatch || previewMatch) {
+          matchedTerms++;
+
+          // Title matches
+          if (titleMatch) {
+            score += 100;  // Base score for title match
+            if (titleText === term) score += 50;  // Exact title match
+            if (titleText.startsWith(term)) score += 25;  // Title starts with term
+          }
+          // Preview matches
+          if (previewMatch) {
+            score += 10;
+            // Bonus for term appearing early in preview
+            const position = previewText.indexOf(term);
+            if (position < 20) score += 5;
+          }
+        }
+      });
+
+      // Require at least one search term to match
+      if (matchedTerms === 0) return null;
+
+      // Bonus for page type and full matches
+      if (item.type === 'page') score += 30;
+      if (matchedTerms === searchTerms.length) score += 50;  // Bonus for matching all terms
+
+      return {
+        ...item,
+        score
+      };
+    })
+    .filter((item): item is ScoredResult => item !== null);
+
+  // Remove duplicates, keeping highest scoring version
+  scoredResults.forEach(result => {
+    const key = result.elementId ? \`\${result.elementId}:\${result.preview}\` : result.preview;
+    const existing = uniqueResults.get(key);
+    if (!existing || result.score > existing.score) {
+      uniqueResults.set(key, result);
+    }
+  });
+
+  return Array.from(uniqueResults.values())
+    .sort((a, b) => b.score - a.score)
+    .map(({ score, ...item }) => item);
 }
 `;
 

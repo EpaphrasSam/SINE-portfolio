@@ -2,7 +2,7 @@ import { Project } from "../types/project";
 
 export const projects: Project[] = [
   {
-    id: "agrilink",
+    id: "AgriLink",
     title: "AgriLink Web Application",
     preview: "A revolutionary platform bridging the gap between farmers and consumers, enabling direct trade and communication.",
     description: [
@@ -24,7 +24,7 @@ export const projects: Project[] = [
     url: "https://agri-link.vercel.app" // Replace with actual URL
   },
   {
-    id: "campserve",
+    id: "CampServe",
     title: "Campserve Mobile Application",
     preview: "A comprehensive mobile platform connecting university students with essential campus services and local businesses.",
     description: [
@@ -45,7 +45,7 @@ export const projects: Project[] = [
     tech: ["React Native", "Flask", "PostgreSQL", "TailwindCSS"]
   },
   {
-    id: "braszy",
+    id: "Braszy",
     title: "Braszy Clothing E-commerce",
     preview: "A modern e-commerce platform offering a seamless shopping experience for fashion enthusiasts.",
     description: [
