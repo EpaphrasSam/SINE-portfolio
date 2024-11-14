@@ -299,42 +299,21 @@ export const searchData: SearchResultType[] = [
   },
   {
     "title": "IT Support Staff at KNUST School of Business",
-    "preview": "IT Support Staff at KNUST School of Business\nPeriod: Nov 2023 - Present\nResponsibilities:\n• Providing comprehensive IT support and infrastructure management\n• Managing and maintaining computer labs and network infrastructure\n• Assisting faculty and staff with technical issues\n• Ensuring systems security and data backup",
-    "path": "/about",
-    "type": "content",
-    "elementId": "experience-it"
-  },
-  {
-    "title": "KNUST School of Business",
-    "preview": "IT Support Staff at KNUST School of Business\nPeriod: Nov 2023 - Present\nResponsibilities:\n• Providing comprehensive IT support and infrastructure management\n• Managing and maintaining computer labs and network infrastructure\n• Assisting faculty and staff with technical issues\n• Ensuring systems security and data backup",
+    "preview": "Nov 2023 - Present. Providing comprehensive IT support and infrastructure management Managing and maintaining computer labs and network infrastructure Assisting faculty and staff with technical issues Ensuring systems security and data backup",
     "path": "/about",
     "type": "content",
     "elementId": "experience-it"
   },
   {
     "title": "Fullstack Developer at KNUST School of Business",
-    "preview": "Fullstack Developer at KNUST School of Business\nPeriod: Nov 2023 - Present\nResponsibilities:\n• Developed comprehensive exams attendance tracking application\n• Created admin dashboard for managing exam schedules and staff assignments\n• Implemented secure web-based Voting System with real-time updates\n• Designed nomination platform with secure role-based authentication (RBAC)\n• Built admin and reviewer dashboards with real-time notifications\n• Integrated real-time updates using WebSocket technology\n• Implemented data visualization for exam statistics",
-    "path": "/about",
-    "type": "content",
-    "elementId": "experience-fullstack"
-  },
-  {
-    "title": "KNUST School of Business",
-    "preview": "Fullstack Developer at KNUST School of Business\nPeriod: Nov 2023 - Present\nResponsibilities:\n• Developed comprehensive exams attendance tracking application\n• Created admin dashboard for managing exam schedules and staff assignments\n• Implemented secure web-based Voting System with real-time updates\n• Designed nomination platform with secure role-based authentication (RBAC)\n• Built admin and reviewer dashboards with real-time notifications\n• Integrated real-time updates using WebSocket technology\n• Implemented data visualization for exam statistics",
+    "preview": "Nov 2023 - Present. Developed comprehensive exams attendance tracking application Created admin dashboard for managing exam schedules and staff assignments Implemented secure web-based Voting System with real-time updates Designed nomination platform with secure role-based authentication (RBAC) Built admin and reviewer dashboards with real-time notifications Integrated real-time updates using WebSocket technology Implemented data visualization for exam statistics",
     "path": "/about",
     "type": "content",
     "elementId": "experience-fullstack"
   },
   {
     "title": "Software Engineer Intern, Frontend Developer at BSystems Limited",
-    "preview": "Software Engineer Intern, Frontend Developer at BSystems Limited\nPeriod: Oct 2022 - Jan 2023\nResponsibilities:\n• Developed and enhanced features for the admin dashboard of the PeoplesPay app, improving user interface and experience\n• Implemented user authentication, verification, and various admin functionalities including managing admins, customers, transactions, and e-levy records, ensuring data security and integrity\n• Redesigned UI components to enhance usability and visual appeal, leading to a more intuitive and engaging user experience\n• Created detailed technical documentation for the web application, facilitating better understanding and maintenance for future developers",
-    "path": "/about",
-    "type": "content",
-    "elementId": "experience-intern"
-  },
-  {
-    "title": "BSystems Limited",
-    "preview": "Software Engineer Intern, Frontend Developer at BSystems Limited\nPeriod: Oct 2022 - Jan 2023\nResponsibilities:\n• Developed and enhanced features for the admin dashboard of the PeoplesPay app, improving user interface and experience\n• Implemented user authentication, verification, and various admin functionalities including managing admins, customers, transactions, and e-levy records, ensuring data security and integrity\n• Redesigned UI components to enhance usability and visual appeal, leading to a more intuitive and engaging user experience\n• Created detailed technical documentation for the web application, facilitating better understanding and maintenance for future developers",
+    "preview": "Oct 2022 - Jan 2023. Developed and enhanced features for the admin dashboard of the PeoplesPay app, improving user interface and experience Implemented user authentication, verification, and various admin functionalities including managing admins, customers, transactions, and e-levy records, ensuring data security and integrity Redesigned UI components to enhance usability and visual appeal, leading to a more intuitive and engaging user experience Created detailed technical documentation for the web application, facilitating better understanding and maintenance for future developers",
     "path": "/about",
     "type": "content",
     "elementId": "experience-intern"
@@ -374,6 +353,27 @@ export const searchData: SearchResultType[] = [
     "preview": "Education",
     "path": "/about",
     "type": "content"
+  },
+  {
+    "title": "Contact via Email",
+    "preview": "isinesam@gmail.com",
+    "path": "/contact",
+    "type": "content",
+    "elementId": "email"
+  },
+  {
+    "title": "Contact via GitHub",
+    "preview": "github.com/EpaphrasSam",
+    "path": "/contact",
+    "type": "content",
+    "elementId": "github"
+  },
+  {
+    "title": "Contact via LinkedIn",
+    "preview": "linkedin.com/in/isaac-sam-epaphras",
+    "path": "/contact",
+    "type": "content",
+    "elementId": "linkedin"
   },
   {
     "title": "Get in Touch",

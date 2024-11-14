@@ -106,29 +106,45 @@ function extractSearchableContent(code: string): SearchResult[] {
             });
 
             if (title && company) {
-              // Create a comprehensive preview with all information
-              const preview = [
-                `${title} at ${company}`,
-                `Period: ${period}`,
-                'Responsibilities:',
-                ...responsibilities.map(r => `• ${r}`)
-              ].join('\n');
-
-              // Add a single comprehensive entry that can be found by company or title
               addSearchResult(
                 `${title} at ${company}`,
-                preview,
+                `${period}. ${responsibilities.join(' ')}`,
                 id
               );
+            }
+          }
+        });
+      }
 
-              // Add alternative search entry for company name
-              if (!title.toLowerCase().includes(company.toLowerCase())) {
-                addSearchResult(
-                  company,
-                  preview,
-                  id
-                );
+      // Process contact methods
+      if (name === 'contactMethods' && t.isArrayExpression(path.node.init)) {
+        path.node.init.elements.forEach(element => {
+          if (t.isObjectExpression(element)) {
+            let id = '', title = '', value = '', link = '';
+
+            element.properties.forEach(prop => {
+              if (!t.isObjectProperty(prop) || !t.isIdentifier(prop.key)) return;
+
+              if (prop.key.name === 'id' && t.isStringLiteral(prop.value)) {
+                id = prop.value.value;
               }
+              if (prop.key.name === 'title' && t.isStringLiteral(prop.value)) {
+                title = prop.value.value;
+              }
+              if (prop.key.name === 'value' && t.isStringLiteral(prop.value)) {
+                value = prop.value.value;
+              }
+              if (prop.key.name === 'link' && t.isStringLiteral(prop.value)) {
+                link = prop.value.value;
+              }
+            });
+
+            if (title && value) {
+              addSearchResult(
+                `Contact via ${title}`,
+                value,
+                id
+              );
             }
           }
         });
