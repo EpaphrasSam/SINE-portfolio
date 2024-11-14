@@ -125,7 +125,15 @@ interface FeaturedProjectCardProps {
 
 function FeaturedProjectCard({ project, projectImages }: FeaturedProjectCardProps) {
   return (
-    <div className="relative h-64 rounded-lg overflow-hidden bg-white dark:bg-zinc-800/50 border border-gray-200 dark:border-zinc-700">
+    <motion.div 
+      className="relative h-64 rounded-lg overflow-hidden bg-white dark:bg-zinc-800/50 border border-gray-200 dark:border-zinc-700"
+      whileHover={{ 
+        scale: 1.02,
+        boxShadow: "0 0 20px rgba(139, 92, 246, 0.1)",
+        borderColor: "rgba(139, 92, 246, 0.5)"
+      }}
+      transition={{ type: "spring", stiffness: 300 }}
+    >
       <div className="absolute bottom-0 left-0 right-0 p-6">
         <div className="flex items-center gap-4 mb-4">
           <div className="w-12 h-12 rounded-lg relative overflow-hidden bg-violet-500/10 dark:bg-violet-400/10">
@@ -157,7 +165,7 @@ function FeaturedProjectCard({ project, projectImages }: FeaturedProjectCardProp
           ))}
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 
