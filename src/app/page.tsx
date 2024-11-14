@@ -126,27 +126,29 @@ interface FeaturedProjectCardProps {
 function FeaturedProjectCard({ project, projectImages }: FeaturedProjectCardProps) {
   return (
     <div className="relative h-64 rounded-lg overflow-hidden bg-white dark:bg-zinc-800/50 border border-gray-200 dark:border-zinc-700">
-      {projectImages.hasLogo ? (
-        <div className="absolute inset-0">
-          <Image
-            src={projectImages.logo}
-            alt={`${project.title} logo`}
-            fill
-            className="object-fit opacity-20 group-hover:opacity-30 transition-opacity duration-300 "
-          />
-        </div>
-      ) : (
-        <div className="h-full">
-          <div className="absolute inset-0 flex items-center justify-center text-violet-500/50 dark:text-violet-400/50">
-            <svg className="w-16 h-16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-            </svg>
-          </div>
-        </div>
-      )}
       <div className="absolute bottom-0 left-0 right-0 p-6">
-        <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">{project.title}</h3>
-        <p className="text-gray-600 dark:text-gray-400 mb-4">{project.preview}</p>
+        <div className="flex items-center gap-4 mb-4">
+          <div className="w-12 h-12 rounded-lg relative overflow-hidden bg-violet-500/10 dark:bg-violet-400/10">
+            {projectImages.hasLogo ? (
+              <Image
+                src={projectImages.logo}
+                alt={`${project.title} logo`}
+                fill
+                className="object-contain p-2 bg-white"
+              />
+            ) : (
+              <div className="w-full h-full flex items-center justify-center text-violet-500 dark:text-violet-400">
+                {project.icon}
+              </div>
+            )}
+          </div>
+          <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
+            {project.title}
+          </h3>
+        </div>
+        <p className="text-gray-600 dark:text-gray-400 text-sm mb-4">
+          {project.preview}
+        </p>
         <div className="flex flex-wrap gap-2">
           {project.tech.map(tech => (
             <span key={tech} className="px-3 py-1 text-sm bg-violet-500/10 dark:bg-violet-400/10 text-violet-600 dark:text-violet-400 rounded-full">

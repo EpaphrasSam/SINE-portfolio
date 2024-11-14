@@ -25,45 +25,74 @@ const item = {
 
 const ProjectCard = memo(({ 
   project, 
-  isSelected, 
-  onSelect 
+  isSelected,
+  onSelect,
+  projectImages 
 }: { 
   project: Project,
   isSelected: boolean,
-  onSelect: (id: string) => void
-}) => (
-  <motion.div
-    key={project.id}
-    className={`flex-shrink-0 w-[320px] p-6 rounded-lg cursor-pointer transition-all duration-150 ${
-      isSelected
-        ? 'bg-violet-500 dark:bg-violet-600 text-white'
-        : 'bg-white dark:bg-zinc-800/50 border border-gray-200 dark:border-zinc-700 hover:border-violet-500/50 dark:hover:border-violet-500/50'
-    }`}
-    onClick={() => onSelect(project.id)}
-    whileHover={{ scale: 1.02 }}
-    transition={{ type: "spring", stiffness: 300 }}
-  >
-    <div className="flex items-start gap-4">
-      <div className={`w-12 h-12 rounded-lg flex items-center justify-center transition-colors duration-150 ${
+  onSelect: (id: string) => void,
+  projectImages?: {
+    images: string[];
+    logo: string;
+    hasLogo: boolean;
+  }
+}) => {
+  const hasLogo = projectImages?.hasLogo ?? false;
+  const logo = projectImages?.logo ?? '';
+
+  return (
+    <motion.div
+      key={project.id}
+      className={`flex-shrink-0 w-[320px] p-6 rounded-lg cursor-pointer transition-all duration-150 ${
         isSelected
-          ? 'bg-white/20 text-white'
-          : 'bg-violet-500/10 dark:bg-violet-400/10 text-violet-500 dark:text-violet-400'
-      }`}>
-        {project.icon}
-      </div>
-      <div>
-        <h3 className="text-lg font-semibold">{project.title}</h3>
-        <p className={`text-sm mt-1 transition-colors duration-150 ${
+          ? 'bg-violet-500 dark:bg-violet-600 text-white'
+          : 'bg-white dark:bg-zinc-800/50 border border-gray-200 dark:border-zinc-700 hover:border-violet-500/50 dark:hover:border-violet-500/50'
+      }`}
+      onClick={() => onSelect(project.id)}
+      whileHover={{ scale: 1.02 }}
+      transition={{ type: "spring", stiffness: 300 }}
+    >
+      <div className="flex items-start gap-4">
+        <div className={`flex-shrink-0 w-12 h-12 rounded-lg flex items-center justify-center transition-colors duration-150 relative overflow-hidden ${
           isSelected
-            ? 'text-white/80'
-            : 'text-gray-600 dark:text-gray-400'
+            ? 'bg-white/20'
+            : 'bg-violet-500/10 dark:bg-violet-400/10'
         }`}>
-          {project.preview}
-        </p>
+          {hasLogo && logo ? (
+            <div className="absolute inset-0">
+              <Image
+                src={logo}
+                alt={`${project.title} logo`}
+                fill
+                className="object-contain bg-white"
+                priority
+              />
+            </div>
+          ) : (
+            <div className={`${
+              isSelected
+                ? 'text-white'
+                : 'text-violet-500 dark:text-violet-400'
+            }`}>
+              {project.icon}
+            </div>
+          )}
+        </div>
+        <div className="min-w-0 flex-1">
+          <h3 className="text-lg font-semibold line-clamp-2">{project.title}</h3>
+          <p className={`text-sm mt-1 transition-colors duration-150 ${
+            isSelected
+              ? 'text-white/80'
+              : 'text-gray-600 dark:text-gray-400'
+          }`}>
+            {project.preview}
+          </p>
+        </div>
       </div>
-    </div>
-  </motion.div>
-));
+    </motion.div>
+  );
+});
 
 ProjectCard.displayName = 'ProjectCard';
 
@@ -72,13 +101,19 @@ const ProjectSection = memo(({
   projects,
   selectedProject,
   onProjectSelect,
-  projectType
+  projectType,
+  projectImages
 }: { 
   title: string;
   projects: Project[];
   selectedProject: string | null;
   onProjectSelect: (id: string) => void;
   projectType: 'web' | 'mobile';
+  projectImages: Record<string, {
+    images: string[];
+    logo: string;
+    hasLogo: boolean;
+  }>;
 }) => {
   const isTypeSelected = selectedProject ? 
     projects.find(p => p.id === selectedProject)?.type === projectType 
@@ -104,6 +139,7 @@ const ProjectSection = memo(({
               project={project}
               isSelected={selectedProject === project.id}
               onSelect={onProjectSelect}
+              projectImages={projectImages[project.id]}
             />
           ))}
         </div>
@@ -230,7 +266,7 @@ const ProjectDetails = memo(({
               alt={`${project.title} logo`}
               width={48}
               height={48}
-              className="rounded-lg"
+              className="rounded-lg bg-white p-2 py-2"
             />
           )}
           <div>
@@ -285,16 +321,34 @@ ProjectDetails.displayName = 'ProjectDetails';
 export default function Projects() {
   const [selectedProject, setSelectedProject] = useState<string | null>(null);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const [projectImages, setProjectImages] = useState<{
+  const [projectImages, setProjectImages] = useState<Record<string, {
     images: string[];
     logo: string;
     hasLogo: boolean;
-  }>({ images: [], logo: '', hasLogo: false });
+  }>>({});
   const [isImageLoading, setIsImageLoading] = useState(false);
 
   const handleProjectClick = useCallback((projectId: string) => {
     setSelectedProject(projectId);
   }, []);
+
+  // Load project images when needed
+  useEffect(() => {
+    const loadProjectImages = async () => {
+      const promises = projects.map(async (project) => {
+        if (!projectImages[project.id]) {
+          const images = await getProjectImages(project.id);
+          setProjectImages(prev => ({
+            ...prev,
+            [project.id]: images
+          }));
+        }
+      });
+      await Promise.all(promises);
+    };
+
+    loadProjectImages();
+  }, []); // Only run once on mount
 
   useEffect(() => {
     // Handle URL hash for direct navigation
@@ -312,13 +366,8 @@ export default function Projects() {
 
   useEffect(() => {
     if (selectedProject) {
-      const loadImages = async () => {
-        const images = await getProjectImages(selectedProject);
-        setProjectImages(images);
-        setCurrentImageIndex(0);
-      };
-      loadImages();
-
+      // Reset image index when selecting a new project
+      setCurrentImageIndex(0);
       // Update URL hash when a project is selected
       window.history.pushState(null, '', `#${selectedProject}`);
     }
@@ -330,16 +379,18 @@ export default function Projects() {
   const currentProject = projects.find(p => p.id === selectedProject);
 
   const nextImage = () => {
+    if (!selectedProject || !projectImages[selectedProject]) return;
     setIsImageLoading(true);
     setCurrentImageIndex((prev) => 
-      prev === projectImages.images.length - 1 ? 0 : prev + 1
+      prev === projectImages[selectedProject].images.length - 1 ? 0 : prev + 1
     );
   };
 
   const previousImage = () => {
+    if (!selectedProject || !projectImages[selectedProject]) return;
     setIsImageLoading(true);
     setCurrentImageIndex((prev) => 
-      prev === 0 ? projectImages.images.length - 1 : prev - 1
+      prev === 0 ? projectImages[selectedProject].images.length - 1 : prev - 1
     );
   };
 
@@ -375,6 +426,7 @@ export default function Projects() {
           selectedProject={selectedProject}
           onProjectSelect={handleProjectClick}
           projectType="web"
+          projectImages={projectImages}
         />
 
         <ProjectSection 
@@ -383,12 +435,13 @@ export default function Projects() {
           selectedProject={selectedProject}
           onProjectSelect={handleProjectClick}
           projectType="mobile"
+          projectImages={projectImages}
         />
 
-        {selectedProject && currentProject && (
+        {selectedProject && currentProject && projectImages[selectedProject] && (
           <ProjectDetails
             project={currentProject}
-            projectImages={projectImages}
+            projectImages={projectImages[selectedProject]}
             currentImageIndex={currentImageIndex}
             isImageLoading={isImageLoading}
             onImageLoad={handleImageLoad}
