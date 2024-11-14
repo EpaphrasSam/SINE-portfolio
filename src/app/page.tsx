@@ -182,15 +182,9 @@ function FeaturedProject({ project }: { project: Project }) {
       transition={{ delay: 0.2 }}
       className="group relative"
     >
-      {project.url ? (
-        <a href={project.url} target="_blank" rel="noopener noreferrer" className="block">
-          <FeaturedProjectCard project={project} projectImages={projectImages} />
-        </a>
-      ) : (
-        <Link href={`/projects#${project.id}`}>
-          <FeaturedProjectCard project={project} projectImages={projectImages} />
-        </Link>
-      )}
+      <Link href={`/projects#${project.id}`}>
+        <FeaturedProjectCard project={project} projectImages={projectImages} />
+      </Link>
     </motion.div>
   );
 }

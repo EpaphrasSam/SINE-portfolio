@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { TextHighlight } from "../../components/TextHighlight";
 import { projects } from "../../data/projects";
 import { getProjectImages } from "../../utils/getProjectImages";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 
 const container = {
@@ -23,7 +23,7 @@ const item = {
 };
 
 export default function Projects() {
-  const [selectedProject, setSelectedProject] = useState(projects[0].id);
+  const [selectedProject, setSelectedProject] = useState<string | null>(null);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [projectImages, setProjectImages] = useState<{
     images: string[];
@@ -31,31 +31,43 @@ export default function Projects() {
     hasLogo: boolean;
   }>({ images: [], logo: '', hasLogo: false });
 
-  const currentProject = projects.find(p => p.id === selectedProject)!;
+  // Refs for carousel scrolling
+  const webProjectsRef = useRef<HTMLDivElement>(null);
+  const mobileProjectsRef = useRef<HTMLDivElement>(null);
+
+  const scroll = (direction: 'left' | 'right', ref: React.RefObject<HTMLDivElement>) => {
+    if (ref.current) {
+      const scrollAmount = direction === 'left' ? -400 : 400;
+      ref.current.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+    }
+  };
 
   useEffect(() => {
+    // Handle URL hash for direct navigation
     const hash = window.location.hash.slice(1);
     if (hash && projects.some(p => p.id === hash)) {
       setSelectedProject(hash);
-      if (document.referrer !== '') {
-        const element = document.getElementById(hash);
-        if (element) {
-          element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }
-      }
     }
   }, []);
 
   useEffect(() => {
-    async function loadImages() {
-      const images = await getProjectImages(selectedProject);
-      setProjectImages(images);
-      setCurrentImageIndex(0);
-    }
-    loadImages();
+    if (selectedProject) {
+      const loadImages = async () => {
+        const images = await getProjectImages(selectedProject);
+        setProjectImages(images);
+        setCurrentImageIndex(0);
+      };
+      loadImages();
 
-    window.history.pushState(null, '', `#${selectedProject}`);
+      // Update URL hash when a project is selected
+      window.history.pushState(null, '', `#${selectedProject}`);
+    }
   }, [selectedProject]);
+
+  const webProjects = projects.filter(p => p.type === 'web');
+  const mobileProjects = projects.filter(p => p.type === 'mobile');
+
+  const currentProject = projects.find(p => p.id === selectedProject);
 
   const nextImage = () => {
     setCurrentImageIndex((prev) => 
@@ -69,47 +81,82 @@ export default function Projects() {
     );
   };
 
+  const ProjectSection = ({ title, projects, carouselRef }: { 
+    title: string;
+    projects: typeof webProjects;
+    carouselRef: React.RefObject<HTMLDivElement>;
+  }) => (
+    <div className="relative mb-12">
+      <h2 className="text-2xl font-semibold mb-4">{title}</h2>
+      <div className="relative group">
+        <div
+          ref={carouselRef}
+          className="flex overflow-x-auto gap-4 scroll-smooth no-scrollbar"
+          style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
+        >
+          <div className="flex gap-4 px-4">
+            {projects.map(project => (
+              <motion.div
+                key={project.id}
+                className={`flex-shrink-0 w-[320px] p-6 rounded-lg cursor-pointer transition-all duration-200 ${
+                  selectedProject === project.id
+                    ? 'bg-violet-500 dark:bg-violet-600 text-white'
+                    : 'bg-white dark:bg-zinc-800/50 border border-gray-200 dark:border-zinc-700 hover:border-violet-500/50 dark:hover:border-violet-500/50'
+                }`}
+                onClick={() => setSelectedProject(project.id)}
+                whileHover={{ scale: 1.02 }}
+                transition={{ type: "spring", stiffness: 300 }}
+              >
+                <div className="flex items-start gap-4">
+                  <div className={`w-12 h-12 rounded-lg flex items-center justify-center ${
+                    selectedProject === project.id
+                      ? 'bg-white/20 text-white'
+                      : 'bg-violet-500/10 dark:bg-violet-400/10 text-violet-500 dark:text-violet-400'
+                  }`}>
+                    {project.icon}
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-semibold">{project.title}</h3>
+                    <p className={`text-sm mt-1 ${
+                      selectedProject === project.id
+                        ? 'text-white/80'
+                        : 'text-gray-600 dark:text-gray-400'
+                    }`}>
+                      {project.preview}
+                    </p>
+                  </div>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+        {projects.length > 2 && (
+          <>
+            <button
+              onClick={() => scroll('left', carouselRef)}
+              className="absolute left-0 top-1/2 -translate-y-1/2 bg-white dark:bg-zinc-800 shadow-lg rounded-r-lg p-2 opacity-0 group-hover:opacity-100 transition-opacity disabled:opacity-0"
+              disabled={carouselRef.current?.scrollLeft === 0}
+            >
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+              </svg>
+            </button>
+            <button
+              onClick={() => scroll('right', carouselRef)}
+              className="absolute right-0 top-1/2 -translate-y-1/2 bg-white dark:bg-zinc-800 shadow-lg rounded-l-lg p-2 opacity-0 group-hover:opacity-100 transition-opacity"
+            >
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
+            </button>
+          </>
+        )}
+      </div>
+    </div>
+  );
+
   return (
     <div className="bg-white dark:bg-zinc-950">
-      {/* Floating Background Elements */}
-      <div className="fixed inset-0 pointer-events-none">
-        {/* Web Icon */}
-        <motion.div
-          className="absolute top-20 right-[10%] text-violet-500/10 dark:text-violet-400/10"
-          animate={{ 
-            y: [0, -20, 0],
-            rotate: [0, 5, 0]
-          }}
-          transition={{ 
-            duration: 5,
-            repeat: Infinity,
-            ease: "easeInOut"
-          }}
-        >
-          <svg className="w-32 h-32" fill="currentColor" viewBox="0 0 24 24">
-            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z" />
-          </svg>
-        </motion.div>
-
-        {/* Mobile Icon */}
-        <motion.div
-          className="absolute bottom-20 left-[10%] text-violet-500/10 dark:text-violet-400/10"
-          animate={{ 
-            y: [0, 20, 0],
-            rotate: [0, -5, 0]
-          }}
-          transition={{ 
-            duration: 6,
-            repeat: Infinity,
-            ease: "easeInOut"
-          }}
-        >
-          <svg className="w-28 h-28" fill="currentColor" viewBox="0 0 24 24">
-            <path d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
-          </svg>
-        </motion.div>
-      </div>
-
       <div className="max-w-7xl mx-auto px-4 py-20">
       <motion.div
           initial={{ x: -100, opacity: 0 }}
@@ -130,63 +177,25 @@ export default function Projects() {
           />
         </motion.div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-          {/* Project Navigation */}
-          <div className="lg:col-span-1 space-y-4">
-            {projects.map((project) => (
-              <motion.div
-                key={project.id}
-                variants={item}
-                onClick={() => {
-                  setSelectedProject(project.id);
-                  setCurrentImageIndex(0);
-                }}
-                className={`p-6 rounded-lg cursor-pointer transition-all duration-200 ${
-                  selectedProject === project.id
-                    ? 'bg-violet-500 dark:bg-violet-600 text-white'
-                    : 'bg-white dark:bg-zinc-800/50 border border-gray-200 dark:border-zinc-700 hover:border-violet-500/50 dark:hover:border-violet-500/50'
-                }`}
-                id={project.id}
-              >
-                <div className="flex items-start gap-4">
-                  <div className={`w-12 h-12 rounded-lg flex items-center justify-center ${
-                    selectedProject === project.id
-                      ? 'bg-white/20 text-white'
-                      : 'bg-violet-500/10 dark:bg-violet-400/10 text-violet-500 dark:text-violet-400'
-                  }`}>
-                    {project.icon}
-                  </div>
-                  <div>
-                    <div className="flex items-center gap-2">
-                      <h3 className="text-lg font-semibold">{project.title}</h3>
-                      <span className={`px-2 py-1 text-xs rounded-full capitalize ${
-                        selectedProject === project.id
-                          ? 'bg-white/20 text-white'
-                          : 'bg-violet-500/10 dark:bg-violet-400/10  text-violet-500 dark:text-violet-400'
-                      }`}>
-                        {project.type}
-                      </span>
-                    </div>
-                    <p className={`text-sm mt-1 ${
-                      selectedProject === project.id
-                        ? 'text-white/80'
-                        : 'text-gray-600 dark:text-gray-400'
-                    }`}>
-                      {project.preview}
-                    </p>
-                  </div>
-                </div>
-              </motion.div>
-            ))}
-          </div>
+        <ProjectSection 
+          title="Web Projects" 
+          projects={webProjects} 
+          carouselRef={webProjectsRef} 
+        />
 
-          {/* Project Details */}
+        <ProjectSection 
+          title="Mobile Projects" 
+          projects={mobileProjects} 
+          carouselRef={mobileProjectsRef} 
+        />
+
+        {selectedProject && (
           <motion.div
             key={selectedProject}
-            initial={{ opacity: 0, x: 20 }}
-            animate={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="lg:col-span-2 space-y-8"
+            className="mt-12 border-t pt-8"
           >
             {/* Project Images */}
             <div className="space-y-4">
@@ -203,9 +212,9 @@ export default function Projects() {
                     >
                       <Image
                         src={projectImages.images[currentImageIndex]}
-                        alt={`${currentProject.title} screenshot`}
+                        alt={`${currentProject?.title} screenshot`}
                         fill
-                        className={`${projects.find(p => p.id === selectedProject)!.type === 'web' ? 'object-fit' : 'object-contain'}`}
+                        className={`${currentProject?.type === 'web' ? 'object-fit' : 'object-contain'}`}
                       />
                     </motion.div>
                     {projectImages.images.length > 1 && (
@@ -261,7 +270,7 @@ export default function Projects() {
                   {projectImages.hasLogo && (
                     <Image
                       src={projectImages.logo}
-                      alt={`${currentProject.title} logo`}
+                      alt={`${currentProject?.title} logo`}
                       width={48}
                       height={48}
                       className="rounded-lg"
@@ -269,13 +278,13 @@ export default function Projects() {
                   )}
                   <div>
                     <h2 className="text-2xl font-bold text-gray-900 dark:text-white">
-                      {currentProject.title}
+                      {currentProject?.title}
                     </h2>
                     <div className="flex items-center gap-2 mt-1">
                       <span className="px-2 py-1 text-sm rounded-full capitalize bg-violet-500/10 dark:bg-violet-400/10 text-violet-500 dark:text-violet-400">
-                        {currentProject.type}
+                        {currentProject?.type}
                       </span>
-                      {currentProject.url && (
+                      {currentProject?.url && (
                         <a
                           href={currentProject.url}
                           target="_blank"
@@ -293,7 +302,7 @@ export default function Projects() {
               </div>
 
               <div className="prose dark:prose-invert max-w-none">
-                {currentProject.description.map((paragraph, index) => (
+                {currentProject?.description.map((paragraph, index) => (
                   <p key={index} className="text-gray-600 dark:text-gray-400">
                     {paragraph}
                   </p>
@@ -301,7 +310,7 @@ export default function Projects() {
               </div>
 
               <div className="flex flex-wrap gap-2">
-                {currentProject.tech.map(tech => (
+                {currentProject?.tech.map(tech => (
                   <span
                     key={tech}
                     className="px-3 py-1 text-sm bg-violet-500/10 dark:bg-violet-400/10 text-violet-500 dark:text-violet-400 rounded-full"
@@ -312,7 +321,7 @@ export default function Projects() {
               </div>
             </div>
           </motion.div>
-        </div>
+        )}
       </div>
     </div>
   );
