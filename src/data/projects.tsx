@@ -21,7 +21,29 @@ export const projects: Project[] = [
       </svg>
     ),
     tech: ["Next.js", "TypeScript", "Prisma", "Tailwind CSS", "Pusher"],
-    url: "https://agri-link.vercel.app" // Replace with actual URL
+    url: "https://agri-link.vercel.app" 
+  },
+  {
+    id: "DigiTechEdge",
+    title: "DigiTech Edge Website",
+    preview: "A modern corporate website showcasing technology solutions and services with an engaging user interface.",
+    description: [
+      "DigiTech Edge is a professional technology solutions company website built with modern web technologies.",
+      "Features an animated and responsive user interface using Framer Motion for smooth transitions and interactions.",
+      "Implements comprehensive service showcase and project portfolio sections.",
+      "Includes an integrated contact form with email functionality for client communications.",
+      "Showcases company expertise, team information, and client testimonials.",
+      "Utilizes modern design principles with attention to user experience and accessibility.",
+      "Built with performance optimization and SEO best practices in mind."
+    ],
+    type: "web",
+    icon: (
+      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+      </svg>
+    ),
+    tech: ["Next.js", "TypeScript", "TailwindCSS", "Framer Motion"],
+    url: "https://digitechedge.com"
   },
   {
     id: "CampServe",
@@ -39,7 +61,7 @@ export const projects: Project[] = [
     type: "mobile",
     icon: (
       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2h2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z" />
       </svg>
     ),
     tech: ["React Native", "Flask", "PostgreSQL", "TailwindCSS"]
@@ -65,5 +87,71 @@ export const projects: Project[] = [
     ),
     tech: ["Next.js", "TypeScript", "Prisma", "TailwindCSS"],
     url: "https://braszyclothing.com" // Replace with actual URL
+  },
+  {
+    id: "Threads",
+    title: "Threads Social Platform",
+    preview: "A modern social platform enabling users to share thoughts, engage in discussions, and build connections.",
+    description: [
+      "Threads is a social networking platform built with modern web technologies, focusing on user engagement and content sharing.",
+      "Features a clean and intuitive user interface that makes it easy to create and interact with posts.",
+      "Implements core social features including post creation, comments, and user interactions.",
+      "Users can engage with content through likes and comments, fostering meaningful discussions.",
+      "Built with responsive design principles ensuring a seamless experience across all devices.",
+      "Incorporates user authentication for secure access and personalized experiences.",
+      "Utilizes modern web technologies for efficient data management and real-time updates."
+    ],
+    type: "web",
+    icon: (
+      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z" />
+      </svg>
+    ),
+    tech: ["Next.js", "TypeScript", "Prisma", "TailwindCSS"],
+    url: "https://threads-khaki-eight.vercel.app"
+  },
+  {
+    id: "BlogoSphere",
+    title: "BlogoSphere",
+    preview: "A modern blogging platform with rich text editing, category organization, and interactive features.",
+    description: [
+      "BlogoSphere is a feature-rich blogging platform built with modern web technologies.",
+      "Implements a comprehensive content management system with category-based organization and rich text editing.",
+      "Features user authentication and profile management for secure content creation and interaction.",
+      "Includes an interactive comment system allowing users to engage with blog content.",
+      "Incorporates view tracking to monitor post engagement and popularity.",
+      "Supports dark/light theme modes for enhanced user experience.",
+      "Built with responsive design principles for seamless viewing across all devices."
+    ],
+    type: "web",
+    icon: (
+      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9.5a2.5 2.5 0 00-2.5-2.5H15M9 11l3 3L9 17" />
+      </svg>
+    ),
+    tech: ["Next.js", "TypeScript", "Prisma", "TailwindCSS"],
+    url: "https://blogosphere-umber.vercel.app"
+  },
+  {
+    id: "VoteSphere",
+    title: "VoteSphere E-Voting Platform",
+    preview: "A comprehensive electronic voting system with period management, real-time tracking, and result visualization.",
+    description: [
+      "VoteSphere is a secure and efficient electronic voting platform designed for managing multiple voting periods and elections.",
+      "Features a robust role-based access control system with three levels: regular users, voting administrators, and supreme administrators.",
+      "Implements position-based voting structure with candidate profiles, image management, and vote verification.",
+      "Includes real-time vote tracking and result visualization using interactive charts and analytics.",
+      "Provides administrative tools for managing voting periods, positions, and candidates.",
+      "Incorporates data export functionality for generating detailed reports and analysis.",
+      "Built with security-first approach including secure authentication and vote verification systems."
+    ],
+    type: "web",
+    icon: (
+      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+      </svg>
+    ),
+    tech: ["Next.js", "TypeScript", "Prisma", "Chart.js", "TailwindCSS"],
+    url: "https://vote-sphere-chi.vercel.app"
   }
 ];

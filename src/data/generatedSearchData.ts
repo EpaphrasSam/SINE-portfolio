@@ -130,6 +130,90 @@ export const searchData: SearchResultType[] = [
     "elementId": "AgriLink"
   },
   {
+    "title": "DigiTech Edge Website",
+    "path": "/projects",
+    "type": "content",
+    "preview": "A modern corporate website showcasing technology solutions and services with an engaging user interface. (Technologies: Next.js, TypeScript, TailwindCSS, Framer Motion)",
+    "elementId": "DigiTechEdge"
+  },
+  {
+    "title": "DigiTech Edge Website - Details",
+    "path": "/projects",
+    "type": "content",
+    "preview": "DigiTech Edge is a professional technology solutions company website built with modern web technologies.",
+    "elementId": "DigiTechEdge"
+  },
+  {
+    "title": "DigiTech Edge Website - Details",
+    "path": "/projects",
+    "type": "content",
+    "preview": "Features an animated and responsive user interface using Framer Motion for smooth transitions and interactions.",
+    "elementId": "DigiTechEdge"
+  },
+  {
+    "title": "DigiTech Edge Website - Details",
+    "path": "/projects",
+    "type": "content",
+    "preview": "Implements comprehensive service showcase and project portfolio sections.",
+    "elementId": "DigiTechEdge"
+  },
+  {
+    "title": "DigiTech Edge Website - Details",
+    "path": "/projects",
+    "type": "content",
+    "preview": "Includes an integrated contact form with email functionality for client communications.",
+    "elementId": "DigiTechEdge"
+  },
+  {
+    "title": "DigiTech Edge Website - Details",
+    "path": "/projects",
+    "type": "content",
+    "preview": "Showcases company expertise, team information, and client testimonials.",
+    "elementId": "DigiTechEdge"
+  },
+  {
+    "title": "DigiTech Edge Website - Details",
+    "path": "/projects",
+    "type": "content",
+    "preview": "Utilizes modern design principles with attention to user experience and accessibility.",
+    "elementId": "DigiTechEdge"
+  },
+  {
+    "title": "DigiTech Edge Website - Details",
+    "path": "/projects",
+    "type": "content",
+    "preview": "Built with performance optimization and SEO best practices in mind.",
+    "elementId": "DigiTechEdge"
+  },
+  {
+    "title": "Next.js Project: DigiTech Edge Website",
+    "path": "/projects",
+    "type": "content",
+    "preview": "DigiTech Edge Website - Built with Next.js. A modern corporate website showcasing technology solutions and services with an engaging user interface.",
+    "elementId": "DigiTechEdge"
+  },
+  {
+    "title": "TypeScript Project: DigiTech Edge Website",
+    "path": "/projects",
+    "type": "content",
+    "preview": "DigiTech Edge Website - Built with TypeScript. A modern corporate website showcasing technology solutions and services with an engaging user interface.",
+    "elementId": "DigiTechEdge"
+  },
+  {
+    "title": "TailwindCSS Project: DigiTech Edge Website",
+    "path": "/projects",
+    "type": "content",
+    "preview": "DigiTech Edge Website - Built with TailwindCSS. A modern corporate website showcasing technology solutions and services with an engaging user interface.",
+    "elementId": "DigiTechEdge"
+  },
+  {
+    "title": "Framer Motion Project: DigiTech Edge Website",
+    "path": "/projects",
+    "type": "content",
+    "preview": "DigiTech Edge Website - Built with Framer Motion. A modern corporate website showcasing technology solutions and services with an engaging user interface.",
+    "elementId": "DigiTechEdge"
+  },
+  {
     "title": "Campserve Mobile Application",
     "path": "/projects",
     "type": "content",
@@ -296,6 +380,265 @@ export const searchData: SearchResultType[] = [
     "type": "content",
     "preview": "Braszy Clothing E-commerce - Built with TailwindCSS. A modern e-commerce platform offering a seamless shopping experience for fashion enthusiasts.",
     "elementId": "Braszy"
+  },
+  {
+    "title": "Threads Social Platform",
+    "path": "/projects",
+    "type": "content",
+    "preview": "A modern social platform enabling users to share thoughts, engage in discussions, and build connections. (Technologies: Next.js, TypeScript, Prisma, TailwindCSS)",
+    "elementId": "Threads"
+  },
+  {
+    "title": "Threads Social Platform - Details",
+    "path": "/projects",
+    "type": "content",
+    "preview": "Threads is a social networking platform built with modern web technologies, focusing on user engagement and content sharing.",
+    "elementId": "Threads"
+  },
+  {
+    "title": "Threads Social Platform - Details",
+    "path": "/projects",
+    "type": "content",
+    "preview": "Features a clean and intuitive user interface that makes it easy to create and interact with posts.",
+    "elementId": "Threads"
+  },
+  {
+    "title": "Threads Social Platform - Details",
+    "path": "/projects",
+    "type": "content",
+    "preview": "Implements core social features including post creation, comments, and user interactions.",
+    "elementId": "Threads"
+  },
+  {
+    "title": "Threads Social Platform - Details",
+    "path": "/projects",
+    "type": "content",
+    "preview": "Users can engage with content through likes and comments, fostering meaningful discussions.",
+    "elementId": "Threads"
+  },
+  {
+    "title": "Threads Social Platform - Details",
+    "path": "/projects",
+    "type": "content",
+    "preview": "Built with responsive design principles ensuring a seamless experience across all devices.",
+    "elementId": "Threads"
+  },
+  {
+    "title": "Threads Social Platform - Details",
+    "path": "/projects",
+    "type": "content",
+    "preview": "Incorporates user authentication for secure access and personalized experiences.",
+    "elementId": "Threads"
+  },
+  {
+    "title": "Threads Social Platform - Details",
+    "path": "/projects",
+    "type": "content",
+    "preview": "Utilizes modern web technologies for efficient data management and real-time updates.",
+    "elementId": "Threads"
+  },
+  {
+    "title": "Next.js Project: Threads Social Platform",
+    "path": "/projects",
+    "type": "content",
+    "preview": "Threads Social Platform - Built with Next.js. A modern social platform enabling users to share thoughts, engage in discussions, and build connections.",
+    "elementId": "Threads"
+  },
+  {
+    "title": "TypeScript Project: Threads Social Platform",
+    "path": "/projects",
+    "type": "content",
+    "preview": "Threads Social Platform - Built with TypeScript. A modern social platform enabling users to share thoughts, engage in discussions, and build connections.",
+    "elementId": "Threads"
+  },
+  {
+    "title": "Prisma Project: Threads Social Platform",
+    "path": "/projects",
+    "type": "content",
+    "preview": "Threads Social Platform - Built with Prisma. A modern social platform enabling users to share thoughts, engage in discussions, and build connections.",
+    "elementId": "Threads"
+  },
+  {
+    "title": "TailwindCSS Project: Threads Social Platform",
+    "path": "/projects",
+    "type": "content",
+    "preview": "Threads Social Platform - Built with TailwindCSS. A modern social platform enabling users to share thoughts, engage in discussions, and build connections.",
+    "elementId": "Threads"
+  },
+  {
+    "title": "BlogoSphere",
+    "path": "/projects",
+    "type": "content",
+    "preview": "A modern blogging platform with rich text editing, category organization, and interactive features. (Technologies: Next.js, TypeScript, Prisma, TailwindCSS)",
+    "elementId": "BlogoSphere"
+  },
+  {
+    "title": "BlogoSphere - Details",
+    "path": "/projects",
+    "type": "content",
+    "preview": "BlogoSphere is a feature-rich blogging platform built with modern web technologies.",
+    "elementId": "BlogoSphere"
+  },
+  {
+    "title": "BlogoSphere - Details",
+    "path": "/projects",
+    "type": "content",
+    "preview": "Implements a comprehensive content management system with category-based organization and rich text editing.",
+    "elementId": "BlogoSphere"
+  },
+  {
+    "title": "BlogoSphere - Details",
+    "path": "/projects",
+    "type": "content",
+    "preview": "Features user authentication and profile management for secure content creation and interaction.",
+    "elementId": "BlogoSphere"
+  },
+  {
+    "title": "BlogoSphere - Details",
+    "path": "/projects",
+    "type": "content",
+    "preview": "Includes an interactive comment system allowing users to engage with blog content.",
+    "elementId": "BlogoSphere"
+  },
+  {
+    "title": "BlogoSphere - Details",
+    "path": "/projects",
+    "type": "content",
+    "preview": "Incorporates view tracking to monitor post engagement and popularity.",
+    "elementId": "BlogoSphere"
+  },
+  {
+    "title": "BlogoSphere - Details",
+    "path": "/projects",
+    "type": "content",
+    "preview": "Supports dark/light theme modes for enhanced user experience.",
+    "elementId": "BlogoSphere"
+  },
+  {
+    "title": "BlogoSphere - Details",
+    "path": "/projects",
+    "type": "content",
+    "preview": "Built with responsive design principles for seamless viewing across all devices.",
+    "elementId": "BlogoSphere"
+  },
+  {
+    "title": "Next.js Project: BlogoSphere",
+    "path": "/projects",
+    "type": "content",
+    "preview": "BlogoSphere - Built with Next.js. A modern blogging platform with rich text editing, category organization, and interactive features.",
+    "elementId": "BlogoSphere"
+  },
+  {
+    "title": "TypeScript Project: BlogoSphere",
+    "path": "/projects",
+    "type": "content",
+    "preview": "BlogoSphere - Built with TypeScript. A modern blogging platform with rich text editing, category organization, and interactive features.",
+    "elementId": "BlogoSphere"
+  },
+  {
+    "title": "Prisma Project: BlogoSphere",
+    "path": "/projects",
+    "type": "content",
+    "preview": "BlogoSphere - Built with Prisma. A modern blogging platform with rich text editing, category organization, and interactive features.",
+    "elementId": "BlogoSphere"
+  },
+  {
+    "title": "TailwindCSS Project: BlogoSphere",
+    "path": "/projects",
+    "type": "content",
+    "preview": "BlogoSphere - Built with TailwindCSS. A modern blogging platform with rich text editing, category organization, and interactive features.",
+    "elementId": "BlogoSphere"
+  },
+  {
+    "title": "VoteSphere E-Voting Platform",
+    "path": "/projects",
+    "type": "content",
+    "preview": "A comprehensive electronic voting system with period management, real-time tracking, and result visualization. (Technologies: Next.js, TypeScript, Prisma, Chart.js, TailwindCSS)",
+    "elementId": "VoteSphere"
+  },
+  {
+    "title": "VoteSphere E-Voting Platform - Details",
+    "path": "/projects",
+    "type": "content",
+    "preview": "VoteSphere is a secure and efficient electronic voting platform designed for managing multiple voting periods and elections.",
+    "elementId": "VoteSphere"
+  },
+  {
+    "title": "VoteSphere E-Voting Platform - Details",
+    "path": "/projects",
+    "type": "content",
+    "preview": "Features a robust role-based access control system with three levels: regular users, voting administrators, and supreme administrators.",
+    "elementId": "VoteSphere"
+  },
+  {
+    "title": "VoteSphere E-Voting Platform - Details",
+    "path": "/projects",
+    "type": "content",
+    "preview": "Implements position-based voting structure with candidate profiles, image management, and vote verification.",
+    "elementId": "VoteSphere"
+  },
+  {
+    "title": "VoteSphere E-Voting Platform - Details",
+    "path": "/projects",
+    "type": "content",
+    "preview": "Includes real-time vote tracking and result visualization using interactive charts and analytics.",
+    "elementId": "VoteSphere"
+  },
+  {
+    "title": "VoteSphere E-Voting Platform - Details",
+    "path": "/projects",
+    "type": "content",
+    "preview": "Provides administrative tools for managing voting periods, positions, and candidates.",
+    "elementId": "VoteSphere"
+  },
+  {
+    "title": "VoteSphere E-Voting Platform - Details",
+    "path": "/projects",
+    "type": "content",
+    "preview": "Incorporates data export functionality for generating detailed reports and analysis.",
+    "elementId": "VoteSphere"
+  },
+  {
+    "title": "VoteSphere E-Voting Platform - Details",
+    "path": "/projects",
+    "type": "content",
+    "preview": "Built with security-first approach including secure authentication and vote verification systems.",
+    "elementId": "VoteSphere"
+  },
+  {
+    "title": "Next.js Project: VoteSphere E-Voting Platform",
+    "path": "/projects",
+    "type": "content",
+    "preview": "VoteSphere E-Voting Platform - Built with Next.js. A comprehensive electronic voting system with period management, real-time tracking, and result visualization.",
+    "elementId": "VoteSphere"
+  },
+  {
+    "title": "TypeScript Project: VoteSphere E-Voting Platform",
+    "path": "/projects",
+    "type": "content",
+    "preview": "VoteSphere E-Voting Platform - Built with TypeScript. A comprehensive electronic voting system with period management, real-time tracking, and result visualization.",
+    "elementId": "VoteSphere"
+  },
+  {
+    "title": "Prisma Project: VoteSphere E-Voting Platform",
+    "path": "/projects",
+    "type": "content",
+    "preview": "VoteSphere E-Voting Platform - Built with Prisma. A comprehensive electronic voting system with period management, real-time tracking, and result visualization.",
+    "elementId": "VoteSphere"
+  },
+  {
+    "title": "Chart.js Project: VoteSphere E-Voting Platform",
+    "path": "/projects",
+    "type": "content",
+    "preview": "VoteSphere E-Voting Platform - Built with Chart.js. A comprehensive electronic voting system with period management, real-time tracking, and result visualization.",
+    "elementId": "VoteSphere"
+  },
+  {
+    "title": "TailwindCSS Project: VoteSphere E-Voting Platform",
+    "path": "/projects",
+    "type": "content",
+    "preview": "VoteSphere E-Voting Platform - Built with TailwindCSS. A comprehensive electronic voting system with period management, real-time tracking, and result visualization.",
+    "elementId": "VoteSphere"
   },
   {
     "title": "IT Support Staff at KNUST School of Business",

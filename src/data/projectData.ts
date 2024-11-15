@@ -1,5 +1,5 @@
 // This file is auto-generated. Do not edit manually.
-// Generated on 2024-11-14T23:48:20.711Z
+// Generated on 2024-11-15T02:52:50.467Z
 
 export interface ProjectImages {
   images: string[];
@@ -20,6 +20,19 @@ export const projectData: Record<string, ProjectImages> = {
       "/images/projects/AgriLink/Screenshot 2024-11-14 004433.png"
     ],
     "logo": "/images/projects/AgriLink/logo.png",
+    "hasLogo": true
+  },
+  "BlogoSphere": {
+    "images": [
+      "/images/projects/BlogoSphere/Screenshot 2024-11-15 010329.png",
+      "/images/projects/BlogoSphere/Screenshot 2024-11-15 010344.png",
+      "/images/projects/BlogoSphere/Screenshot 2024-11-15 010358.png",
+      "/images/projects/BlogoSphere/Screenshot 2024-11-15 010448.png",
+      "/images/projects/BlogoSphere/Screenshot 2024-11-15 010956.png",
+      "/images/projects/BlogoSphere/Screenshot 2024-11-15 011008.png",
+      "/images/projects/BlogoSphere/Screenshot 2024-11-15 011025.png"
+    ],
+    "logo": "/images/projects/BlogoSphere/logo.png",
     "hasLogo": true
   },
   "Braszy": {
@@ -48,6 +61,50 @@ export const projectData: Record<string, ProjectImages> = {
       "/images/projects/CampServe/Screenshot 2024-11-14 010458.png"
     ],
     "logo": "/images/projects/CampServe/logo.png",
+    "hasLogo": true
+  },
+  "DigiTechEdge": {
+    "images": [
+      "/images/projects/DigiTechEdge/Screenshot 2024-11-15 024832.png",
+      "/images/projects/DigiTechEdge/Screenshot 2024-11-15 024856.png",
+      "/images/projects/DigiTechEdge/Screenshot 2024-11-15 024910.png",
+      "/images/projects/DigiTechEdge/Screenshot 2024-11-15 024923.png",
+      "/images/projects/DigiTechEdge/Screenshot 2024-11-15 024935.png",
+      "/images/projects/DigiTechEdge/Screenshot 2024-11-15 024950.png",
+      "/images/projects/DigiTechEdge/Screenshot 2024-11-15 025006.png",
+      "/images/projects/DigiTechEdge/Screenshot 2024-11-15 025033.png",
+      "/images/projects/DigiTechEdge/Screenshot 2024-11-15 025050.png",
+      "/images/projects/DigiTechEdge/Screenshot 2024-11-15 025108.png"
+    ],
+    "logo": "/images/projects/DigiTechEdge/logo.png",
+    "hasLogo": true
+  },
+  "Threads": {
+    "images": [
+      "/images/projects/Threads/Screenshot 2024-11-15 005250.png",
+      "/images/projects/Threads/Screenshot 2024-11-15 005313.png",
+      "/images/projects/Threads/Screenshot 2024-11-15 005326.png",
+      "/images/projects/Threads/Screenshot 2024-11-15 005340.png",
+      "/images/projects/Threads/Screenshot 2024-11-15 005351.png",
+      "/images/projects/Threads/Screenshot 2024-11-15 005403.png",
+      "/images/projects/Threads/Screenshot 2024-11-15 005415.png",
+      "/images/projects/Threads/Screenshot 2024-11-15 005455.png"
+    ],
+    "logo": "/images/projects/Threads/logo.png",
+    "hasLogo": true
+  },
+  "VoteSphere": {
+    "images": [
+      "/images/projects/VoteSphere/Screenshot 2024-11-15 023102.png",
+      "/images/projects/VoteSphere/Screenshot 2024-11-15 023127.png",
+      "/images/projects/VoteSphere/Screenshot 2024-11-15 023233.png",
+      "/images/projects/VoteSphere/Screenshot 2024-11-15 023530.png",
+      "/images/projects/VoteSphere/Screenshot 2024-11-15 023608.png",
+      "/images/projects/VoteSphere/Screenshot 2024-11-15 023631.png",
+      "/images/projects/VoteSphere/Screenshot 2024-11-15 023708.png",
+      "/images/projects/VoteSphere/Screenshot 2024-11-15 023738.png"
+    ],
+    "logo": "/images/projects/VoteSphere/logo.png",
     "hasLogo": true
   }
 };
