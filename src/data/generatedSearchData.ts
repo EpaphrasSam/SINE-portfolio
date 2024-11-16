@@ -641,27 +641,6 @@ export const searchData: SearchResultType[] = [
     "elementId": "VoteSphere"
   },
   {
-    "title": "IT Support Staff at KNUST School of Business",
-    "preview": "Nov 2023 - Present. Providing comprehensive IT support and infrastructure management Managing and maintaining computer labs and network infrastructure Assisting faculty and staff with technical issues Ensuring systems security and data backup",
-    "path": "/about",
-    "type": "content",
-    "elementId": "experience-it"
-  },
-  {
-    "title": "Fullstack Developer at KNUST School of Business",
-    "preview": "Nov 2023 - Present. Developed comprehensive exams attendance tracking application Created admin dashboard for managing exam schedules and staff assignments Implemented secure web-based Voting System with real-time updates Designed nomination platform with secure role-based authentication (RBAC) Built admin and reviewer dashboards with real-time notifications Integrated real-time updates using WebSocket technology Implemented data visualization for exam statistics",
-    "path": "/about",
-    "type": "content",
-    "elementId": "experience-fullstack"
-  },
-  {
-    "title": "Software Engineer Intern, Frontend Developer at BSystems Limited",
-    "preview": "Oct 2022 - Jan 2023. Developed and enhanced features for the admin dashboard of the PeoplesPay app, improving user interface and experience Implemented user authentication, verification, and various admin functionalities including managing admins, customers, transactions, and e-levy records, ensuring data security and integrity Redesigned UI components to enhance usability and visual appeal, leading to a more intuitive and engaging user experience Created detailed technical documentation for the web application, facilitating better understanding and maintenance for future developers",
-    "path": "/about",
-    "type": "content",
-    "elementId": "experience-intern"
-  },
-  {
     "title": "About Me",
     "preview": "About Me",
     "path": "/about",
