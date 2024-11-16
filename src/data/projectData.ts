@@ -1,5 +1,5 @@
 // This file is auto-generated. Do not edit manually.
-// Generated on 2024-11-16T19:49:56.148Z
+// Generated on 2024-11-16T20:09:18.913Z
 
 export interface ProjectImages {
   images: string[];

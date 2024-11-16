@@ -98,6 +98,16 @@ export default function SearchResults({ results, onClose, searchQuery }: SearchR
   const pageResults = results.filter(r => r.type === 'page');
   const contentResults = results.filter(r => r.type === 'content');
 
+  // Sort content results by whether they have matches in the title
+  const searchTerms = searchQuery.toLowerCase().split(/\s+/).filter(Boolean);
+  contentResults.sort((a, b) => {
+    const aHasTitleMatch = searchTerms.some(term => a.title.toLowerCase().includes(term));
+    const bHasTitleMatch = searchTerms.some(term => b.title.toLowerCase().includes(term));
+    if (aHasTitleMatch && !bHasTitleMatch) return -1;
+    if (!aHasTitleMatch && bHasTitleMatch) return 1;
+    return 0;
+  });
+
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -131,7 +141,6 @@ export default function SearchResults({ results, onClose, searchQuery }: SearchR
                   Page
                 </span>
               </div>
-              {/* Removed preview for pages */}
             </Link>
           </motion.div>
         ))}
@@ -152,7 +161,12 @@ export default function SearchResults({ results, onClose, searchQuery }: SearchR
               className="block p-4 rounded-lg bg-gray-50 dark:bg-zinc-800/50 hover:bg-violet-500/10 dark:hover:bg-violet-400/10 border border-gray-200 dark:border-zinc-700 hover:border-violet-500/50 dark:hover:border-violet-400/50 transition-all duration-150"
             >
               <div className="text-gray-900 dark:text-white transition-colors duration-150">
-                <TextHighlight text={result.preview} />
+                <div className="font-medium mb-2">
+                  <TextHighlight text={result.title} />
+                </div>
+                <div className="text-sm text-gray-600 dark:text-gray-400">
+                  <TextHighlight text={result.preview} />
+                </div>
               </div>
               <div className="text-xs text-violet-500 dark:text-violet-400 mt-2">
                 Found in {getPageName(result.path)}

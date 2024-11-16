@@ -108,9 +108,29 @@ function extractSearchableContent(code: string): SearchResult[] {
             if (title && company) {
               addSearchResult(
                 `${title} at ${company}`,
-                `${period}. ${responsibilities.join(' ')}`,
+                `${title} - ${company}. ${period}. ${responsibilities.join(' ')}`,
                 id
               );
+
+              addSearchResult(
+                company,
+                `${title} position at ${company}. ${period}. ${responsibilities[0]}`,
+                id
+              );
+
+              addSearchResult(
+                title,
+                `${title} at ${company}. ${period}. ${responsibilities[0]}`,
+                id
+              );
+
+              responsibilities.forEach(resp => {
+                addSearchResult(
+                  `${title} - ${company}`,
+                  resp,
+                  id
+                );
+              });
             }
           }
         });
@@ -352,6 +372,102 @@ async function generateSearchData() {
     console.error('Error processing projects:', error);
   }
 
+  // Add experiences to search results
+  try {
+    const experiencesFile = path.join(process.cwd(), 'src', 'data', 'experiences.ts');
+    const experiencesCode = fs.readFileSync(experiencesFile, 'utf-8');
+    const ast = parse(experiencesCode, {
+      sourceType: 'module',
+      plugins: ['jsx', 'typescript'],
+    });
+
+    traverse(ast, {
+      VariableDeclarator(path) {
+        if (
+          t.isIdentifier(path.node.id, { name: 'experiences' }) &&
+          t.isArrayExpression(path.node.init)
+        ) {
+          path.node.init.elements.forEach((element) => {
+            if (t.isObjectExpression(element)) {
+              let id = '';
+              let title = '';
+              let company = '';
+              let period = '';
+              let responsibilities: string[] = [];
+
+              element.properties.forEach((prop) => {
+                if (
+                  t.isObjectProperty(prop) &&
+                  t.isIdentifier(prop.key)
+                ) {
+                  if (prop.key.name === 'id' && t.isStringLiteral(prop.value)) {
+                    id = prop.value.value;
+                  }
+                  if (prop.key.name === 'title' && t.isStringLiteral(prop.value)) {
+                    title = prop.value.value;
+                  }
+                  if (prop.key.name === 'company' && t.isStringLiteral(prop.value)) {
+                    company = prop.value.value;
+                  }
+                  if (prop.key.name === 'period' && t.isStringLiteral(prop.value)) {
+                    period = prop.value.value;
+                  }
+                  if (prop.key.name === 'responsibilities' && t.isArrayExpression(prop.value)) {
+                    responsibilities = prop.value.elements
+                      .filter((el): el is t.StringLiteral => t.isStringLiteral(el))
+                      .map(el => el.value);
+                  }
+                }
+              });
+
+              if (title && company) {
+                // Add main experience entry with company and title in preview
+                searchResults.push({
+                  title: `${title} at ${company}`,
+                  path: '/about',
+                  type: 'content',
+                  preview: `${title} - ${company}. ${period}. ${responsibilities.join(' ')}`,
+                  elementId: id
+                });
+
+                // Add company-specific entry
+                searchResults.push({
+                  title: company,
+                  path: '/about',
+                  type: 'content',
+                  preview: `${title} position at ${company}. ${period}. ${responsibilities[0]}`,
+                  elementId: id
+                });
+
+                // Add title-specific entry
+                searchResults.push({
+                  title: title,
+                  path: '/about',
+                  type: 'content',
+                  preview: `${title} at ${company}. ${period}. ${responsibilities[0]}`,
+                  elementId: id
+                });
+
+                // Add individual responsibility entries with job context
+                responsibilities.forEach(resp => {
+                  searchResults.push({
+                    title: `${title} - ${company}`,
+                    path: '/about',
+                    type: 'content',
+                    preview: resp,
+                    elementId: id
+                  });
+                });
+              }
+            }
+          });
+        }
+      }
+    });
+  } catch (error) {
+    console.error('Error processing experiences:', error);
+  }
+
   function processDirectory(dirPath: string, urlPath: string = '') {
     const entries = fs.readdirSync(dirPath);
 
@@ -455,7 +571,7 @@ export function searchContent(query: string): SearchResultType[] {
 
   // Remove duplicates, keeping highest scoring version
   scoredResults.forEach(result => {
-    const key = result.elementId ? \`\${result.elementId}:\${result.preview}\` : result.preview;
+    const key = result.elementId ? result.elementId + ':' + result.preview : result.preview;
     const existing = uniqueResults.get(key);
     if (!existing || result.score > existing.score) {
       uniqueResults.set(key, result);
@@ -469,7 +585,6 @@ export function searchContent(query: string): SearchResultType[] {
 `;
 
   fs.writeFileSync(outputPath, outputContent);
-  console.log('Search data generated successfully!');
 }
 
 generateSearchData().catch(console.error);

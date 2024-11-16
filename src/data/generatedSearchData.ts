@@ -641,6 +641,160 @@ export const searchData: SearchResultType[] = [
     "elementId": "VoteSphere"
   },
   {
+    "title": "Frontend Developer at Hurisoft",
+    "path": "/about",
+    "type": "content",
+    "preview": "Frontend Developer - Hurisoft. Nov 2024 - Present. Collaborating with a remote team to develop responsive web applications, enhancing user experience with React and Next.js. Building intuitive UIs with React, optimizing performance, and ensuring accessibility and mobile responsiveness",
+    "elementId": "experience-frontend"
+  },
+  {
+    "title": "Hurisoft",
+    "path": "/about",
+    "type": "content",
+    "preview": "Frontend Developer position at Hurisoft. Nov 2024 - Present. Collaborating with a remote team to develop responsive web applications, enhancing user experience with React and Next.js.",
+    "elementId": "experience-frontend"
+  },
+  {
+    "title": "Frontend Developer",
+    "path": "/about",
+    "type": "content",
+    "preview": "Frontend Developer at Hurisoft. Nov 2024 - Present. Collaborating with a remote team to develop responsive web applications, enhancing user experience with React and Next.js.",
+    "elementId": "experience-frontend"
+  },
+  {
+    "title": "Frontend Developer - Hurisoft",
+    "path": "/about",
+    "type": "content",
+    "preview": "Collaborating with a remote team to develop responsive web applications, enhancing user experience with React and Next.js.",
+    "elementId": "experience-frontend"
+  },
+  {
+    "title": "Frontend Developer - Hurisoft",
+    "path": "/about",
+    "type": "content",
+    "preview": "Building intuitive UIs with React, optimizing performance, and ensuring accessibility and mobile responsiveness",
+    "elementId": "experience-frontend"
+  },
+  {
+    "title": "Fullstack Developer at KNUST School of Business",
+    "path": "/about",
+    "type": "content",
+    "preview": "Fullstack Developer - KNUST School of Business. Nov 2023 - Nov 2024. Developed comprehensive exams attendance tracking application Created admin dashboard for managing exam schedules and staff assignments Implemented secure web-based Voting System with real-time updates Designed nomination platform with secure role-based authentication (RBAC) Built admin and reviewer dashboards with real-time notifications Integrated real-time updates using WebSocket technology Implemented data visualization for exam statistics",
+    "elementId": "experience-fullstack"
+  },
+  {
+    "title": "KNUST School of Business",
+    "path": "/about",
+    "type": "content",
+    "preview": "Fullstack Developer position at KNUST School of Business. Nov 2023 - Nov 2024. Developed comprehensive exams attendance tracking application",
+    "elementId": "experience-fullstack"
+  },
+  {
+    "title": "Fullstack Developer",
+    "path": "/about",
+    "type": "content",
+    "preview": "Fullstack Developer at KNUST School of Business. Nov 2023 - Nov 2024. Developed comprehensive exams attendance tracking application",
+    "elementId": "experience-fullstack"
+  },
+  {
+    "title": "Fullstack Developer - KNUST School of Business",
+    "path": "/about",
+    "type": "content",
+    "preview": "Developed comprehensive exams attendance tracking application",
+    "elementId": "experience-fullstack"
+  },
+  {
+    "title": "Fullstack Developer - KNUST School of Business",
+    "path": "/about",
+    "type": "content",
+    "preview": "Created admin dashboard for managing exam schedules and staff assignments",
+    "elementId": "experience-fullstack"
+  },
+  {
+    "title": "Fullstack Developer - KNUST School of Business",
+    "path": "/about",
+    "type": "content",
+    "preview": "Implemented secure web-based Voting System with real-time updates",
+    "elementId": "experience-fullstack"
+  },
+  {
+    "title": "Fullstack Developer - KNUST School of Business",
+    "path": "/about",
+    "type": "content",
+    "preview": "Designed nomination platform with secure role-based authentication (RBAC)",
+    "elementId": "experience-fullstack"
+  },
+  {
+    "title": "Fullstack Developer - KNUST School of Business",
+    "path": "/about",
+    "type": "content",
+    "preview": "Built admin and reviewer dashboards with real-time notifications",
+    "elementId": "experience-fullstack"
+  },
+  {
+    "title": "Fullstack Developer - KNUST School of Business",
+    "path": "/about",
+    "type": "content",
+    "preview": "Integrated real-time updates using WebSocket technology",
+    "elementId": "experience-fullstack"
+  },
+  {
+    "title": "Fullstack Developer - KNUST School of Business",
+    "path": "/about",
+    "type": "content",
+    "preview": "Implemented data visualization for exam statistics",
+    "elementId": "experience-fullstack"
+  },
+  {
+    "title": "Software Engineer Intern, Frontend Developer at BSystems Limited",
+    "path": "/about",
+    "type": "content",
+    "preview": "Software Engineer Intern, Frontend Developer - BSystems Limited. Oct 2022 - Jan 2023. Developed and enhanced features for the admin dashboard of the PeoplesPay app, improving user interface and experience Implemented user authentication, verification, and various admin functionalities including managing admins, customers, transactions, and e-levy records, ensuring data security and integrity Redesigned UI components to enhance usability and visual appeal, leading to a more intuitive and engaging user experience Created detailed technical documentation for the web application, facilitating better understanding and maintenance for future developers",
+    "elementId": "experience-intern"
+  },
+  {
+    "title": "BSystems Limited",
+    "path": "/about",
+    "type": "content",
+    "preview": "Software Engineer Intern, Frontend Developer position at BSystems Limited. Oct 2022 - Jan 2023. Developed and enhanced features for the admin dashboard of the PeoplesPay app, improving user interface and experience",
+    "elementId": "experience-intern"
+  },
+  {
+    "title": "Software Engineer Intern, Frontend Developer",
+    "path": "/about",
+    "type": "content",
+    "preview": "Software Engineer Intern, Frontend Developer at BSystems Limited. Oct 2022 - Jan 2023. Developed and enhanced features for the admin dashboard of the PeoplesPay app, improving user interface and experience",
+    "elementId": "experience-intern"
+  },
+  {
+    "title": "Software Engineer Intern, Frontend Developer - BSystems Limited",
+    "path": "/about",
+    "type": "content",
+    "preview": "Developed and enhanced features for the admin dashboard of the PeoplesPay app, improving user interface and experience",
+    "elementId": "experience-intern"
+  },
+  {
+    "title": "Software Engineer Intern, Frontend Developer - BSystems Limited",
+    "path": "/about",
+    "type": "content",
+    "preview": "Implemented user authentication, verification, and various admin functionalities including managing admins, customers, transactions, and e-levy records, ensuring data security and integrity",
+    "elementId": "experience-intern"
+  },
+  {
+    "title": "Software Engineer Intern, Frontend Developer - BSystems Limited",
+    "path": "/about",
+    "type": "content",
+    "preview": "Redesigned UI components to enhance usability and visual appeal, leading to a more intuitive and engaging user experience",
+    "elementId": "experience-intern"
+  },
+  {
+    "title": "Software Engineer Intern, Frontend Developer - BSystems Limited",
+    "path": "/about",
+    "type": "content",
+    "preview": "Created detailed technical documentation for the web application, facilitating better understanding and maintenance for future developers",
+    "elementId": "experience-intern"
+  },
+  {
     "title": "About Me",
     "preview": "About Me",
     "path": "/about",
@@ -1011,7 +1165,7 @@ export function searchContent(query: string): SearchResultType[] {
 
   // Remove duplicates, keeping highest scoring version
   scoredResults.forEach(result => {
-    const key = result.elementId ? `${result.elementId}:${result.preview}` : result.preview;
+    const key = result.elementId ? result.elementId + ':' + result.preview : result.preview;
     const existing = uniqueResults.get(key);
     if (!existing || result.score > existing.score) {
       uniqueResults.set(key, result);

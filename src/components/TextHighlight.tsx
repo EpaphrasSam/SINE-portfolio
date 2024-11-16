@@ -11,7 +11,6 @@ interface TextHighlightProps {
 export function TextHighlight({ text, className = '' }: TextHighlightProps) {
   const { activeSearch } = useSearch();
 
-
   if (!activeSearch?.query) {
     return <span className={className}>{text}</span>;
   }
@@ -32,49 +31,57 @@ export function TextHighlight({ text, className = '' }: TextHighlightProps) {
       return <span className={className}>{text}</span>;
     }
 
-    // Create an array to store parts and their match status
-    const parts: { text: string; isMatch: boolean }[] = [];
-    let currentText = text;
-
-    // For each search term
+    // First, find all matches for all terms
+    const allMatches: { term: string, index: number }[] = [];
     searchTerms.forEach(term => {
-      const regex = new RegExp(`(${term})`, 'gi');
-      let lastIndex = 0;
+      const regex = new RegExp(term, 'gi');
       let match;
-
-      // Find all matches for this term
-      while ((match = regex.exec(currentText)) !== null) {
-        // Add the text before this match
-        if (match.index > lastIndex) {
-          parts.push({
-            text: currentText.slice(lastIndex, match.index),
-            isMatch: false
-          });
-        }
-
-        // Add the matched text
-        parts.push({
-          text: match[0], // Use the actual matched text to preserve case
-          isMatch: true
-        });
-
-        lastIndex = regex.lastIndex;
-      }
-
-      // Add any remaining text after the last match
-      if (lastIndex < currentText.length) {
-        parts.push({
-          text: currentText.slice(lastIndex),
-          isMatch: false
-        });
+      while ((match = regex.exec(text.toLowerCase())) !== null) {
+        allMatches.push({ term, index: match.index });
       }
     });
 
-    // If no matches were found, return the original text
-    if (parts.length === 0) {
+    // If no matches, return original text
+    if (allMatches.length === 0) {
       return <span className={className}>{text}</span>;
     }
-  
+
+    // Sort matches by index
+    allMatches.sort((a, b) => a.index - b.index);
+
+    // Create parts with context
+    const parts: { text: string; isMatch: boolean }[] = [];
+    let lastIndex = 0;
+
+    allMatches.forEach((match, i) => {
+      const matchText = text.slice(match.index, match.index + match.term.length);
+      
+      // Add text before this match
+      if (match.index > lastIndex) {
+        // If there's a gap between matches, add ellipsis for gaps longer than 40 chars
+        const beforeText = text.slice(lastIndex, match.index);
+        if (beforeText.length > 40) {
+          parts.push({ text: '...', isMatch: false });
+        } else {
+          parts.push({ text: beforeText, isMatch: false });
+        }
+      }
+
+      // Add the matched text
+      parts.push({ text: matchText, isMatch: true });
+      lastIndex = match.index + match.term.length;
+    });
+
+    // Add remaining text (with possible truncation)
+    if (lastIndex < text.length) {
+      const remainingText = text.slice(lastIndex);
+      if (remainingText.length > 40) {
+        parts.push({ text: remainingText.slice(0, 40) + '...', isMatch: false });
+      } else {
+        parts.push({ text: remainingText, isMatch: false });
+      }
+    }
+
     return (
       <span className={className}>
         {parts.map((part, i) => 
@@ -92,7 +99,6 @@ export function TextHighlight({ text, className = '' }: TextHighlightProps) {
       </span>
     );
   } catch (error) {
-    // If there's any error with the regex, return the original text
     console.error('Error in TextHighlight:', error);
     return <span className={className}>{text}</span>;
   }
