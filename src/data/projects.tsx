@@ -45,27 +45,7 @@ export const projects: Project[] = [
     tech: ["Next.js", "TypeScript", "TailwindCSS", "Framer Motion"],
     url: "https://digitechedge.com"
   },
-  {
-    id: "CampServe",
-    title: "Campserve Mobile Application",
-    preview: "A comprehensive mobile platform connecting university students with essential campus services and local businesses.",
-    description: [
-      "Campserve is a revolutionary mobile application designed to enhance campus life by connecting university students with various services and local businesses.",
-      "The app features an intuitive interface where students can discover and book services ranging from laundry and food delivery to academic tutoring.",
-      "Service providers can create profiles, list their services, and manage bookings through a dedicated business dashboard.",
-      "The platform includes a sophisticated rating and review system to maintain service quality and build trust within the campus community.",
-      "Real-time chat functionality enables smooth communication between service providers and students.",
-      "Integrated payment system supports multiple payment methods for secure and convenient transactions.",
-      "Location-based service discovery helps students find nearby service providers efficiently."
-    ],
-    type: "mobile",
-    icon: (
-      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2h2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z" />
-      </svg>
-    ),
-    tech: ["React Native", "Flask", "PostgreSQL", "TailwindCSS"]
-  },
+  
   {
     id: "Braszy",
     title: "Braszy Clothing E-commerce",
@@ -153,5 +133,69 @@ export const projects: Project[] = [
     ),
     tech: ["Next.js", "TypeScript", "Prisma", "Chart.js", "TailwindCSS"],
     url: "https://vote-sphere-chi.vercel.app"
+  },
+  {
+    id: "MoMoXpress",
+    title: "MoMoXpress Calculator",
+    preview: "A modern web application for calculating mobile money transfer charges across different telecommunications networks in Ghana.",
+    description: [
+      "MoMoXpress is a specialized calculator tool designed to help users calculate mobile money transfer fees across Ghanaian telecom networks.",
+      "Features real-time fee calculations with automatic E-levy integration for accurate total cost estimation.",
+      "Implements smart validation for network-specific phone numbers ensuring accurate inputs for different providers.",
+      "Provides cross-network support allowing users to calculate fees across different mobile money providers.",
+      "Includes a newsletter subscription system for SMS updates about fee changes and new features.",
+      "Built with a modern, responsive interface that works seamlessly across all devices.",
+      "Utilizes custom validation rules for Ghanaian phone numbers by network provider."
+    ],
+    type: "web",
+    icon: (
+      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z" />
+      </svg>
+    ),
+    tech: ["Next.js", "TypeScript", "TailwindCSS", "NextUI","Framer Motion"],
+    url: "https://momoxpress.vercel.app"
+  },
+  {
+    id: "CampServe",
+    title: "Campserve Mobile Application",
+    preview: "A comprehensive mobile platform connecting university students with essential campus services and local businesses.",
+    description: [
+      "Campserve is a revolutionary mobile application designed to enhance campus life by connecting university students with various services and local businesses.",
+      "The app features an intuitive interface where students can discover and book services ranging from laundry and food delivery to academic tutoring.",
+      "Service providers can create profiles, list their services, and manage bookings through a dedicated business dashboard.",
+      "The platform includes a sophisticated rating and review system to maintain service quality and build trust within the campus community.",
+      "Real-time chat functionality enables smooth communication between service providers and students.",
+      "Integrated payment system supports multiple payment methods for secure and convenient transactions.",
+      "Location-based service discovery helps students find nearby service providers efficiently."
+    ],
+    type: "mobile",
+    icon: (
+      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 012-2h.5a2 2 0 012 2v14a2 2 0 002 2h2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z" />
+      </svg>
+    ),
+    tech: ["React Native", "Flask", "PostgreSQL", "TailwindCSS"]
+  },
+  {
+    id: "BudgetBuddy",
+    title: "BudgetBuddy Finance App",
+    preview: "A comprehensive personal finance management mobile app for expense tracking, budgeting, and financial goal setting.",
+    description: [
+      "BudgetBuddy is an intuitive mobile application designed to help users take control of their personal finances.",
+      "Features an easy-to-use expense tracking system with automatic categorization and custom categories.",
+      "Implements budget management tools with real-time monitoring and spending alerts.",
+      "Provides visual analytics and reports to help users understand their spending patterns and financial health.",
+      "Includes goal-setting features for savings targets and financial milestones.",
+      "Offers secure user authentication and data storage for personal financial information.",
+      "Built with a responsive UI that adapts to different mobile devices and screen sizes."
+    ],
+    type: "mobile",
+    icon: (
+      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+      </svg>
+    ),
+    tech: ["React Native", "Expo", "TypeScript", "Node.js", "Drizzle"],
   }
 ];

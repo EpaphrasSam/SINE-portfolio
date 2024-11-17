@@ -1,5 +1,5 @@
 // This file is auto-generated. Do not edit manually.
-// Generated on 2024-11-16T20:09:18.913Z
+// Generated on 2024-11-17T00:25:03.298Z
 
 export interface ProjectImages {
   images: string[];
@@ -47,6 +47,25 @@ export const projectData: Record<string, ProjectImages> = {
     "logo": "/images/projects/Braszy/logo.png",
     "hasLogo": true
   },
+  "BudgetBuddy": {
+    "images": [
+      "/images/projects/BudgetBuddy/Screenshot_20241116-234721_Expo Go.jpg",
+      "/images/projects/BudgetBuddy/Screenshot_20241116-234900_Expo Go.jpg",
+      "/images/projects/BudgetBuddy/Screenshot_20241116-234930_Expo Go.jpg",
+      "/images/projects/BudgetBuddy/Screenshot_20241116-234937_Expo Go.jpg",
+      "/images/projects/BudgetBuddy/Screenshot_20241116-234944_Expo Go.jpg",
+      "/images/projects/BudgetBuddy/Screenshot_20241116-235041_Expo Go.jpg",
+      "/images/projects/BudgetBuddy/Screenshot_20241116-235050_Expo Go.jpg",
+      "/images/projects/BudgetBuddy/Screenshot_20241116-235105_Expo Go.jpg",
+      "/images/projects/BudgetBuddy/Screenshot_20241116-235119_Expo Go.jpg",
+      "/images/projects/BudgetBuddy/Screenshot_20241116-235129_Expo Go.jpg",
+      "/images/projects/BudgetBuddy/Screenshot_20241116-235138_Expo Go.jpg",
+      "/images/projects/BudgetBuddy/Screenshot_20241116-235148_Expo Go.jpg",
+      "/images/projects/BudgetBuddy/Screenshot_20241116-235211_Expo Go.jpg"
+    ],
+    "logo": "/images/projects/BudgetBuddy/logo.png",
+    "hasLogo": true
+  },
   "CampServe": {
     "images": [
       "/images/projects/CampServe/Screenshot 2024-11-14 010132.png",
@@ -77,6 +96,19 @@ export const projectData: Record<string, ProjectImages> = {
       "/images/projects/DigiTechEdge/Screenshot 2024-11-15 025108.png"
     ],
     "logo": "/images/projects/DigiTechEdge/logo.png",
+    "hasLogo": true
+  },
+  "MoMoXpress": {
+    "images": [
+      "/images/projects/MoMoXpress/Screenshot 2024-11-16 233638.png",
+      "/images/projects/MoMoXpress/Screenshot 2024-11-16 233652.png",
+      "/images/projects/MoMoXpress/Screenshot 2024-11-16 233714.png",
+      "/images/projects/MoMoXpress/Screenshot 2024-11-16 233732.png",
+      "/images/projects/MoMoXpress/Screenshot 2024-11-16 233741.png",
+      "/images/projects/MoMoXpress/Screenshot 2024-11-16 233811.png",
+      "/images/projects/MoMoXpress/Screenshot 2024-11-16 233823.png"
+    ],
+    "logo": "/images/projects/MoMoXpress/logo.png",
     "hasLogo": true
   },
   "Threads": {

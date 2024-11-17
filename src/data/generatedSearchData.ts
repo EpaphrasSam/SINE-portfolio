@@ -214,90 +214,6 @@ export const searchData: SearchResultType[] = [
     "elementId": "DigiTechEdge"
   },
   {
-    "title": "Campserve Mobile Application",
-    "path": "/projects",
-    "type": "content",
-    "preview": "A comprehensive mobile platform connecting university students with essential campus services and local businesses. (Technologies: React Native, Flask, PostgreSQL, TailwindCSS)",
-    "elementId": "CampServe"
-  },
-  {
-    "title": "Campserve Mobile Application - Details",
-    "path": "/projects",
-    "type": "content",
-    "preview": "Campserve is a revolutionary mobile application designed to enhance campus life by connecting university students with various services and local businesses.",
-    "elementId": "CampServe"
-  },
-  {
-    "title": "Campserve Mobile Application - Details",
-    "path": "/projects",
-    "type": "content",
-    "preview": "The app features an intuitive interface where students can discover and book services ranging from laundry and food delivery to academic tutoring.",
-    "elementId": "CampServe"
-  },
-  {
-    "title": "Campserve Mobile Application - Details",
-    "path": "/projects",
-    "type": "content",
-    "preview": "Service providers can create profiles, list their services, and manage bookings through a dedicated business dashboard.",
-    "elementId": "CampServe"
-  },
-  {
-    "title": "Campserve Mobile Application - Details",
-    "path": "/projects",
-    "type": "content",
-    "preview": "The platform includes a sophisticated rating and review system to maintain service quality and build trust within the campus community.",
-    "elementId": "CampServe"
-  },
-  {
-    "title": "Campserve Mobile Application - Details",
-    "path": "/projects",
-    "type": "content",
-    "preview": "Real-time chat functionality enables smooth communication between service providers and students.",
-    "elementId": "CampServe"
-  },
-  {
-    "title": "Campserve Mobile Application - Details",
-    "path": "/projects",
-    "type": "content",
-    "preview": "Integrated payment system supports multiple payment methods for secure and convenient transactions.",
-    "elementId": "CampServe"
-  },
-  {
-    "title": "Campserve Mobile Application - Details",
-    "path": "/projects",
-    "type": "content",
-    "preview": "Location-based service discovery helps students find nearby service providers efficiently.",
-    "elementId": "CampServe"
-  },
-  {
-    "title": "React Native Project: Campserve Mobile Application",
-    "path": "/projects",
-    "type": "content",
-    "preview": "Campserve Mobile Application - Built with React Native. A comprehensive mobile platform connecting university students with essential campus services and local businesses.",
-    "elementId": "CampServe"
-  },
-  {
-    "title": "Flask Project: Campserve Mobile Application",
-    "path": "/projects",
-    "type": "content",
-    "preview": "Campserve Mobile Application - Built with Flask. A comprehensive mobile platform connecting university students with essential campus services and local businesses.",
-    "elementId": "CampServe"
-  },
-  {
-    "title": "PostgreSQL Project: Campserve Mobile Application",
-    "path": "/projects",
-    "type": "content",
-    "preview": "Campserve Mobile Application - Built with PostgreSQL. A comprehensive mobile platform connecting university students with essential campus services and local businesses.",
-    "elementId": "CampServe"
-  },
-  {
-    "title": "TailwindCSS Project: Campserve Mobile Application",
-    "path": "/projects",
-    "type": "content",
-    "preview": "Campserve Mobile Application - Built with TailwindCSS. A comprehensive mobile platform connecting university students with essential campus services and local businesses.",
-    "elementId": "CampServe"
-  },
-  {
     "title": "Braszy Clothing E-commerce",
     "path": "/projects",
     "type": "content",
@@ -639,6 +555,272 @@ export const searchData: SearchResultType[] = [
     "type": "content",
     "preview": "VoteSphere E-Voting Platform - Built with TailwindCSS. A comprehensive electronic voting system with period management, real-time tracking, and result visualization.",
     "elementId": "VoteSphere"
+  },
+  {
+    "title": "MoMoXpress Calculator",
+    "path": "/projects",
+    "type": "content",
+    "preview": "A modern web application for calculating mobile money transfer charges across different telecommunications networks in Ghana. (Technologies: Next.js, TypeScript, TailwindCSS, NextUI, Framer Motion)",
+    "elementId": "MoMoXpress"
+  },
+  {
+    "title": "MoMoXpress Calculator - Details",
+    "path": "/projects",
+    "type": "content",
+    "preview": "MoMoXpress is a specialized calculator tool designed to help users calculate mobile money transfer fees across Ghanaian telecom networks.",
+    "elementId": "MoMoXpress"
+  },
+  {
+    "title": "MoMoXpress Calculator - Details",
+    "path": "/projects",
+    "type": "content",
+    "preview": "Features real-time fee calculations with automatic E-levy integration for accurate total cost estimation.",
+    "elementId": "MoMoXpress"
+  },
+  {
+    "title": "MoMoXpress Calculator - Details",
+    "path": "/projects",
+    "type": "content",
+    "preview": "Implements smart validation for network-specific phone numbers ensuring accurate inputs for different providers.",
+    "elementId": "MoMoXpress"
+  },
+  {
+    "title": "MoMoXpress Calculator - Details",
+    "path": "/projects",
+    "type": "content",
+    "preview": "Provides cross-network support allowing users to calculate fees across different mobile money providers.",
+    "elementId": "MoMoXpress"
+  },
+  {
+    "title": "MoMoXpress Calculator - Details",
+    "path": "/projects",
+    "type": "content",
+    "preview": "Includes a newsletter subscription system for SMS updates about fee changes and new features.",
+    "elementId": "MoMoXpress"
+  },
+  {
+    "title": "MoMoXpress Calculator - Details",
+    "path": "/projects",
+    "type": "content",
+    "preview": "Built with a modern, responsive interface that works seamlessly across all devices.",
+    "elementId": "MoMoXpress"
+  },
+  {
+    "title": "MoMoXpress Calculator - Details",
+    "path": "/projects",
+    "type": "content",
+    "preview": "Utilizes custom validation rules for Ghanaian phone numbers by network provider.",
+    "elementId": "MoMoXpress"
+  },
+  {
+    "title": "Next.js Project: MoMoXpress Calculator",
+    "path": "/projects",
+    "type": "content",
+    "preview": "MoMoXpress Calculator - Built with Next.js. A modern web application for calculating mobile money transfer charges across different telecommunications networks in Ghana.",
+    "elementId": "MoMoXpress"
+  },
+  {
+    "title": "TypeScript Project: MoMoXpress Calculator",
+    "path": "/projects",
+    "type": "content",
+    "preview": "MoMoXpress Calculator - Built with TypeScript. A modern web application for calculating mobile money transfer charges across different telecommunications networks in Ghana.",
+    "elementId": "MoMoXpress"
+  },
+  {
+    "title": "TailwindCSS Project: MoMoXpress Calculator",
+    "path": "/projects",
+    "type": "content",
+    "preview": "MoMoXpress Calculator - Built with TailwindCSS. A modern web application for calculating mobile money transfer charges across different telecommunications networks in Ghana.",
+    "elementId": "MoMoXpress"
+  },
+  {
+    "title": "NextUI Project: MoMoXpress Calculator",
+    "path": "/projects",
+    "type": "content",
+    "preview": "MoMoXpress Calculator - Built with NextUI. A modern web application for calculating mobile money transfer charges across different telecommunications networks in Ghana.",
+    "elementId": "MoMoXpress"
+  },
+  {
+    "title": "Framer Motion Project: MoMoXpress Calculator",
+    "path": "/projects",
+    "type": "content",
+    "preview": "MoMoXpress Calculator - Built with Framer Motion. A modern web application for calculating mobile money transfer charges across different telecommunications networks in Ghana.",
+    "elementId": "MoMoXpress"
+  },
+  {
+    "title": "Campserve Mobile Application",
+    "path": "/projects",
+    "type": "content",
+    "preview": "A comprehensive mobile platform connecting university students with essential campus services and local businesses. (Technologies: React Native, Flask, PostgreSQL, TailwindCSS)",
+    "elementId": "CampServe"
+  },
+  {
+    "title": "Campserve Mobile Application - Details",
+    "path": "/projects",
+    "type": "content",
+    "preview": "Campserve is a revolutionary mobile application designed to enhance campus life by connecting university students with various services and local businesses.",
+    "elementId": "CampServe"
+  },
+  {
+    "title": "Campserve Mobile Application - Details",
+    "path": "/projects",
+    "type": "content",
+    "preview": "The app features an intuitive interface where students can discover and book services ranging from laundry and food delivery to academic tutoring.",
+    "elementId": "CampServe"
+  },
+  {
+    "title": "Campserve Mobile Application - Details",
+    "path": "/projects",
+    "type": "content",
+    "preview": "Service providers can create profiles, list their services, and manage bookings through a dedicated business dashboard.",
+    "elementId": "CampServe"
+  },
+  {
+    "title": "Campserve Mobile Application - Details",
+    "path": "/projects",
+    "type": "content",
+    "preview": "The platform includes a sophisticated rating and review system to maintain service quality and build trust within the campus community.",
+    "elementId": "CampServe"
+  },
+  {
+    "title": "Campserve Mobile Application - Details",
+    "path": "/projects",
+    "type": "content",
+    "preview": "Real-time chat functionality enables smooth communication between service providers and students.",
+    "elementId": "CampServe"
+  },
+  {
+    "title": "Campserve Mobile Application - Details",
+    "path": "/projects",
+    "type": "content",
+    "preview": "Integrated payment system supports multiple payment methods for secure and convenient transactions.",
+    "elementId": "CampServe"
+  },
+  {
+    "title": "Campserve Mobile Application - Details",
+    "path": "/projects",
+    "type": "content",
+    "preview": "Location-based service discovery helps students find nearby service providers efficiently.",
+    "elementId": "CampServe"
+  },
+  {
+    "title": "React Native Project: Campserve Mobile Application",
+    "path": "/projects",
+    "type": "content",
+    "preview": "Campserve Mobile Application - Built with React Native. A comprehensive mobile platform connecting university students with essential campus services and local businesses.",
+    "elementId": "CampServe"
+  },
+  {
+    "title": "Flask Project: Campserve Mobile Application",
+    "path": "/projects",
+    "type": "content",
+    "preview": "Campserve Mobile Application - Built with Flask. A comprehensive mobile platform connecting university students with essential campus services and local businesses.",
+    "elementId": "CampServe"
+  },
+  {
+    "title": "PostgreSQL Project: Campserve Mobile Application",
+    "path": "/projects",
+    "type": "content",
+    "preview": "Campserve Mobile Application - Built with PostgreSQL. A comprehensive mobile platform connecting university students with essential campus services and local businesses.",
+    "elementId": "CampServe"
+  },
+  {
+    "title": "TailwindCSS Project: Campserve Mobile Application",
+    "path": "/projects",
+    "type": "content",
+    "preview": "Campserve Mobile Application - Built with TailwindCSS. A comprehensive mobile platform connecting university students with essential campus services and local businesses.",
+    "elementId": "CampServe"
+  },
+  {
+    "title": "BudgetBuddy Finance App",
+    "path": "/projects",
+    "type": "content",
+    "preview": "A comprehensive personal finance management mobile app for expense tracking, budgeting, and financial goal setting. (Technologies: React Native, Expo, TypeScript, Node.js, Drizzle)",
+    "elementId": "BudgetBuddy"
+  },
+  {
+    "title": "BudgetBuddy Finance App - Details",
+    "path": "/projects",
+    "type": "content",
+    "preview": "BudgetBuddy is an intuitive mobile application designed to help users take control of their personal finances.",
+    "elementId": "BudgetBuddy"
+  },
+  {
+    "title": "BudgetBuddy Finance App - Details",
+    "path": "/projects",
+    "type": "content",
+    "preview": "Features an easy-to-use expense tracking system with automatic categorization and custom categories.",
+    "elementId": "BudgetBuddy"
+  },
+  {
+    "title": "BudgetBuddy Finance App - Details",
+    "path": "/projects",
+    "type": "content",
+    "preview": "Implements budget management tools with real-time monitoring and spending alerts.",
+    "elementId": "BudgetBuddy"
+  },
+  {
+    "title": "BudgetBuddy Finance App - Details",
+    "path": "/projects",
+    "type": "content",
+    "preview": "Provides visual analytics and reports to help users understand their spending patterns and financial health.",
+    "elementId": "BudgetBuddy"
+  },
+  {
+    "title": "BudgetBuddy Finance App - Details",
+    "path": "/projects",
+    "type": "content",
+    "preview": "Includes goal-setting features for savings targets and financial milestones.",
+    "elementId": "BudgetBuddy"
+  },
+  {
+    "title": "BudgetBuddy Finance App - Details",
+    "path": "/projects",
+    "type": "content",
+    "preview": "Offers secure user authentication and data storage for personal financial information.",
+    "elementId": "BudgetBuddy"
+  },
+  {
+    "title": "BudgetBuddy Finance App - Details",
+    "path": "/projects",
+    "type": "content",
+    "preview": "Built with a responsive UI that adapts to different mobile devices and screen sizes.",
+    "elementId": "BudgetBuddy"
+  },
+  {
+    "title": "React Native Project: BudgetBuddy Finance App",
+    "path": "/projects",
+    "type": "content",
+    "preview": "BudgetBuddy Finance App - Built with React Native. A comprehensive personal finance management mobile app for expense tracking, budgeting, and financial goal setting.",
+    "elementId": "BudgetBuddy"
+  },
+  {
+    "title": "Expo Project: BudgetBuddy Finance App",
+    "path": "/projects",
+    "type": "content",
+    "preview": "BudgetBuddy Finance App - Built with Expo. A comprehensive personal finance management mobile app for expense tracking, budgeting, and financial goal setting.",
+    "elementId": "BudgetBuddy"
+  },
+  {
+    "title": "TypeScript Project: BudgetBuddy Finance App",
+    "path": "/projects",
+    "type": "content",
+    "preview": "BudgetBuddy Finance App - Built with TypeScript. A comprehensive personal finance management mobile app for expense tracking, budgeting, and financial goal setting.",
+    "elementId": "BudgetBuddy"
+  },
+  {
+    "title": "Node.js Project: BudgetBuddy Finance App",
+    "path": "/projects",
+    "type": "content",
+    "preview": "BudgetBuddy Finance App - Built with Node.js. A comprehensive personal finance management mobile app for expense tracking, budgeting, and financial goal setting.",
+    "elementId": "BudgetBuddy"
+  },
+  {
+    "title": "Drizzle Project: BudgetBuddy Finance App",
+    "path": "/projects",
+    "type": "content",
+    "preview": "BudgetBuddy Finance App - Built with Drizzle. A comprehensive personal finance management mobile app for expense tracking, budgeting, and financial goal setting.",
+    "elementId": "BudgetBuddy"
   },
   {
     "title": "Frontend Developer at Hurisoft",
