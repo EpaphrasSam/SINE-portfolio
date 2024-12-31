@@ -1,27 +1,23 @@
-'use client';
+"use client";
 
 import { motion } from "framer-motion";
 import { TextHighlight } from "../../components/TextHighlight";
-import {experiences, education} from "../../data/experiences";
+import { experiences, education, summary } from "../../data/experiences";
 
 const container = {
   hidden: { opacity: 0 },
   show: {
     opacity: 1,
     transition: {
-      staggerChildren: 0.1
-    }
-  }
+      staggerChildren: 0.1,
+    },
+  },
 };
 
 const item = {
   hidden: { opacity: 0, y: 20 },
-  show: { opacity: 1, y: 0 }
+  show: { opacity: 1, y: 0 },
 };
-
-
-
-
 
 export default function About() {
   return (
@@ -31,59 +27,59 @@ export default function About() {
         {/* Experience Icon */}
         <motion.div
           className="absolute top-40 right-[15%] text-violet-500/10 dark:text-violet-400/10"
-          animate={{ 
+          animate={{
             y: [0, -20, 0],
-            rotate: [0, -5, 0]
+            rotate: [0, -5, 0],
           }}
-          transition={{ 
+          transition={{
             duration: 5,
             repeat: Infinity,
-            ease: "easeInOut"
+            ease: "easeInOut",
           }}
         >
           <svg className="w-32 h-32" fill="currentColor" viewBox="0 0 24 24">
-            <path d="M4 5h16a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm1 2v10h14V7H5zm2 2h10v2H7V9zm0 4h10v2H7v-2z"/>
+            <path d="M4 5h16a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm1 2v10h14V7H5zm2 2h10v2H7V9zm0 4h10v2H7v-2z" />
           </svg>
         </motion.div>
 
         {/* Education Icon */}
         <motion.div
           className="absolute bottom-40 left-[10%] text-violet-500/10 dark:text-violet-400/10"
-          animate={{ 
+          animate={{
             y: [0, 20, 0],
-            rotate: [0, 5, 0]
+            rotate: [0, 5, 0],
           }}
-          transition={{ 
+          transition={{
             duration: 6,
             repeat: Infinity,
-            ease: "easeInOut"
+            ease: "easeInOut",
           }}
         >
           <svg className="w-28 h-28" fill="currentColor" viewBox="0 0 24 24">
-            <path d="M12 3L1 9l4 2.18v6L12 21l7-3.82v-6l2-1.09V17h2V9L12 3zm6.82 6L12 12.72 5.18 9 12 5.28 18.82 9zM17 15.99l-5 2.73-5-2.73v-3.72L12 15l5-2.73v3.72z"/>
+            <path d="M12 3L1 9l4 2.18v6L12 21l7-3.82v-6l2-1.09V17h2V9L12 3zm6.82 6L12 12.72 5.18 9 12 5.28 18.82 9zM17 15.99l-5 2.73-5-2.73v-3.72L12 15l5-2.73v3.72z" />
           </svg>
         </motion.div>
 
         {/* Skills Icon */}
         <motion.div
           className="absolute top-1/2 right-[5%] text-violet-500/10 dark:text-violet-400/10"
-          animate={{ 
+          animate={{
             x: [0, 20, 0],
-            rotate: [0, 10, 0]
+            rotate: [0, 10, 0],
           }}
-          transition={{ 
+          transition={{
             duration: 7,
             repeat: Infinity,
-            ease: "easeInOut"
+            ease: "easeInOut",
           }}
         >
           <svg className="w-24 h-24" fill="currentColor" viewBox="0 0 24 24">
-            <path d="M7 5h2V3H7v2zm0 8h2v-2H7v2zm0 8h2v-2H7v2zm4-4h2v-2h-2v2zm0 4h2v-2h-2v2zm-4-8h2v-2H7v2zm8 8h2v-2h-2v2zm-4-8h2v-2h-2v2zm4 0h2v-2h-2v2zm0-4h2V7h-2v2zm0-4h2V3h-2v2zm-4 8h2v-2h-2v2zm0-8h2V3h-2v2zm4 8h2v-2h-2v2z"/>
+            <path d="M7 5h2V3H7v2zm0 8h2v-2H7v2zm0 8h2v-2H7v2zm4-4h2v-2h-2v2zm0 4h2v-2h-2v2zm-4-8h2v-2H7v2zm8 8h2v-2h-2v2zm-4-8h2v-2h-2v2zm4 0h2v-2h-2v2zm0-4h2V7h-2v2zm0-4h2V3h-2v2zm-4 8h2v-2h-2v2zm0-8h2V3h-2v2zm4 8h2v-2h-2v2z" />
           </svg>
         </motion.div>
       </div>
 
-      <motion.div 
+      <motion.div
         className="max-w-4xl mx-auto px-4 py-16 pt-32 relative"
         initial="hidden"
         animate="show"
@@ -94,7 +90,7 @@ export default function About() {
           animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
-          <motion.h1 
+          <motion.h1
             className="text-4xl md:text-5xl font-bold gradient-text mb-2"
             variants={item}
           >
@@ -110,18 +106,16 @@ export default function About() {
 
         <motion.div variants={container} className="space-y-12">
           {/* Introduction */}
-          <motion.section 
-            variants={item}
-            className="relative"
-          >
-            <div className="prose prose-gray dark:prose-invert max-w-none">
-              <TextHighlight text="I am a dedicated Software Developer with a Bachelor's Degree in Computer Engineering from Kwame Nkrumah University of Science and Technology (KNUST). With a First Class Honours and a CWA of 73.71 (GPA: 3.70), I have demonstrated strong academic excellence and technical aptitude." />
-            </div>
-            <div className="prose prose-gray dark:prose-invert max-w-none mt-4">
-              <TextHighlight text="My expertise lies in frontend and fullstack development, where I excel at creating scalable and user-friendly applications. I am proficient in modern technologies such as React, React Native, Next.js, and Express.js, with a strong foundation in both mobile and web development." />
-            </div>
-            <div className="prose prose-gray dark:prose-invert max-w-none mt-4">
-              <TextHighlight text="I am passionate about creating innovative solutions that solve real-world problems. My experience spans from developing mobile applications to implementing complex web systems, always focusing on delivering high-quality, maintainable code." />
+          <motion.section variants={item} className="relative">
+            <div className="space-y-4 max-w-3xl">
+              {summary.map((paragraph, index) => (
+                <div
+                  key={index}
+                  className="prose prose-gray dark:prose-invert max-w-none"
+                >
+                  <TextHighlight text={paragraph} />
+                </div>
+              ))}
             </div>
           </motion.section>
 
@@ -140,9 +134,9 @@ export default function About() {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: index * 0.1 }}
-                  whileHover={{ 
+                  whileHover={{
                     scale: 1.02,
-                    boxShadow: "0 0 20px rgba(139, 92, 246, 0.1)"
+                    boxShadow: "0 0 20px rgba(139, 92, 246, 0.1)",
                   }}
                 >
                   <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-1">
@@ -156,7 +150,7 @@ export default function About() {
                   </div>
                   <ul className="space-y-2">
                     {exp.responsibilities.map((resp, index) => (
-                      <motion.li 
+                      <motion.li
                         key={index}
                         className="flex items-start text-gray-700 dark:text-gray-300"
                         variants={item}
@@ -164,7 +158,7 @@ export default function About() {
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ delay: index * 0.05 }}
                       >
-                        <motion.span 
+                        <motion.span
                           className="text-violet-500 dark:text-violet-400 mr-2"
                           animate={{ scale: [1, 1.2, 1] }}
                           transition={{ duration: 1, repeat: Infinity }}
@@ -191,9 +185,9 @@ export default function About() {
               variants={item}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              whileHover={{ 
+              whileHover={{
                 scale: 1.02,
-                boxShadow: "0 0 20px rgba(139, 92, 246, 0.1)"
+                boxShadow: "0 0 20px rgba(139, 92, 246, 0.1)",
               }}
             >
               <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-1">
@@ -207,7 +201,7 @@ export default function About() {
               </div>
               <ul className="space-y-2">
                 {education.achievements.map((achievement, index) => (
-                  <motion.li 
+                  <motion.li
                     key={index}
                     className="flex items-start text-gray-700 dark:text-gray-300"
                     variants={item}
@@ -215,7 +209,7 @@ export default function About() {
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ delay: index * 0.05 }}
                   >
-                    <motion.span 
+                    <motion.span
                       className="text-violet-500 dark:text-violet-400 mr-2"
                       animate={{ scale: [1, 1.2, 1] }}
                       transition={{ duration: 1, repeat: Infinity }}

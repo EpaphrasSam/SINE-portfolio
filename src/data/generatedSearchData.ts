@@ -39,1022 +39,9 @@ export const searchData: SearchResultType[] = [
     "preview": "Get in touch for collaboration opportunities"
   },
   {
-    "title": "AgriLink Web Application",
-    "path": "/projects",
-    "type": "content",
-    "preview": "A revolutionary platform bridging the gap between farmers and consumers, enabling direct trade and communication. (Technologies: Next.js, TypeScript, Prisma, Tailwind CSS, Pusher)",
-    "elementId": "AgriLink"
-  },
-  {
-    "title": "AgriLink Web Application - Details",
-    "path": "/projects",
-    "type": "content",
-    "preview": "AgriLink is an innovative web platform designed to transform agricultural commerce by creating a direct connection between farmers and consumers.",
-    "elementId": "AgriLink"
-  },
-  {
-    "title": "AgriLink Web Application - Details",
-    "path": "/projects",
-    "type": "content",
-    "preview": "The platform features a sophisticated marketplace where farmers can showcase their products, complete with detailed descriptions, pricing, and availability information.",
-    "elementId": "AgriLink"
-  },
-  {
-    "title": "AgriLink Web Application - Details",
-    "path": "/projects",
-    "type": "content",
-    "preview": "Consumers can browse through various agricultural products, place orders, and communicate directly with farmers through an integrated real-time messaging system.",
-    "elementId": "AgriLink"
-  },
-  {
-    "title": "AgriLink Web Application - Details",
-    "path": "/projects",
-    "type": "content",
-    "preview": "The application includes a robust review and rating system, helping build trust and transparency in the agricultural marketplace.",
-    "elementId": "AgriLink"
-  },
-  {
-    "title": "AgriLink Web Application - Details",
-    "path": "/projects",
-    "type": "content",
-    "preview": "A dedicated Farmer Portal enables agricultural producers to manage their product listings, track orders, and analyze their sales performance through intuitive dashboards.",
-    "elementId": "AgriLink"
-  },
-  {
-    "title": "AgriLink Web Application - Details",
-    "path": "/projects",
-    "type": "content",
-    "preview": "The Community Forum facilitates knowledge sharing and discussions about agricultural practices, market trends, and sustainable farming methods.",
-    "elementId": "AgriLink"
-  },
-  {
-    "title": "AgriLink Web Application - Details",
-    "path": "/projects",
-    "type": "content",
-    "preview": "Built with modern web technologies, the platform offers a responsive design that works seamlessly across all devices.",
-    "elementId": "AgriLink"
-  },
-  {
-    "title": "Next.js Project: AgriLink Web Application",
-    "path": "/projects",
-    "type": "content",
-    "preview": "AgriLink Web Application - Built with Next.js. A revolutionary platform bridging the gap between farmers and consumers, enabling direct trade and communication.",
-    "elementId": "AgriLink"
-  },
-  {
-    "title": "TypeScript Project: AgriLink Web Application",
-    "path": "/projects",
-    "type": "content",
-    "preview": "AgriLink Web Application - Built with TypeScript. A revolutionary platform bridging the gap between farmers and consumers, enabling direct trade and communication.",
-    "elementId": "AgriLink"
-  },
-  {
-    "title": "Prisma Project: AgriLink Web Application",
-    "path": "/projects",
-    "type": "content",
-    "preview": "AgriLink Web Application - Built with Prisma. A revolutionary platform bridging the gap between farmers and consumers, enabling direct trade and communication.",
-    "elementId": "AgriLink"
-  },
-  {
-    "title": "Tailwind CSS Project: AgriLink Web Application",
-    "path": "/projects",
-    "type": "content",
-    "preview": "AgriLink Web Application - Built with Tailwind CSS. A revolutionary platform bridging the gap between farmers and consumers, enabling direct trade and communication.",
-    "elementId": "AgriLink"
-  },
-  {
-    "title": "Pusher Project: AgriLink Web Application",
-    "path": "/projects",
-    "type": "content",
-    "preview": "AgriLink Web Application - Built with Pusher. A revolutionary platform bridging the gap between farmers and consumers, enabling direct trade and communication.",
-    "elementId": "AgriLink"
-  },
-  {
-    "title": "DigiTech Edge Website",
-    "path": "/projects",
-    "type": "content",
-    "preview": "A modern corporate website showcasing technology solutions and services with an engaging user interface. (Technologies: Next.js, TypeScript, TailwindCSS, Framer Motion)",
-    "elementId": "DigiTechEdge"
-  },
-  {
-    "title": "DigiTech Edge Website - Details",
-    "path": "/projects",
-    "type": "content",
-    "preview": "DigiTech Edge is a professional technology solutions company website built with modern web technologies.",
-    "elementId": "DigiTechEdge"
-  },
-  {
-    "title": "DigiTech Edge Website - Details",
-    "path": "/projects",
-    "type": "content",
-    "preview": "Features an animated and responsive user interface using Framer Motion for smooth transitions and interactions.",
-    "elementId": "DigiTechEdge"
-  },
-  {
-    "title": "DigiTech Edge Website - Details",
-    "path": "/projects",
-    "type": "content",
-    "preview": "Implements comprehensive service showcase and project portfolio sections.",
-    "elementId": "DigiTechEdge"
-  },
-  {
-    "title": "DigiTech Edge Website - Details",
-    "path": "/projects",
-    "type": "content",
-    "preview": "Includes an integrated contact form with email functionality for client communications.",
-    "elementId": "DigiTechEdge"
-  },
-  {
-    "title": "DigiTech Edge Website - Details",
-    "path": "/projects",
-    "type": "content",
-    "preview": "Showcases company expertise, team information, and client testimonials.",
-    "elementId": "DigiTechEdge"
-  },
-  {
-    "title": "DigiTech Edge Website - Details",
-    "path": "/projects",
-    "type": "content",
-    "preview": "Utilizes modern design principles with attention to user experience and accessibility.",
-    "elementId": "DigiTechEdge"
-  },
-  {
-    "title": "DigiTech Edge Website - Details",
-    "path": "/projects",
-    "type": "content",
-    "preview": "Built with performance optimization and SEO best practices in mind.",
-    "elementId": "DigiTechEdge"
-  },
-  {
-    "title": "Next.js Project: DigiTech Edge Website",
-    "path": "/projects",
-    "type": "content",
-    "preview": "DigiTech Edge Website - Built with Next.js. A modern corporate website showcasing technology solutions and services with an engaging user interface.",
-    "elementId": "DigiTechEdge"
-  },
-  {
-    "title": "TypeScript Project: DigiTech Edge Website",
-    "path": "/projects",
-    "type": "content",
-    "preview": "DigiTech Edge Website - Built with TypeScript. A modern corporate website showcasing technology solutions and services with an engaging user interface.",
-    "elementId": "DigiTechEdge"
-  },
-  {
-    "title": "TailwindCSS Project: DigiTech Edge Website",
-    "path": "/projects",
-    "type": "content",
-    "preview": "DigiTech Edge Website - Built with TailwindCSS. A modern corporate website showcasing technology solutions and services with an engaging user interface.",
-    "elementId": "DigiTechEdge"
-  },
-  {
-    "title": "Framer Motion Project: DigiTech Edge Website",
-    "path": "/projects",
-    "type": "content",
-    "preview": "DigiTech Edge Website - Built with Framer Motion. A modern corporate website showcasing technology solutions and services with an engaging user interface.",
-    "elementId": "DigiTechEdge"
-  },
-  {
-    "title": "Braszy Clothing E-commerce",
-    "path": "/projects",
-    "type": "content",
-    "preview": "A modern e-commerce platform offering a seamless shopping experience for fashion enthusiasts. (Technologies: Next.js, TypeScript, Prisma, TailwindCSS)",
-    "elementId": "Braszy"
-  },
-  {
-    "title": "Braszy Clothing E-commerce - Details",
-    "path": "/projects",
-    "type": "content",
-    "preview": "Braszy is a cutting-edge e-commerce platform that redefines online fashion shopping with its modern and intuitive interface.",
-    "elementId": "Braszy"
-  },
-  {
-    "title": "Braszy Clothing E-commerce - Details",
-    "path": "/projects",
-    "type": "content",
-    "preview": "The platform features a dynamic product catalog with advanced filtering and search capabilities, making it easy for customers to find their perfect style.",
-    "elementId": "Braszy"
-  },
-  {
-    "title": "Braszy Clothing E-commerce - Details",
-    "path": "/projects",
-    "type": "content",
-    "preview": "Each product page includes detailed information, size guides, and high-quality images with zoom functionality for a better shopping experience.",
-    "elementId": "Braszy"
-  },
-  {
-    "title": "Braszy Clothing E-commerce - Details",
-    "path": "/projects",
-    "type": "content",
-    "preview": "The integrated cart and checkout system supports multiple payment methods through Stripe integration, ensuring secure transactions.",
-    "elementId": "Braszy"
-  },
-  {
-    "title": "Braszy Clothing E-commerce - Details",
-    "path": "/projects",
-    "type": "content",
-    "preview": "A sophisticated inventory management system helps track stock levels and automatically updates product availability.",
-    "elementId": "Braszy"
-  },
-  {
-    "title": "Braszy Clothing E-commerce - Details",
-    "path": "/projects",
-    "type": "content",
-    "preview": "The platform includes a customer account system where users can track orders, save favorite items, and manage their shopping preferences.",
-    "elementId": "Braszy"
-  },
-  {
-    "title": "Braszy Clothing E-commerce - Details",
-    "path": "/projects",
-    "type": "content",
-    "preview": "Built with performance in mind, the application uses modern web technologies to ensure fast loading times and smooth navigation.",
-    "elementId": "Braszy"
-  },
-  {
-    "title": "Next.js Project: Braszy Clothing E-commerce",
-    "path": "/projects",
-    "type": "content",
-    "preview": "Braszy Clothing E-commerce - Built with Next.js. A modern e-commerce platform offering a seamless shopping experience for fashion enthusiasts.",
-    "elementId": "Braszy"
-  },
-  {
-    "title": "TypeScript Project: Braszy Clothing E-commerce",
-    "path": "/projects",
-    "type": "content",
-    "preview": "Braszy Clothing E-commerce - Built with TypeScript. A modern e-commerce platform offering a seamless shopping experience for fashion enthusiasts.",
-    "elementId": "Braszy"
-  },
-  {
-    "title": "Prisma Project: Braszy Clothing E-commerce",
-    "path": "/projects",
-    "type": "content",
-    "preview": "Braszy Clothing E-commerce - Built with Prisma. A modern e-commerce platform offering a seamless shopping experience for fashion enthusiasts.",
-    "elementId": "Braszy"
-  },
-  {
-    "title": "TailwindCSS Project: Braszy Clothing E-commerce",
-    "path": "/projects",
-    "type": "content",
-    "preview": "Braszy Clothing E-commerce - Built with TailwindCSS. A modern e-commerce platform offering a seamless shopping experience for fashion enthusiasts.",
-    "elementId": "Braszy"
-  },
-  {
-    "title": "Threads Social Platform",
-    "path": "/projects",
-    "type": "content",
-    "preview": "A modern social platform enabling users to share thoughts, engage in discussions, and build connections. (Technologies: Next.js, TypeScript, Prisma, TailwindCSS)",
-    "elementId": "Threads"
-  },
-  {
-    "title": "Threads Social Platform - Details",
-    "path": "/projects",
-    "type": "content",
-    "preview": "Threads is a social networking platform built with modern web technologies, focusing on user engagement and content sharing.",
-    "elementId": "Threads"
-  },
-  {
-    "title": "Threads Social Platform - Details",
-    "path": "/projects",
-    "type": "content",
-    "preview": "Features a clean and intuitive user interface that makes it easy to create and interact with posts.",
-    "elementId": "Threads"
-  },
-  {
-    "title": "Threads Social Platform - Details",
-    "path": "/projects",
-    "type": "content",
-    "preview": "Implements core social features including post creation, comments, and user interactions.",
-    "elementId": "Threads"
-  },
-  {
-    "title": "Threads Social Platform - Details",
-    "path": "/projects",
-    "type": "content",
-    "preview": "Users can engage with content through likes and comments, fostering meaningful discussions.",
-    "elementId": "Threads"
-  },
-  {
-    "title": "Threads Social Platform - Details",
-    "path": "/projects",
-    "type": "content",
-    "preview": "Built with responsive design principles ensuring a seamless experience across all devices.",
-    "elementId": "Threads"
-  },
-  {
-    "title": "Threads Social Platform - Details",
-    "path": "/projects",
-    "type": "content",
-    "preview": "Incorporates user authentication for secure access and personalized experiences.",
-    "elementId": "Threads"
-  },
-  {
-    "title": "Threads Social Platform - Details",
-    "path": "/projects",
-    "type": "content",
-    "preview": "Utilizes modern web technologies for efficient data management and real-time updates.",
-    "elementId": "Threads"
-  },
-  {
-    "title": "Next.js Project: Threads Social Platform",
-    "path": "/projects",
-    "type": "content",
-    "preview": "Threads Social Platform - Built with Next.js. A modern social platform enabling users to share thoughts, engage in discussions, and build connections.",
-    "elementId": "Threads"
-  },
-  {
-    "title": "TypeScript Project: Threads Social Platform",
-    "path": "/projects",
-    "type": "content",
-    "preview": "Threads Social Platform - Built with TypeScript. A modern social platform enabling users to share thoughts, engage in discussions, and build connections.",
-    "elementId": "Threads"
-  },
-  {
-    "title": "Prisma Project: Threads Social Platform",
-    "path": "/projects",
-    "type": "content",
-    "preview": "Threads Social Platform - Built with Prisma. A modern social platform enabling users to share thoughts, engage in discussions, and build connections.",
-    "elementId": "Threads"
-  },
-  {
-    "title": "TailwindCSS Project: Threads Social Platform",
-    "path": "/projects",
-    "type": "content",
-    "preview": "Threads Social Platform - Built with TailwindCSS. A modern social platform enabling users to share thoughts, engage in discussions, and build connections.",
-    "elementId": "Threads"
-  },
-  {
-    "title": "BlogoSphere",
-    "path": "/projects",
-    "type": "content",
-    "preview": "A modern blogging platform with rich text editing, category organization, and interactive features. (Technologies: Next.js, TypeScript, Prisma, TailwindCSS)",
-    "elementId": "BlogoSphere"
-  },
-  {
-    "title": "BlogoSphere - Details",
-    "path": "/projects",
-    "type": "content",
-    "preview": "BlogoSphere is a feature-rich blogging platform built with modern web technologies.",
-    "elementId": "BlogoSphere"
-  },
-  {
-    "title": "BlogoSphere - Details",
-    "path": "/projects",
-    "type": "content",
-    "preview": "Implements a comprehensive content management system with category-based organization and rich text editing.",
-    "elementId": "BlogoSphere"
-  },
-  {
-    "title": "BlogoSphere - Details",
-    "path": "/projects",
-    "type": "content",
-    "preview": "Features user authentication and profile management for secure content creation and interaction.",
-    "elementId": "BlogoSphere"
-  },
-  {
-    "title": "BlogoSphere - Details",
-    "path": "/projects",
-    "type": "content",
-    "preview": "Includes an interactive comment system allowing users to engage with blog content.",
-    "elementId": "BlogoSphere"
-  },
-  {
-    "title": "BlogoSphere - Details",
-    "path": "/projects",
-    "type": "content",
-    "preview": "Incorporates view tracking to monitor post engagement and popularity.",
-    "elementId": "BlogoSphere"
-  },
-  {
-    "title": "BlogoSphere - Details",
-    "path": "/projects",
-    "type": "content",
-    "preview": "Supports dark/light theme modes for enhanced user experience.",
-    "elementId": "BlogoSphere"
-  },
-  {
-    "title": "BlogoSphere - Details",
-    "path": "/projects",
-    "type": "content",
-    "preview": "Built with responsive design principles for seamless viewing across all devices.",
-    "elementId": "BlogoSphere"
-  },
-  {
-    "title": "Next.js Project: BlogoSphere",
-    "path": "/projects",
-    "type": "content",
-    "preview": "BlogoSphere - Built with Next.js. A modern blogging platform with rich text editing, category organization, and interactive features.",
-    "elementId": "BlogoSphere"
-  },
-  {
-    "title": "TypeScript Project: BlogoSphere",
-    "path": "/projects",
-    "type": "content",
-    "preview": "BlogoSphere - Built with TypeScript. A modern blogging platform with rich text editing, category organization, and interactive features.",
-    "elementId": "BlogoSphere"
-  },
-  {
-    "title": "Prisma Project: BlogoSphere",
-    "path": "/projects",
-    "type": "content",
-    "preview": "BlogoSphere - Built with Prisma. A modern blogging platform with rich text editing, category organization, and interactive features.",
-    "elementId": "BlogoSphere"
-  },
-  {
-    "title": "TailwindCSS Project: BlogoSphere",
-    "path": "/projects",
-    "type": "content",
-    "preview": "BlogoSphere - Built with TailwindCSS. A modern blogging platform with rich text editing, category organization, and interactive features.",
-    "elementId": "BlogoSphere"
-  },
-  {
-    "title": "VoteSphere E-Voting Platform",
-    "path": "/projects",
-    "type": "content",
-    "preview": "A comprehensive electronic voting system with period management, real-time tracking, and result visualization. (Technologies: Next.js, TypeScript, Prisma, Chart.js, TailwindCSS)",
-    "elementId": "VoteSphere"
-  },
-  {
-    "title": "VoteSphere E-Voting Platform - Details",
-    "path": "/projects",
-    "type": "content",
-    "preview": "VoteSphere is a secure and efficient electronic voting platform designed for managing multiple voting periods and elections.",
-    "elementId": "VoteSphere"
-  },
-  {
-    "title": "VoteSphere E-Voting Platform - Details",
-    "path": "/projects",
-    "type": "content",
-    "preview": "Features a robust role-based access control system with three levels: regular users, voting administrators, and supreme administrators.",
-    "elementId": "VoteSphere"
-  },
-  {
-    "title": "VoteSphere E-Voting Platform - Details",
-    "path": "/projects",
-    "type": "content",
-    "preview": "Implements position-based voting structure with candidate profiles, image management, and vote verification.",
-    "elementId": "VoteSphere"
-  },
-  {
-    "title": "VoteSphere E-Voting Platform - Details",
-    "path": "/projects",
-    "type": "content",
-    "preview": "Includes real-time vote tracking and result visualization using interactive charts and analytics.",
-    "elementId": "VoteSphere"
-  },
-  {
-    "title": "VoteSphere E-Voting Platform - Details",
-    "path": "/projects",
-    "type": "content",
-    "preview": "Provides administrative tools for managing voting periods, positions, and candidates.",
-    "elementId": "VoteSphere"
-  },
-  {
-    "title": "VoteSphere E-Voting Platform - Details",
-    "path": "/projects",
-    "type": "content",
-    "preview": "Incorporates data export functionality for generating detailed reports and analysis.",
-    "elementId": "VoteSphere"
-  },
-  {
-    "title": "VoteSphere E-Voting Platform - Details",
-    "path": "/projects",
-    "type": "content",
-    "preview": "Built with security-first approach including secure authentication and vote verification systems.",
-    "elementId": "VoteSphere"
-  },
-  {
-    "title": "Next.js Project: VoteSphere E-Voting Platform",
-    "path": "/projects",
-    "type": "content",
-    "preview": "VoteSphere E-Voting Platform - Built with Next.js. A comprehensive electronic voting system with period management, real-time tracking, and result visualization.",
-    "elementId": "VoteSphere"
-  },
-  {
-    "title": "TypeScript Project: VoteSphere E-Voting Platform",
-    "path": "/projects",
-    "type": "content",
-    "preview": "VoteSphere E-Voting Platform - Built with TypeScript. A comprehensive electronic voting system with period management, real-time tracking, and result visualization.",
-    "elementId": "VoteSphere"
-  },
-  {
-    "title": "Prisma Project: VoteSphere E-Voting Platform",
-    "path": "/projects",
-    "type": "content",
-    "preview": "VoteSphere E-Voting Platform - Built with Prisma. A comprehensive electronic voting system with period management, real-time tracking, and result visualization.",
-    "elementId": "VoteSphere"
-  },
-  {
-    "title": "Chart.js Project: VoteSphere E-Voting Platform",
-    "path": "/projects",
-    "type": "content",
-    "preview": "VoteSphere E-Voting Platform - Built with Chart.js. A comprehensive electronic voting system with period management, real-time tracking, and result visualization.",
-    "elementId": "VoteSphere"
-  },
-  {
-    "title": "TailwindCSS Project: VoteSphere E-Voting Platform",
-    "path": "/projects",
-    "type": "content",
-    "preview": "VoteSphere E-Voting Platform - Built with TailwindCSS. A comprehensive electronic voting system with period management, real-time tracking, and result visualization.",
-    "elementId": "VoteSphere"
-  },
-  {
-    "title": "MoMoXpress Calculator",
-    "path": "/projects",
-    "type": "content",
-    "preview": "A modern web application for calculating mobile money transfer charges across different telecommunications networks in Ghana. (Technologies: Next.js, TypeScript, TailwindCSS, NextUI, Framer Motion)",
-    "elementId": "MoMoXpress"
-  },
-  {
-    "title": "MoMoXpress Calculator - Details",
-    "path": "/projects",
-    "type": "content",
-    "preview": "MoMoXpress is a specialized calculator tool designed to help users calculate mobile money transfer fees across Ghanaian telecom networks.",
-    "elementId": "MoMoXpress"
-  },
-  {
-    "title": "MoMoXpress Calculator - Details",
-    "path": "/projects",
-    "type": "content",
-    "preview": "Features real-time fee calculations with automatic E-levy integration for accurate total cost estimation.",
-    "elementId": "MoMoXpress"
-  },
-  {
-    "title": "MoMoXpress Calculator - Details",
-    "path": "/projects",
-    "type": "content",
-    "preview": "Implements smart validation for network-specific phone numbers ensuring accurate inputs for different providers.",
-    "elementId": "MoMoXpress"
-  },
-  {
-    "title": "MoMoXpress Calculator - Details",
-    "path": "/projects",
-    "type": "content",
-    "preview": "Provides cross-network support allowing users to calculate fees across different mobile money providers.",
-    "elementId": "MoMoXpress"
-  },
-  {
-    "title": "MoMoXpress Calculator - Details",
-    "path": "/projects",
-    "type": "content",
-    "preview": "Includes a newsletter subscription system for SMS updates about fee changes and new features.",
-    "elementId": "MoMoXpress"
-  },
-  {
-    "title": "MoMoXpress Calculator - Details",
-    "path": "/projects",
-    "type": "content",
-    "preview": "Built with a modern, responsive interface that works seamlessly across all devices.",
-    "elementId": "MoMoXpress"
-  },
-  {
-    "title": "MoMoXpress Calculator - Details",
-    "path": "/projects",
-    "type": "content",
-    "preview": "Utilizes custom validation rules for Ghanaian phone numbers by network provider.",
-    "elementId": "MoMoXpress"
-  },
-  {
-    "title": "Next.js Project: MoMoXpress Calculator",
-    "path": "/projects",
-    "type": "content",
-    "preview": "MoMoXpress Calculator - Built with Next.js. A modern web application for calculating mobile money transfer charges across different telecommunications networks in Ghana.",
-    "elementId": "MoMoXpress"
-  },
-  {
-    "title": "TypeScript Project: MoMoXpress Calculator",
-    "path": "/projects",
-    "type": "content",
-    "preview": "MoMoXpress Calculator - Built with TypeScript. A modern web application for calculating mobile money transfer charges across different telecommunications networks in Ghana.",
-    "elementId": "MoMoXpress"
-  },
-  {
-    "title": "TailwindCSS Project: MoMoXpress Calculator",
-    "path": "/projects",
-    "type": "content",
-    "preview": "MoMoXpress Calculator - Built with TailwindCSS. A modern web application for calculating mobile money transfer charges across different telecommunications networks in Ghana.",
-    "elementId": "MoMoXpress"
-  },
-  {
-    "title": "NextUI Project: MoMoXpress Calculator",
-    "path": "/projects",
-    "type": "content",
-    "preview": "MoMoXpress Calculator - Built with NextUI. A modern web application for calculating mobile money transfer charges across different telecommunications networks in Ghana.",
-    "elementId": "MoMoXpress"
-  },
-  {
-    "title": "Framer Motion Project: MoMoXpress Calculator",
-    "path": "/projects",
-    "type": "content",
-    "preview": "MoMoXpress Calculator - Built with Framer Motion. A modern web application for calculating mobile money transfer charges across different telecommunications networks in Ghana.",
-    "elementId": "MoMoXpress"
-  },
-  {
-    "title": "Campserve Mobile Application",
-    "path": "/projects",
-    "type": "content",
-    "preview": "A comprehensive mobile platform connecting university students with essential campus services and local businesses. (Technologies: React Native, Flask, PostgreSQL, TailwindCSS)",
-    "elementId": "CampServe"
-  },
-  {
-    "title": "Campserve Mobile Application - Details",
-    "path": "/projects",
-    "type": "content",
-    "preview": "Campserve is a revolutionary mobile application designed to enhance campus life by connecting university students with various services and local businesses.",
-    "elementId": "CampServe"
-  },
-  {
-    "title": "Campserve Mobile Application - Details",
-    "path": "/projects",
-    "type": "content",
-    "preview": "The app features an intuitive interface where students can discover and book services ranging from laundry and food delivery to academic tutoring.",
-    "elementId": "CampServe"
-  },
-  {
-    "title": "Campserve Mobile Application - Details",
-    "path": "/projects",
-    "type": "content",
-    "preview": "Service providers can create profiles, list their services, and manage bookings through a dedicated business dashboard.",
-    "elementId": "CampServe"
-  },
-  {
-    "title": "Campserve Mobile Application - Details",
-    "path": "/projects",
-    "type": "content",
-    "preview": "The platform includes a sophisticated rating and review system to maintain service quality and build trust within the campus community.",
-    "elementId": "CampServe"
-  },
-  {
-    "title": "Campserve Mobile Application - Details",
-    "path": "/projects",
-    "type": "content",
-    "preview": "Real-time chat functionality enables smooth communication between service providers and students.",
-    "elementId": "CampServe"
-  },
-  {
-    "title": "Campserve Mobile Application - Details",
-    "path": "/projects",
-    "type": "content",
-    "preview": "Integrated payment system supports multiple payment methods for secure and convenient transactions.",
-    "elementId": "CampServe"
-  },
-  {
-    "title": "Campserve Mobile Application - Details",
-    "path": "/projects",
-    "type": "content",
-    "preview": "Location-based service discovery helps students find nearby service providers efficiently.",
-    "elementId": "CampServe"
-  },
-  {
-    "title": "React Native Project: Campserve Mobile Application",
-    "path": "/projects",
-    "type": "content",
-    "preview": "Campserve Mobile Application - Built with React Native. A comprehensive mobile platform connecting university students with essential campus services and local businesses.",
-    "elementId": "CampServe"
-  },
-  {
-    "title": "Flask Project: Campserve Mobile Application",
-    "path": "/projects",
-    "type": "content",
-    "preview": "Campserve Mobile Application - Built with Flask. A comprehensive mobile platform connecting university students with essential campus services and local businesses.",
-    "elementId": "CampServe"
-  },
-  {
-    "title": "PostgreSQL Project: Campserve Mobile Application",
-    "path": "/projects",
-    "type": "content",
-    "preview": "Campserve Mobile Application - Built with PostgreSQL. A comprehensive mobile platform connecting university students with essential campus services and local businesses.",
-    "elementId": "CampServe"
-  },
-  {
-    "title": "TailwindCSS Project: Campserve Mobile Application",
-    "path": "/projects",
-    "type": "content",
-    "preview": "Campserve Mobile Application - Built with TailwindCSS. A comprehensive mobile platform connecting university students with essential campus services and local businesses.",
-    "elementId": "CampServe"
-  },
-  {
-    "title": "BudgetBuddy Finance App",
-    "path": "/projects",
-    "type": "content",
-    "preview": "A comprehensive personal finance management mobile app for expense tracking, budgeting, and financial goal setting. (Technologies: React Native, Expo, TypeScript, Node.js, Drizzle)",
-    "elementId": "BudgetBuddy"
-  },
-  {
-    "title": "BudgetBuddy Finance App - Details",
-    "path": "/projects",
-    "type": "content",
-    "preview": "BudgetBuddy is an intuitive mobile application designed to help users take control of their personal finances.",
-    "elementId": "BudgetBuddy"
-  },
-  {
-    "title": "BudgetBuddy Finance App - Details",
-    "path": "/projects",
-    "type": "content",
-    "preview": "Features an easy-to-use expense tracking system with automatic categorization and custom categories.",
-    "elementId": "BudgetBuddy"
-  },
-  {
-    "title": "BudgetBuddy Finance App - Details",
-    "path": "/projects",
-    "type": "content",
-    "preview": "Implements budget management tools with real-time monitoring and spending alerts.",
-    "elementId": "BudgetBuddy"
-  },
-  {
-    "title": "BudgetBuddy Finance App - Details",
-    "path": "/projects",
-    "type": "content",
-    "preview": "Provides visual analytics and reports to help users understand their spending patterns and financial health.",
-    "elementId": "BudgetBuddy"
-  },
-  {
-    "title": "BudgetBuddy Finance App - Details",
-    "path": "/projects",
-    "type": "content",
-    "preview": "Includes goal-setting features for savings targets and financial milestones.",
-    "elementId": "BudgetBuddy"
-  },
-  {
-    "title": "BudgetBuddy Finance App - Details",
-    "path": "/projects",
-    "type": "content",
-    "preview": "Offers secure user authentication and data storage for personal financial information.",
-    "elementId": "BudgetBuddy"
-  },
-  {
-    "title": "BudgetBuddy Finance App - Details",
-    "path": "/projects",
-    "type": "content",
-    "preview": "Built with a responsive UI that adapts to different mobile devices and screen sizes.",
-    "elementId": "BudgetBuddy"
-  },
-  {
-    "title": "React Native Project: BudgetBuddy Finance App",
-    "path": "/projects",
-    "type": "content",
-    "preview": "BudgetBuddy Finance App - Built with React Native. A comprehensive personal finance management mobile app for expense tracking, budgeting, and financial goal setting.",
-    "elementId": "BudgetBuddy"
-  },
-  {
-    "title": "Expo Project: BudgetBuddy Finance App",
-    "path": "/projects",
-    "type": "content",
-    "preview": "BudgetBuddy Finance App - Built with Expo. A comprehensive personal finance management mobile app for expense tracking, budgeting, and financial goal setting.",
-    "elementId": "BudgetBuddy"
-  },
-  {
-    "title": "TypeScript Project: BudgetBuddy Finance App",
-    "path": "/projects",
-    "type": "content",
-    "preview": "BudgetBuddy Finance App - Built with TypeScript. A comprehensive personal finance management mobile app for expense tracking, budgeting, and financial goal setting.",
-    "elementId": "BudgetBuddy"
-  },
-  {
-    "title": "Node.js Project: BudgetBuddy Finance App",
-    "path": "/projects",
-    "type": "content",
-    "preview": "BudgetBuddy Finance App - Built with Node.js. A comprehensive personal finance management mobile app for expense tracking, budgeting, and financial goal setting.",
-    "elementId": "BudgetBuddy"
-  },
-  {
-    "title": "Drizzle Project: BudgetBuddy Finance App",
-    "path": "/projects",
-    "type": "content",
-    "preview": "BudgetBuddy Finance App - Built with Drizzle. A comprehensive personal finance management mobile app for expense tracking, budgeting, and financial goal setting.",
-    "elementId": "BudgetBuddy"
-  },
-  {
-    "title": "Frontend Developer at Hurisoft",
+    "title": "•",
+    "preview": "•",
     "path": "/about",
-    "type": "content",
-    "preview": "Frontend Developer - Hurisoft. Nov 2024 - Present. Collaborating with a remote team to develop responsive web applications, enhancing user experience with React and Next.js. Building intuitive UIs with React, optimizing performance, and ensuring accessibility and mobile responsiveness",
-    "elementId": "experience-frontend"
-  },
-  {
-    "title": "Hurisoft",
-    "path": "/about",
-    "type": "content",
-    "preview": "Frontend Developer position at Hurisoft. Nov 2024 - Present. Collaborating with a remote team to develop responsive web applications, enhancing user experience with React and Next.js.",
-    "elementId": "experience-frontend"
-  },
-  {
-    "title": "Frontend Developer",
-    "path": "/about",
-    "type": "content",
-    "preview": "Frontend Developer at Hurisoft. Nov 2024 - Present. Collaborating with a remote team to develop responsive web applications, enhancing user experience with React and Next.js.",
-    "elementId": "experience-frontend"
-  },
-  {
-    "title": "Frontend Developer - Hurisoft",
-    "path": "/about",
-    "type": "content",
-    "preview": "Collaborating with a remote team to develop responsive web applications, enhancing user experience with React and Next.js.",
-    "elementId": "experience-frontend"
-  },
-  {
-    "title": "Frontend Developer - Hurisoft",
-    "path": "/about",
-    "type": "content",
-    "preview": "Building intuitive UIs with React, optimizing performance, and ensuring accessibility and mobile responsiveness",
-    "elementId": "experience-frontend"
-  },
-  {
-    "title": "Fullstack Developer at KNUST School of Business",
-    "path": "/about",
-    "type": "content",
-    "preview": "Fullstack Developer - KNUST School of Business. Nov 2023 - Nov 2024. Developed comprehensive exams attendance tracking application Created admin dashboard for managing exam schedules and staff assignments Implemented secure web-based Voting System with real-time updates Designed nomination platform with secure role-based authentication (RBAC) Built admin and reviewer dashboards with real-time notifications Integrated real-time updates using WebSocket technology Implemented data visualization for exam statistics",
-    "elementId": "experience-fullstack"
-  },
-  {
-    "title": "KNUST School of Business",
-    "path": "/about",
-    "type": "content",
-    "preview": "Fullstack Developer position at KNUST School of Business. Nov 2023 - Nov 2024. Developed comprehensive exams attendance tracking application",
-    "elementId": "experience-fullstack"
-  },
-  {
-    "title": "Fullstack Developer",
-    "path": "/about",
-    "type": "content",
-    "preview": "Fullstack Developer at KNUST School of Business. Nov 2023 - Nov 2024. Developed comprehensive exams attendance tracking application",
-    "elementId": "experience-fullstack"
-  },
-  {
-    "title": "Fullstack Developer - KNUST School of Business",
-    "path": "/about",
-    "type": "content",
-    "preview": "Developed comprehensive exams attendance tracking application",
-    "elementId": "experience-fullstack"
-  },
-  {
-    "title": "Fullstack Developer - KNUST School of Business",
-    "path": "/about",
-    "type": "content",
-    "preview": "Created admin dashboard for managing exam schedules and staff assignments",
-    "elementId": "experience-fullstack"
-  },
-  {
-    "title": "Fullstack Developer - KNUST School of Business",
-    "path": "/about",
-    "type": "content",
-    "preview": "Implemented secure web-based Voting System with real-time updates",
-    "elementId": "experience-fullstack"
-  },
-  {
-    "title": "Fullstack Developer - KNUST School of Business",
-    "path": "/about",
-    "type": "content",
-    "preview": "Designed nomination platform with secure role-based authentication (RBAC)",
-    "elementId": "experience-fullstack"
-  },
-  {
-    "title": "Fullstack Developer - KNUST School of Business",
-    "path": "/about",
-    "type": "content",
-    "preview": "Built admin and reviewer dashboards with real-time notifications",
-    "elementId": "experience-fullstack"
-  },
-  {
-    "title": "Fullstack Developer - KNUST School of Business",
-    "path": "/about",
-    "type": "content",
-    "preview": "Integrated real-time updates using WebSocket technology",
-    "elementId": "experience-fullstack"
-  },
-  {
-    "title": "Fullstack Developer - KNUST School of Business",
-    "path": "/about",
-    "type": "content",
-    "preview": "Implemented data visualization for exam statistics",
-    "elementId": "experience-fullstack"
-  },
-  {
-    "title": "Software Engineer Intern, Frontend Developer at BSystems Limited",
-    "path": "/about",
-    "type": "content",
-    "preview": "Software Engineer Intern, Frontend Developer - BSystems Limited. Oct 2022 - Jan 2023. Developed and enhanced features for the admin dashboard of the PeoplesPay app, improving user interface and experience Implemented user authentication, verification, and various admin functionalities including managing admins, customers, transactions, and e-levy records, ensuring data security and integrity Redesigned UI components to enhance usability and visual appeal, leading to a more intuitive and engaging user experience Created detailed technical documentation for the web application, facilitating better understanding and maintenance for future developers",
-    "elementId": "experience-intern"
-  },
-  {
-    "title": "BSystems Limited",
-    "path": "/about",
-    "type": "content",
-    "preview": "Software Engineer Intern, Frontend Developer position at BSystems Limited. Oct 2022 - Jan 2023. Developed and enhanced features for the admin dashboard of the PeoplesPay app, improving user interface and experience",
-    "elementId": "experience-intern"
-  },
-  {
-    "title": "Software Engineer Intern, Frontend Developer",
-    "path": "/about",
-    "type": "content",
-    "preview": "Software Engineer Intern, Frontend Developer at BSystems Limited. Oct 2022 - Jan 2023. Developed and enhanced features for the admin dashboard of the PeoplesPay app, improving user interface and experience",
-    "elementId": "experience-intern"
-  },
-  {
-    "title": "Software Engineer Intern, Frontend Developer - BSystems Limited",
-    "path": "/about",
-    "type": "content",
-    "preview": "Developed and enhanced features for the admin dashboard of the PeoplesPay app, improving user interface and experience",
-    "elementId": "experience-intern"
-  },
-  {
-    "title": "Software Engineer Intern, Frontend Developer - BSystems Limited",
-    "path": "/about",
-    "type": "content",
-    "preview": "Implemented user authentication, verification, and various admin functionalities including managing admins, customers, transactions, and e-levy records, ensuring data security and integrity",
-    "elementId": "experience-intern"
-  },
-  {
-    "title": "Software Engineer Intern, Frontend Developer - BSystems Limited",
-    "path": "/about",
-    "type": "content",
-    "preview": "Redesigned UI components to enhance usability and visual appeal, leading to a more intuitive and engaging user experience",
-    "elementId": "experience-intern"
-  },
-  {
-    "title": "Software Engineer Intern, Frontend Developer - BSystems Limited",
-    "path": "/about",
-    "type": "content",
-    "preview": "Created detailed technical documentation for the web application, facilitating better understanding and maintenance for future developers",
-    "elementId": "experience-intern"
-  },
-  {
-    "title": "About Me",
-    "preview": "About Me",
-    "path": "/about",
-    "type": "content"
-  },
-  {
-    "title": "I am a dedicated Software Developer with a Bachelor's Degree in Computer Engineering from Kwame Nkrumah University of Science and Technology (KNUST). With a First Class Honours and a CWA of 73.71 (GPA: 3.70), I have demonstrated strong academic excellence and technical aptitude.",
-    "preview": "I am a dedicated Software Developer with a Bachelor's Degree in Computer Engineering from Kwame Nkrumah University of Science and Technology (KNUST). With a First Class Honours and a CWA of 73.71 (GPA: 3.70), I have demonstrated strong academic excellence and technical aptitude.",
-    "path": "/about",
-    "type": "content"
-  },
-  {
-    "title": "My expertise lies in frontend and fullstack development, where I excel at creating scalable and user-friendly applications. I am proficient in modern technologies such as React, React Native, Next.js, and Express.js, with a strong foundation in both mobile and web development.",
-    "preview": "My expertise lies in frontend and fullstack development, where I excel at creating scalable and user-friendly applications. I am proficient in modern technologies such as React, React Native, Next.js, and Express.js, with a strong foundation in both mobile and web development.",
-    "path": "/about",
-    "type": "content"
-  },
-  {
-    "title": "I am passionate about creating innovative solutions that solve real-world problems. My experience spans from developing mobile applications to implementing complex web systems, always focusing on delivering high-quality, maintainable code.",
-    "preview": "I am passionate about creating innovative solutions that solve real-world problems. My experience spans from developing mobile applications to implementing complex web systems, always focusing on delivering high-quality, maintainable code.",
-    "path": "/about",
-    "type": "content"
-  },
-  {
-    "title": "Work Experience",
-    "preview": "Work Experience",
-    "path": "/about",
-    "type": "content"
-  },
-  {
-    "title": "Education",
-    "preview": "Education",
-    "path": "/about",
-    "type": "content"
-  },
-  {
-    "title": "Contact via Email",
-    "preview": "isinesam@gmail.com",
-    "path": "/contact",
-    "type": "content",
-    "elementId": "email"
-  },
-  {
-    "title": "Contact via GitHub",
-    "preview": "github.com/EpaphrasSam",
-    "path": "/contact",
-    "type": "content",
-    "elementId": "github"
-  },
-  {
-    "title": "Contact via LinkedIn",
-    "preview": "linkedin.com/in/isaac-sam-epaphras",
-    "path": "/contact",
-    "type": "content",
-    "elementId": "linkedin"
-  },
-  {
-    "title": "Get in Touch",
-    "preview": "Get in Touch",
-    "path": "/contact",
-    "type": "content"
-  },
-  {
-    "title": "I'm always interested in new opportunities and collaborations. Feel free to reach out through any of these channels:",
-    "preview": "I'm always interested in new opportunities and collaborations. Feel free to reach out through any of these channels:",
-    "path": "/contact",
-    "type": "content"
-  },
-  {
-    "title": "Let's Create Something Amazing",
-    "preview": "Let's Create Something Amazing",
-    "path": "/contact",
-    "type": "content"
-  },
-  {
-    "title": "Whether you have a project in mind or just want to connect, I'm always open to discussing new opportunities and ideas.",
-    "preview": "Whether you have a project in mind or just want to connect, I'm always open to discussing new opportunities and ideas.",
-    "path": "/contact",
     "type": "content"
   },
   {
@@ -1082,27 +69,604 @@ export const searchData: SearchResultType[] = [
     "type": "content"
   },
   {
-    "title": "Isaac Epaphras Nana Sam",
-    "preview": "Isaac Epaphras Nana Sam",
+    "title": "View Projects  Get in Touch                       ",
+    "preview": "View Projects  Get in Touch                                            Get in Touch  View GitHub            Let's Talk",
     "path": "/",
     "type": "content"
   },
   {
-    "title": "I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.",
+    "title": "View Projects  Get in Touch",
+    "preview": "View Projects  Get in Touch",
+    "path": "/",
+    "type": "content"
+  },
+  {
+    "title": "View Projects",
+    "preview": "View Projects",
+    "path": "/",
+    "type": "content"
+  },
+  {
+    "title": "View Projects",
+    "preview": "View Projects",
+    "path": "/",
+    "type": "content"
+  },
+  {
+    "title": "Get in Touch",
+    "preview": "Get in Touch",
+    "path": "/",
+    "type": "content"
+  },
+  {
+    "title": "Get in Touch",
+    "preview": "Get in Touch",
+    "path": "/",
+    "type": "content"
+  },
+  {
+    "title": "Featured Projects",
+    "preview": "Some of my recent web applications that I'm proud of",
+    "path": "/",
+    "type": "content"
+  },
+  {
+    "title": "Skills Overview",
+    "preview": "My technical expertise and tools I work with",
+    "path": "/",
+    "type": "content"
+  },
+  {
+    "title": "Explore My Portfolio",
+    "preview": "Navigate through different sections to learn more about my work and expertise",
+    "path": "/",
+    "type": "content"
+  },
+  {
+    "title": "Get in Touch  View GitHub",
+    "preview": "Get in Touch  View GitHub",
+    "path": "/",
+    "type": "content"
+  },
+  {
+    "title": "Let's Work Together",
     "preview": "I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.",
     "path": "/",
     "type": "content"
   },
   {
-    "title": "My Projects",
-    "preview": "My Projects",
-    "path": "/projects",
+    "title": "View GitHub",
+    "preview": "View GitHub",
+    "path": "/",
     "type": "content"
   },
   {
-    "title": "Programming Languages",
-    "preview": "Programming Languages:\nJavaScript - Advanced web and mobile application development\nTypeScript - Type-safe application development with modern features\nPython - Backend development and data processing\nJava - Object-oriented programming and Android development\nSQL - Database design and optimization\nHTML & CSS - Modern web development with responsive design",
+    "title": "View GitHub",
+    "preview": "View GitHub",
+    "path": "/",
+    "type": "content"
+  },
+  {
+    "title": "Let's Talk",
+    "preview": "Let's Talk",
+    "path": "/",
+    "type": "content"
+  },
+  {
+    "title": "VoteSphere",
+    "preview": "A secure and transparent blockchain-based voting platform revolutionizing digital democracy with real-time tracking. (Next.js, Solidity, TailwindCSS)",
+    "path": "/projects#VoteSphere",
+    "type": "content",
+    "elementId": "VoteSphere"
+  },
+  {
+    "title": "VoteSphere",
+    "preview": "A secure and transparent blockchain-based voting platform revolutionizing digital democracy with real-time tracking. (Next.js, Solidity, TailwindCSS)",
+    "path": "/",
+    "type": "content",
+    "elementId": "VoteSphere"
+  },
+  {
+    "title": "IExchange Landing Page",
+    "preview": "A dynamic landing page for a revolutionary P2P crypto trading platform, showcasing seamless fiat-to-crypto exchanges. (Next.js, Typescript, TailwindCSS)",
+    "path": "/projects#IExchange",
+    "type": "content",
+    "elementId": "IExchange"
+  },
+  {
+    "title": "IExchange Landing Page",
+    "preview": "A dynamic landing page for a revolutionary P2P crypto trading platform, showcasing seamless fiat-to-crypto exchanges. (Next.js, Typescript, TailwindCSS)",
+    "path": "/",
+    "type": "content",
+    "elementId": "IExchange"
+  },
+  {
+    "title": "Braszy Clothing E-commerce",
+    "preview": "A modern e-commerce platform offering a seamless shopping experience for fashion enthusiasts. (Next.js, TypeScript, Prisma)",
+    "path": "/projects#Braszy",
+    "type": "content",
+    "elementId": "Braszy"
+  },
+  {
+    "title": "Braszy Clothing E-commerce",
+    "preview": "A modern e-commerce platform offering a seamless shopping experience for fashion enthusiasts. (Next.js, TypeScript, Prisma)",
+    "path": "/",
+    "type": "content",
+    "elementId": "Braszy"
+  },
+  {
+    "title": "AgriLink Web Application",
+    "preview": "A revolutionary platform bridging the gap between farmers and consumers, enabling direct trade and communication. (Next.js, TypeScript, Prisma)",
+    "path": "/projects#AgriLink",
+    "type": "content",
+    "elementId": "AgriLink"
+  },
+  {
+    "title": "AgriLink Web Application",
+    "preview": "A revolutionary platform bridging the gap between farmers and consumers, enabling direct trade and communication. (Next.js, TypeScript, Prisma)",
+    "path": "/",
+    "type": "content",
+    "elementId": "AgriLink"
+  },
+  {
+    "title": "Threads Social Platform",
+    "preview": "A modern social platform enabling users to share thoughts, engage in discussions, and build connections. (Next.js, TypeScript, Prisma)",
+    "path": "/projects#Threads",
+    "type": "content",
+    "elementId": "Threads"
+  },
+  {
+    "title": "Threads Social Platform",
+    "preview": "A modern social platform enabling users to share thoughts, engage in discussions, and build connections. (Next.js, TypeScript, Prisma)",
+    "path": "/",
+    "type": "content",
+    "elementId": "Threads"
+  },
+  {
+    "title": "BlogoSphere",
+    "preview": "A modern blogging platform with rich text editing, category organization, and interactive features. (Next.js, TypeScript, Prisma)",
+    "path": "/projects#BlogoSphere",
+    "type": "content",
+    "elementId": "BlogoSphere"
+  },
+  {
+    "title": "BlogoSphere",
+    "preview": "A modern blogging platform with rich text editing, category organization, and interactive features. (Next.js, TypeScript, Prisma)",
+    "path": "/",
+    "type": "content",
+    "elementId": "BlogoSphere"
+  },
+  {
+    "title": "MoMoXpress Calculator",
+    "preview": "A modern web application for calculating mobile money transfer charges across different telecommunications networks in Ghana. (Next.js, TypeScript, TailwindCSS)",
+    "path": "/projects#MoMoXpress",
+    "type": "content",
+    "elementId": "MoMoXpress"
+  },
+  {
+    "title": "MoMoXpress Calculator",
+    "preview": "A modern web application for calculating mobile money transfer charges across different telecommunications networks in Ghana. (Next.js, TypeScript, TailwindCSS)",
+    "path": "/",
+    "type": "content",
+    "elementId": "MoMoXpress"
+  },
+  {
+    "title": "Campserve Mobile Application",
+    "preview": "A comprehensive mobile platform connecting university students with essential campus services and local businesses. (React Native, Flask, PostgreSQL)",
+    "path": "/projects#CampServe",
+    "type": "content",
+    "elementId": "CampServe"
+  },
+  {
+    "title": "BudgetBuddy Finance App",
+    "preview": "A comprehensive personal finance management mobile app for expense tracking, budgeting, and financial goal setting. (React Native, Expo, TypeScript)",
+    "path": "/projects#BudgetBuddy",
+    "type": "content",
+    "elementId": "BudgetBuddy"
+  },
+  {
+    "title": "DigiTech Edge Website",
+    "preview": "A modern corporate website showcasing technology solutions and services with an engaging user interface. (Next.js, TypeScript, TailwindCSS)",
+    "path": "/projects#DigiTechEdge",
+    "type": "content",
+    "elementId": "DigiTechEdge"
+  },
+  {
+    "title": "DigiTech Edge Website",
+    "preview": "A modern corporate website showcasing technology solutions and services with an engaging user interface. (Next.js, TypeScript, TailwindCSS)",
+    "path": "/",
+    "type": "content",
+    "elementId": "DigiTechEdge"
+  },
+  {
+    "title": "Frontend Developer at Hurisoft",
+    "preview": "Frontend Developer - Hurisoft. Nov 2024 - Present. Developed the landing page for iExchange, a blockchain-based platform, focusing on responsive design, modern aesthetics, and user-friendly interfaces Collaborating with the team to build the main web application for iExchange, integrating blockchain features and enabling various user offers and interactions Worked with the lead frontend developer on Soccersm to resolve bugs, improve performance, and ensure a polished user experience Ensuring accessibility, performance optimization, and seamless user interactions for all developed platforms",
+    "path": "/about",
+    "type": "content",
+    "elementId": "experience-frontend"
+  },
+  {
+    "title": "Frontend Developer at Hurisoft",
+    "preview": "Frontend Developer - Hurisoft. Nov 2024 - Present. Developed the landing page for iExchange, a blockchain-based platform, focusing on responsive design, modern aesthetics, and user-friendly interfaces Collaborating with the team to build the main web application for iExchange, integrating blockchain features and enabling various user offers and interactions Worked with the lead frontend developer on Soccersm to resolve bugs, improve performance, and ensure a polished user experience Ensuring accessibility, performance optimization, and seamless user interactions for all developed platforms",
+    "path": "/",
+    "type": "content",
+    "elementId": "experience-frontend"
+  },
+  {
+    "title": "Hurisoft",
+    "preview": "Frontend Developer position at Hurisoft. Nov 2024 - Present. Developed the landing page for iExchange, a blockchain-based platform, focusing on responsive design, modern aesthetics, and user-friendly interfaces",
+    "path": "/about",
+    "type": "content",
+    "elementId": "experience-frontend"
+  },
+  {
+    "title": "Hurisoft",
+    "preview": "Frontend Developer position at Hurisoft. Nov 2024 - Present. Developed the landing page for iExchange, a blockchain-based platform, focusing on responsive design, modern aesthetics, and user-friendly interfaces",
+    "path": "/",
+    "type": "content",
+    "elementId": "experience-frontend"
+  },
+  {
+    "title": "Frontend Developer",
+    "preview": "Frontend Developer at Hurisoft. Nov 2024 - Present. Developed the landing page for iExchange, a blockchain-based platform, focusing on responsive design, modern aesthetics, and user-friendly interfaces",
+    "path": "/about",
+    "type": "content",
+    "elementId": "experience-frontend"
+  },
+  {
+    "title": "Frontend Developer",
+    "preview": "Frontend Developer at Hurisoft. Nov 2024 - Present. Developed the landing page for iExchange, a blockchain-based platform, focusing on responsive design, modern aesthetics, and user-friendly interfaces",
+    "path": "/",
+    "type": "content",
+    "elementId": "experience-frontend"
+  },
+  {
+    "title": "Frontend Developer - Hurisoft",
+    "preview": "Developed the landing page for iExchange, a blockchain-based platform, focusing on responsive design, modern aesthetics, and user-friendly interfaces",
+    "path": "/about",
+    "type": "content",
+    "elementId": "experience-frontend"
+  },
+  {
+    "title": "Frontend Developer - Hurisoft",
+    "preview": "Developed the landing page for iExchange, a blockchain-based platform, focusing on responsive design, modern aesthetics, and user-friendly interfaces",
+    "path": "/",
+    "type": "content",
+    "elementId": "experience-frontend"
+  },
+  {
+    "title": "Frontend Developer - Hurisoft",
+    "preview": "Collaborating with the team to build the main web application for iExchange, integrating blockchain features and enabling various user offers and interactions",
+    "path": "/about",
+    "type": "content",
+    "elementId": "experience-frontend"
+  },
+  {
+    "title": "Frontend Developer - Hurisoft",
+    "preview": "Collaborating with the team to build the main web application for iExchange, integrating blockchain features and enabling various user offers and interactions",
+    "path": "/",
+    "type": "content",
+    "elementId": "experience-frontend"
+  },
+  {
+    "title": "Frontend Developer - Hurisoft",
+    "preview": "Worked with the lead frontend developer on Soccersm to resolve bugs, improve performance, and ensure a polished user experience",
+    "path": "/about",
+    "type": "content",
+    "elementId": "experience-frontend"
+  },
+  {
+    "title": "Frontend Developer - Hurisoft",
+    "preview": "Worked with the lead frontend developer on Soccersm to resolve bugs, improve performance, and ensure a polished user experience",
+    "path": "/",
+    "type": "content",
+    "elementId": "experience-frontend"
+  },
+  {
+    "title": "Frontend Developer - Hurisoft",
+    "preview": "Ensuring accessibility, performance optimization, and seamless user interactions for all developed platforms",
+    "path": "/about",
+    "type": "content",
+    "elementId": "experience-frontend"
+  },
+  {
+    "title": "Frontend Developer - Hurisoft",
+    "preview": "Ensuring accessibility, performance optimization, and seamless user interactions for all developed platforms",
+    "path": "/",
+    "type": "content",
+    "elementId": "experience-frontend"
+  },
+  {
+    "title": "Fullstack Developer at KNUST School of Business",
+    "preview": "Fullstack Developer - KNUST School of Business. Nov 2023 - Nov 2024. Developed an exams attendance application and an admin dashboard for managing schedules, improving staff accountability and administrative efficiency Built a secure, web-based Voting System for School elections, automating vote collection and providing real-time election monitoring and result analytics Created a nomination platform with role-based authentication and multi-stage workflows, streamlining the nomination process for university elections Designed admin and reviewer dashboards for managing nominations, with real-time notifications and analytics tools to enhance user management Utilized Next.js, Prisma ORM, and MongoDB to build a scalable backend, with future plans for multi-institution deployment and machine learning integration",
+    "path": "/about",
+    "type": "content",
+    "elementId": "experience-fullstack"
+  },
+  {
+    "title": "Fullstack Developer at KNUST School of Business",
+    "preview": "Fullstack Developer - KNUST School of Business. Nov 2023 - Nov 2024. Developed an exams attendance application and an admin dashboard for managing schedules, improving staff accountability and administrative efficiency Built a secure, web-based Voting System for School elections, automating vote collection and providing real-time election monitoring and result analytics Created a nomination platform with role-based authentication and multi-stage workflows, streamlining the nomination process for university elections Designed admin and reviewer dashboards for managing nominations, with real-time notifications and analytics tools to enhance user management Utilized Next.js, Prisma ORM, and MongoDB to build a scalable backend, with future plans for multi-institution deployment and machine learning integration",
+    "path": "/",
+    "type": "content",
+    "elementId": "experience-fullstack"
+  },
+  {
+    "title": "KNUST School of Business",
+    "preview": "Fullstack Developer position at KNUST School of Business. Nov 2023 - Nov 2024. Developed an exams attendance application and an admin dashboard for managing schedules, improving staff accountability and administrative efficiency",
+    "path": "/about",
+    "type": "content",
+    "elementId": "experience-fullstack"
+  },
+  {
+    "title": "KNUST School of Business",
+    "preview": "Fullstack Developer position at KNUST School of Business. Nov 2023 - Nov 2024. Developed an exams attendance application and an admin dashboard for managing schedules, improving staff accountability and administrative efficiency",
+    "path": "/",
+    "type": "content",
+    "elementId": "experience-fullstack"
+  },
+  {
+    "title": "Fullstack Developer",
+    "preview": "Fullstack Developer at KNUST School of Business. Nov 2023 - Nov 2024. Developed an exams attendance application and an admin dashboard for managing schedules, improving staff accountability and administrative efficiency",
+    "path": "/about",
+    "type": "content",
+    "elementId": "experience-fullstack"
+  },
+  {
+    "title": "Fullstack Developer",
+    "preview": "Fullstack Developer at KNUST School of Business. Nov 2023 - Nov 2024. Developed an exams attendance application and an admin dashboard for managing schedules, improving staff accountability and administrative efficiency",
+    "path": "/",
+    "type": "content",
+    "elementId": "experience-fullstack"
+  },
+  {
+    "title": "Fullstack Developer - KNUST School of Business",
+    "preview": "Developed an exams attendance application and an admin dashboard for managing schedules, improving staff accountability and administrative efficiency",
+    "path": "/about",
+    "type": "content",
+    "elementId": "experience-fullstack"
+  },
+  {
+    "title": "Fullstack Developer - KNUST School of Business",
+    "preview": "Developed an exams attendance application and an admin dashboard for managing schedules, improving staff accountability and administrative efficiency",
+    "path": "/",
+    "type": "content",
+    "elementId": "experience-fullstack"
+  },
+  {
+    "title": "Fullstack Developer - KNUST School of Business",
+    "preview": "Built a secure, web-based Voting System for School elections, automating vote collection and providing real-time election monitoring and result analytics",
+    "path": "/about",
+    "type": "content",
+    "elementId": "experience-fullstack"
+  },
+  {
+    "title": "Fullstack Developer - KNUST School of Business",
+    "preview": "Built a secure, web-based Voting System for School elections, automating vote collection and providing real-time election monitoring and result analytics",
+    "path": "/",
+    "type": "content",
+    "elementId": "experience-fullstack"
+  },
+  {
+    "title": "Fullstack Developer - KNUST School of Business",
+    "preview": "Created a nomination platform with role-based authentication and multi-stage workflows, streamlining the nomination process for university elections",
+    "path": "/about",
+    "type": "content",
+    "elementId": "experience-fullstack"
+  },
+  {
+    "title": "Fullstack Developer - KNUST School of Business",
+    "preview": "Created a nomination platform with role-based authentication and multi-stage workflows, streamlining the nomination process for university elections",
+    "path": "/",
+    "type": "content",
+    "elementId": "experience-fullstack"
+  },
+  {
+    "title": "Fullstack Developer - KNUST School of Business",
+    "preview": "Designed admin and reviewer dashboards for managing nominations, with real-time notifications and analytics tools to enhance user management",
+    "path": "/about",
+    "type": "content",
+    "elementId": "experience-fullstack"
+  },
+  {
+    "title": "Fullstack Developer - KNUST School of Business",
+    "preview": "Designed admin and reviewer dashboards for managing nominations, with real-time notifications and analytics tools to enhance user management",
+    "path": "/",
+    "type": "content",
+    "elementId": "experience-fullstack"
+  },
+  {
+    "title": "Fullstack Developer - KNUST School of Business",
+    "preview": "Utilized Next.js, Prisma ORM, and MongoDB to build a scalable backend, with future plans for multi-institution deployment and machine learning integration",
+    "path": "/about",
+    "type": "content",
+    "elementId": "experience-fullstack"
+  },
+  {
+    "title": "Fullstack Developer - KNUST School of Business",
+    "preview": "Utilized Next.js, Prisma ORM, and MongoDB to build a scalable backend, with future plans for multi-institution deployment and machine learning integration",
+    "path": "/",
+    "type": "content",
+    "elementId": "experience-fullstack"
+  },
+  {
+    "title": "Software Engineer Intern, Frontend Developer at BSystems Limited",
+    "preview": "Software Engineer Intern, Frontend Developer - BSystems Limited. Oct 2022 - Jan 2023. Developed and enhanced features for the admin dashboard of the PeoplesPay app, improving user interface and experience Implemented user authentication, verification, and various admin functionalities including managing admins, customers, transactions, and e-levy records, ensuring data security and integrity Redesigned UI components to enhance usability and visual appeal, leading to a more intuitive and engaging user experience Created detailed technical documentation for the web application, facilitating better understanding and maintenance for future developers",
+    "path": "/about",
+    "type": "content",
+    "elementId": "experience-intern"
+  },
+  {
+    "title": "Software Engineer Intern, Frontend Developer at BSystems Limited",
+    "preview": "Software Engineer Intern, Frontend Developer - BSystems Limited. Oct 2022 - Jan 2023. Developed and enhanced features for the admin dashboard of the PeoplesPay app, improving user interface and experience Implemented user authentication, verification, and various admin functionalities including managing admins, customers, transactions, and e-levy records, ensuring data security and integrity Redesigned UI components to enhance usability and visual appeal, leading to a more intuitive and engaging user experience Created detailed technical documentation for the web application, facilitating better understanding and maintenance for future developers",
+    "path": "/",
+    "type": "content",
+    "elementId": "experience-intern"
+  },
+  {
+    "title": "BSystems Limited",
+    "preview": "Software Engineer Intern, Frontend Developer position at BSystems Limited. Oct 2022 - Jan 2023. Developed and enhanced features for the admin dashboard of the PeoplesPay app, improving user interface and experience",
+    "path": "/about",
+    "type": "content",
+    "elementId": "experience-intern"
+  },
+  {
+    "title": "BSystems Limited",
+    "preview": "Software Engineer Intern, Frontend Developer position at BSystems Limited. Oct 2022 - Jan 2023. Developed and enhanced features for the admin dashboard of the PeoplesPay app, improving user interface and experience",
+    "path": "/",
+    "type": "content",
+    "elementId": "experience-intern"
+  },
+  {
+    "title": "Software Engineer Intern, Frontend Developer",
+    "preview": "Software Engineer Intern, Frontend Developer at BSystems Limited. Oct 2022 - Jan 2023. Developed and enhanced features for the admin dashboard of the PeoplesPay app, improving user interface and experience",
+    "path": "/about",
+    "type": "content",
+    "elementId": "experience-intern"
+  },
+  {
+    "title": "Software Engineer Intern, Frontend Developer",
+    "preview": "Software Engineer Intern, Frontend Developer at BSystems Limited. Oct 2022 - Jan 2023. Developed and enhanced features for the admin dashboard of the PeoplesPay app, improving user interface and experience",
+    "path": "/",
+    "type": "content",
+    "elementId": "experience-intern"
+  },
+  {
+    "title": "Software Engineer Intern, Frontend Developer - BSystems Limited",
+    "preview": "Developed and enhanced features for the admin dashboard of the PeoplesPay app, improving user interface and experience",
+    "path": "/about",
+    "type": "content",
+    "elementId": "experience-intern"
+  },
+  {
+    "title": "Software Engineer Intern, Frontend Developer - BSystems Limited",
+    "preview": "Developed and enhanced features for the admin dashboard of the PeoplesPay app, improving user interface and experience",
+    "path": "/",
+    "type": "content",
+    "elementId": "experience-intern"
+  },
+  {
+    "title": "Software Engineer Intern, Frontend Developer - BSystems Limited",
+    "preview": "Implemented user authentication, verification, and various admin functionalities including managing admins, customers, transactions, and e-levy records, ensuring data security and integrity",
+    "path": "/about",
+    "type": "content",
+    "elementId": "experience-intern"
+  },
+  {
+    "title": "Software Engineer Intern, Frontend Developer - BSystems Limited",
+    "preview": "Implemented user authentication, verification, and various admin functionalities including managing admins, customers, transactions, and e-levy records, ensuring data security and integrity",
+    "path": "/",
+    "type": "content",
+    "elementId": "experience-intern"
+  },
+  {
+    "title": "Software Engineer Intern, Frontend Developer - BSystems Limited",
+    "preview": "Redesigned UI components to enhance usability and visual appeal, leading to a more intuitive and engaging user experience",
+    "path": "/about",
+    "type": "content",
+    "elementId": "experience-intern"
+  },
+  {
+    "title": "Software Engineer Intern, Frontend Developer - BSystems Limited",
+    "preview": "Redesigned UI components to enhance usability and visual appeal, leading to a more intuitive and engaging user experience",
+    "path": "/",
+    "type": "content",
+    "elementId": "experience-intern"
+  },
+  {
+    "title": "Software Engineer Intern, Frontend Developer - BSystems Limited",
+    "preview": "Created detailed technical documentation for the web application, facilitating better understanding and maintenance for future developers",
+    "path": "/about",
+    "type": "content",
+    "elementId": "experience-intern"
+  },
+  {
+    "title": "Software Engineer Intern, Frontend Developer - BSystems Limited",
+    "preview": "Created detailed technical documentation for the web application, facilitating better understanding and maintenance for future developers",
+    "path": "/",
+    "type": "content",
+    "elementId": "experience-intern"
+  },
+  {
+    "title": "Frontend Development",
+    "preview": "Key skills: React, Next.js, TypeScript",
+    "path": "/",
+    "type": "content",
+    "elementId": "highlighted-skills"
+  },
+  {
+    "title": "Frontend Development",
+    "preview": "Key skills: React, Next.js, TypeScript",
     "path": "/skills",
+    "type": "content",
+    "elementId": "highlighted-skills"
+  },
+  {
+    "title": "Web3 Development",
+    "preview": "Key skills: Solidity, Web3.js, Ethers.js",
+    "path": "/",
+    "type": "content",
+    "elementId": "highlighted-skills"
+  },
+  {
+    "title": "Web3 Development",
+    "preview": "Key skills: Solidity, Web3.js, Ethers.js",
+    "path": "/skills",
+    "type": "content",
+    "elementId": "highlighted-skills"
+  },
+  {
+    "title": "Backend Development",
+    "preview": "Key skills: Node.js, Express, Python",
+    "path": "/",
+    "type": "content",
+    "elementId": "highlighted-skills"
+  },
+  {
+    "title": "Backend Development",
+    "preview": "Key skills: Node.js, Express, Python",
+    "path": "/skills",
+    "type": "content",
+    "elementId": "highlighted-skills"
+  },
+  {
+    "title": "Cloud Services",
+    "preview": "Key skills: Supabase, Firebase, Appwrite",
+    "path": "/",
+    "type": "content",
+    "elementId": "highlighted-skills"
+  },
+  {
+    "title": "Cloud Services",
+    "preview": "Key skills: Supabase, Firebase, Appwrite",
+    "path": "/skills",
+    "type": "content",
+    "elementId": "highlighted-skills"
+  },
+  {
+    "title": "Mobile Development",
+    "preview": "Key skills: React Native, Expo",
+    "path": "/",
+    "type": "content",
+    "elementId": "highlighted-skills"
+  },
+  {
+    "title": "Mobile Development",
+    "preview": "Key skills: React Native, Expo",
+    "path": "/skills",
+    "type": "content",
+    "elementId": "highlighted-skills"
+  },
+  {
+    "title": "Programming Languages",
+    "preview": "Programming Languages:\nJavaScript - Advanced web and mobile application development\nTypeScript - Type-safe application development with modern features\nPython - Backend development and data processing\nSolidity - Smart contract development for blockchain applications\nSQL - Database design and optimization\nHTML & CSS - Modern web development with responsive design",
+    "path": "/skills",
+    "type": "content",
+    "elementId": "languages"
+  },
+  {
+    "title": "Programming Languages",
+    "preview": "Programming Languages:\nJavaScript - Advanced web and mobile application development\nTypeScript - Type-safe application development with modern features\nPython - Backend development and data processing\nSolidity - Smart contract development for blockchain applications\nSQL - Database design and optimization\nHTML & CSS - Modern web development with responsive design",
+    "path": "/",
     "type": "content",
     "elementId": "languages"
   },
@@ -1114,9 +678,23 @@ export const searchData: SearchResultType[] = [
     "elementId": "languages"
   },
   {
+    "title": "JavaScript",
+    "preview": "JavaScript - Advanced web and mobile application development (Programming Languages)",
+    "path": "/",
+    "type": "content",
+    "elementId": "languages"
+  },
+  {
     "title": "TypeScript",
     "preview": "TypeScript - Type-safe application development with modern features (Programming Languages)",
     "path": "/skills",
+    "type": "content",
+    "elementId": "languages"
+  },
+  {
+    "title": "TypeScript",
+    "preview": "TypeScript - Type-safe application development with modern features (Programming Languages)",
+    "path": "/",
     "type": "content",
     "elementId": "languages"
   },
@@ -1128,9 +706,23 @@ export const searchData: SearchResultType[] = [
     "elementId": "languages"
   },
   {
-    "title": "Java",
-    "preview": "Java - Object-oriented programming and Android development (Programming Languages)",
+    "title": "Python",
+    "preview": "Python - Backend development and data processing (Programming Languages)",
+    "path": "/",
+    "type": "content",
+    "elementId": "languages"
+  },
+  {
+    "title": "Solidity",
+    "preview": "Solidity - Smart contract development for blockchain applications (Programming Languages)",
     "path": "/skills",
+    "type": "content",
+    "elementId": "languages"
+  },
+  {
+    "title": "Solidity",
+    "preview": "Solidity - Smart contract development for blockchain applications (Programming Languages)",
+    "path": "/",
     "type": "content",
     "elementId": "languages"
   },
@@ -1142,6 +734,13 @@ export const searchData: SearchResultType[] = [
     "elementId": "languages"
   },
   {
+    "title": "SQL",
+    "preview": "SQL - Database design and optimization (Programming Languages)",
+    "path": "/",
+    "type": "content",
+    "elementId": "languages"
+  },
+  {
     "title": "HTML & CSS",
     "preview": "HTML & CSS - Modern web development with responsive design (Programming Languages)",
     "path": "/skills",
@@ -1149,9 +748,23 @@ export const searchData: SearchResultType[] = [
     "elementId": "languages"
   },
   {
+    "title": "HTML & CSS",
+    "preview": "HTML & CSS - Modern web development with responsive design (Programming Languages)",
+    "path": "/",
+    "type": "content",
+    "elementId": "languages"
+  },
+  {
     "title": "Frameworks & Libraries",
-    "preview": "Frameworks & Libraries:\nReact - Building interactive user interfaces\nNext.js - Server-side rendering and static site generation\nExpress.js - RESTful API development\nFlask - Python web application framework\nReact Native - Cross-platform mobile development\nTailwindCSS - Utility-first CSS framework\nZustand - State management solution",
+    "preview": "Frameworks & Libraries:\nReact - Building interactive user interfaces\nNext.js - Server-side rendering and static site generation\nExpress.js - RESTful API development\nFlask - Python web application framework\nReact Native - Cross-platform mobile development\nTailwindCSS - Utility-first CSS framework\nWeb3.js - Ethereum blockchain interactions\nZustand - State management solution",
     "path": "/skills",
+    "type": "content",
+    "elementId": "frameworks"
+  },
+  {
+    "title": "Frameworks & Libraries",
+    "preview": "Frameworks & Libraries:\nReact - Building interactive user interfaces\nNext.js - Server-side rendering and static site generation\nExpress.js - RESTful API development\nFlask - Python web application framework\nReact Native - Cross-platform mobile development\nTailwindCSS - Utility-first CSS framework\nWeb3.js - Ethereum blockchain interactions\nZustand - State management solution",
+    "path": "/",
     "type": "content",
     "elementId": "frameworks"
   },
@@ -1163,9 +776,23 @@ export const searchData: SearchResultType[] = [
     "elementId": "frameworks"
   },
   {
+    "title": "React",
+    "preview": "React - Building interactive user interfaces (Frameworks & Libraries)",
+    "path": "/",
+    "type": "content",
+    "elementId": "frameworks"
+  },
+  {
     "title": "Next.js",
     "preview": "Next.js - Server-side rendering and static site generation (Frameworks & Libraries)",
     "path": "/skills",
+    "type": "content",
+    "elementId": "frameworks"
+  },
+  {
+    "title": "Next.js",
+    "preview": "Next.js - Server-side rendering and static site generation (Frameworks & Libraries)",
+    "path": "/",
     "type": "content",
     "elementId": "frameworks"
   },
@@ -1177,9 +804,23 @@ export const searchData: SearchResultType[] = [
     "elementId": "frameworks"
   },
   {
+    "title": "Express.js",
+    "preview": "Express.js - RESTful API development (Frameworks & Libraries)",
+    "path": "/",
+    "type": "content",
+    "elementId": "frameworks"
+  },
+  {
     "title": "Flask",
     "preview": "Flask - Python web application framework (Frameworks & Libraries)",
     "path": "/skills",
+    "type": "content",
+    "elementId": "frameworks"
+  },
+  {
+    "title": "Flask",
+    "preview": "Flask - Python web application framework (Frameworks & Libraries)",
+    "path": "/",
     "type": "content",
     "elementId": "frameworks"
   },
@@ -1191,9 +832,37 @@ export const searchData: SearchResultType[] = [
     "elementId": "frameworks"
   },
   {
+    "title": "React Native",
+    "preview": "React Native - Cross-platform mobile development (Frameworks & Libraries)",
+    "path": "/",
+    "type": "content",
+    "elementId": "frameworks"
+  },
+  {
     "title": "TailwindCSS",
     "preview": "TailwindCSS - Utility-first CSS framework (Frameworks & Libraries)",
     "path": "/skills",
+    "type": "content",
+    "elementId": "frameworks"
+  },
+  {
+    "title": "TailwindCSS",
+    "preview": "TailwindCSS - Utility-first CSS framework (Frameworks & Libraries)",
+    "path": "/",
+    "type": "content",
+    "elementId": "frameworks"
+  },
+  {
+    "title": "Web3.js",
+    "preview": "Web3.js - Ethereum blockchain interactions (Frameworks & Libraries)",
+    "path": "/skills",
+    "type": "content",
+    "elementId": "frameworks"
+  },
+  {
+    "title": "Web3.js",
+    "preview": "Web3.js - Ethereum blockchain interactions (Frameworks & Libraries)",
+    "path": "/",
     "type": "content",
     "elementId": "frameworks"
   },
@@ -1205,9 +874,93 @@ export const searchData: SearchResultType[] = [
     "elementId": "frameworks"
   },
   {
+    "title": "Zustand",
+    "preview": "Zustand - State management solution (Frameworks & Libraries)",
+    "path": "/",
+    "type": "content",
+    "elementId": "frameworks"
+  },
+  {
+    "title": "Web3 Technologies",
+    "preview": "Web3 Technologies:\nEthereum - Smart contract development and deployment\nSolidity - Smart contract programming\nWeb3.js - Blockchain interaction and integration\nEthers.js - Ethereum wallet integration",
+    "path": "/skills",
+    "type": "content",
+    "elementId": "web3"
+  },
+  {
+    "title": "Web3 Technologies",
+    "preview": "Web3 Technologies:\nEthereum - Smart contract development and deployment\nSolidity - Smart contract programming\nWeb3.js - Blockchain interaction and integration\nEthers.js - Ethereum wallet integration",
+    "path": "/",
+    "type": "content",
+    "elementId": "web3"
+  },
+  {
+    "title": "Ethereum",
+    "preview": "Ethereum - Smart contract development and deployment (Web3 Technologies)",
+    "path": "/skills",
+    "type": "content",
+    "elementId": "web3"
+  },
+  {
+    "title": "Ethereum",
+    "preview": "Ethereum - Smart contract development and deployment (Web3 Technologies)",
+    "path": "/",
+    "type": "content",
+    "elementId": "web3"
+  },
+  {
+    "title": "Solidity",
+    "preview": "Solidity - Smart contract programming (Web3 Technologies)",
+    "path": "/skills",
+    "type": "content",
+    "elementId": "web3"
+  },
+  {
+    "title": "Solidity",
+    "preview": "Solidity - Smart contract programming (Web3 Technologies)",
+    "path": "/",
+    "type": "content",
+    "elementId": "web3"
+  },
+  {
+    "title": "Web3.js",
+    "preview": "Web3.js - Blockchain interaction and integration (Web3 Technologies)",
+    "path": "/skills",
+    "type": "content",
+    "elementId": "web3"
+  },
+  {
+    "title": "Web3.js",
+    "preview": "Web3.js - Blockchain interaction and integration (Web3 Technologies)",
+    "path": "/",
+    "type": "content",
+    "elementId": "web3"
+  },
+  {
+    "title": "Ethers.js",
+    "preview": "Ethers.js - Ethereum wallet integration (Web3 Technologies)",
+    "path": "/skills",
+    "type": "content",
+    "elementId": "web3"
+  },
+  {
+    "title": "Ethers.js",
+    "preview": "Ethers.js - Ethereum wallet integration (Web3 Technologies)",
+    "path": "/",
+    "type": "content",
+    "elementId": "web3"
+  },
+  {
     "title": "Databases",
     "preview": "Databases:\nMySQL - Relational database management\nPostgreSQL - Advanced relational database features\nMongoDB - NoSQL database for flexible data structures",
     "path": "/skills",
+    "type": "content",
+    "elementId": "databases"
+  },
+  {
+    "title": "Databases",
+    "preview": "Databases:\nMySQL - Relational database management\nPostgreSQL - Advanced relational database features\nMongoDB - NoSQL database for flexible data structures",
+    "path": "/",
     "type": "content",
     "elementId": "databases"
   },
@@ -1219,9 +972,23 @@ export const searchData: SearchResultType[] = [
     "elementId": "databases"
   },
   {
+    "title": "MySQL",
+    "preview": "MySQL - Relational database management (Databases)",
+    "path": "/",
+    "type": "content",
+    "elementId": "databases"
+  },
+  {
     "title": "PostgreSQL",
     "preview": "PostgreSQL - Advanced relational database features (Databases)",
     "path": "/skills",
+    "type": "content",
+    "elementId": "databases"
+  },
+  {
+    "title": "PostgreSQL",
+    "preview": "PostgreSQL - Advanced relational database features (Databases)",
+    "path": "/",
     "type": "content",
     "elementId": "databases"
   },
@@ -1233,9 +1000,23 @@ export const searchData: SearchResultType[] = [
     "elementId": "databases"
   },
   {
+    "title": "MongoDB",
+    "preview": "MongoDB - NoSQL database for flexible data structures (Databases)",
+    "path": "/",
+    "type": "content",
+    "elementId": "databases"
+  },
+  {
     "title": "Developer Tools",
     "preview": "Developer Tools:\nGit - Version control and collaboration\nDocker - Containerization and deployment\nPrisma - Next-generation ORM\nSanity - Headless CMS\nVercel - Deployment and hosting platform\nVisual Studio Code - Primary development environment",
     "path": "/skills",
+    "type": "content",
+    "elementId": "tools"
+  },
+  {
+    "title": "Developer Tools",
+    "preview": "Developer Tools:\nGit - Version control and collaboration\nDocker - Containerization and deployment\nPrisma - Next-generation ORM\nSanity - Headless CMS\nVercel - Deployment and hosting platform\nVisual Studio Code - Primary development environment",
+    "path": "/",
     "type": "content",
     "elementId": "tools"
   },
@@ -1247,9 +1028,23 @@ export const searchData: SearchResultType[] = [
     "elementId": "tools"
   },
   {
+    "title": "Git",
+    "preview": "Git - Version control and collaboration (Developer Tools)",
+    "path": "/",
+    "type": "content",
+    "elementId": "tools"
+  },
+  {
     "title": "Docker",
     "preview": "Docker - Containerization and deployment (Developer Tools)",
     "path": "/skills",
+    "type": "content",
+    "elementId": "tools"
+  },
+  {
+    "title": "Docker",
+    "preview": "Docker - Containerization and deployment (Developer Tools)",
+    "path": "/",
     "type": "content",
     "elementId": "tools"
   },
@@ -1261,9 +1056,23 @@ export const searchData: SearchResultType[] = [
     "elementId": "tools"
   },
   {
+    "title": "Prisma",
+    "preview": "Prisma - Next-generation ORM (Developer Tools)",
+    "path": "/",
+    "type": "content",
+    "elementId": "tools"
+  },
+  {
     "title": "Sanity",
     "preview": "Sanity - Headless CMS (Developer Tools)",
     "path": "/skills",
+    "type": "content",
+    "elementId": "tools"
+  },
+  {
+    "title": "Sanity",
+    "preview": "Sanity - Headless CMS (Developer Tools)",
+    "path": "/",
     "type": "content",
     "elementId": "tools"
   },
@@ -1275,6 +1084,13 @@ export const searchData: SearchResultType[] = [
     "elementId": "tools"
   },
   {
+    "title": "Vercel",
+    "preview": "Vercel - Deployment and hosting platform (Developer Tools)",
+    "path": "/",
+    "type": "content",
+    "elementId": "tools"
+  },
+  {
     "title": "Visual Studio Code",
     "preview": "Visual Studio Code - Primary development environment (Developer Tools)",
     "path": "/skills",
@@ -1282,10 +1098,130 @@ export const searchData: SearchResultType[] = [
     "elementId": "tools"
   },
   {
-    "title": "Skills & Expertise",
-    "preview": "Skills & Expertise",
+    "title": "Visual Studio Code",
+    "preview": "Visual Studio Code - Primary development environment (Developer Tools)",
+    "path": "/",
+    "type": "content",
+    "elementId": "tools"
+  },
+  {
+    "title": "Cloud Services",
+    "preview": "Cloud Services:\nSupabase - Backend-as-a-Service with PostgreSQL and real-time capabilities\nFirebase - Google's platform for building and scaling web and mobile applications\nAppwrite - Open-source Backend-as-a-Service platform for modern app development",
     "path": "/skills",
-    "type": "content"
+    "type": "content",
+    "elementId": "cloud"
+  },
+  {
+    "title": "Cloud Services",
+    "preview": "Cloud Services:\nSupabase - Backend-as-a-Service with PostgreSQL and real-time capabilities\nFirebase - Google's platform for building and scaling web and mobile applications\nAppwrite - Open-source Backend-as-a-Service platform for modern app development",
+    "path": "/",
+    "type": "content",
+    "elementId": "cloud"
+  },
+  {
+    "title": "Supabase",
+    "preview": "Supabase - Backend-as-a-Service with PostgreSQL and real-time capabilities (Cloud Services)",
+    "path": "/skills",
+    "type": "content",
+    "elementId": "cloud"
+  },
+  {
+    "title": "Supabase",
+    "preview": "Supabase - Backend-as-a-Service with PostgreSQL and real-time capabilities (Cloud Services)",
+    "path": "/",
+    "type": "content",
+    "elementId": "cloud"
+  },
+  {
+    "title": "Firebase",
+    "preview": "Firebase - Google's platform for building and scaling web and mobile applications (Cloud Services)",
+    "path": "/skills",
+    "type": "content",
+    "elementId": "cloud"
+  },
+  {
+    "title": "Firebase",
+    "preview": "Firebase - Google's platform for building and scaling web and mobile applications (Cloud Services)",
+    "path": "/",
+    "type": "content",
+    "elementId": "cloud"
+  },
+  {
+    "title": "Appwrite",
+    "preview": "Appwrite - Open-source Backend-as-a-Service platform for modern app development (Cloud Services)",
+    "path": "/skills",
+    "type": "content",
+    "elementId": "cloud"
+  },
+  {
+    "title": "Appwrite",
+    "preview": "Appwrite - Open-source Backend-as-a-Service platform for modern app development (Cloud Services)",
+    "path": "/",
+    "type": "content",
+    "elementId": "cloud"
+  },
+  {
+    "title": "Contact via GitHub",
+    "preview": "github.com/EpaphrasSam",
+    "path": "/contact",
+    "type": "content",
+    "elementId": "github"
+  },
+  {
+    "title": "Contact via GitHub",
+    "preview": "github.com/EpaphrasSam",
+    "path": "/",
+    "type": "content",
+    "elementId": "github"
+  },
+  {
+    "title": "Contact via GitHub",
+    "preview": "github.com/EpaphrasSam",
+    "path": "/about",
+    "type": "content",
+    "elementId": "github"
+  },
+  {
+    "title": "Contact via LinkedIn",
+    "preview": "linkedin.com/in/isaac-sam-epaphras",
+    "path": "/contact",
+    "type": "content",
+    "elementId": "linkedin"
+  },
+  {
+    "title": "Contact via LinkedIn",
+    "preview": "linkedin.com/in/isaac-sam-epaphras",
+    "path": "/",
+    "type": "content",
+    "elementId": "linkedin"
+  },
+  {
+    "title": "Contact via LinkedIn",
+    "preview": "linkedin.com/in/isaac-sam-epaphras",
+    "path": "/about",
+    "type": "content",
+    "elementId": "linkedin"
+  },
+  {
+    "title": "Contact via Email",
+    "preview": "isinesam@gmail.com",
+    "path": "/contact",
+    "type": "content",
+    "elementId": "email"
+  },
+  {
+    "title": "Contact via Email",
+    "preview": "isinesam@gmail.com",
+    "path": "/",
+    "type": "content",
+    "elementId": "email"
+  },
+  {
+    "title": "Contact via Email",
+    "preview": "isinesam@gmail.com",
+    "path": "/about",
+    "type": "content",
+    "elementId": "email"
   }
 ];
 

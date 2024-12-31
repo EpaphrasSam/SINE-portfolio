@@ -1,21 +1,26 @@
-'use client';
+"use client";
 
 import { motion, AnimatePresence } from "framer-motion";
 import { useState, useEffect } from "react";
 
-const titles = [
+interface TypewriterTextProps {
+  texts?: string[];
+}
+
+const defaultTitles = [
   "Software Developer",
   "Frontend Engineer",
   "Backend Developer",
   "Mobile App Developer",
   "Full Stack Developer",
-  "UI/UX Enthusiast"
+  "UI/UX Enthusiast",
+  "Web3 Developer",
 ];
 
-export function TypewriterText() {
+export function TypewriterText({ texts = defaultTitles }: TypewriterTextProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
-  const [text, setText] = useState('');
+  const [text, setText] = useState("");
   const [delta, setDelta] = useState(100);
 
   useEffect(() => {
@@ -27,8 +32,8 @@ export function TypewriterText() {
   }, [text, isDeleting, currentIndex]);
 
   const tick = () => {
-    const fullText = titles[currentIndex];
-    const nextIndex = (currentIndex + 1) % titles.length;
+    const fullText = texts[currentIndex];
+    const nextIndex = (currentIndex + 1) % texts.length;
 
     if (!isDeleting) {
       setText(fullText.substring(0, text.length + 1));
@@ -42,7 +47,7 @@ export function TypewriterText() {
       setText(fullText.substring(0, text.length - 1));
       setDelta(50);
 
-      if (text === '') {
+      if (text === "") {
         setIsDeleting(false);
         setCurrentIndex(nextIndex);
         setDelta(500); // Wait before typing next word
@@ -63,7 +68,11 @@ export function TypewriterText() {
           {text}
           <motion.span
             animate={{ opacity: [1, 0] }}
-            transition={{ duration: 0.5, repeat: Infinity, repeatType: "reverse" }}
+            transition={{
+              duration: 0.5,
+              repeat: Infinity,
+              repeatType: "reverse",
+            }}
             className="inline-block w-0.5 h-6 bg-violet-500 dark:bg-violet-400 ml-1"
           />
         </span>

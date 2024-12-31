@@ -1,13 +1,13 @@
-import fs from 'fs';
-import path from 'path';
-import { parse } from '@babel/parser';
-import traverse from '@babel/traverse';
-import * as t from '@babel/types';
+import fs from "fs";
+import path from "path";
+import { parse } from "@babel/parser";
+import traverse from "@babel/traverse";
+import * as t from "@babel/types";
 
 interface SearchResult {
   title: string;
   path: string;
-  type: 'page' | 'content';
+  type: "page" | "content";
   preview: string;
   elementId?: string;
 }
@@ -17,87 +17,284 @@ const pages: SearchResult[] = [
     title: "Home",
     path: "/",
     type: "page",
-    preview: "Software Developer specializing in building exceptional digital experiences"
+    preview:
+      "Software Developer specializing in building exceptional digital experiences",
   },
   {
     title: "About Me",
     path: "/about",
     type: "page",
-    preview: "Software Developer with a passion for creating innovative solutions"
+    preview:
+      "Software Developer with a passion for creating innovative solutions",
   },
   {
     title: "My Projects",
     path: "/projects",
     type: "page",
-    preview: "Showcase of my latest work and projects"
+    preview: "Showcase of my latest work and projects",
   },
   {
     title: "Skills & Technologies",
     path: "/skills",
     type: "page",
-    preview: "Technical skills and expertise in software development"
+    preview: "Technical skills and expertise in software development",
   },
   {
     title: "Contact Me",
     path: "/contact",
     type: "page",
-    preview: "Get in touch for collaboration opportunities"
-  }
+    preview: "Get in touch for collaboration opportunities",
+  },
 ];
 
-function extractSearchableContent(code: string): SearchResult[] {
+function extractSearchableContent(
+  code: string,
+  filePath: string
+): SearchResult[] {
   const ast = parse(code, {
-    sourceType: 'module',
-    plugins: ['jsx', 'typescript'],
+    sourceType: "module",
+    plugins: ["jsx", "typescript"],
   });
 
   const results: SearchResult[] = [];
   const seenContent = new Set<string>();
 
-  function addSearchResult(title: string, preview: string, elementId?: string) {
-    const key = `${title}:${preview}`;
+  function addSearchResult(
+    title: string,
+    preview: string,
+    elementId?: string,
+    specificPath?: string
+  ) {
+    const key = `${title}:${preview}:${specificPath || ""}`;
     if (seenContent.has(key)) return;
     seenContent.add(key);
 
     results.push({
       title,
       preview,
-      path: '',  // Will be set later
-      type: 'content',
-      elementId
+      path: specificPath || "", // Will be set later if not specified
+      type: "content",
+      elementId,
     });
   }
 
   traverse(ast, {
-    // Handle arrays of objects (skills, experiences, projects, etc.)
     VariableDeclarator(path) {
       if (!t.isIdentifier(path.node.id)) return;
       const name = path.node.id.name;
-      
-      if (name === 'experiences' && t.isArrayExpression(path.node.init)) {
-        // Process experiences
-        path.node.init.elements.forEach(element => {
+
+      // Handle highlighted skills - index them for the home page
+      if (name === "highlightedSkills" && t.isArrayExpression(path.node.init)) {
+        path.node.init.elements.forEach((element) => {
           if (t.isObjectExpression(element)) {
-            let id = '', title = '', company = '', period = '';
-            const responsibilities: string[] = [];
+            let name = "";
+            const items: string[] = [];
 
-            element.properties.forEach(prop => {
-              if (!t.isObjectProperty(prop) || !t.isIdentifier(prop.key)) return;
+            element.properties.forEach((prop) => {
+              if (!t.isObjectProperty(prop) || !t.isIdentifier(prop.key))
+                return;
 
-              if (prop.key.name === 'id' && t.isStringLiteral(prop.value)) {
+              if (prop.key.name === "name" && t.isStringLiteral(prop.value)) {
+                name = prop.value.value;
+              }
+              if (
+                prop.key.name === "items" &&
+                t.isArrayExpression(prop.value)
+              ) {
+                items.push(
+                  ...prop.value.elements
+                    .filter((el): el is t.StringLiteral =>
+                      t.isStringLiteral(el)
+                    )
+                    .map((el) => el.value)
+                );
+              }
+            });
+
+            if (name && items.length > 0) {
+              // Add to home page specifically
+              addSearchResult(
+                name,
+                `Key skills: ${items.join(", ")}`,
+                "highlighted-skills",
+                "/"
+              );
+
+              // Also add to skills page for comprehensive coverage
+              addSearchResult(
+                name,
+                `Key skills: ${items.join(", ")}`,
+                "highlighted-skills",
+                "/skills"
+              );
+            }
+          }
+        });
+      }
+
+      // Handle social links and contact methods - index them for multiple pages
+      if (
+        (name === "socialLinks" || name === "contactMethods") &&
+        t.isArrayExpression(path.node.init)
+      ) {
+        path.node.init.elements.forEach((element) => {
+          if (t.isObjectExpression(element)) {
+            let id = "",
+              title = "",
+              value = "",
+              link = "";
+
+            element.properties.forEach((prop) => {
+              if (!t.isObjectProperty(prop) || !t.isIdentifier(prop.key))
+                return;
+
+              if (prop.key.name === "id" && t.isStringLiteral(prop.value)) {
                 id = prop.value.value;
               }
-              if (prop.key.name === 'title' && t.isStringLiteral(prop.value)) {
+              if (prop.key.name === "title" && t.isStringLiteral(prop.value)) {
                 title = prop.value.value;
               }
-              if (prop.key.name === 'company' && t.isStringLiteral(prop.value)) {
+              if (prop.key.name === "value" && t.isStringLiteral(prop.value)) {
+                value = prop.value.value;
+              }
+              if (prop.key.name === "link" && t.isStringLiteral(prop.value)) {
+                link = prop.value.value;
+              }
+            });
+
+            if (title && (value || link)) {
+              // Add to contact page
+              addSearchResult(
+                `Contact via ${title}`,
+                value || link,
+                id,
+                "/contact"
+              );
+
+              // Add to home page footer
+              addSearchResult(`Contact via ${title}`, value || link, id, "/");
+
+              // Add to about page
+              addSearchResult(
+                `Contact via ${title}`,
+                value || link,
+                id,
+                "/about"
+              );
+            }
+          }
+        });
+      }
+
+      // Handle skills (existing code)
+      if (name === "skills" && t.isArrayExpression(path.node.init)) {
+        path.node.init.elements.forEach((element) => {
+          if (t.isObjectExpression(element)) {
+            let id = "",
+              title = "";
+            const items: { name: string; description: string }[] = [];
+
+            element.properties.forEach((prop) => {
+              if (!t.isObjectProperty(prop) || !t.isIdentifier(prop.key))
+                return;
+
+              if (prop.key.name === "id" && t.isStringLiteral(prop.value)) {
+                id = prop.value.value;
+              }
+              if (prop.key.name === "title" && t.isStringLiteral(prop.value)) {
+                title = prop.value.value;
+              }
+              if (
+                prop.key.name === "items" &&
+                t.isArrayExpression(prop.value)
+              ) {
+                prop.value.elements.forEach((item) => {
+                  if (t.isObjectExpression(item)) {
+                    let name = "",
+                      description = "";
+                    item.properties.forEach((itemProp) => {
+                      if (
+                        !t.isObjectProperty(itemProp) ||
+                        !t.isIdentifier(itemProp.key)
+                      )
+                        return;
+                      if (
+                        itemProp.key.name === "name" &&
+                        t.isStringLiteral(itemProp.value)
+                      ) {
+                        name = itemProp.value.value;
+                      }
+                      if (
+                        itemProp.key.name === "description" &&
+                        t.isStringLiteral(itemProp.value)
+                      ) {
+                        description = itemProp.value.value;
+                      }
+                    });
+                    if (name && description) {
+                      items.push({ name, description });
+                    }
+                  }
+                });
+              }
+            });
+
+            if (title && items.length > 0) {
+              // Add category entry
+              addSearchResult(
+                title,
+                `${title}:\n${items.map((item) => `${item.name} - ${item.description}`).join("\n")}`,
+                id
+              );
+
+              // Add individual skill entries
+              items.forEach((item) => {
+                addSearchResult(
+                  item.name,
+                  `${item.name} - ${item.description} (${title})`,
+                  id
+                );
+              });
+            }
+          }
+        });
+      }
+
+      // Handle arrays of objects (skills, experiences, projects, etc.)
+      if (name === "experiences" && t.isArrayExpression(path.node.init)) {
+        // Process experiences
+        path.node.init.elements.forEach((element) => {
+          if (t.isObjectExpression(element)) {
+            let id = "",
+              title = "",
+              company = "",
+              period = "";
+            const responsibilities: string[] = [];
+
+            element.properties.forEach((prop) => {
+              if (!t.isObjectProperty(prop) || !t.isIdentifier(prop.key))
+                return;
+
+              if (prop.key.name === "id" && t.isStringLiteral(prop.value)) {
+                id = prop.value.value;
+              }
+              if (prop.key.name === "title" && t.isStringLiteral(prop.value)) {
+                title = prop.value.value;
+              }
+              if (
+                prop.key.name === "company" &&
+                t.isStringLiteral(prop.value)
+              ) {
                 company = prop.value.value;
               }
-              if (prop.key.name === 'period' && t.isStringLiteral(prop.value)) {
+              if (prop.key.name === "period" && t.isStringLiteral(prop.value)) {
                 period = prop.value.value;
               }
-              if (prop.key.name === 'responsibilities' && t.isArrayExpression(prop.value)) {
-                prop.value.elements.forEach(resp => {
+              if (
+                prop.key.name === "responsibilities" &&
+                t.isArrayExpression(prop.value)
+              ) {
+                prop.value.elements.forEach((resp) => {
                   if (t.isStringLiteral(resp)) {
                     responsibilities.push(resp.value);
                   }
@@ -108,7 +305,7 @@ function extractSearchableContent(code: string): SearchResult[] {
             if (title && company) {
               addSearchResult(
                 `${title} at ${company}`,
-                `${title} - ${company}. ${period}. ${responsibilities.join(' ')}`,
+                `${title} - ${company}. ${period}. ${responsibilities.join(" ")}`,
                 id
               );
 
@@ -124,12 +321,8 @@ function extractSearchableContent(code: string): SearchResult[] {
                 id
               );
 
-              responsibilities.forEach(resp => {
-                addSearchResult(
-                  `${title} - ${company}`,
-                  resp,
-                  id
-                );
+              responsibilities.forEach((resp) => {
+                addSearchResult(`${title} - ${company}`, resp, id);
               });
             }
           }
@@ -137,110 +330,61 @@ function extractSearchableContent(code: string): SearchResult[] {
       }
 
       // Process contact methods
-      if (name === 'contactMethods' && t.isArrayExpression(path.node.init)) {
-        path.node.init.elements.forEach(element => {
+      if (name === "contactMethods" && t.isArrayExpression(path.node.init)) {
+        path.node.init.elements.forEach((element) => {
           if (t.isObjectExpression(element)) {
-            let id = '', title = '', value = '', link = '';
+            let id = "",
+              title = "",
+              value = "",
+              link = "";
 
-            element.properties.forEach(prop => {
-              if (!t.isObjectProperty(prop) || !t.isIdentifier(prop.key)) return;
+            element.properties.forEach((prop) => {
+              if (!t.isObjectProperty(prop) || !t.isIdentifier(prop.key))
+                return;
 
-              if (prop.key.name === 'id' && t.isStringLiteral(prop.value)) {
+              if (prop.key.name === "id" && t.isStringLiteral(prop.value)) {
                 id = prop.value.value;
               }
-              if (prop.key.name === 'title' && t.isStringLiteral(prop.value)) {
+              if (prop.key.name === "title" && t.isStringLiteral(prop.value)) {
                 title = prop.value.value;
               }
-              if (prop.key.name === 'value' && t.isStringLiteral(prop.value)) {
+              if (prop.key.name === "value" && t.isStringLiteral(prop.value)) {
                 value = prop.value.value;
               }
-              if (prop.key.name === 'link' && t.isStringLiteral(prop.value)) {
+              if (prop.key.name === "link" && t.isStringLiteral(prop.value)) {
                 link = prop.value.value;
               }
             });
 
             if (title && value) {
-              addSearchResult(
-                `Contact via ${title}`,
-                value,
-                id
-              );
-            }
-          }
-        });
-      }
-      
-      if (name === 'skills' && t.isArrayExpression(path.node.init)) {
-        // Process skills
-        path.node.init.elements.forEach(element => {
-          if (t.isObjectExpression(element)) {
-            let id = '', title = '';
-            const items: { name: string, description: string }[] = [];
-
-            element.properties.forEach(prop => {
-              if (!t.isObjectProperty(prop) || !t.isIdentifier(prop.key)) return;
-
-              if (prop.key.name === 'id' && t.isStringLiteral(prop.value)) {
-                id = prop.value.value;
-              }
-              if (prop.key.name === 'title' && t.isStringLiteral(prop.value)) {
-                title = prop.value.value;
-              }
-              if (prop.key.name === 'items' && t.isArrayExpression(prop.value)) {
-                prop.value.elements.forEach(item => {
-                  if (t.isObjectExpression(item)) {
-                    let name = '', description = '';
-                    item.properties.forEach(itemProp => {
-                      if (!t.isObjectProperty(itemProp) || !t.isIdentifier(itemProp.key)) return;
-                      if (itemProp.key.name === 'name' && t.isStringLiteral(itemProp.value)) {
-                        name = itemProp.value.value;
-                      }
-                      if (itemProp.key.name === 'description' && t.isStringLiteral(itemProp.value)) {
-                        description = itemProp.value.value;
-                      }
-                    });
-                    if (name && description) {
-                      items.push({ name, description });
-                    }
-                  }
-                });
-              }
-            });
-
-            if (title && items.length > 0) {
-              // Add single entry for the skill category with all items
-              const preview = `${title}:\n${items.map(item => `${item.name} - ${item.description}`).join('\n')}`;
-              addSearchResult(title, preview, id);
-
-              // Add individual skill entries that point back to the category
-              items.forEach(item => {
-                addSearchResult(
-                  item.name,
-                  `${item.name} - ${item.description} (${title})`,
-                  id
-                );
-              });
+              addSearchResult(`Contact via ${title}`, value, id);
             }
           }
         });
       }
 
-      if (name === 'navigationCards' && t.isArrayExpression(path.node.init)) {
+      if (name === "navigationCards" && t.isArrayExpression(path.node.init)) {
         // Process navigation cards
-        path.node.init.elements.forEach(element => {
+        path.node.init.elements.forEach((element) => {
           if (t.isObjectExpression(element)) {
-            let title = '', description = '', path = '';
+            let title = "",
+              description = "",
+              path = "";
 
-            element.properties.forEach(prop => {
-              if (!t.isObjectProperty(prop) || !t.isIdentifier(prop.key)) return;
+            element.properties.forEach((prop) => {
+              if (!t.isObjectProperty(prop) || !t.isIdentifier(prop.key))
+                return;
 
-              if (prop.key.name === 'title' && t.isStringLiteral(prop.value)) {
+              if (prop.key.name === "title" && t.isStringLiteral(prop.value)) {
                 title = prop.value.value;
               }
-              if (prop.key.name === 'description' && t.isStringLiteral(prop.value)) {
+              if (
+                prop.key.name === "description" &&
+                t.isStringLiteral(prop.value)
+              ) {
                 description = prop.value.value;
               }
-              if (prop.key.name === 'path' && t.isStringLiteral(prop.value)) {
+              if (prop.key.name === "path" && t.isStringLiteral(prop.value)) {
                 path = prop.value.value;
               }
             });
@@ -251,247 +395,262 @@ function extractSearchableContent(code: string): SearchResult[] {
           }
         });
       }
+
+      // Handle projects - simplified indexing
+      if (name === "projects" && t.isArrayExpression(path.node.init)) {
+        path.node.init.elements.forEach((element) => {
+          if (t.isObjectExpression(element)) {
+            let id = "";
+            let title = "";
+            let preview = "";
+            let tech: string[] = [];
+            let type = "";
+
+            element.properties.forEach((prop) => {
+              if (!t.isObjectProperty(prop) || !t.isIdentifier(prop.key))
+                return;
+
+              if (prop.key.name === "id" && t.isStringLiteral(prop.value)) {
+                id = prop.value.value;
+              }
+              if (prop.key.name === "title" && t.isStringLiteral(prop.value)) {
+                title = prop.value.value;
+              }
+              if (
+                prop.key.name === "preview" &&
+                t.isStringLiteral(prop.value)
+              ) {
+                preview = prop.value.value;
+              }
+              if (prop.key.name === "type" && t.isStringLiteral(prop.value)) {
+                type = prop.value.value;
+              }
+              if (prop.key.name === "tech" && t.isArrayExpression(prop.value)) {
+                tech = prop.value.elements
+                  .filter((el): el is t.StringLiteral => t.isStringLiteral(el))
+                  .map((el) => el.value);
+              }
+            });
+
+            if (id && title) {
+              // Add main project entry with proper hashtag ID
+              addSearchResult(
+                title,
+                `${preview} (${tech.slice(0, 3).join(", ")})`,
+                id,
+                `/projects#${id}`
+              );
+
+              // If it's a web project, also index it for the home page
+              if (type === "web") {
+                addSearchResult(
+                  title,
+                  `${preview} (${tech.slice(0, 3).join(", ")})`,
+                  id,
+                  "/"
+                );
+              }
+            }
+          }
+        });
+      }
     },
 
-    // Handle TextHighlight components
+    // Handle TSX content
     JSXElement(path) {
       if (!t.isJSXElement(path.node)) return;
       const element = path.node;
 
-      if (t.isJSXIdentifier(element.openingElement.name) && 
-          element.openingElement.name.name === 'TextHighlight') {
-        const textAttr = element.openingElement.attributes.find(attr => 
-          t.isJSXAttribute(attr) && 
-          t.isJSXIdentifier(attr.name) && 
-          attr.name.name === 'text'
-        );
+      // Handle sections with IDs
+      const idAttr = element.openingElement.attributes.find(
+        (attr) =>
+          t.isJSXAttribute(attr) &&
+          t.isJSXIdentifier(attr.name) &&
+          attr.name.name === "id"
+      );
 
-        if (textAttr && t.isJSXAttribute(textAttr) && t.isStringLiteral(textAttr.value)) {
-          const text = textAttr.value.value;
-          addSearchResult(text, text);
+      if (
+        idAttr &&
+        t.isJSXAttribute(idAttr) &&
+        t.isStringLiteral(idAttr.value)
+      ) {
+        const sectionId = idAttr.value.value;
+        const textContent = extractTextContent(element);
+        if (textContent) {
+          // For sections in projects, use hashtag
+          const currentPath = getCurrentPath(path);
+          const sectionPath = currentPath.includes("/projects")
+            ? `${currentPath}#${sectionId}`
+            : currentPath;
+
+          addSearchResult(
+            textContent.slice(0, 50),
+            textContent,
+            sectionId,
+            sectionPath
+          );
         }
       }
-    }
+
+      // Handle SectionHeader components
+      if (
+        t.isJSXIdentifier(element.openingElement.name) &&
+        element.openingElement.name.name === "SectionHeader"
+      ) {
+        let title = "",
+          subtitle = "";
+        element.openingElement.attributes.forEach((attr) => {
+          if (!t.isJSXAttribute(attr) || !t.isJSXIdentifier(attr.name)) return;
+
+          if (attr.name.name === "title" && t.isStringLiteral(attr.value)) {
+            title = attr.value.value;
+          }
+          if (attr.name.name === "subtitle" && t.isStringLiteral(attr.value)) {
+            subtitle = attr.value.value;
+          }
+        });
+
+        if (title) {
+          const sectionId = findNearestSectionId(path);
+          const currentPath = getCurrentPath(path);
+          addSearchResult(
+            title,
+            subtitle || title,
+            sectionId,
+            sectionId ? `${currentPath}#${sectionId}` : currentPath
+          );
+        }
+      }
+
+      // Handle other components with text content
+      const textContent = extractTextContent(element);
+      if (textContent && textContent.length > 10) {
+        // Avoid indexing tiny text fragments
+        const sectionId = findNearestSectionId(path);
+        const currentPath = getCurrentPath(path);
+        addSearchResult(
+          textContent.slice(0, 50),
+          textContent,
+          sectionId,
+          sectionId ? `${currentPath}#${sectionId}` : currentPath
+        );
+      }
+    },
+
+    // Handle string literals in JSX
+    JSXText(path) {
+      const text = path.node.value.trim();
+      if (text) {
+        const sectionId = findNearestSectionId(path);
+        addSearchResult(text.slice(0, 50), text, sectionId);
+      }
+    },
   });
 
   return results;
 }
 
+// Helper function to find the nearest section ID
+function findNearestSectionId(path: any): string | undefined {
+  let current = path;
+  while (current) {
+    if (t.isJSXElement(current.node)) {
+      const idAttr = current.node.openingElement.attributes.find(
+        (attr: any) =>
+          t.isJSXAttribute(attr) &&
+          t.isJSXIdentifier(attr.name) &&
+          attr.name.name === "id"
+      );
+
+      if (
+        idAttr &&
+        t.isJSXAttribute(idAttr) &&
+        t.isStringLiteral(idAttr.value)
+      ) {
+        return idAttr.value.value;
+      }
+    }
+    current = current.parentPath;
+  }
+  return undefined;
+}
+
+// Helper function to extract text content from JSX elements
+function extractTextContent(element: t.JSXElement): string {
+  let text = "";
+
+  function traverse(node: any) {
+    if (t.isJSXText(node)) {
+      text += node.value.trim() + " ";
+    } else if (t.isJSXElement(node)) {
+      if (node.children) {
+        node.children.forEach(traverse);
+      }
+    } else if (
+      t.isJSXExpressionContainer(node) &&
+      t.isStringLiteral(node.expression)
+    ) {
+      text += node.expression.value + " ";
+    }
+  }
+
+  element.children.forEach(traverse);
+  return text.trim();
+}
+
+// Helper function to get current file path
+function getCurrentPath(path: any): string {
+  let current = path;
+  while (current) {
+    if (current.hub?.file?.opts?.filename) {
+      const filename = current.hub.file.opts.filename;
+      if (filename.includes("/app/")) {
+        const match = filename.match(/\/app\/(.*?)\/page\.tsx$/);
+        if (match) {
+          return "/" + match[1];
+        }
+        return "/";
+      }
+    }
+    current = current.parentPath;
+  }
+  return "/";
+}
+
 async function generateSearchData() {
-  const pagesDir = path.join(process.cwd(), 'src', 'app');
   const searchResults: SearchResult[] = [...pages];
+  const pagesDir = path.join(process.cwd(), "src", "app");
 
-  // Add projects to search results
-  try {
-    const projectsFile = path.join(process.cwd(), 'src', 'data', 'projects.tsx');
-    const projectsCode = fs.readFileSync(projectsFile, 'utf-8');
-    const ast = parse(projectsCode, {
-      sourceType: 'module',
-      plugins: ['jsx', 'typescript'],
-    });
-
-    traverse(ast, {
-      VariableDeclarator(path) {
-        if (
-          t.isIdentifier(path.node.id, { name: 'projects' }) &&
-          t.isArrayExpression(path.node.init)
-        ) {
-          path.node.init.elements.forEach((element) => {
-            if (t.isObjectExpression(element)) {
-              let id = '';
-              let title = '';
-              let preview = '';
-              let description: string[] = [];
-              let tech: string[] = [];
-
-              element.properties.forEach((prop) => {
-                if (
-                  t.isObjectProperty(prop) &&
-                  t.isIdentifier(prop.key)
-                ) {
-                  if (prop.key.name === 'id' && t.isStringLiteral(prop.value)) {
-                    id = prop.value.value;
-                  }
-                  if (prop.key.name === 'title' && t.isStringLiteral(prop.value)) {
-                    title = prop.value.value;
-                  }
-                  if (prop.key.name === 'preview' && t.isStringLiteral(prop.value)) {
-                    preview = prop.value.value;
-                  }
-                  if (prop.key.name === 'description' && t.isArrayExpression(prop.value)) {
-                    description = prop.value.elements
-                      .filter((el): el is t.StringLiteral => t.isStringLiteral(el))
-                      .map(el => el.value);
-                  }
-                  if (prop.key.name === 'tech' && t.isArrayExpression(prop.value)) {
-                    tech = prop.value.elements
-                      .filter((el): el is t.StringLiteral => t.isStringLiteral(el))
-                      .map(el => el.value);
-                  }
-                }
-              });
-
-              if (id && title) {
-                // Add main project entry
-                searchResults.push({
-                  title,
-                  path: '/projects',
-                  type: 'content',
-                  preview: `${preview} (Technologies: ${tech.join(', ')})`,
-                  elementId: id
-                });
-
-                // Add each description paragraph
-                description.forEach(desc => {
-                  searchResults.push({
-                    title: `${title} - Details`,
-                    path: '/projects',
-                    type: 'content',
-                    preview: desc,
-                    elementId: id
-                  });
-                });
-
-                // Add technology-specific entries
-                tech.forEach(techItem => {
-                  searchResults.push({
-                    title: `${techItem} Project: ${title}`,
-                    path: '/projects',
-                    type: 'content',
-                    preview: `${title} - Built with ${techItem}. ${preview}`,
-                    elementId: id
-                  });
-                });
-              }
-            }
-          });
-        }
-      }
-    });
-  } catch (error) {
-    console.error('Error processing projects:', error);
-  }
-
-  // Add experiences to search results
-  try {
-    const experiencesFile = path.join(process.cwd(), 'src', 'data', 'experiences.ts');
-    const experiencesCode = fs.readFileSync(experiencesFile, 'utf-8');
-    const ast = parse(experiencesCode, {
-      sourceType: 'module',
-      plugins: ['jsx', 'typescript'],
-    });
-
-    traverse(ast, {
-      VariableDeclarator(path) {
-        if (
-          t.isIdentifier(path.node.id, { name: 'experiences' }) &&
-          t.isArrayExpression(path.node.init)
-        ) {
-          path.node.init.elements.forEach((element) => {
-            if (t.isObjectExpression(element)) {
-              let id = '';
-              let title = '';
-              let company = '';
-              let period = '';
-              let responsibilities: string[] = [];
-
-              element.properties.forEach((prop) => {
-                if (
-                  t.isObjectProperty(prop) &&
-                  t.isIdentifier(prop.key)
-                ) {
-                  if (prop.key.name === 'id' && t.isStringLiteral(prop.value)) {
-                    id = prop.value.value;
-                  }
-                  if (prop.key.name === 'title' && t.isStringLiteral(prop.value)) {
-                    title = prop.value.value;
-                  }
-                  if (prop.key.name === 'company' && t.isStringLiteral(prop.value)) {
-                    company = prop.value.value;
-                  }
-                  if (prop.key.name === 'period' && t.isStringLiteral(prop.value)) {
-                    period = prop.value.value;
-                  }
-                  if (prop.key.name === 'responsibilities' && t.isArrayExpression(prop.value)) {
-                    responsibilities = prop.value.elements
-                      .filter((el): el is t.StringLiteral => t.isStringLiteral(el))
-                      .map(el => el.value);
-                  }
-                }
-              });
-
-              if (title && company) {
-                // Add main experience entry with company and title in preview
-                searchResults.push({
-                  title: `${title} at ${company}`,
-                  path: '/about',
-                  type: 'content',
-                  preview: `${title} - ${company}. ${period}. ${responsibilities.join(' ')}`,
-                  elementId: id
-                });
-
-                // Add company-specific entry
-                searchResults.push({
-                  title: company,
-                  path: '/about',
-                  type: 'content',
-                  preview: `${title} position at ${company}. ${period}. ${responsibilities[0]}`,
-                  elementId: id
-                });
-
-                // Add title-specific entry
-                searchResults.push({
-                  title: title,
-                  path: '/about',
-                  type: 'content',
-                  preview: `${title} at ${company}. ${period}. ${responsibilities[0]}`,
-                  elementId: id
-                });
-
-                // Add individual responsibility entries with job context
-                responsibilities.forEach(resp => {
-                  searchResults.push({
-                    title: `${title} - ${company}`,
-                    path: '/about',
-                    type: 'content',
-                    preview: resp,
-                    elementId: id
-                  });
-                });
-              }
-            }
-          });
-        }
-      }
-    });
-  } catch (error) {
-    console.error('Error processing experiences:', error);
-  }
-
-  function processDirectory(dirPath: string, urlPath: string = '') {
+  // Process all page files first
+  function processDirectory(dirPath: string, urlPath: string = "") {
     const entries = fs.readdirSync(dirPath);
 
     for (const entry of entries) {
       const fullPath = path.join(dirPath, entry);
       const stat = fs.statSync(fullPath);
 
-      if (stat.isDirectory() && !entry.startsWith('_') && !entry.startsWith('.')) {
+      if (
+        stat.isDirectory() &&
+        !entry.startsWith("_") &&
+        !entry.startsWith(".")
+      ) {
         processDirectory(
           fullPath,
-          urlPath + '/' + (entry === 'page' ? '' : entry)
+          urlPath + "/" + (entry === "page" ? "" : entry)
         );
       } else if (
         stat.isFile() &&
-        entry === 'page.tsx' &&
-        !dirPath.includes('api')
+        entry === "page.tsx" &&
+        !dirPath.includes("api")
       ) {
-        const code = fs.readFileSync(fullPath, 'utf-8');
-        const pagePath = urlPath || '/';
-        const results = extractSearchableContent(code);
-        
-        // Add path to all results
-        results.forEach(result => {
-          result.path = pagePath;
+        const code = fs.readFileSync(fullPath, "utf-8");
+        const pagePath = urlPath || "/";
+        const results = extractSearchableContent(code, fullPath);
+
+        results.forEach((result) => {
+          if (!result.path) {
+            result.path = pagePath;
+          }
           searchResults.push(result);
         });
       }
@@ -500,8 +659,69 @@ async function generateSearchData() {
 
   processDirectory(pagesDir);
 
+  // Then process data files
+  const dataFiles = [
+    {
+      path: "projects.tsx",
+      urlPath: "/projects",
+      additionalPaths: ["/"],
+    },
+    {
+      path: "experiences.ts",
+      urlPath: "/about",
+      additionalPaths: ["/"],
+    },
+    {
+      path: "skills.tsx",
+      urlPath: "/skills",
+      additionalPaths: ["/"],
+    },
+    {
+      path: "contact.tsx",
+      urlPath: "/contact",
+      additionalPaths: ["/", "/about"],
+    },
+  ];
+
+  for (const file of dataFiles) {
+    try {
+      const filePath = path.join(process.cwd(), "src", "data", file.path);
+      const code = fs.readFileSync(filePath, "utf-8");
+      const results = extractSearchableContent(code, file.path);
+
+      // Add paths to all results
+      results.forEach((result) => {
+        if (!result.path) {
+          // If no specific path was set during extraction, use the default path
+          result.path = file.urlPath;
+          searchResults.push(result);
+
+          // Add additional entries for pages that also show this content
+          if (file.additionalPaths) {
+            file.additionalPaths.forEach((additionalPath) => {
+              searchResults.push({
+                ...result,
+                path: additionalPath,
+              });
+            });
+          }
+        } else {
+          // If a specific path was set during extraction, use that
+          searchResults.push(result);
+        }
+      });
+    } catch (error) {
+      console.error(`Error processing ${file.path}:`, error);
+    }
+  }
+
   // Write the search data to a file
-  const outputPath = path.join(process.cwd(), 'src', 'data', 'generatedSearchData.ts');
+  const outputPath = path.join(
+    process.cwd(),
+    "src",
+    "data",
+    "generatedSearchData.ts"
+  );
   const outputContent = `// This file is auto-generated. Do not edit manually.
 export type SearchResultType = {
   title: string;

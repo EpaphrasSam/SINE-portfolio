@@ -1,5 +1,5 @@
 // This file is auto-generated. Do not edit manually.
-// Generated on 2024-11-17T00:25:03.298Z
+// Generated on 2024-12-31T07:36:36.146Z
 
 export interface ProjectImages {
   images: string[];
@@ -96,6 +96,19 @@ export const projectData: Record<string, ProjectImages> = {
       "/images/projects/DigiTechEdge/Screenshot 2024-11-15 025108.png"
     ],
     "logo": "/images/projects/DigiTechEdge/logo.png",
+    "hasLogo": true
+  },
+  "IExchange": {
+    "images": [
+      "/images/projects/IExchange/Screenshot 2024-12-31 063714.png",
+      "/images/projects/IExchange/Screenshot 2024-12-31 063730.png",
+      "/images/projects/IExchange/Screenshot 2024-12-31 063739.png",
+      "/images/projects/IExchange/Screenshot 2024-12-31 063751.png",
+      "/images/projects/IExchange/Screenshot 2024-12-31 063803.png",
+      "/images/projects/IExchange/Screenshot 2024-12-31 063816.png",
+      "/images/projects/IExchange/Screenshot 2024-12-31 063828.png"
+    ],
+    "logo": "/images/projects/IExchange/logo.png",
     "hasLogo": true
   },
   "MoMoXpress": {
