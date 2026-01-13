@@ -1,0 +1,213 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\usepackage[margin=1.4cm]{geometry}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.1in}
+\addtolength{\textwidth}{0.2in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure ATS parsable
+\pdfgentounicode=1
+
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{0pt}}
+  }
+}
+
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{0pt}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\Large \scshape Isaac Epaphras Nana Sam} \\[2mm]
+    \footnotesize \raisebox{-0.1\height}
+    \faPhone\ \underline{+233 55 142 9980} ~ 
+    \faEnvelope\ \underline{isinesam@gmail.com} ~ 
+    \faGithub\ \href{https://github.com/EpaphrasSam}{github.com/EpaphrasSam} ~ 
+    \faLinkedin\ \href{https://www.linkedin.com/in/isaac-epaphras-nana-sam-b52116196/}{linkedin/isaac-epaphras-nana-sam} ~ 
+    \faGlobe\ \href{https://www.sine-portfolio.vercel.app}{sine-portfolio.vercel.app}
+    \vspace{8pt}
+\end{center}
+
+%-----------SUMMARY-----------
+\section{Summary}
+\resumeSubHeadingListStart
+\resumeItem{Full-stack Software Developer with a Bachelor's in Computer Engineering, specializing in TypeScript, React, Next.js, and React Native. Experienced in building scalable web and mobile applications with modern JavaScript frameworks and backend technologies. Delivered production systems across healthcare, fintech, and e-commerce sectors, focusing on performance, maintainability, and user-centric design.}
+\resumeSubHeadingListEnd
+\vspace{-1pt}
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+    \resumeSubheading
+      {Kwame Nkrumah University of Science and Technology (KNUST)}{Sep 2019 -- Aug 2023}
+      {Bachelor of Science in Computer Engineering, First Class Honours}{CWA: 73.71/GPA: 3.70}
+\resumeSubHeadingListEnd
+\vspace{-1pt}
+
+%-----------HONOURS AND AWARDS-----------
+\section{Academic Honours and Awards}
+\resumeSubHeadingListStart
+\resumeItem{Best Student Award, 2021}
+\resumeSubHeadingListEnd
+\vspace{-1pt}
+
+%-----------EXPERIENCE---------------
+\section{Work Experience}
+\resumeSubHeadingListStart
+\resumeSubheading
+  {Carex Behavioral Health (via Gigsama LLC)}{Mar 2025 -- Present}
+  {Fullstack Developer}{Remote, Cincinnati, OH, USA}
+\resumeItemListStart
+  \resumeItem{Led R\&D initiatives, evaluating and implementing production tools (PostHog, Sentry, Zoho Desk) and building technical PoCs to validate EHR integrations before full implementation.}
+  \resumeItem{Architected and developed the complete frontend for Carex Scholar, a platform for managing youth behavioral health sessions and assessments, with responsive interfaces across multiple user portals.}
+  \resumeItem{Built automated scholar check-in, assessments, and group notes for scholar sessions, reducing administrative overhead by 60\%.}
+  \resumeItem{Contributed to backend development, implementing API endpoints and business logic for the Scholar platform.}
+  \resumeItem{Ensured HIPAA compliance throughout the platform, safeguarding sensitive healthcare data and minimizing audit risks.}
+\resumeItemListEnd
+\resumeItem{Technologies used: Next.js, TypeScript, Express.js, PostgreSQL.}
+
+\resumeSubheading
+  {Hurisoft}{Nov 2024 -- July 2025}
+  {Frontend Developer}{Remote}
+\resumeItemListStart
+  \resumeItem{Developed the landing page for iExchange, a P2P cryptocurrency trading platform, driving user acquisition with a modern, responsive UI.}
+  \resumeItem{Collaborated on iExchange's main trading application, building front-end components and integrating APIs for secure transactions.}
+  \resumeItem{Resolved bugs and optimized performance for Soccersm, enhancing user experience and platform reliability through targeted front-end improvements.}
+  \resumeItem{Enhanced Scrowton, an e-commerce marketplace, by adding features, fixing bugs, and maintaining the platform to support secure escrow-based transactions.}
+\resumeItemListEnd
+\resumeItem{Technologies used: Next.js, TypeScript, Express.js, Firebase.}
+
+\vspace*{1cm}
+\resumeSubheading
+  {KNUST School of Business}{Nov 2023 -- Nov 2024}
+  {Fullstack Developer}{Kumasi, Ghana}
+\resumeItemListStart
+  \resumeItem{Developed an exams attendance application and admin dashboard, improving staff accountability and administrative efficiency.}
+  \resumeItem{Built a secure web-based Voting System for faculty elections, automating vote collection and providing real-time analytics.}
+  \resumeItem{Developed a nomination platform with role-based authentication, streamlining the nomination process for university elections.}
+  \resumeItem{Designed admin dashboards for managing nominations, with real-time notifications and analytics to enhance user management.}
+\resumeItemListEnd
+\resumeItem{Technologies used: Next.js, TypeScript, Flask, MongoDB.}
+\resumeSubHeadingListEnd
+\vspace{-1pt}
+
+%-----------PROJECTS-----------
+\section{Projects}
+\resumeSubHeadingListStart
+\resumeProjectHeading
+  {\textbf{NCCRM DataHub - Crisis Response Platform}}{Next.js, TypeScript}
+\resumeItemListStart
+  \resumeItem{Developed frontend for Ghana's NCCRM crisis response platform with geospatial incident tracking.}
+  \resumeItem{Built event reporting system with comprehensive data capture integrated with backend API.}
+  \resumeItem{Implemented situational analysis dashboard with risk assessment scoring and comparative reporting tools for crisis management.}
+\resumeItemListEnd
+
+\resumeProjectHeading
+  {\textbf{Visa Ready - Visa Assessment Platform}}{Next.js, TypeScript}
+\resumeItemListStart
+  \resumeItem{Developed frontend for visa readiness assessment platform with 6-step wizard guiding travelers through eligibility evaluation across multiple categories.}
+  \resumeItem{Integrated external backend API for score calculation, displaying overall readiness percentage and breakdowns across interview, financial, documents, and language categories.}
+  \resumeItem{Built social sharing features with dynamically generated Open Graph images via Next.js API routes for multi-platform distribution.}
+\resumeItemListEnd
+
+\resumeProjectHeading
+  {\textbf{Verse Catch - Bible Verse Detection System}}{Next.js, TypeScript, SQLite, Whisper, Gemini}
+\resumeItemListStart
+  \resumeItem{Built a full-stack app to detect Bible verses in sermon audio using AI APIs.}
+  \resumeItem{Implemented WebSocket communication with Pusher for live verse updates.}
+  \resumeItem{Designed SQLite database to manage 31K+ verses across translations.}
+  \resumeItem{Developed real-time audio processing with MediaRecorder API for chunk handling.}
+\resumeItemListEnd
+
+\resumeProjectHeading
+  {\textbf{Braszy Clothing - E-commerce Application}}{Next.js, TypeScript, Prisma, MongoDB}
+\resumeItemListStart
+  \resumeItem{Built full-stack e-commerce platform with user authentication, OTP email verification, and guest checkout support.}
+  \resumeItem{Developed multi-step checkout flow with Stripe payment integration supporting multiple payment methods.}
+  \resumeItem{Implemented admin dashboard for order management, inventory tracking, and automated invoice generation.}
+  \resumeItem{Integrated Sanity CMS for product catalog management and built shopping cart with product search and filtering capabilities.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+\vspace{-1pt}
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+\small{
+\item{\textbf{Languages}: JavaScript, TypeScript, Python, SQL.}
+\item{\textbf{Libraries/Frameworks}: React, Next.js, Vue.js, React Native, Express.js, Flask.}
+\item{\textbf{Developer Tools}: Git, Docker, AWS, Prisma, Firebase.}
+\item{\textbf{Testing}: Jest, Playwright.}
+\item{\textbf{Database}: PostgreSQL, MongoDB, MySQL, SQLite.}
+}
+\end{itemize}
+\vspace{-5pt}
+
+\end{document}

@@ -2,50 +2,16 @@ import { Project } from "../types/project";
 
 export const projects: Project[] = [
   {
-    id: "VoteSphere",
-    title: "VoteSphere",
-    preview:
-      "A secure and transparent blockchain-based voting platform revolutionizing digital democracy with real-time tracking.",
-    description: [
-      "VoteSphere is a cutting-edge electronic voting platform that leverages blockchain technology to ensure transparent, secure, and tamper-proof elections.",
-      "The platform features a sophisticated role-based access system, allowing different levels of participation from voters, election administrators, and system moderators.",
-      "Users can securely authenticate using their blockchain wallets, ensuring one-person-one-vote integrity through smart contract verification.",
-      "Each vote is recorded on the Ethereum blockchain, providing immutable records and complete transparency while maintaining voter privacy.",
-      "The intuitive dashboard offers real-time election monitoring with interactive charts and analytics for live result tracking.",
-      "Election administrators can easily manage voting periods, candidate registrations, and voter verifications through a comprehensive admin interface.",
-      "Built with a focus on accessibility, the platform ensures a seamless voting experience across all devices while maintaining the highest security standards.",
-    ],
-    type: "web",
-    icon: (
-      <svg
-        className="w-6 h-6"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={2}
-          d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-        />
-      </svg>
-    ),
-    tech: ["Next.js", "Solidity", "TailwindCSS", "Web3.js", "Ethereum"],
-    url: "https://vote-sphere-chi.vercel.app",
-  },
-  {
     id: "IExchange",
     title: "IExchange Landing Page",
     preview:
-      "A dynamic landing page for a revolutionary P2P crypto trading platform, showcasing seamless fiat-to-crypto exchanges.",
+      "A dynamic landing page for a P2P cryptocurrency trading platform, showcasing seamless fiat-to-crypto exchanges.",
     description: [
       "IExchange is an innovative platform that bridges the gap between traditional finance and cryptocurrency through a secure peer-to-peer trading system.",
       "The landing page features an engaging user interface that clearly communicates the platform's unique value proposition of easy crypto-to-cash conversions.",
-      "Interactive sections showcase the platform's key features including decentralized P2P trading, built-in on-chain AML & eKYC, and seamless wallet integration.",
-      "Visitors can explore the platform's comprehensive solution for DeFi DApps integration through the P2P SDK offering.",
+      "Interactive sections showcase the platform's key features including P2P trading capabilities and secure transaction processing.",
       "The design incorporates smooth animations and transitions to create an engaging user experience while highlighting platform benefits.",
-      "A detailed whitepaper section provides in-depth information about the platform's technology and security measures.",
+      "A detailed section provides in-depth information about the platform's technology and security measures.",
       "The responsive design ensures perfect presentation across all devices, with optimized performance and accessibility.",
     ],
     type: "web",

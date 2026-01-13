@@ -14,7 +14,6 @@ const defaultTitles = [
   "Mobile App Developer",
   "Full Stack Developer",
   "UI/UX Enthusiast",
-  "Web3 Developer",
 ];
 
 export function TypewriterText({ texts = defaultTitles }: TypewriterTextProps) {

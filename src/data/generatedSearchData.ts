@@ -153,29 +153,15 @@ export const searchData: SearchResultType[] = [
     "type": "content"
   },
   {
-    "title": "VoteSphere",
-    "preview": "A secure and transparent blockchain-based voting platform revolutionizing digital democracy with real-time tracking. (Next.js, Solidity, TailwindCSS)",
-    "path": "/projects#VoteSphere",
-    "type": "content",
-    "elementId": "VoteSphere"
-  },
-  {
-    "title": "VoteSphere",
-    "preview": "A secure and transparent blockchain-based voting platform revolutionizing digital democracy with real-time tracking. (Next.js, Solidity, TailwindCSS)",
-    "path": "/",
-    "type": "content",
-    "elementId": "VoteSphere"
-  },
-  {
     "title": "IExchange Landing Page",
-    "preview": "A dynamic landing page for a revolutionary P2P crypto trading platform, showcasing seamless fiat-to-crypto exchanges. (Next.js, Typescript, TailwindCSS)",
+    "preview": "A dynamic landing page for a P2P cryptocurrency trading platform, showcasing seamless fiat-to-crypto exchanges. (Next.js, Typescript, TailwindCSS)",
     "path": "/projects#IExchange",
     "type": "content",
     "elementId": "IExchange"
   },
   {
     "title": "IExchange Landing Page",
-    "preview": "A dynamic landing page for a revolutionary P2P crypto trading platform, showcasing seamless fiat-to-crypto exchanges. (Next.js, Typescript, TailwindCSS)",
+    "preview": "A dynamic landing page for a P2P cryptocurrency trading platform, showcasing seamless fiat-to-crypto exchanges. (Next.js, Typescript, TailwindCSS)",
     "path": "/",
     "type": "content",
     "elementId": "IExchange"
@@ -279,113 +265,225 @@ export const searchData: SearchResultType[] = [
     "elementId": "DigiTechEdge"
   },
   {
+    "title": "Fullstack Developer at Carex Behavioral Health (via Gigsama LLC)",
+    "preview": "Fullstack Developer - Carex Behavioral Health (via Gigsama LLC). Mar 2025 - Present. Led R&D initiatives, evaluating and implementing production tools (PostHog, Sentry, Zoho Desk) and building technical PoCs to validate EHR integrations before full implementation Architected and developed the complete frontend for Carex Scholar, a platform for managing youth behavioral health sessions and assessments, with responsive interfaces across multiple user portals Built automated scholar check-in, assessments, and group notes for scholar sessions, reducing administrative overhead by 60% Contributed to backend development, implementing API endpoints and business logic for the Scholar platform Ensured HIPAA compliance throughout the platform, safeguarding sensitive healthcare data and minimizing audit risks",
+    "path": "/about",
+    "type": "content",
+    "elementId": "experience-carex"
+  },
+  {
+    "title": "Fullstack Developer at Carex Behavioral Health (via Gigsama LLC)",
+    "preview": "Fullstack Developer - Carex Behavioral Health (via Gigsama LLC). Mar 2025 - Present. Led R&D initiatives, evaluating and implementing production tools (PostHog, Sentry, Zoho Desk) and building technical PoCs to validate EHR integrations before full implementation Architected and developed the complete frontend for Carex Scholar, a platform for managing youth behavioral health sessions and assessments, with responsive interfaces across multiple user portals Built automated scholar check-in, assessments, and group notes for scholar sessions, reducing administrative overhead by 60% Contributed to backend development, implementing API endpoints and business logic for the Scholar platform Ensured HIPAA compliance throughout the platform, safeguarding sensitive healthcare data and minimizing audit risks",
+    "path": "/",
+    "type": "content",
+    "elementId": "experience-carex"
+  },
+  {
+    "title": "Carex Behavioral Health (via Gigsama LLC)",
+    "preview": "Fullstack Developer position at Carex Behavioral Health (via Gigsama LLC). Mar 2025 - Present. Led R&D initiatives, evaluating and implementing production tools (PostHog, Sentry, Zoho Desk) and building technical PoCs to validate EHR integrations before full implementation",
+    "path": "/about",
+    "type": "content",
+    "elementId": "experience-carex"
+  },
+  {
+    "title": "Carex Behavioral Health (via Gigsama LLC)",
+    "preview": "Fullstack Developer position at Carex Behavioral Health (via Gigsama LLC). Mar 2025 - Present. Led R&D initiatives, evaluating and implementing production tools (PostHog, Sentry, Zoho Desk) and building technical PoCs to validate EHR integrations before full implementation",
+    "path": "/",
+    "type": "content",
+    "elementId": "experience-carex"
+  },
+  {
+    "title": "Fullstack Developer",
+    "preview": "Fullstack Developer at Carex Behavioral Health (via Gigsama LLC). Mar 2025 - Present. Led R&D initiatives, evaluating and implementing production tools (PostHog, Sentry, Zoho Desk) and building technical PoCs to validate EHR integrations before full implementation",
+    "path": "/about",
+    "type": "content",
+    "elementId": "experience-carex"
+  },
+  {
+    "title": "Fullstack Developer",
+    "preview": "Fullstack Developer at Carex Behavioral Health (via Gigsama LLC). Mar 2025 - Present. Led R&D initiatives, evaluating and implementing production tools (PostHog, Sentry, Zoho Desk) and building technical PoCs to validate EHR integrations before full implementation",
+    "path": "/",
+    "type": "content",
+    "elementId": "experience-carex"
+  },
+  {
+    "title": "Fullstack Developer - Carex Behavioral Health (via Gigsama LLC)",
+    "preview": "Led R&D initiatives, evaluating and implementing production tools (PostHog, Sentry, Zoho Desk) and building technical PoCs to validate EHR integrations before full implementation",
+    "path": "/about",
+    "type": "content",
+    "elementId": "experience-carex"
+  },
+  {
+    "title": "Fullstack Developer - Carex Behavioral Health (via Gigsama LLC)",
+    "preview": "Led R&D initiatives, evaluating and implementing production tools (PostHog, Sentry, Zoho Desk) and building technical PoCs to validate EHR integrations before full implementation",
+    "path": "/",
+    "type": "content",
+    "elementId": "experience-carex"
+  },
+  {
+    "title": "Fullstack Developer - Carex Behavioral Health (via Gigsama LLC)",
+    "preview": "Architected and developed the complete frontend for Carex Scholar, a platform for managing youth behavioral health sessions and assessments, with responsive interfaces across multiple user portals",
+    "path": "/about",
+    "type": "content",
+    "elementId": "experience-carex"
+  },
+  {
+    "title": "Fullstack Developer - Carex Behavioral Health (via Gigsama LLC)",
+    "preview": "Architected and developed the complete frontend for Carex Scholar, a platform for managing youth behavioral health sessions and assessments, with responsive interfaces across multiple user portals",
+    "path": "/",
+    "type": "content",
+    "elementId": "experience-carex"
+  },
+  {
+    "title": "Fullstack Developer - Carex Behavioral Health (via Gigsama LLC)",
+    "preview": "Built automated scholar check-in, assessments, and group notes for scholar sessions, reducing administrative overhead by 60%",
+    "path": "/about",
+    "type": "content",
+    "elementId": "experience-carex"
+  },
+  {
+    "title": "Fullstack Developer - Carex Behavioral Health (via Gigsama LLC)",
+    "preview": "Built automated scholar check-in, assessments, and group notes for scholar sessions, reducing administrative overhead by 60%",
+    "path": "/",
+    "type": "content",
+    "elementId": "experience-carex"
+  },
+  {
+    "title": "Fullstack Developer - Carex Behavioral Health (via Gigsama LLC)",
+    "preview": "Contributed to backend development, implementing API endpoints and business logic for the Scholar platform",
+    "path": "/about",
+    "type": "content",
+    "elementId": "experience-carex"
+  },
+  {
+    "title": "Fullstack Developer - Carex Behavioral Health (via Gigsama LLC)",
+    "preview": "Contributed to backend development, implementing API endpoints and business logic for the Scholar platform",
+    "path": "/",
+    "type": "content",
+    "elementId": "experience-carex"
+  },
+  {
+    "title": "Fullstack Developer - Carex Behavioral Health (via Gigsama LLC)",
+    "preview": "Ensured HIPAA compliance throughout the platform, safeguarding sensitive healthcare data and minimizing audit risks",
+    "path": "/about",
+    "type": "content",
+    "elementId": "experience-carex"
+  },
+  {
+    "title": "Fullstack Developer - Carex Behavioral Health (via Gigsama LLC)",
+    "preview": "Ensured HIPAA compliance throughout the platform, safeguarding sensitive healthcare data and minimizing audit risks",
+    "path": "/",
+    "type": "content",
+    "elementId": "experience-carex"
+  },
+  {
     "title": "Frontend Developer at Hurisoft",
-    "preview": "Frontend Developer - Hurisoft. Nov 2024 - Present. Developed the landing page for iExchange, a blockchain-based platform, focusing on responsive design, modern aesthetics, and user-friendly interfaces Collaborating with the team to build the main web application for iExchange, integrating blockchain features and enabling various user offers and interactions Worked with the lead frontend developer on Soccersm to resolve bugs, improve performance, and ensure a polished user experience Ensuring accessibility, performance optimization, and seamless user interactions for all developed platforms",
+    "preview": "Frontend Developer - Hurisoft. Nov 2024 - July 2025. Developed the landing page for iExchange, a P2P cryptocurrency trading platform, driving user acquisition with a modern, responsive UI Collaborated on iExchange's main trading application, building front-end components and integrating APIs for secure transactions Resolved bugs and optimized performance for Soccersm, enhancing user experience and platform reliability through targeted front-end improvements Enhanced Scrowton, an e-commerce marketplace, by adding features, fixing bugs, and maintaining the platform to support secure escrow-based transactions",
     "path": "/about",
     "type": "content",
     "elementId": "experience-frontend"
   },
   {
     "title": "Frontend Developer at Hurisoft",
-    "preview": "Frontend Developer - Hurisoft. Nov 2024 - Present. Developed the landing page for iExchange, a blockchain-based platform, focusing on responsive design, modern aesthetics, and user-friendly interfaces Collaborating with the team to build the main web application for iExchange, integrating blockchain features and enabling various user offers and interactions Worked with the lead frontend developer on Soccersm to resolve bugs, improve performance, and ensure a polished user experience Ensuring accessibility, performance optimization, and seamless user interactions for all developed platforms",
+    "preview": "Frontend Developer - Hurisoft. Nov 2024 - July 2025. Developed the landing page for iExchange, a P2P cryptocurrency trading platform, driving user acquisition with a modern, responsive UI Collaborated on iExchange's main trading application, building front-end components and integrating APIs for secure transactions Resolved bugs and optimized performance for Soccersm, enhancing user experience and platform reliability through targeted front-end improvements Enhanced Scrowton, an e-commerce marketplace, by adding features, fixing bugs, and maintaining the platform to support secure escrow-based transactions",
     "path": "/",
     "type": "content",
     "elementId": "experience-frontend"
   },
   {
     "title": "Hurisoft",
-    "preview": "Frontend Developer position at Hurisoft. Nov 2024 - Present. Developed the landing page for iExchange, a blockchain-based platform, focusing on responsive design, modern aesthetics, and user-friendly interfaces",
+    "preview": "Frontend Developer position at Hurisoft. Nov 2024 - July 2025. Developed the landing page for iExchange, a P2P cryptocurrency trading platform, driving user acquisition with a modern, responsive UI",
     "path": "/about",
     "type": "content",
     "elementId": "experience-frontend"
   },
   {
     "title": "Hurisoft",
-    "preview": "Frontend Developer position at Hurisoft. Nov 2024 - Present. Developed the landing page for iExchange, a blockchain-based platform, focusing on responsive design, modern aesthetics, and user-friendly interfaces",
+    "preview": "Frontend Developer position at Hurisoft. Nov 2024 - July 2025. Developed the landing page for iExchange, a P2P cryptocurrency trading platform, driving user acquisition with a modern, responsive UI",
     "path": "/",
     "type": "content",
     "elementId": "experience-frontend"
   },
   {
     "title": "Frontend Developer",
-    "preview": "Frontend Developer at Hurisoft. Nov 2024 - Present. Developed the landing page for iExchange, a blockchain-based platform, focusing on responsive design, modern aesthetics, and user-friendly interfaces",
+    "preview": "Frontend Developer at Hurisoft. Nov 2024 - July 2025. Developed the landing page for iExchange, a P2P cryptocurrency trading platform, driving user acquisition with a modern, responsive UI",
     "path": "/about",
     "type": "content",
     "elementId": "experience-frontend"
   },
   {
     "title": "Frontend Developer",
-    "preview": "Frontend Developer at Hurisoft. Nov 2024 - Present. Developed the landing page for iExchange, a blockchain-based platform, focusing on responsive design, modern aesthetics, and user-friendly interfaces",
+    "preview": "Frontend Developer at Hurisoft. Nov 2024 - July 2025. Developed the landing page for iExchange, a P2P cryptocurrency trading platform, driving user acquisition with a modern, responsive UI",
     "path": "/",
     "type": "content",
     "elementId": "experience-frontend"
   },
   {
     "title": "Frontend Developer - Hurisoft",
-    "preview": "Developed the landing page for iExchange, a blockchain-based platform, focusing on responsive design, modern aesthetics, and user-friendly interfaces",
+    "preview": "Developed the landing page for iExchange, a P2P cryptocurrency trading platform, driving user acquisition with a modern, responsive UI",
     "path": "/about",
     "type": "content",
     "elementId": "experience-frontend"
   },
   {
     "title": "Frontend Developer - Hurisoft",
-    "preview": "Developed the landing page for iExchange, a blockchain-based platform, focusing on responsive design, modern aesthetics, and user-friendly interfaces",
+    "preview": "Developed the landing page for iExchange, a P2P cryptocurrency trading platform, driving user acquisition with a modern, responsive UI",
     "path": "/",
     "type": "content",
     "elementId": "experience-frontend"
   },
   {
     "title": "Frontend Developer - Hurisoft",
-    "preview": "Collaborating with the team to build the main web application for iExchange, integrating blockchain features and enabling various user offers and interactions",
+    "preview": "Collaborated on iExchange's main trading application, building front-end components and integrating APIs for secure transactions",
     "path": "/about",
     "type": "content",
     "elementId": "experience-frontend"
   },
   {
     "title": "Frontend Developer - Hurisoft",
-    "preview": "Collaborating with the team to build the main web application for iExchange, integrating blockchain features and enabling various user offers and interactions",
+    "preview": "Collaborated on iExchange's main trading application, building front-end components and integrating APIs for secure transactions",
     "path": "/",
     "type": "content",
     "elementId": "experience-frontend"
   },
   {
     "title": "Frontend Developer - Hurisoft",
-    "preview": "Worked with the lead frontend developer on Soccersm to resolve bugs, improve performance, and ensure a polished user experience",
+    "preview": "Resolved bugs and optimized performance for Soccersm, enhancing user experience and platform reliability through targeted front-end improvements",
     "path": "/about",
     "type": "content",
     "elementId": "experience-frontend"
   },
   {
     "title": "Frontend Developer - Hurisoft",
-    "preview": "Worked with the lead frontend developer on Soccersm to resolve bugs, improve performance, and ensure a polished user experience",
+    "preview": "Resolved bugs and optimized performance for Soccersm, enhancing user experience and platform reliability through targeted front-end improvements",
     "path": "/",
     "type": "content",
     "elementId": "experience-frontend"
   },
   {
     "title": "Frontend Developer - Hurisoft",
-    "preview": "Ensuring accessibility, performance optimization, and seamless user interactions for all developed platforms",
+    "preview": "Enhanced Scrowton, an e-commerce marketplace, by adding features, fixing bugs, and maintaining the platform to support secure escrow-based transactions",
     "path": "/about",
     "type": "content",
     "elementId": "experience-frontend"
   },
   {
     "title": "Frontend Developer - Hurisoft",
-    "preview": "Ensuring accessibility, performance optimization, and seamless user interactions for all developed platforms",
+    "preview": "Enhanced Scrowton, an e-commerce marketplace, by adding features, fixing bugs, and maintaining the platform to support secure escrow-based transactions",
     "path": "/",
     "type": "content",
     "elementId": "experience-frontend"
   },
   {
     "title": "Fullstack Developer at KNUST School of Business",
-    "preview": "Fullstack Developer - KNUST School of Business. Nov 2023 - Nov 2024. Developed an exams attendance application and an admin dashboard for managing schedules, improving staff accountability and administrative efficiency Built a secure, web-based Voting System for School elections, automating vote collection and providing real-time election monitoring and result analytics Created a nomination platform with role-based authentication and multi-stage workflows, streamlining the nomination process for university elections Designed admin and reviewer dashboards for managing nominations, with real-time notifications and analytics tools to enhance user management Utilized Next.js, Prisma ORM, and MongoDB to build a scalable backend, with future plans for multi-institution deployment and machine learning integration",
+    "preview": "Fullstack Developer - KNUST School of Business. Nov 2023 - Nov 2024. Developed an exams attendance application and an admin dashboard for managing schedules, improving staff accountability and administrative efficiency Built a secure, web-based Voting System for faculty elections, automating vote collection and providing real-time election monitoring and result analytics Created a nomination platform with role-based authentication and multi-stage workflows, streamlining the nomination process for university elections Designed admin and reviewer dashboards for managing nominations, with real-time notifications and analytics tools to enhance user management Utilized Next.js, Prisma ORM, and MongoDB to build a scalable backend, with future plans for multi-institution deployment and machine learning integration",
     "path": "/about",
     "type": "content",
     "elementId": "experience-fullstack"
   },
   {
     "title": "Fullstack Developer at KNUST School of Business",
-    "preview": "Fullstack Developer - KNUST School of Business. Nov 2023 - Nov 2024. Developed an exams attendance application and an admin dashboard for managing schedules, improving staff accountability and administrative efficiency Built a secure, web-based Voting System for School elections, automating vote collection and providing real-time election monitoring and result analytics Created a nomination platform with role-based authentication and multi-stage workflows, streamlining the nomination process for university elections Designed admin and reviewer dashboards for managing nominations, with real-time notifications and analytics tools to enhance user management Utilized Next.js, Prisma ORM, and MongoDB to build a scalable backend, with future plans for multi-institution deployment and machine learning integration",
+    "preview": "Fullstack Developer - KNUST School of Business. Nov 2023 - Nov 2024. Developed an exams attendance application and an admin dashboard for managing schedules, improving staff accountability and administrative efficiency Built a secure, web-based Voting System for faculty elections, automating vote collection and providing real-time election monitoring and result analytics Created a nomination platform with role-based authentication and multi-stage workflows, streamlining the nomination process for university elections Designed admin and reviewer dashboards for managing nominations, with real-time notifications and analytics tools to enhance user management Utilized Next.js, Prisma ORM, and MongoDB to build a scalable backend, with future plans for multi-institution deployment and machine learning integration",
     "path": "/",
     "type": "content",
     "elementId": "experience-fullstack"
@@ -434,14 +532,14 @@ export const searchData: SearchResultType[] = [
   },
   {
     "title": "Fullstack Developer - KNUST School of Business",
-    "preview": "Built a secure, web-based Voting System for School elections, automating vote collection and providing real-time election monitoring and result analytics",
+    "preview": "Built a secure, web-based Voting System for faculty elections, automating vote collection and providing real-time election monitoring and result analytics",
     "path": "/about",
     "type": "content",
     "elementId": "experience-fullstack"
   },
   {
     "title": "Fullstack Developer - KNUST School of Business",
-    "preview": "Built a secure, web-based Voting System for School elections, automating vote collection and providing real-time election monitoring and result analytics",
+    "preview": "Built a secure, web-based Voting System for faculty elections, automating vote collection and providing real-time election monitoring and result analytics",
     "path": "/",
     "type": "content",
     "elementId": "experience-fullstack"
@@ -601,20 +699,6 @@ export const searchData: SearchResultType[] = [
     "elementId": "highlighted-skills"
   },
   {
-    "title": "Web3 Development",
-    "preview": "Key skills: Solidity, Web3.js, Ethers.js",
-    "path": "/",
-    "type": "content",
-    "elementId": "highlighted-skills"
-  },
-  {
-    "title": "Web3 Development",
-    "preview": "Key skills: Solidity, Web3.js, Ethers.js",
-    "path": "/skills",
-    "type": "content",
-    "elementId": "highlighted-skills"
-  },
-  {
     "title": "Backend Development",
     "preview": "Key skills: Node.js, Express, Python",
     "path": "/",
@@ -630,14 +714,14 @@ export const searchData: SearchResultType[] = [
   },
   {
     "title": "Cloud Services",
-    "preview": "Key skills: Supabase, Firebase, Appwrite",
+    "preview": "Key skills: AWS, Firebase, PostgreSQL",
     "path": "/",
     "type": "content",
     "elementId": "highlighted-skills"
   },
   {
     "title": "Cloud Services",
-    "preview": "Key skills: Supabase, Firebase, Appwrite",
+    "preview": "Key skills: AWS, Firebase, PostgreSQL",
     "path": "/skills",
     "type": "content",
     "elementId": "highlighted-skills"
@@ -658,14 +742,14 @@ export const searchData: SearchResultType[] = [
   },
   {
     "title": "Programming Languages",
-    "preview": "Programming Languages:\nJavaScript - Advanced web and mobile application development\nTypeScript - Type-safe application development with modern features\nPython - Backend development and data processing\nSolidity - Smart contract development for blockchain applications\nSQL - Database design and optimization\nHTML & CSS - Modern web development with responsive design",
+    "preview": "Programming Languages:\nJavaScript - Advanced web and mobile application development\nTypeScript - Type-safe application development with modern features\nPython - Backend development and data processing\nSQL - Database design and optimization",
     "path": "/skills",
     "type": "content",
     "elementId": "languages"
   },
   {
     "title": "Programming Languages",
-    "preview": "Programming Languages:\nJavaScript - Advanced web and mobile application development\nTypeScript - Type-safe application development with modern features\nPython - Backend development and data processing\nSolidity - Smart contract development for blockchain applications\nSQL - Database design and optimization\nHTML & CSS - Modern web development with responsive design",
+    "preview": "Programming Languages:\nJavaScript - Advanced web and mobile application development\nTypeScript - Type-safe application development with modern features\nPython - Backend development and data processing\nSQL - Database design and optimization",
     "path": "/",
     "type": "content",
     "elementId": "languages"
@@ -713,20 +797,6 @@ export const searchData: SearchResultType[] = [
     "elementId": "languages"
   },
   {
-    "title": "Solidity",
-    "preview": "Solidity - Smart contract development for blockchain applications (Programming Languages)",
-    "path": "/skills",
-    "type": "content",
-    "elementId": "languages"
-  },
-  {
-    "title": "Solidity",
-    "preview": "Solidity - Smart contract development for blockchain applications (Programming Languages)",
-    "path": "/",
-    "type": "content",
-    "elementId": "languages"
-  },
-  {
     "title": "SQL",
     "preview": "SQL - Database design and optimization (Programming Languages)",
     "path": "/skills",
@@ -736,34 +806,20 @@ export const searchData: SearchResultType[] = [
   {
     "title": "SQL",
     "preview": "SQL - Database design and optimization (Programming Languages)",
-    "path": "/",
-    "type": "content",
-    "elementId": "languages"
-  },
-  {
-    "title": "HTML & CSS",
-    "preview": "HTML & CSS - Modern web development with responsive design (Programming Languages)",
-    "path": "/skills",
-    "type": "content",
-    "elementId": "languages"
-  },
-  {
-    "title": "HTML & CSS",
-    "preview": "HTML & CSS - Modern web development with responsive design (Programming Languages)",
     "path": "/",
     "type": "content",
     "elementId": "languages"
   },
   {
     "title": "Frameworks & Libraries",
-    "preview": "Frameworks & Libraries:\nReact - Building interactive user interfaces\nNext.js - Server-side rendering and static site generation\nExpress.js - RESTful API development\nFlask - Python web application framework\nReact Native - Cross-platform mobile development\nTailwindCSS - Utility-first CSS framework\nWeb3.js - Ethereum blockchain interactions\nZustand - State management solution",
+    "preview": "Frameworks & Libraries:\nReact - Building interactive user interfaces\nNext.js - Server-side rendering and static site generation\nVue.js - Progressive JavaScript framework\nExpress.js - RESTful API development\nFlask - Python web application framework\nReact Native - Cross-platform mobile development",
     "path": "/skills",
     "type": "content",
     "elementId": "frameworks"
   },
   {
     "title": "Frameworks & Libraries",
-    "preview": "Frameworks & Libraries:\nReact - Building interactive user interfaces\nNext.js - Server-side rendering and static site generation\nExpress.js - RESTful API development\nFlask - Python web application framework\nReact Native - Cross-platform mobile development\nTailwindCSS - Utility-first CSS framework\nWeb3.js - Ethereum blockchain interactions\nZustand - State management solution",
+    "preview": "Frameworks & Libraries:\nReact - Building interactive user interfaces\nNext.js - Server-side rendering and static site generation\nVue.js - Progressive JavaScript framework\nExpress.js - RESTful API development\nFlask - Python web application framework\nReact Native - Cross-platform mobile development",
     "path": "/",
     "type": "content",
     "elementId": "frameworks"
@@ -792,6 +848,20 @@ export const searchData: SearchResultType[] = [
   {
     "title": "Next.js",
     "preview": "Next.js - Server-side rendering and static site generation (Frameworks & Libraries)",
+    "path": "/",
+    "type": "content",
+    "elementId": "frameworks"
+  },
+  {
+    "title": "Vue.js",
+    "preview": "Vue.js - Progressive JavaScript framework (Frameworks & Libraries)",
+    "path": "/skills",
+    "type": "content",
+    "elementId": "frameworks"
+  },
+  {
+    "title": "Vue.js",
+    "preview": "Vue.js - Progressive JavaScript framework (Frameworks & Libraries)",
     "path": "/",
     "type": "content",
     "elementId": "frameworks"
@@ -839,141 +909,15 @@ export const searchData: SearchResultType[] = [
     "elementId": "frameworks"
   },
   {
-    "title": "TailwindCSS",
-    "preview": "TailwindCSS - Utility-first CSS framework (Frameworks & Libraries)",
-    "path": "/skills",
-    "type": "content",
-    "elementId": "frameworks"
-  },
-  {
-    "title": "TailwindCSS",
-    "preview": "TailwindCSS - Utility-first CSS framework (Frameworks & Libraries)",
-    "path": "/",
-    "type": "content",
-    "elementId": "frameworks"
-  },
-  {
-    "title": "Web3.js",
-    "preview": "Web3.js - Ethereum blockchain interactions (Frameworks & Libraries)",
-    "path": "/skills",
-    "type": "content",
-    "elementId": "frameworks"
-  },
-  {
-    "title": "Web3.js",
-    "preview": "Web3.js - Ethereum blockchain interactions (Frameworks & Libraries)",
-    "path": "/",
-    "type": "content",
-    "elementId": "frameworks"
-  },
-  {
-    "title": "Zustand",
-    "preview": "Zustand - State management solution (Frameworks & Libraries)",
-    "path": "/skills",
-    "type": "content",
-    "elementId": "frameworks"
-  },
-  {
-    "title": "Zustand",
-    "preview": "Zustand - State management solution (Frameworks & Libraries)",
-    "path": "/",
-    "type": "content",
-    "elementId": "frameworks"
-  },
-  {
-    "title": "Web3 Technologies",
-    "preview": "Web3 Technologies:\nEthereum - Smart contract development and deployment\nSolidity - Smart contract programming\nWeb3.js - Blockchain interaction and integration\nEthers.js - Ethereum wallet integration",
-    "path": "/skills",
-    "type": "content",
-    "elementId": "web3"
-  },
-  {
-    "title": "Web3 Technologies",
-    "preview": "Web3 Technologies:\nEthereum - Smart contract development and deployment\nSolidity - Smart contract programming\nWeb3.js - Blockchain interaction and integration\nEthers.js - Ethereum wallet integration",
-    "path": "/",
-    "type": "content",
-    "elementId": "web3"
-  },
-  {
-    "title": "Ethereum",
-    "preview": "Ethereum - Smart contract development and deployment (Web3 Technologies)",
-    "path": "/skills",
-    "type": "content",
-    "elementId": "web3"
-  },
-  {
-    "title": "Ethereum",
-    "preview": "Ethereum - Smart contract development and deployment (Web3 Technologies)",
-    "path": "/",
-    "type": "content",
-    "elementId": "web3"
-  },
-  {
-    "title": "Solidity",
-    "preview": "Solidity - Smart contract programming (Web3 Technologies)",
-    "path": "/skills",
-    "type": "content",
-    "elementId": "web3"
-  },
-  {
-    "title": "Solidity",
-    "preview": "Solidity - Smart contract programming (Web3 Technologies)",
-    "path": "/",
-    "type": "content",
-    "elementId": "web3"
-  },
-  {
-    "title": "Web3.js",
-    "preview": "Web3.js - Blockchain interaction and integration (Web3 Technologies)",
-    "path": "/skills",
-    "type": "content",
-    "elementId": "web3"
-  },
-  {
-    "title": "Web3.js",
-    "preview": "Web3.js - Blockchain interaction and integration (Web3 Technologies)",
-    "path": "/",
-    "type": "content",
-    "elementId": "web3"
-  },
-  {
-    "title": "Ethers.js",
-    "preview": "Ethers.js - Ethereum wallet integration (Web3 Technologies)",
-    "path": "/skills",
-    "type": "content",
-    "elementId": "web3"
-  },
-  {
-    "title": "Ethers.js",
-    "preview": "Ethers.js - Ethereum wallet integration (Web3 Technologies)",
-    "path": "/",
-    "type": "content",
-    "elementId": "web3"
-  },
-  {
     "title": "Databases",
-    "preview": "Databases:\nMySQL - Relational database management\nPostgreSQL - Advanced relational database features\nMongoDB - NoSQL database for flexible data structures",
+    "preview": "Databases:\nPostgreSQL - Advanced relational database features\nMongoDB - NoSQL database for flexible data structures\nMySQL - Relational database management\nSQLite - Lightweight embedded database for applications",
     "path": "/skills",
     "type": "content",
     "elementId": "databases"
   },
   {
     "title": "Databases",
-    "preview": "Databases:\nMySQL - Relational database management\nPostgreSQL - Advanced relational database features\nMongoDB - NoSQL database for flexible data structures",
-    "path": "/",
-    "type": "content",
-    "elementId": "databases"
-  },
-  {
-    "title": "MySQL",
-    "preview": "MySQL - Relational database management (Databases)",
-    "path": "/skills",
-    "type": "content",
-    "elementId": "databases"
-  },
-  {
-    "title": "MySQL",
-    "preview": "MySQL - Relational database management (Databases)",
+    "preview": "Databases:\nPostgreSQL - Advanced relational database features\nMongoDB - NoSQL database for flexible data structures\nMySQL - Relational database management\nSQLite - Lightweight embedded database for applications",
     "path": "/",
     "type": "content",
     "elementId": "databases"
@@ -1007,15 +951,43 @@ export const searchData: SearchResultType[] = [
     "elementId": "databases"
   },
   {
+    "title": "MySQL",
+    "preview": "MySQL - Relational database management (Databases)",
+    "path": "/skills",
+    "type": "content",
+    "elementId": "databases"
+  },
+  {
+    "title": "MySQL",
+    "preview": "MySQL - Relational database management (Databases)",
+    "path": "/",
+    "type": "content",
+    "elementId": "databases"
+  },
+  {
+    "title": "SQLite",
+    "preview": "SQLite - Lightweight embedded database for applications (Databases)",
+    "path": "/skills",
+    "type": "content",
+    "elementId": "databases"
+  },
+  {
+    "title": "SQLite",
+    "preview": "SQLite - Lightweight embedded database for applications (Databases)",
+    "path": "/",
+    "type": "content",
+    "elementId": "databases"
+  },
+  {
     "title": "Developer Tools",
-    "preview": "Developer Tools:\nGit - Version control and collaboration\nDocker - Containerization and deployment\nPrisma - Next-generation ORM\nSanity - Headless CMS\nVercel - Deployment and hosting platform\nVisual Studio Code - Primary development environment",
+    "preview": "Developer Tools:\nGit - Version control and collaboration\nDocker - Containerization and deployment\nAWS - Cloud computing and services\nPrisma - Next-generation ORM\nFirebase - Backend-as-a-Service platform\nJest - JavaScript testing framework\nPlaywright - End-to-end testing framework",
     "path": "/skills",
     "type": "content",
     "elementId": "tools"
   },
   {
     "title": "Developer Tools",
-    "preview": "Developer Tools:\nGit - Version control and collaboration\nDocker - Containerization and deployment\nPrisma - Next-generation ORM\nSanity - Headless CMS\nVercel - Deployment and hosting platform\nVisual Studio Code - Primary development environment",
+    "preview": "Developer Tools:\nGit - Version control and collaboration\nDocker - Containerization and deployment\nAWS - Cloud computing and services\nPrisma - Next-generation ORM\nFirebase - Backend-as-a-Service platform\nJest - JavaScript testing framework\nPlaywright - End-to-end testing framework",
     "path": "/",
     "type": "content",
     "elementId": "tools"
@@ -1049,6 +1021,20 @@ export const searchData: SearchResultType[] = [
     "elementId": "tools"
   },
   {
+    "title": "AWS",
+    "preview": "AWS - Cloud computing and services (Developer Tools)",
+    "path": "/skills",
+    "type": "content",
+    "elementId": "tools"
+  },
+  {
+    "title": "AWS",
+    "preview": "AWS - Cloud computing and services (Developer Tools)",
+    "path": "/",
+    "type": "content",
+    "elementId": "tools"
+  },
+  {
     "title": "Prisma",
     "preview": "Prisma - Next-generation ORM (Developer Tools)",
     "path": "/skills",
@@ -1063,71 +1049,71 @@ export const searchData: SearchResultType[] = [
     "elementId": "tools"
   },
   {
-    "title": "Sanity",
-    "preview": "Sanity - Headless CMS (Developer Tools)",
+    "title": "Firebase",
+    "preview": "Firebase - Backend-as-a-Service platform (Developer Tools)",
     "path": "/skills",
     "type": "content",
     "elementId": "tools"
   },
   {
-    "title": "Sanity",
-    "preview": "Sanity - Headless CMS (Developer Tools)",
+    "title": "Firebase",
+    "preview": "Firebase - Backend-as-a-Service platform (Developer Tools)",
     "path": "/",
     "type": "content",
     "elementId": "tools"
   },
   {
-    "title": "Vercel",
-    "preview": "Vercel - Deployment and hosting platform (Developer Tools)",
+    "title": "Jest",
+    "preview": "Jest - JavaScript testing framework (Developer Tools)",
     "path": "/skills",
     "type": "content",
     "elementId": "tools"
   },
   {
-    "title": "Vercel",
-    "preview": "Vercel - Deployment and hosting platform (Developer Tools)",
+    "title": "Jest",
+    "preview": "Jest - JavaScript testing framework (Developer Tools)",
     "path": "/",
     "type": "content",
     "elementId": "tools"
   },
   {
-    "title": "Visual Studio Code",
-    "preview": "Visual Studio Code - Primary development environment (Developer Tools)",
+    "title": "Playwright",
+    "preview": "Playwright - End-to-end testing framework (Developer Tools)",
     "path": "/skills",
     "type": "content",
     "elementId": "tools"
   },
   {
-    "title": "Visual Studio Code",
-    "preview": "Visual Studio Code - Primary development environment (Developer Tools)",
+    "title": "Playwright",
+    "preview": "Playwright - End-to-end testing framework (Developer Tools)",
     "path": "/",
     "type": "content",
     "elementId": "tools"
   },
   {
     "title": "Cloud Services",
-    "preview": "Cloud Services:\nSupabase - Backend-as-a-Service with PostgreSQL and real-time capabilities\nFirebase - Google's platform for building and scaling web and mobile applications\nAppwrite - Open-source Backend-as-a-Service platform for modern app development",
+    "preview": "Cloud Services:\nAWS - Cloud computing services and infrastructure\nFirebase - Google's platform for building and scaling web and mobile applications",
     "path": "/skills",
     "type": "content",
     "elementId": "cloud"
   },
   {
     "title": "Cloud Services",
-    "preview": "Cloud Services:\nSupabase - Backend-as-a-Service with PostgreSQL and real-time capabilities\nFirebase - Google's platform for building and scaling web and mobile applications\nAppwrite - Open-source Backend-as-a-Service platform for modern app development",
+    "preview": "Cloud Services:\nAWS - Cloud computing services and infrastructure\nFirebase - Google's platform for building and scaling web and mobile applications",
     "path": "/",
     "type": "content",
     "elementId": "cloud"
   },
   {
-    "title": "Supabase",
-    "preview": "Supabase - Backend-as-a-Service with PostgreSQL and real-time capabilities (Cloud Services)",
+    "title": "AWS",
+    "preview": "AWS - Cloud computing services and infrastructure (Cloud Services)",
     "path": "/skills",
     "type": "content",
     "elementId": "cloud"
   },
   {
-    "title": "Supabase",
-    "preview": "Supabase - Backend-as-a-Service with PostgreSQL and real-time capabilities (Cloud Services)",
+    "title": "AWS",
+    "preview": "AWS - Cloud computing services and infrastructure (Cloud Services)",
     "path": "/",
     "type": "content",
     "elementId": "cloud"
@@ -1142,20 +1128,6 @@ export const searchData: SearchResultType[] = [
   {
     "title": "Firebase",
     "preview": "Firebase - Google's platform for building and scaling web and mobile applications (Cloud Services)",
-    "path": "/",
-    "type": "content",
-    "elementId": "cloud"
-  },
-  {
-    "title": "Appwrite",
-    "preview": "Appwrite - Open-source Backend-as-a-Service platform for modern app development (Cloud Services)",
-    "path": "/skills",
-    "type": "content",
-    "elementId": "cloud"
-  },
-  {
-    "title": "Appwrite",
-    "preview": "Appwrite - Open-source Backend-as-a-Service platform for modern app development (Cloud Services)",
     "path": "/",
     "type": "content",
     "elementId": "cloud"

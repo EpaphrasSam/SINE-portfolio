@@ -1,7 +1,7 @@
 export const summary = [
   "I am a dedicated Software Developer with a Bachelor's Degree in Computer Engineering from Kwame Nkrumah University of Science and Technology (KNUST). With a First Class Honours and a CWA of 73.71 (GPA: 3.70), I have demonstrated strong academic excellence and technical aptitude.",
-  "My expertise lies in frontend and fullstack development, where I excel at creating scalable and user-friendly applications. I am proficient in modern technologies such as React, React Native, Next.js, and Express.js, with a strong foundation in both mobile and web development. Recently, I've expanded my skills into Web3 development, working with blockchain technologies like Solidity and Ethereum to build decentralized applications.",
-  "I am passionate about creating innovative solutions that solve real-world problems. My experience spans from developing mobile applications to implementing complex web systems and blockchain solutions, always focusing on delivering high-quality, maintainable code.",
+  "My expertise lies in frontend and fullstack development, where I excel at creating scalable and user-friendly applications. I am proficient in modern technologies such as React, React Native, Next.js, and Express.js, with a strong foundation in both mobile and web development.",
+  "I am passionate about creating innovative solutions that solve real-world problems. My experience spans from developing mobile applications to implementing complex web systems across healthcare, fintech, and e-commerce sectors, always focusing on delivering high-quality, maintainable code.",
 ];
 
 export const education = {
@@ -17,15 +17,28 @@ export const education = {
 
 export const experiences = [
   {
+    id: "experience-carex",
+    title: "Fullstack Developer",
+    company: "Carex Behavioral Health (via Gigsama LLC)",
+    period: "Mar 2025 - Present",
+    responsibilities: [
+      "Led R&D initiatives, evaluating and implementing production tools (PostHog, Sentry, Zoho Desk) and building technical PoCs to validate EHR integrations before full implementation",
+      "Architected and developed the complete frontend for Carex Scholar, a platform for managing youth behavioral health sessions and assessments, with responsive interfaces across multiple user portals",
+      "Built automated scholar check-in, assessments, and group notes for scholar sessions, reducing administrative overhead by 60%",
+      "Contributed to backend development, implementing API endpoints and business logic for the Scholar platform",
+      "Ensured HIPAA compliance throughout the platform, safeguarding sensitive healthcare data and minimizing audit risks",
+    ],
+  },
+  {
     id: "experience-frontend",
     title: "Frontend Developer",
     company: "Hurisoft",
-    period: "Nov 2024 - Present",
+    period: "Nov 2024 - July 2025",
     responsibilities: [
-      "Developed the landing page for iExchange, a blockchain-based platform, focusing on responsive design, modern aesthetics, and user-friendly interfaces",
-      "Collaborating with the team to build the main web application for iExchange, integrating blockchain features and enabling various user offers and interactions",
-      "Worked with the lead frontend developer on Soccersm to resolve bugs, improve performance, and ensure a polished user experience",
-      "Ensuring accessibility, performance optimization, and seamless user interactions for all developed platforms",
+      "Developed the landing page for iExchange, a P2P cryptocurrency trading platform, driving user acquisition with a modern, responsive UI",
+      "Collaborated on iExchange's main trading application, building front-end components and integrating APIs for secure transactions",
+      "Resolved bugs and optimized performance for Soccersm, enhancing user experience and platform reliability through targeted front-end improvements",
+      "Enhanced Scrowton, an e-commerce marketplace, by adding features, fixing bugs, and maintaining the platform to support secure escrow-based transactions",
     ],
   },
   {
@@ -35,7 +48,7 @@ export const experiences = [
     period: "Nov 2023 - Nov 2024",
     responsibilities: [
       "Developed an exams attendance application and an admin dashboard for managing schedules, improving staff accountability and administrative efficiency",
-      "Built a secure, web-based Voting System for School elections, automating vote collection and providing real-time election monitoring and result analytics",
+      "Built a secure, web-based Voting System for faculty elections, automating vote collection and providing real-time election monitoring and result analytics",
       "Created a nomination platform with role-based authentication and multi-stage workflows, streamlining the nomination process for university elections",
       "Designed admin and reviewer dashboards for managing nominations, with real-time notifications and analytics tools to enhance user management",
       "Utilized Next.js, Prisma ORM, and MongoDB to build a scalable backend, with future plans for multi-institution deployment and machine learning integration",

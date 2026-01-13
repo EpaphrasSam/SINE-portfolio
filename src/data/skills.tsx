@@ -14,9 +14,8 @@ interface Skill {
 
 export const highlightedSkills = [
   { name: "Frontend Development", items: ["React", "Next.js", "TypeScript"] },
-  { name: "Web3 Development", items: ["Solidity", "Web3.js", "Ethers.js"] },
   { name: "Backend Development", items: ["Node.js", "Express", "Python"] },
-  { name: "Cloud Services", items: ["Supabase", "Firebase", "Appwrite"] },
+  { name: "Cloud Services", items: ["AWS", "Firebase", "PostgreSQL"] },
   { name: "Mobile Development", items: ["React Native", "Expo"] },
 ];
 
@@ -52,15 +51,7 @@ export const skills: Skill[] = [
         name: "Python",
         description: "Backend development and data processing",
       },
-      {
-        name: "Solidity",
-        description: "Smart contract development for blockchain applications",
-      },
       { name: "SQL", description: "Database design and optimization" },
-      {
-        name: "HTML & CSS",
-        description: "Modern web development with responsive design",
-      },
     ],
   },
   {
@@ -87,46 +78,13 @@ export const skills: Skill[] = [
         name: "Next.js",
         description: "Server-side rendering and static site generation",
       },
+      { name: "Vue.js", description: "Progressive JavaScript framework" },
       { name: "Express.js", description: "RESTful API development" },
       { name: "Flask", description: "Python web application framework" },
       {
         name: "React Native",
         description: "Cross-platform mobile development",
       },
-      { name: "TailwindCSS", description: "Utility-first CSS framework" },
-      { name: "Web3.js", description: "Ethereum blockchain interactions" },
-      { name: "Zustand", description: "State management solution" },
-    ],
-  },
-  {
-    id: "web3",
-    title: "Web3 Technologies",
-    icon: (
-      <svg
-        className="w-6 h-6"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={2}
-          d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"
-        />
-      </svg>
-    ),
-    items: [
-      {
-        name: "Ethereum",
-        description: "Smart contract development and deployment",
-      },
-      { name: "Solidity", description: "Smart contract programming" },
-      {
-        name: "Web3.js",
-        description: "Blockchain interaction and integration",
-      },
-      { name: "Ethers.js", description: "Ethereum wallet integration" },
     ],
   },
   {
@@ -148,7 +106,6 @@ export const skills: Skill[] = [
       </svg>
     ),
     items: [
-      { name: "MySQL", description: "Relational database management" },
       {
         name: "PostgreSQL",
         description: "Advanced relational database features",
@@ -156,6 +113,11 @@ export const skills: Skill[] = [
       {
         name: "MongoDB",
         description: "NoSQL database for flexible data structures",
+      },
+      { name: "MySQL", description: "Relational database management" },
+      {
+        name: "SQLite",
+        description: "Lightweight embedded database for applications",
       },
     ],
   },
@@ -186,13 +148,11 @@ export const skills: Skill[] = [
     items: [
       { name: "Git", description: "Version control and collaboration" },
       { name: "Docker", description: "Containerization and deployment" },
+      { name: "AWS", description: "Cloud computing and services" },
       { name: "Prisma", description: "Next-generation ORM" },
-      { name: "Sanity", description: "Headless CMS" },
-      { name: "Vercel", description: "Deployment and hosting platform" },
-      {
-        name: "Visual Studio Code",
-        description: "Primary development environment",
-      },
+      { name: "Firebase", description: "Backend-as-a-Service platform" },
+      { name: "Jest", description: "JavaScript testing framework" },
+      { name: "Playwright", description: "End-to-end testing framework" },
     ],
   },
   {
@@ -215,14 +175,19 @@ export const skills: Skill[] = [
     ),
     items: [
       {
-        name: "Supabase",
+        name: "AWS",
         description:
-          "Backend-as-a-Service with PostgreSQL and real-time capabilities",
+          "Cloud computing services and infrastructure",
       },
       {
         name: "Firebase",
         description:
           "Google's platform for building and scaling web and mobile applications",
+      },
+      {
+        name: "Supabase",
+        description:
+          "Backend-as-a-Service with PostgreSQL and real-time capabilities",
       },
       {
         name: "Appwrite",
