@@ -39,6 +39,18 @@ export const searchData: SearchResultType[] = [
     "preview": "Get in touch for collaboration opportunities"
   },
   {
+    "title": "Download CV",
+    "preview": "Download CV",
+    "path": "/",
+    "type": "content"
+  },
+  {
+    "title": "Download CV",
+    "preview": "Download CV",
+    "path": "/about",
+    "type": "content"
+  },
+  {
     "title": "•",
     "preview": "•",
     "path": "/about",
@@ -398,210 +410,210 @@ export const searchData: SearchResultType[] = [
     "elementId": "WeMoveManager"
   },
   {
-    "title": "Fullstack Developer at Carex Behavioral Health (via Gigsama LLC)",
-    "preview": "Fullstack Developer - Carex Behavioral Health (via Gigsama LLC). Mar 2025 - Present. Led R&D initiatives, evaluating and implementing production tools (PostHog, Sentry, Zoho Desk) and building technical PoCs to validate EHR integrations before full implementation Architected and developed the complete frontend for Carex Scholar, a platform for managing youth behavioral health sessions and assessments, with responsive interfaces across multiple user portals Built automated scholar check-in, assessments, and group notes for scholar sessions, reducing administrative overhead by 60% Contributed to backend development, implementing API endpoints and business logic for the Scholar platform Ensured HIPAA compliance throughout the platform, safeguarding sensitive healthcare data and minimizing audit risks",
+    "title": "Fullstack Developer at Gigsama LLC",
+    "preview": "Fullstack Developer - Gigsama LLC. Mar 2025 - Mar 2026. Led R&D initiatives, evaluating and implementing production tools (PostHog, Sentry, Zoho Desk) and building technical PoCs to validate EHR integrations before full implementation Architected and developed the complete frontend for Carex Scholar, a platform for managing youth behavioral health sessions and assessments, with responsive interfaces across multiple user portals Built automated scholar check-in, assessments, and group notes for scholar sessions, reducing administrative overhead by 60% Contributed to backend development, implementing API endpoints and business logic for the Scholar platform Ensured HIPAA compliance throughout the platform, safeguarding sensitive healthcare data and minimizing audit risks",
     "path": "/about",
     "type": "content",
     "elementId": "experience-carex"
   },
   {
-    "title": "Fullstack Developer at Carex Behavioral Health (via Gigsama LLC)",
-    "preview": "Fullstack Developer - Carex Behavioral Health (via Gigsama LLC). Mar 2025 - Present. Led R&D initiatives, evaluating and implementing production tools (PostHog, Sentry, Zoho Desk) and building technical PoCs to validate EHR integrations before full implementation Architected and developed the complete frontend for Carex Scholar, a platform for managing youth behavioral health sessions and assessments, with responsive interfaces across multiple user portals Built automated scholar check-in, assessments, and group notes for scholar sessions, reducing administrative overhead by 60% Contributed to backend development, implementing API endpoints and business logic for the Scholar platform Ensured HIPAA compliance throughout the platform, safeguarding sensitive healthcare data and minimizing audit risks",
+    "title": "Fullstack Developer at Gigsama LLC",
+    "preview": "Fullstack Developer - Gigsama LLC. Mar 2025 - Mar 2026. Led R&D initiatives, evaluating and implementing production tools (PostHog, Sentry, Zoho Desk) and building technical PoCs to validate EHR integrations before full implementation Architected and developed the complete frontend for Carex Scholar, a platform for managing youth behavioral health sessions and assessments, with responsive interfaces across multiple user portals Built automated scholar check-in, assessments, and group notes for scholar sessions, reducing administrative overhead by 60% Contributed to backend development, implementing API endpoints and business logic for the Scholar platform Ensured HIPAA compliance throughout the platform, safeguarding sensitive healthcare data and minimizing audit risks",
     "path": "/",
     "type": "content",
     "elementId": "experience-carex"
   },
   {
-    "title": "Carex Behavioral Health (via Gigsama LLC)",
-    "preview": "Fullstack Developer position at Carex Behavioral Health (via Gigsama LLC). Mar 2025 - Present. Led R&D initiatives, evaluating and implementing production tools (PostHog, Sentry, Zoho Desk) and building technical PoCs to validate EHR integrations before full implementation",
+    "title": "Gigsama LLC",
+    "preview": "Fullstack Developer position at Gigsama LLC. Mar 2025 - Mar 2026. Led R&D initiatives, evaluating and implementing production tools (PostHog, Sentry, Zoho Desk) and building technical PoCs to validate EHR integrations before full implementation",
     "path": "/about",
     "type": "content",
     "elementId": "experience-carex"
   },
   {
-    "title": "Carex Behavioral Health (via Gigsama LLC)",
-    "preview": "Fullstack Developer position at Carex Behavioral Health (via Gigsama LLC). Mar 2025 - Present. Led R&D initiatives, evaluating and implementing production tools (PostHog, Sentry, Zoho Desk) and building technical PoCs to validate EHR integrations before full implementation",
+    "title": "Gigsama LLC",
+    "preview": "Fullstack Developer position at Gigsama LLC. Mar 2025 - Mar 2026. Led R&D initiatives, evaluating and implementing production tools (PostHog, Sentry, Zoho Desk) and building technical PoCs to validate EHR integrations before full implementation",
     "path": "/",
     "type": "content",
     "elementId": "experience-carex"
   },
   {
     "title": "Fullstack Developer",
-    "preview": "Fullstack Developer at Carex Behavioral Health (via Gigsama LLC). Mar 2025 - Present. Led R&D initiatives, evaluating and implementing production tools (PostHog, Sentry, Zoho Desk) and building technical PoCs to validate EHR integrations before full implementation",
+    "preview": "Fullstack Developer at Gigsama LLC. Mar 2025 - Mar 2026. Led R&D initiatives, evaluating and implementing production tools (PostHog, Sentry, Zoho Desk) and building technical PoCs to validate EHR integrations before full implementation",
     "path": "/about",
     "type": "content",
     "elementId": "experience-carex"
   },
   {
     "title": "Fullstack Developer",
-    "preview": "Fullstack Developer at Carex Behavioral Health (via Gigsama LLC). Mar 2025 - Present. Led R&D initiatives, evaluating and implementing production tools (PostHog, Sentry, Zoho Desk) and building technical PoCs to validate EHR integrations before full implementation",
+    "preview": "Fullstack Developer at Gigsama LLC. Mar 2025 - Mar 2026. Led R&D initiatives, evaluating and implementing production tools (PostHog, Sentry, Zoho Desk) and building technical PoCs to validate EHR integrations before full implementation",
     "path": "/",
     "type": "content",
     "elementId": "experience-carex"
   },
   {
-    "title": "Fullstack Developer - Carex Behavioral Health (via Gigsama LLC)",
+    "title": "Fullstack Developer - Gigsama LLC",
     "preview": "Led R&D initiatives, evaluating and implementing production tools (PostHog, Sentry, Zoho Desk) and building technical PoCs to validate EHR integrations before full implementation",
     "path": "/about",
     "type": "content",
     "elementId": "experience-carex"
   },
   {
-    "title": "Fullstack Developer - Carex Behavioral Health (via Gigsama LLC)",
+    "title": "Fullstack Developer - Gigsama LLC",
     "preview": "Led R&D initiatives, evaluating and implementing production tools (PostHog, Sentry, Zoho Desk) and building technical PoCs to validate EHR integrations before full implementation",
     "path": "/",
     "type": "content",
     "elementId": "experience-carex"
   },
   {
-    "title": "Fullstack Developer - Carex Behavioral Health (via Gigsama LLC)",
+    "title": "Fullstack Developer - Gigsama LLC",
     "preview": "Architected and developed the complete frontend for Carex Scholar, a platform for managing youth behavioral health sessions and assessments, with responsive interfaces across multiple user portals",
     "path": "/about",
     "type": "content",
     "elementId": "experience-carex"
   },
   {
-    "title": "Fullstack Developer - Carex Behavioral Health (via Gigsama LLC)",
+    "title": "Fullstack Developer - Gigsama LLC",
     "preview": "Architected and developed the complete frontend for Carex Scholar, a platform for managing youth behavioral health sessions and assessments, with responsive interfaces across multiple user portals",
     "path": "/",
     "type": "content",
     "elementId": "experience-carex"
   },
   {
-    "title": "Fullstack Developer - Carex Behavioral Health (via Gigsama LLC)",
+    "title": "Fullstack Developer - Gigsama LLC",
     "preview": "Built automated scholar check-in, assessments, and group notes for scholar sessions, reducing administrative overhead by 60%",
     "path": "/about",
     "type": "content",
     "elementId": "experience-carex"
   },
   {
-    "title": "Fullstack Developer - Carex Behavioral Health (via Gigsama LLC)",
+    "title": "Fullstack Developer - Gigsama LLC",
     "preview": "Built automated scholar check-in, assessments, and group notes for scholar sessions, reducing administrative overhead by 60%",
     "path": "/",
     "type": "content",
     "elementId": "experience-carex"
   },
   {
-    "title": "Fullstack Developer - Carex Behavioral Health (via Gigsama LLC)",
+    "title": "Fullstack Developer - Gigsama LLC",
     "preview": "Contributed to backend development, implementing API endpoints and business logic for the Scholar platform",
     "path": "/about",
     "type": "content",
     "elementId": "experience-carex"
   },
   {
-    "title": "Fullstack Developer - Carex Behavioral Health (via Gigsama LLC)",
+    "title": "Fullstack Developer - Gigsama LLC",
     "preview": "Contributed to backend development, implementing API endpoints and business logic for the Scholar platform",
     "path": "/",
     "type": "content",
     "elementId": "experience-carex"
   },
   {
-    "title": "Fullstack Developer - Carex Behavioral Health (via Gigsama LLC)",
+    "title": "Fullstack Developer - Gigsama LLC",
     "preview": "Ensured HIPAA compliance throughout the platform, safeguarding sensitive healthcare data and minimizing audit risks",
     "path": "/about",
     "type": "content",
     "elementId": "experience-carex"
   },
   {
-    "title": "Fullstack Developer - Carex Behavioral Health (via Gigsama LLC)",
+    "title": "Fullstack Developer - Gigsama LLC",
     "preview": "Ensured HIPAA compliance throughout the platform, safeguarding sensitive healthcare data and minimizing audit risks",
     "path": "/",
     "type": "content",
     "elementId": "experience-carex"
   },
   {
-    "title": "Frontend Developer at Hurisoft",
-    "preview": "Frontend Developer - Hurisoft. Nov 2024 - July 2025. Developed the landing page for iExchange, a P2P cryptocurrency trading platform, driving user acquisition with a modern, responsive UI Collaborated on iExchange's main trading application, building front-end components and integrating APIs for secure transactions Resolved bugs and optimized performance for Soccersm, enhancing user experience and platform reliability through targeted front-end improvements Enhanced Scrowton, an e-commerce marketplace, by adding features, fixing bugs, and maintaining the platform to support secure escrow-based transactions",
+    "title": "Fullstack Developer at Hurisoft",
+    "preview": "Fullstack Developer - Hurisoft. Nov 2024 - July 2025. Developed the landing page for iExchange, a P2P cryptocurrency trading platform, driving user acquisition with a modern, responsive UI Collaborated on iExchange's main trading application, building front-end components and integrating APIs for secure transactions Resolved bugs and optimized performance for Soccersm, enhancing user experience and platform reliability through targeted front-end improvements Enhanced Scrowton, an e-commerce marketplace, by adding features, fixing bugs, and maintaining the platform to support secure escrow-based transactions",
     "path": "/about",
     "type": "content",
     "elementId": "experience-frontend"
   },
   {
-    "title": "Frontend Developer at Hurisoft",
-    "preview": "Frontend Developer - Hurisoft. Nov 2024 - July 2025. Developed the landing page for iExchange, a P2P cryptocurrency trading platform, driving user acquisition with a modern, responsive UI Collaborated on iExchange's main trading application, building front-end components and integrating APIs for secure transactions Resolved bugs and optimized performance for Soccersm, enhancing user experience and platform reliability through targeted front-end improvements Enhanced Scrowton, an e-commerce marketplace, by adding features, fixing bugs, and maintaining the platform to support secure escrow-based transactions",
+    "title": "Fullstack Developer at Hurisoft",
+    "preview": "Fullstack Developer - Hurisoft. Nov 2024 - July 2025. Developed the landing page for iExchange, a P2P cryptocurrency trading platform, driving user acquisition with a modern, responsive UI Collaborated on iExchange's main trading application, building front-end components and integrating APIs for secure transactions Resolved bugs and optimized performance for Soccersm, enhancing user experience and platform reliability through targeted front-end improvements Enhanced Scrowton, an e-commerce marketplace, by adding features, fixing bugs, and maintaining the platform to support secure escrow-based transactions",
     "path": "/",
     "type": "content",
     "elementId": "experience-frontend"
   },
   {
     "title": "Hurisoft",
-    "preview": "Frontend Developer position at Hurisoft. Nov 2024 - July 2025. Developed the landing page for iExchange, a P2P cryptocurrency trading platform, driving user acquisition with a modern, responsive UI",
+    "preview": "Fullstack Developer position at Hurisoft. Nov 2024 - July 2025. Developed the landing page for iExchange, a P2P cryptocurrency trading platform, driving user acquisition with a modern, responsive UI",
     "path": "/about",
     "type": "content",
     "elementId": "experience-frontend"
   },
   {
     "title": "Hurisoft",
-    "preview": "Frontend Developer position at Hurisoft. Nov 2024 - July 2025. Developed the landing page for iExchange, a P2P cryptocurrency trading platform, driving user acquisition with a modern, responsive UI",
+    "preview": "Fullstack Developer position at Hurisoft. Nov 2024 - July 2025. Developed the landing page for iExchange, a P2P cryptocurrency trading platform, driving user acquisition with a modern, responsive UI",
     "path": "/",
     "type": "content",
     "elementId": "experience-frontend"
   },
   {
-    "title": "Frontend Developer",
-    "preview": "Frontend Developer at Hurisoft. Nov 2024 - July 2025. Developed the landing page for iExchange, a P2P cryptocurrency trading platform, driving user acquisition with a modern, responsive UI",
+    "title": "Fullstack Developer",
+    "preview": "Fullstack Developer at Hurisoft. Nov 2024 - July 2025. Developed the landing page for iExchange, a P2P cryptocurrency trading platform, driving user acquisition with a modern, responsive UI",
     "path": "/about",
     "type": "content",
     "elementId": "experience-frontend"
   },
   {
-    "title": "Frontend Developer",
-    "preview": "Frontend Developer at Hurisoft. Nov 2024 - July 2025. Developed the landing page for iExchange, a P2P cryptocurrency trading platform, driving user acquisition with a modern, responsive UI",
+    "title": "Fullstack Developer",
+    "preview": "Fullstack Developer at Hurisoft. Nov 2024 - July 2025. Developed the landing page for iExchange, a P2P cryptocurrency trading platform, driving user acquisition with a modern, responsive UI",
     "path": "/",
     "type": "content",
     "elementId": "experience-frontend"
   },
   {
-    "title": "Frontend Developer - Hurisoft",
+    "title": "Fullstack Developer - Hurisoft",
     "preview": "Developed the landing page for iExchange, a P2P cryptocurrency trading platform, driving user acquisition with a modern, responsive UI",
     "path": "/about",
     "type": "content",
     "elementId": "experience-frontend"
   },
   {
-    "title": "Frontend Developer - Hurisoft",
+    "title": "Fullstack Developer - Hurisoft",
     "preview": "Developed the landing page for iExchange, a P2P cryptocurrency trading platform, driving user acquisition with a modern, responsive UI",
     "path": "/",
     "type": "content",
     "elementId": "experience-frontend"
   },
   {
-    "title": "Frontend Developer - Hurisoft",
+    "title": "Fullstack Developer - Hurisoft",
     "preview": "Collaborated on iExchange's main trading application, building front-end components and integrating APIs for secure transactions",
     "path": "/about",
     "type": "content",
     "elementId": "experience-frontend"
   },
   {
-    "title": "Frontend Developer - Hurisoft",
+    "title": "Fullstack Developer - Hurisoft",
     "preview": "Collaborated on iExchange's main trading application, building front-end components and integrating APIs for secure transactions",
     "path": "/",
     "type": "content",
     "elementId": "experience-frontend"
   },
   {
-    "title": "Frontend Developer - Hurisoft",
+    "title": "Fullstack Developer - Hurisoft",
     "preview": "Resolved bugs and optimized performance for Soccersm, enhancing user experience and platform reliability through targeted front-end improvements",
     "path": "/about",
     "type": "content",
     "elementId": "experience-frontend"
   },
   {
-    "title": "Frontend Developer - Hurisoft",
+    "title": "Fullstack Developer - Hurisoft",
     "preview": "Resolved bugs and optimized performance for Soccersm, enhancing user experience and platform reliability through targeted front-end improvements",
     "path": "/",
     "type": "content",
     "elementId": "experience-frontend"
   },
   {
-    "title": "Frontend Developer - Hurisoft",
+    "title": "Fullstack Developer - Hurisoft",
     "preview": "Enhanced Scrowton, an e-commerce marketplace, by adding features, fixing bugs, and maintaining the platform to support secure escrow-based transactions",
     "path": "/about",
     "type": "content",
     "elementId": "experience-frontend"
   },
   {
-    "title": "Frontend Developer - Hurisoft",
+    "title": "Fullstack Developer - Hurisoft",
     "preview": "Enhanced Scrowton, an e-commerce marketplace, by adding features, fixing bugs, and maintaining the platform to support secure escrow-based transactions",
     "path": "/",
     "type": "content",
@@ -875,14 +887,14 @@ export const searchData: SearchResultType[] = [
   },
   {
     "title": "Programming Languages",
-    "preview": "Programming Languages:\nJavaScript - Advanced web and mobile application development\nTypeScript - Type-safe application development with modern features\nPython - Backend development and data processing\nSQL - Database design and optimization",
+    "preview": "Programming Languages:\nJavaScript - Advanced web and mobile application development\nTypeScript - Type-safe application development with modern features\nPython - Backend development and data processing\nSQL - Database design and optimization\nJava - Backend services with Spring Boot",
     "path": "/skills",
     "type": "content",
     "elementId": "languages"
   },
   {
     "title": "Programming Languages",
-    "preview": "Programming Languages:\nJavaScript - Advanced web and mobile application development\nTypeScript - Type-safe application development with modern features\nPython - Backend development and data processing\nSQL - Database design and optimization",
+    "preview": "Programming Languages:\nJavaScript - Advanced web and mobile application development\nTypeScript - Type-safe application development with modern features\nPython - Backend development and data processing\nSQL - Database design and optimization\nJava - Backend services with Spring Boot",
     "path": "/",
     "type": "content",
     "elementId": "languages"
@@ -939,20 +951,34 @@ export const searchData: SearchResultType[] = [
   {
     "title": "SQL",
     "preview": "SQL - Database design and optimization (Programming Languages)",
+    "path": "/",
+    "type": "content",
+    "elementId": "languages"
+  },
+  {
+    "title": "Java",
+    "preview": "Java - Backend services with Spring Boot (Programming Languages)",
+    "path": "/skills",
+    "type": "content",
+    "elementId": "languages"
+  },
+  {
+    "title": "Java",
+    "preview": "Java - Backend services with Spring Boot (Programming Languages)",
     "path": "/",
     "type": "content",
     "elementId": "languages"
   },
   {
     "title": "Frameworks & Libraries",
-    "preview": "Frameworks & Libraries:\nReact - Building interactive user interfaces\nNext.js - Server-side rendering and static site generation\nVue.js - Progressive JavaScript framework\nExpress.js - RESTful API development\nFlask - Python web application framework\nReact Native - Cross-platform mobile development",
+    "preview": "Frameworks & Libraries:\nReact - Building interactive user interfaces\nNext.js - Server-side rendering and static site generation\nVue.js - Progressive JavaScript framework\nExpress.js - RESTful API development\nFlask - Python web application framework\nReact Native - Cross-platform mobile development\nSpring Boot - Java-based REST API development",
     "path": "/skills",
     "type": "content",
     "elementId": "frameworks"
   },
   {
     "title": "Frameworks & Libraries",
-    "preview": "Frameworks & Libraries:\nReact - Building interactive user interfaces\nNext.js - Server-side rendering and static site generation\nVue.js - Progressive JavaScript framework\nExpress.js - RESTful API development\nFlask - Python web application framework\nReact Native - Cross-platform mobile development",
+    "preview": "Frameworks & Libraries:\nReact - Building interactive user interfaces\nNext.js - Server-side rendering and static site generation\nVue.js - Progressive JavaScript framework\nExpress.js - RESTful API development\nFlask - Python web application framework\nReact Native - Cross-platform mobile development\nSpring Boot - Java-based REST API development",
     "path": "/",
     "type": "content",
     "elementId": "frameworks"
@@ -1037,6 +1063,20 @@ export const searchData: SearchResultType[] = [
   {
     "title": "React Native",
     "preview": "React Native - Cross-platform mobile development (Frameworks & Libraries)",
+    "path": "/",
+    "type": "content",
+    "elementId": "frameworks"
+  },
+  {
+    "title": "Spring Boot",
+    "preview": "Spring Boot - Java-based REST API development (Frameworks & Libraries)",
+    "path": "/skills",
+    "type": "content",
+    "elementId": "frameworks"
+  },
+  {
+    "title": "Spring Boot",
+    "preview": "Spring Boot - Java-based REST API development (Frameworks & Libraries)",
     "path": "/",
     "type": "content",
     "elementId": "frameworks"

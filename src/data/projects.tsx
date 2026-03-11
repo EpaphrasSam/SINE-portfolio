@@ -205,7 +205,6 @@ export const projects: Project[] = [
     ),
     tech: ["Next.js", "TypeScript", "Leaflet", "Next-Auth", "SWR"],
     url: "https://ewdh.nccrm.gov.gh/",
-    showUrl: false,
   },
   {
     id: "Hurisoft",
@@ -627,6 +626,12 @@ export const projects: Project[] = [
         />
       </svg>
     ),
-    tech: ["React Native", "Expo", "Expo Router", "React Query", "Gluestack UI"],
+    tech: [
+      "React Native",
+      "Expo",
+      "Expo Router",
+      "React Query",
+      "Gluestack UI",
+    ],
   },
 ];

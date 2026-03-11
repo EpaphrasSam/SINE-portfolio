@@ -1,5 +1,5 @@
 // This file is auto-generated. Do not edit manually.
-// Generated on 2026-03-11T11:07:45.255Z
+// Generated on 2026-03-11T13:50:01.289Z
 
 export interface ProjectImages {
   images: string[];
@@ -52,7 +52,7 @@ export const projectData: Record<string, ProjectImages> = {
   },
   "CarexScholar": {
     "images": [
-      "/images/projects/CarexScholar/Screenshot 2026-03-11 110624.png"
+      "/images/projects/CarexScholar/Screenshot 2026-03-11 133621.png"
     ],
     "logo": "/images/projects/CarexScholar/logo.png",
     "hasLogo": true
@@ -96,7 +96,7 @@ export const projectData: Record<string, ProjectImages> = {
   },
   "NCCRM": {
     "images": [
-      "/images/projects/NCCRM/Screenshot 2026-03-11 001508.png"
+      "/images/projects/NCCRM/Screenshot 2026-03-11 134412.png"
     ],
     "logo": "/images/projects/NCCRM/logo.png",
     "hasLogo": true
