@@ -326,28 +326,61 @@ const ProjectDetails = memo(
                 <span className="px-2 py-1 text-sm rounded-full capitalize bg-violet-500/10 dark:bg-violet-400/10 text-violet-500 dark:text-violet-400">
                   {project.type}
                 </span>
-                {project.url && (
-                  <a
-                    href={project.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-violet-500 dark:text-violet-400 hover:text-violet-600 dark:hover:text-violet-500"
-                  >
-                    <svg
-                      className="w-5 h-5"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-                      />
-                    </svg>
-                  </a>
-                )}
+                {(project.url || project.secondaryUrl) &&
+                  project.showUrl !== false && (
+                    <div className="flex items-center gap-2">
+                      {project.url && (
+                        <a
+                          href={project.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center text-sm text-violet-500 dark:text-violet-400 hover:text-violet-600 dark:hover:text-violet-500"
+                        >
+                          <svg
+                            className="w-4 h-4"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth={2}
+                              d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                            />
+                          </svg>
+                          <span className="ml-1">
+                            {project.urlLabel ?? "Primary"}
+                          </span>
+                        </a>
+                      )}
+                      {project.secondaryUrl && (
+                        <a
+                          href={project.secondaryUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center text-sm text-violet-500 dark:text-violet-400 hover:text-violet-600 dark:hover:text-violet-500"
+                        >
+                          <svg
+                            className="w-4 h-4"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth={2}
+                              d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                            />
+                          </svg>
+                          <span className="ml-1">
+                            {project.secondaryUrlLabel ?? "Secondary"}
+                          </span>
+                        </a>
+                      )}
+                    </div>
+                  )}
               </div>
             </div>
           </div>

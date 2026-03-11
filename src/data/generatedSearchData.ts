@@ -153,18 +153,102 @@ export const searchData: SearchResultType[] = [
     "type": "content"
   },
   {
-    "title": "IExchange Landing Page",
-    "preview": "A dynamic landing page for a P2P cryptocurrency trading platform, showcasing seamless fiat-to-crypto exchanges. (Next.js, Typescript, TailwindCSS)",
+    "title": "Carex Scholar",
+    "preview": "Web platform for checking in youth scholars, recording session notes, and managing behavioral health assessments. (Next.js, TypeScript, React Query)",
+    "path": "/projects#CarexScholar",
+    "type": "content",
+    "elementId": "CarexScholar"
+  },
+  {
+    "title": "Carex Scholar",
+    "preview": "Web platform for checking in youth scholars, recording session notes, and managing behavioral health assessments. (Next.js, TypeScript, React Query)",
+    "path": "/",
+    "type": "content",
+    "elementId": "CarexScholar"
+  },
+  {
+    "title": "IExchange P2P Trading Platform",
+    "preview": "Onchain P2P trading platform with a marketing site and trading interface for seamless crypto–fiat exchange. (Next.js, Typescript, TailwindCSS)",
     "path": "/projects#IExchange",
     "type": "content",
     "elementId": "IExchange"
   },
   {
-    "title": "IExchange Landing Page",
-    "preview": "A dynamic landing page for a P2P cryptocurrency trading platform, showcasing seamless fiat-to-crypto exchanges. (Next.js, Typescript, TailwindCSS)",
+    "title": "IExchange P2P Trading Platform",
+    "preview": "Onchain P2P trading platform with a marketing site and trading interface for seamless crypto–fiat exchange. (Next.js, Typescript, TailwindCSS)",
     "path": "/",
     "type": "content",
     "elementId": "IExchange"
+  },
+  {
+    "title": "Crypto Payment Gateway",
+    "preview": "Dashboard and checkout experiences for processing crypto payments through a unified gateway. (Vue 3, TypeScript, Vite)",
+    "path": "/projects#CPG",
+    "type": "content",
+    "elementId": "CPG"
+  },
+  {
+    "title": "Crypto Payment Gateway",
+    "preview": "Dashboard and checkout experiences for processing crypto payments through a unified gateway. (Vue 3, TypeScript, Vite)",
+    "path": "/",
+    "type": "content",
+    "elementId": "CPG"
+  },
+  {
+    "title": "BisaDoctor Chronic Care Platform",
+    "preview": "Marketing site and backend API for a chronic care platform that connects patients and doctors around vitals and medication management. (Next.js, TypeScript, TailwindCSS)",
+    "path": "/projects#BisaDoctor",
+    "type": "content",
+    "elementId": "BisaDoctor"
+  },
+  {
+    "title": "BisaDoctor Chronic Care Platform",
+    "preview": "Marketing site and backend API for a chronic care platform that connects patients and doctors around vitals and medication management. (Next.js, TypeScript, TailwindCSS)",
+    "path": "/",
+    "type": "content",
+    "elementId": "BisaDoctor"
+  },
+  {
+    "title": "Soccersm Sports Prediction Platform",
+    "preview": "AI-assisted sports prediction platform with challenge pools, leaderboards, and on-chain staking. (Next.js, TypeScript, TailwindCSS)",
+    "path": "/projects#Soccersm",
+    "type": "content",
+    "elementId": "Soccersm"
+  },
+  {
+    "title": "Soccersm Sports Prediction Platform",
+    "preview": "AI-assisted sports prediction platform with challenge pools, leaderboards, and on-chain staking. (Next.js, TypeScript, TailwindCSS)",
+    "path": "/",
+    "type": "content",
+    "elementId": "Soccersm"
+  },
+  {
+    "title": "NCCRM DataHub",
+    "preview": "Government crisis response platform with geospatial incident tracking and situational analysis. (Next.js, TypeScript, Leaflet)",
+    "path": "/projects#NCCRM",
+    "type": "content",
+    "elementId": "NCCRM"
+  },
+  {
+    "title": "NCCRM DataHub",
+    "preview": "Government crisis response platform with geospatial incident tracking and situational analysis. (Next.js, TypeScript, Leaflet)",
+    "path": "/",
+    "type": "content",
+    "elementId": "NCCRM"
+  },
+  {
+    "title": "Hurisoft Website",
+    "preview": "Company website for Hurisoft, showcasing services, products, and thought-leadership content. (Next.js, TypeScript, TailwindCSS)",
+    "path": "/projects#Hurisoft",
+    "type": "content",
+    "elementId": "Hurisoft"
+  },
+  {
+    "title": "Hurisoft Website",
+    "preview": "Company website for Hurisoft, showcasing services, products, and thought-leadership content. (Next.js, TypeScript, TailwindCSS)",
+    "path": "/",
+    "type": "content",
+    "elementId": "Hurisoft"
   },
   {
     "title": "Braszy Clothing E-commerce",
@@ -179,6 +263,48 @@ export const searchData: SearchResultType[] = [
     "path": "/",
     "type": "content",
     "elementId": "Braszy"
+  },
+  {
+    "title": "DigiTech Edge Website",
+    "preview": "A modern corporate website showcasing technology solutions and services with an engaging user interface. (Next.js, TypeScript, TailwindCSS)",
+    "path": "/projects#DigiTechEdge",
+    "type": "content",
+    "elementId": "DigiTechEdge"
+  },
+  {
+    "title": "DigiTech Edge Website",
+    "preview": "A modern corporate website showcasing technology solutions and services with an engaging user interface. (Next.js, TypeScript, TailwindCSS)",
+    "path": "/",
+    "type": "content",
+    "elementId": "DigiTechEdge"
+  },
+  {
+    "title": "Sucoff Ventures",
+    "preview": "Corporate website for Sucoff Ventures with an animated, responsive UI. (Next.js, TypeScript, TailwindCSS)",
+    "path": "/projects#Sucoff",
+    "type": "content",
+    "elementId": "Sucoff"
+  },
+  {
+    "title": "Sucoff Ventures",
+    "preview": "Corporate website for Sucoff Ventures with an animated, responsive UI. (Next.js, TypeScript, TailwindCSS)",
+    "path": "/",
+    "type": "content",
+    "elementId": "Sucoff"
+  },
+  {
+    "title": "Verse Catch",
+    "preview": "App that detects Bible verses in sermon audio using AI (Whisper, Gemini) and real-time updates. (Next.js, TypeScript, Prisma)",
+    "path": "/projects#VerseCatch",
+    "type": "content",
+    "elementId": "VerseCatch"
+  },
+  {
+    "title": "Verse Catch",
+    "preview": "App that detects Bible verses in sermon audio using AI (Whisper, Gemini) and real-time updates. (Next.js, TypeScript, Prisma)",
+    "path": "/",
+    "type": "content",
+    "elementId": "VerseCatch"
   },
   {
     "title": "AgriLink Web Application",
@@ -223,6 +349,20 @@ export const searchData: SearchResultType[] = [
     "elementId": "BlogoSphere"
   },
   {
+    "title": "VoteSphere",
+    "preview": "A voting platform for running secure, transparent polls and elections with real-time results. (Next.js, TypeScript, Prisma)",
+    "path": "/projects#VoteSphere",
+    "type": "content",
+    "elementId": "VoteSphere"
+  },
+  {
+    "title": "VoteSphere",
+    "preview": "A voting platform for running secure, transparent polls and elections with real-time results. (Next.js, TypeScript, Prisma)",
+    "path": "/",
+    "type": "content",
+    "elementId": "VoteSphere"
+  },
+  {
     "title": "MoMoXpress Calculator",
     "preview": "A modern web application for calculating mobile money transfer charges across different telecommunications networks in Ghana. (Next.js, TypeScript, TailwindCSS)",
     "path": "/projects#MoMoXpress",
@@ -251,18 +391,11 @@ export const searchData: SearchResultType[] = [
     "elementId": "BudgetBuddy"
   },
   {
-    "title": "DigiTech Edge Website",
-    "preview": "A modern corporate website showcasing technology solutions and services with an engaging user interface. (Next.js, TypeScript, TailwindCSS)",
-    "path": "/projects#DigiTechEdge",
+    "title": "We Move Manager App",
+    "preview": "Mobile manager app for monitoring and managing We Move deliveries across ongoing, scheduled, and unconfirmed orders. (React Native, Expo, Expo Router)",
+    "path": "/projects#WeMoveManager",
     "type": "content",
-    "elementId": "DigiTechEdge"
-  },
-  {
-    "title": "DigiTech Edge Website",
-    "preview": "A modern corporate website showcasing technology solutions and services with an engaging user interface. (Next.js, TypeScript, TailwindCSS)",
-    "path": "/",
-    "type": "content",
-    "elementId": "DigiTechEdge"
+    "elementId": "WeMoveManager"
   },
   {
     "title": "Fullstack Developer at Carex Behavioral Health (via Gigsama LLC)",
@@ -1092,14 +1225,14 @@ export const searchData: SearchResultType[] = [
   },
   {
     "title": "Cloud Services",
-    "preview": "Cloud Services:\nAWS - Cloud computing services and infrastructure\nFirebase - Google's platform for building and scaling web and mobile applications",
+    "preview": "Cloud Services:\nAWS - Cloud computing services and infrastructure\nFirebase - Google's platform for building and scaling web and mobile applications\nSupabase - Backend-as-a-Service with PostgreSQL and real-time capabilities\nAppwrite - Open-source Backend-as-a-Service platform for modern app development",
     "path": "/skills",
     "type": "content",
     "elementId": "cloud"
   },
   {
     "title": "Cloud Services",
-    "preview": "Cloud Services:\nAWS - Cloud computing services and infrastructure\nFirebase - Google's platform for building and scaling web and mobile applications",
+    "preview": "Cloud Services:\nAWS - Cloud computing services and infrastructure\nFirebase - Google's platform for building and scaling web and mobile applications\nSupabase - Backend-as-a-Service with PostgreSQL and real-time capabilities\nAppwrite - Open-source Backend-as-a-Service platform for modern app development",
     "path": "/",
     "type": "content",
     "elementId": "cloud"
@@ -1128,6 +1261,34 @@ export const searchData: SearchResultType[] = [
   {
     "title": "Firebase",
     "preview": "Firebase - Google's platform for building and scaling web and mobile applications (Cloud Services)",
+    "path": "/",
+    "type": "content",
+    "elementId": "cloud"
+  },
+  {
+    "title": "Supabase",
+    "preview": "Supabase - Backend-as-a-Service with PostgreSQL and real-time capabilities (Cloud Services)",
+    "path": "/skills",
+    "type": "content",
+    "elementId": "cloud"
+  },
+  {
+    "title": "Supabase",
+    "preview": "Supabase - Backend-as-a-Service with PostgreSQL and real-time capabilities (Cloud Services)",
+    "path": "/",
+    "type": "content",
+    "elementId": "cloud"
+  },
+  {
+    "title": "Appwrite",
+    "preview": "Appwrite - Open-source Backend-as-a-Service platform for modern app development (Cloud Services)",
+    "path": "/skills",
+    "type": "content",
+    "elementId": "cloud"
+  },
+  {
+    "title": "Appwrite",
+    "preview": "Appwrite - Open-source Backend-as-a-Service platform for modern app development (Cloud Services)",
     "path": "/",
     "type": "content",
     "elementId": "cloud"

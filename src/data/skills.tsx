@@ -52,6 +52,7 @@ export const skills: Skill[] = [
         description: "Backend development and data processing",
       },
       { name: "SQL", description: "Database design and optimization" },
+      { name: "Java", description: "Backend services with Spring Boot" },
     ],
   },
   {
@@ -85,6 +86,7 @@ export const skills: Skill[] = [
         name: "React Native",
         description: "Cross-platform mobile development",
       },
+      { name: "Spring Boot", description: "Java-based REST API development" },
     ],
   },
   {

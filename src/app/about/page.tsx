@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Link from "next/link";
 import { TextHighlight } from "../../components/TextHighlight";
 import { experiences, education, summary } from "../../data/experiences";
 
@@ -106,7 +107,7 @@ export default function About() {
 
         <motion.div variants={container} className="space-y-12">
           {/* Introduction */}
-          <motion.section variants={item} className="relative">
+          <motion.section variants={item} className="relative space-y-6">
             <div className="space-y-4 max-w-3xl">
               {summary.map((paragraph, index) => (
                 <div
@@ -116,6 +117,30 @@ export default function About() {
                   <TextHighlight text={paragraph} />
                 </div>
               ))}
+            </div>
+
+            <div className="pt-2">
+              <Link
+                href="/cv/Isaac_Sam_CV.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center px-5 py-2.5 rounded-lg bg-violet-500 dark:bg-violet-600 text-white text-sm font-medium hover:bg-violet-600 dark:hover:bg-violet-700 transition-colors duration-200"
+              >
+                Download CV
+                <svg
+                  className="w-4 h-4 ml-2"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M12 4v12m0 0l-4-4m4 4l4-4"
+                  />
+                </svg>
+              </Link>
             </div>
           </motion.section>
 

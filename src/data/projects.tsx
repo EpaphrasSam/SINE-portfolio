@@ -2,10 +2,47 @@ import { Project } from "../types/project";
 
 export const projects: Project[] = [
   {
-    id: "IExchange",
-    title: "IExchange Landing Page",
+    id: "CarexScholar",
+    title: "Carex Scholar",
     preview:
-      "A dynamic landing page for a P2P cryptocurrency trading platform, showcasing seamless fiat-to-crypto exchanges.",
+      "Web platform for checking in youth scholars, recording session notes, and managing behavioral health assessments.",
+    description: [
+      "Carex Scholar is a web application used by organizations to check in scholars, track group sessions, and manage behavioral health documentation.",
+      "Staff can log in to check scholars into sessions, complete assessments, and record group and individual notes from a unified interface.",
+      "The system supports organizations with multiple locations, giving them dashboards to review scholar history, attendance, and risk indicators over time.",
+      "Built with Next.js, React, TypeScript, and a typed API client to integrate with the Scholar backend for authentication, session data, and assessments.",
+    ],
+    type: "web",
+    icon: (
+      <svg
+        className="w-6 h-6"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={2}
+          d="M12 14l9-5-9-5-9 5 9 5z"
+        />
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={2}
+          d="M3 10v6l9 5 9-5v-6"
+        />
+      </svg>
+    ),
+    tech: ["Next.js", "TypeScript", "React Query", "TailwindCSS"],
+    url: "https://checkin.carexbhs.com/",
+    urlLabel: "Carex Scholar",
+  },
+  {
+    id: "IExchange",
+    title: "IExchange P2P Trading Platform",
+    preview:
+      "Onchain P2P trading platform with a marketing site and trading interface for seamless crypto–fiat exchange.",
     description: [
       "IExchange is an innovative platform that bridges the gap between traditional finance and cryptocurrency through a secure peer-to-peer trading system.",
       "The landing page features an engaging user interface that clearly communicates the platform's unique value proposition of easy crypto-to-cash conversions.",
@@ -31,7 +68,175 @@ export const projects: Project[] = [
       </svg>
     ),
     tech: ["Next.js", "Typescript", "TailwindCSS", "Framer Motion"],
-    url: "https://iexchange-landing-page.web.app/",
+    url: "https://app.iexchange.global/",
+    urlLabel: "Trading app",
+    secondaryUrl: "https://iexchange.global/",
+    secondaryUrlLabel: "Marketing site",
+  },
+  {
+    id: "CPG",
+    title: "Crypto Payment Gateway",
+    preview:
+      "Dashboard and checkout experiences for processing crypto payments through a unified gateway.",
+    description: [
+      "Crypto Payment Gateway is a platform for merchants to accept and manage crypto payments across multiple chains.",
+      "The merchant dashboard provides overviews of transactions, payouts, commissions, and configuration such as API keys and webhooks.",
+      "The checkout experience lets customers pay invoices with crypto by connecting their wallets and sending on-chain payments to generated deposit addresses.",
+      "Both dashboard and checkout are built with Vue 3, Naive UI, and TypeScript, talking to a Go backend that handles wallets, reconciliation, and payouts.",
+    ],
+    type: "web",
+    icon: (
+      <svg
+        className="w-6 h-6"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={2}
+          d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M5 20h14a2 2 0 002-2v-5a2 2 0 00-2-2h-3M5 20a2 2 0 01-2-2v-5a2 2 0 012-2h3m6-4h4"
+        />
+      </svg>
+    ),
+    tech: ["Vue 3", "TypeScript", "Vite", "Naive UI", "Wagmi", "Viem"],
+    url: "https://checkout.nyadenk.com/",
+    urlLabel: "Checkout",
+    secondaryUrl: "https://dashboard.nyadenk.com/",
+    secondaryUrlLabel: "Dashboard",
+  },
+  {
+    id: "BisaDoctor",
+    title: "BisaDoctor Chronic Care Platform",
+    preview:
+      "Marketing site and backend API for a chronic care platform that connects patients and doctors around vitals and medication management.",
+    description: [
+      "BisaDoctor is a digital health platform for chronic care management, helping patients track vitals, medications, and connect with doctors remotely.",
+      "The marketing site is a Next.js application that explains the product, showcases benefits, and collects leads through forms and waitlists.",
+      "The backend API, built with TypeScript, Express, Firebase Auth, and Firestore, powers the mobile app with endpoints for vitals, medications, chats, notes, notifications, and statistics.",
+      "Subscription and billing flows integrate with a payment provider to manage plans, webhooks, and withdrawal flows for clinicians.",
+    ],
+    type: "web",
+    icon: (
+      <svg
+        className="w-6 h-6"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={2}
+          d="M9 12h6m-3-3v6m9-3a9 9 0 11-18 0 9 9 0 0118 0z"
+        />
+      </svg>
+    ),
+    tech: ["Next.js", "TypeScript", "TailwindCSS", "Express.js", "Firebase"],
+    url: "https://bisadoctor.com/",
+    urlLabel: "Marketing site",
+  },
+  {
+    id: "Soccersm",
+    title: "Soccersm Sports Prediction Platform",
+    preview:
+      "AI-assisted sports prediction platform with challenge pools, leaderboards, and on-chain staking.",
+    description: [
+      "Soccersm is a sports prediction platform where users can join challenge pools, view AI-generated prediction slips, and track leaderboards.",
+      "The frontend is built with Next.js, TailwindCSS, and React Query, integrating external sports data APIs for live fixtures, stats, and standings.",
+      "Web3 integrations with Thirdweb, Wagmi, and Viem allow users to connect wallets and participate in on-chain pools and reward flows.",
+      "Authentication combines wallet-based login, Firebase Auth, and Telegram-based quests to drive engagement.",
+    ],
+    type: "web",
+    icon: (
+      <svg
+        className="w-6 h-6"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={2}
+          d="M9.75 3a3.75 3.75 0 107.5 0 3.75 3.75 0 00-7.5 0zM4.5 21a6.75 6.75 0 0113.5 0M4.5 21h13.5"
+        />
+      </svg>
+    ),
+    tech: [
+      "Next.js",
+      "TypeScript",
+      "TailwindCSS",
+      "Thirdweb",
+      "Wagmi",
+      "Firebase",
+    ],
+    url: "https://soccersm.ai/",
+    urlLabel: "Platform",
+  },
+  {
+    id: "NCCRM",
+    title: "NCCRM DataHub",
+    preview:
+      "Government crisis response platform with geospatial incident tracking and situational analysis.",
+    description: [
+      "NCCRM DataHub is a crisis response platform built for a government agency, used to record and analyze incident data.",
+      "The application features geospatial incident tracking with interactive Leaflet maps and event reporting with comprehensive data capture.",
+      "Situational analysis tools provide risk assessment scoring and comparative reporting to support crisis management decisions.",
+      "It integrates with a separate backend API and supports role-based access for different user types.",
+      "Built with a responsive interface and modern React patterns for maintainability and performance.",
+    ],
+    type: "web",
+    icon: (
+      <svg
+        className="w-6 h-6"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={2}
+          d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"
+        />
+      </svg>
+    ),
+    tech: ["Next.js", "TypeScript", "Leaflet", "Next-Auth", "SWR"],
+    url: "https://ewdh.nccrm.gov.gh/",
+    showUrl: false,
+  },
+  {
+    id: "Hurisoft",
+    title: "Hurisoft Website",
+    preview:
+      "Company website for Hurisoft, showcasing services, products, and thought-leadership content.",
+    description: [
+      "The Hurisoft website presents the company’s services in AI, blockchain, and software development with a modern, animated UI.",
+      "It includes sections for service offerings, product highlights, testimonials, and a blog generated from structured content.",
+      "Contact and newsletter forms integrate with external form providers to capture leads without a custom backend.",
+      "Built with Next.js, TailwindCSS, and Framer Motion to deliver a responsive, content-focused experience.",
+    ],
+    type: "web",
+    icon: (
+      <svg
+        className="w-6 h-6"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={2}
+          d="M3 7h18M3 12h18M3 17h18"
+        />
+      </svg>
+    ),
+    tech: ["Next.js", "TypeScript", "TailwindCSS", "Framer Motion"],
+    url: "https://hurisoft.com/",
+    urlLabel: "Website",
   },
   {
     id: "Braszy",
@@ -64,7 +269,109 @@ export const projects: Project[] = [
       </svg>
     ),
     tech: ["Next.js", "TypeScript", "Prisma", "TailwindCSS"],
-    url: "https://braszyclothing.com", // Replace with actual URL
+    url: "https://braszyclothing.com",
+  },
+  {
+    id: "DigiTechEdge",
+    title: "DigiTech Edge Website",
+    preview:
+      "A modern corporate website showcasing technology solutions and services with an engaging user interface.",
+    description: [
+      "DigiTech Edge is a professional technology solutions company website built with modern web technologies.",
+      "Features an animated and responsive user interface using Framer Motion for smooth transitions and interactions.",
+      "Implements comprehensive service showcase and project portfolio sections.",
+      "Includes an integrated contact form with email functionality for client communications.",
+      "Showcases company expertise, team information, and client testimonials.",
+      "Utilizes modern design principles with attention to user experience and accessibility.",
+      "Built with performance optimization and SEO best practices in mind.",
+    ],
+    type: "web",
+    icon: (
+      <svg
+        className="w-6 h-6"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={2}
+          d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"
+        />
+      </svg>
+    ),
+    tech: ["Next.js", "TypeScript", "TailwindCSS", "Framer Motion"],
+    url: "https://digitechedge.com",
+  },
+  {
+    id: "Sucoff",
+    title: "Sucoff Ventures",
+    preview:
+      "Corporate website for Sucoff Ventures with an animated, responsive UI.",
+    description: [
+      "Sucoff Ventures is a corporate website built to showcase the company's presence and services with a modern, polished design.",
+      "The site features an animated and responsive layout using Framer Motion and HeroUI for smooth transitions and clear visual hierarchy.",
+      "Built with Next.js and React for fast performance and a strong developer experience.",
+      "The design emphasizes clarity and professionalism while remaining engaging for visitors.",
+    ],
+    type: "web",
+    icon: (
+      <svg
+        className="w-6 h-6"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={2}
+          d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+        />
+      </svg>
+    ),
+    tech: ["Next.js", "TypeScript", "TailwindCSS", "Framer Motion", "HeroUI"],
+    url: "https://sucoffventures.com/",
+  },
+  {
+    id: "VerseCatch",
+    title: "Verse Catch",
+    preview:
+      "App that detects Bible verses in sermon audio using AI (Whisper, Gemini) and real-time updates.",
+    description: [
+      "Verse Catch transcribes and detects Bible verse references in sermon or speech audio in real time.",
+      "The app uses OpenAI Whisper for transcription and Google Gemini for verse detection, with audio processed via the browser and backend APIs.",
+      "Real-time updates are delivered through Pusher so users see detected verses as the audio plays.",
+      "A SQLite database manages a large library of verses across translations to match and display references accurately.",
+      "Built with Next.js and TypeScript for a maintainable frontend and API, with a focus on clarity and performance.",
+    ],
+    type: "web",
+    icon: (
+      <svg
+        className="w-6 h-6"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={2}
+          d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
+        />
+      </svg>
+    ),
+    tech: [
+      "Next.js",
+      "TypeScript",
+      "Prisma",
+      "SQLite",
+      "OpenAI",
+      "Gemini",
+      "Pusher",
+    ],
+    url: "https://verse-catch-pink.vercel.app",
   },
   {
     id: "AgriLink",
@@ -99,7 +406,6 @@ export const projects: Project[] = [
     tech: ["Next.js", "TypeScript", "Prisma", "Tailwind CSS", "Pusher"],
     url: "https://agri-link.vercel.app",
   },
-
   {
     id: "Threads",
     title: "Threads Social Platform",
@@ -167,6 +473,36 @@ export const projects: Project[] = [
     url: "https://blogosphere-umber.vercel.app",
   },
   {
+    id: "VoteSphere",
+    title: "VoteSphere",
+    preview:
+      "A voting platform for running secure, transparent polls and elections with real-time results.",
+    description: [
+      "VoteSphere is a web-based voting platform that enables organizations to run polls and elections with transparency and accountability.",
+      "Users can create elections, define candidates or options, and share voting links with participants.",
+      "The platform supports real-time result tracking and secure vote casting with validation to prevent duplicate votes.",
+      "Built with a clear, responsive interface so voters and organizers can manage and monitor elections easily.",
+    ],
+    type: "web",
+    icon: (
+      <svg
+        className="w-6 h-6"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={2}
+          d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"
+        />
+      </svg>
+    ),
+    tech: ["Next.js", "TypeScript", "Prisma"],
+    url: "https://vote-sphere.vercel.app",
+  },
+  {
     id: "MoMoXpress",
     title: "MoMoXpress Calculator",
     preview:
@@ -231,6 +567,7 @@ export const projects: Project[] = [
     ),
     tech: ["React Native", "Flask", "PostgreSQL", "TailwindCSS"],
   },
+
   {
     id: "BudgetBuddy",
     title: "BudgetBuddy Finance App",
@@ -261,23 +598,20 @@ export const projects: Project[] = [
         />
       </svg>
     ),
-    tech: ["React Native", "Expo", "TypeScript", "Node.js", "Drizzle"],
+    tech: ["React Native", "Expo", "TypeScript", "Tamagui"],
   },
   {
-    id: "DigiTechEdge",
-    title: "DigiTech Edge Website",
+    id: "WeMoveManager",
+    title: "We Move Manager App",
     preview:
-      "A modern corporate website showcasing technology solutions and services with an engaging user interface.",
+      "Mobile manager app for monitoring and managing We Move deliveries across ongoing, scheduled, and unconfirmed orders.",
     description: [
-      "DigiTech Edge is a professional technology solutions company website built with modern web technologies.",
-      "Features an animated and responsive user interface using Framer Motion for smooth transitions and interactions.",
-      "Implements comprehensive service showcase and project portfolio sections.",
-      "Includes an integrated contact form with email functionality for client communications.",
-      "Showcases company expertise, team information, and client testimonials.",
-      "Utilizes modern design principles with attention to user experience and accessibility.",
-      "Built with performance optimization and SEO best practices in mind.",
+      "We Move Manager is an internal mobile app for operations staff to monitor and manage deliveries in real time.",
+      "The home dashboard shows delivery statistics and separates ongoing, scheduled, and unconfirmed deliveries into focused views.",
+      "Data fetching is powered by React Query and a token-based API client that stores sessions securely and automatically logs managers out on unauthorized responses.",
+      "Built with Expo, React Native, Expo Router, Gluestack UI, NativeWind, and integrations for location, notifications, and maps to support day-to-day logistics workflows.",
     ],
-    type: "web",
+    type: "mobile",
     icon: (
       <svg
         className="w-6 h-6"
@@ -289,11 +623,10 @@ export const projects: Project[] = [
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth={2}
-          d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"
+          d="M7 7h10M7 12h6M7 17h4M5 3h14a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2z"
         />
       </svg>
     ),
-    tech: ["Next.js", "TypeScript", "TailwindCSS", "Framer Motion"],
-    url: "https://digitechedge.com",
+    tech: ["React Native", "Expo", "Expo Router", "React Query", "Gluestack UI"],
   },
 ];

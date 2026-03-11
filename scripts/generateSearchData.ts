@@ -51,10 +51,16 @@ function extractSearchableContent(
   code: string,
   filePath: string
 ): SearchResult[] {
-  const ast = parse(code, {
-    sourceType: "module",
-    plugins: ["jsx", "typescript"],
-  });
+  let ast;
+  try {
+    ast = parse(code, {
+      sourceType: "module",
+      plugins: ["jsx", "typescript"],
+    });
+  } catch (error) {
+    console.error(`Failed to parse file for search indexing: ${filePath}`);
+    throw error;
+  }
 
   const results: SearchResult[] = [];
   const seenContent = new Set<string>();
@@ -243,7 +249,9 @@ function extractSearchableContent(
               // Add category entry
               addSearchResult(
                 title,
-                `${title}:\n${items.map((item) => `${item.name} - ${item.description}`).join("\n")}`,
+                `${title}:\n${items
+                  .map((item) => `${item.name} - ${item.description}`)
+                  .join("\n")}`,
                 id
               );
 

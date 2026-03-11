@@ -42,10 +42,6 @@ const techStack = [
     ),
   },
   {
-    name: "Flask",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg",
-  },
-  {
     name: "Python",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
   },

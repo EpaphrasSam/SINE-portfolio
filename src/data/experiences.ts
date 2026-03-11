@@ -19,8 +19,8 @@ export const experiences = [
   {
     id: "experience-carex",
     title: "Fullstack Developer",
-    company: "Carex Behavioral Health (via Gigsama LLC)",
-    period: "Mar 2025 - Present",
+    company: "Gigsama LLC",
+    period: "Mar 2025 - Mar 2026",
     responsibilities: [
       "Led R&D initiatives, evaluating and implementing production tools (PostHog, Sentry, Zoho Desk) and building technical PoCs to validate EHR integrations before full implementation",
       "Architected and developed the complete frontend for Carex Scholar, a platform for managing youth behavioral health sessions and assessments, with responsive interfaces across multiple user portals",
@@ -31,7 +31,7 @@ export const experiences = [
   },
   {
     id: "experience-frontend",
-    title: "Frontend Developer",
+    title: "Fullstack Developer",
     company: "Hurisoft",
     period: "Nov 2024 - July 2025",
     responsibilities: [
