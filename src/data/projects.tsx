@@ -1,43 +1,43 @@
 import { Project } from "../types/project";
 
 export const projects: Project[] = [
-  {
-    id: "CarexScholar",
-    title: "Carex Scholar",
-    preview:
-      "Web platform for checking in youth scholars, recording session notes, and managing behavioral health assessments.",
-    description: [
-      "Carex Scholar is a web application used by organizations to check in scholars, track group sessions, and manage behavioral health documentation.",
-      "Staff can log in to check scholars into sessions, complete assessments, and record group and individual notes from a unified interface.",
-      "The system supports organizations with multiple locations, giving them dashboards to review scholar history, attendance, and risk indicators over time.",
-      "Built with Next.js, React, TypeScript, and a typed API client to integrate with the Scholar backend for authentication, session data, and assessments.",
-    ],
-    type: "web",
-    icon: (
-      <svg
-        className="w-6 h-6"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={2}
-          d="M12 14l9-5-9-5-9 5 9 5z"
-        />
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={2}
-          d="M3 10v6l9 5 9-5v-6"
-        />
-      </svg>
-    ),
-    tech: ["Next.js", "TypeScript", "React Query", "TailwindCSS"],
-    url: "https://checkin.carexbhs.com/",
-    urlLabel: "Carex Scholar",
-  },
+  // {
+  //   id: "CarexScholar",
+  //   title: "Carex Scholar",
+  //   preview:
+  //     "Web platform for checking in youth scholars, recording session notes, and managing behavioral health assessments.",
+  //   description: [
+  //     "Carex Scholar is a web application used by organizations to check in scholars, track group sessions, and manage behavioral health documentation.",
+  //     "Staff can log in to check scholars into sessions, complete assessments, and record group and individual notes from a unified interface.",
+  //     "The system supports organizations with multiple locations, giving them dashboards to review scholar history, attendance, and risk indicators over time.",
+  //     "Built with Next.js, React, TypeScript, and a typed API client to integrate with the Scholar backend for authentication, session data, and assessments.",
+  //   ],
+  //   type: "web",
+  //   icon: (
+  //     <svg
+  //       className="w-6 h-6"
+  //       fill="none"
+  //       stroke="currentColor"
+  //       viewBox="0 0 24 24"
+  //     >
+  //       <path
+  //         strokeLinecap="round"
+  //         strokeLinejoin="round"
+  //         strokeWidth={2}
+  //         d="M12 14l9-5-9-5-9 5 9 5z"
+  //       />
+  //       <path
+  //         strokeLinecap="round"
+  //         strokeLinejoin="round"
+  //         strokeWidth={2}
+  //         d="M3 10v6l9 5 9-5v-6"
+  //       />
+  //     </svg>
+  //   ),
+  //   tech: ["Next.js", "TypeScript", "React Query", "TailwindCSS"],
+  //   url: "https://checkin.carexbhs.com/",
+  //   urlLabel: "Carex Scholar",
+  // },
   {
     id: "IExchange",
     title: "IExchange P2P Trading Platform",
@@ -101,9 +101,9 @@ export const projects: Project[] = [
       </svg>
     ),
     tech: ["Vue 3", "TypeScript", "Vite", "Naive UI", "Wagmi", "Viem"],
-    url: "https://checkout.nyadenk.com/",
+    url: "https://cpg-checkout.web.app/",
     urlLabel: "Checkout",
-    secondaryUrl: "https://dashboard.nyadenk.com/",
+    secondaryUrl: "https://cpg-dashboard.web.app/",
     secondaryUrlLabel: "Dashboard",
   },
   {
