@@ -271,39 +271,6 @@ export const projects: Project[] = [
     url: "https://braszyclothing.com",
   },
   {
-    id: "DigiTechEdge",
-    title: "DigiTech Edge Website",
-    preview:
-      "A modern corporate website showcasing technology solutions and services with an engaging user interface.",
-    description: [
-      "DigiTech Edge is a professional technology solutions company website built with modern web technologies.",
-      "Features an animated and responsive user interface using Framer Motion for smooth transitions and interactions.",
-      "Implements comprehensive service showcase and project portfolio sections.",
-      "Includes an integrated contact form with email functionality for client communications.",
-      "Showcases company expertise, team information, and client testimonials.",
-      "Utilizes modern design principles with attention to user experience and accessibility.",
-      "Built with performance optimization and SEO best practices in mind.",
-    ],
-    type: "web",
-    icon: (
-      <svg
-        className="w-6 h-6"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={2}
-          d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"
-        />
-      </svg>
-    ),
-    tech: ["Next.js", "TypeScript", "TailwindCSS", "Framer Motion"],
-    url: "https://digitechedge.com",
-  },
-  {
     id: "Sucoff",
     title: "Sucoff Ventures",
     preview:
