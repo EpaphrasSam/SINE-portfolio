@@ -1426,21 +1426,21 @@ export const searchData: SearchResultType[] = [
   },
   {
     "title": "Contact via LinkedIn",
-    "preview": "linkedin.com/in/isaac-sam-epaphras",
+    "preview": "linkedin.com/in/isaac-epaphras-nana-sam",
     "path": "/contact",
     "type": "content",
     "elementId": "linkedin"
   },
   {
     "title": "Contact via LinkedIn",
-    "preview": "linkedin.com/in/isaac-sam-epaphras",
+    "preview": "linkedin.com/in/isaac-epaphras-nana-sam",
     "path": "/",
     "type": "content",
     "elementId": "linkedin"
   },
   {
     "title": "Contact via LinkedIn",
-    "preview": "linkedin.com/in/isaac-sam-epaphras",
+    "preview": "linkedin.com/in/isaac-epaphras-nana-sam",
     "path": "/about",
     "type": "content",
     "elementId": "linkedin"
