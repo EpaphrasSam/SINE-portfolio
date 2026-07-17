@@ -49,10 +49,10 @@ export const skills: Skill[] = [
       },
       {
         name: "Python",
-        description: "Backend development and data processing",
+        description: "Scripting, backend services, and AI evaluation environments",
       },
       { name: "SQL", description: "Database design and optimization" },
-      { name: "Java", description: "Backend services with Spring Boot" },
+      { name: "Java", description: "Foundational knowledge of object-oriented programming and data structures" },
     ],
   },
   {
@@ -81,12 +81,10 @@ export const skills: Skill[] = [
       },
       { name: "Vue.js", description: "Progressive JavaScript framework" },
       { name: "Express.js", description: "RESTful API development" },
-      { name: "Flask", description: "Python web application framework" },
       {
         name: "React Native",
         description: "Cross-platform mobile development",
       },
-      { name: "Spring Boot", description: "Java-based REST API development" },
     ],
   },
   {
@@ -150,9 +148,8 @@ export const skills: Skill[] = [
     items: [
       { name: "Git", description: "Version control and collaboration" },
       { name: "Docker", description: "Containerization and deployment" },
-      { name: "AWS", description: "Cloud computing and services" },
+      { name: "Kubernetes", description: "Container orchestration and infrastructure management" },
       { name: "Prisma", description: "Next-generation ORM" },
-      { name: "Firebase", description: "Backend-as-a-Service platform" },
       { name: "Jest", description: "JavaScript testing framework" },
       { name: "Playwright", description: "End-to-end testing framework" },
     ],

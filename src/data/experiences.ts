@@ -1,7 +1,7 @@
 export const summary = [
-  "I am a dedicated Software Developer with a Bachelor's Degree in Computer Engineering from Kwame Nkrumah University of Science and Technology (KNUST). With a First Class Honours and a CWA of 73.71 (GPA: 3.70), I have demonstrated strong academic excellence and technical aptitude.",
-  "My expertise lies in frontend and fullstack development, where I excel at creating scalable and user-friendly applications. I am proficient in modern technologies such as React, React Native, Next.js, and Express.js, with a strong foundation in both mobile and web development.",
-  "I am passionate about creating innovative solutions that solve real-world problems. My experience spans from developing mobile applications to implementing complex web systems across healthcare, fintech, and e-commerce sectors, always focusing on delivering high-quality, maintainable code.",
+  "I'm a full-stack software developer with over 4 years of experience building web applications and production systems. I studied Computer Engineering at KNUST, graduating with First Class Honours.",
+  "Most of my work is in TypeScript, React, and Next.js, though I'm equally comfortable on the backend. I've shipped systems across healthcare, fintech, and crypto. More recently, I spent time at Bespoke Labs building AI agent evaluation environments on Kubernetes, which was a different kind of engineering challenge.",
+  "I tend to gravitate toward work where the constraints are real: regulated environments, government systems, live financial infrastructure. Outside of client work, I build things on the side, mostly web tools and experiments.",
 ];
 
 export const education = {
@@ -17,16 +17,28 @@ export const education = {
 
 export const experiences = [
   {
+    id: "experience-bespoke",
+    title: "RL Environment Engineer",
+    company: "Bespoke Labs",
+    period: "Apr 2026 - Jul 2026",
+    responsibilities: [
+      "Developed AI agent evaluation tasks for Nebula Aurora, a Kubernetes-based benchmarking platform that tests frontier AI models on real-world DevOps and SRE scenarios",
+      "Wrote setup scripts that inject controlled failures into K3s clusters, simulating infrastructure incidents across CI/CD pipelines, service mesh configurations, and observability stacks",
+      "Built Python graders with partial scoring logic to assess AI agent responses against actual system state, covering incident response, platform engineering, and cloud operations tasks",
+      "Authored solution scripts as ground-truth references; each task had to be fully verifiable from observable system state alone",
+    ],
+  },
+  {
     id: "experience-carex",
     title: "Fullstack Developer",
     company: "Gigsama LLC",
     period: "Mar 2025 - Mar 2026",
     responsibilities: [
       "Led R&D initiatives, evaluating and implementing production tools (PostHog, Sentry, Zoho Desk) and building technical PoCs to validate EHR integrations before full implementation",
-      "Architected and developed the complete frontend for Carex Scholar, a platform for managing youth behavioral health sessions and assessments, with responsive interfaces across multiple user portals",
-      "Built automated scholar check-in, assessments, and group notes for scholar sessions, reducing administrative overhead by 60%",
-      "Contributed to backend development, implementing API endpoints and business logic for the Scholar platform",
-      "Ensured HIPAA compliance throughout the platform, safeguarding sensitive healthcare data and minimizing audit risks",
+      "Architected the Carex Scholar frontend across two role-based portals: an organization portal covering schedule management, scholar check-ins, group notes, and assessments; and a staff portal for organization oversight, assessment scheduling, and review workflows",
+      "Built automated scholar check-in, assessments, and group notes for scholar sessions, reducing administrative overhead",
+      "Built a proof of concept for insurance billing integration and contributed backend fixes and features to the Scholar API in Express.js and PostgreSQL",
+      "Maintained HIPAA compliance across the platform, including data access controls and audit logging for sensitive healthcare records",
     ],
   },
   {
@@ -35,10 +47,9 @@ export const experiences = [
     company: "Hurisoft",
     period: "Nov 2024 - July 2025",
     responsibilities: [
-      "Developed the landing page for iExchange, a P2P cryptocurrency trading platform, driving user acquisition with a modern, responsive UI",
-      "Collaborated on iExchange's main trading application, building front-end components and integrating APIs for secure transactions",
-      "Resolved bugs and optimized performance for Soccersm, enhancing user experience and platform reliability through targeted front-end improvements",
-      "Enhanced Scrowton, an e-commerce marketplace, by adding features, fixing bugs, and maintaining the platform to support secure escrow-based transactions",
+      "Developed the landing page for iExchange, a P2P cryptocurrency trading platform, with a responsive layout focused on user acquisition and conversion",
+      "Built the iExchange trading application, setting up the project architecture and developing core P2P trading flows, KYC verification, order management, dispute resolution, and an admin panel",
+      "Resolved bugs and improved frontend performance for Soccersm, a sports prediction platform, reducing load times and stabilizing key user flows",
     ],
   },
   {
@@ -47,11 +58,9 @@ export const experiences = [
     company: "KNUST School of Business",
     period: "Nov 2023 - Nov 2024",
     responsibilities: [
-      "Developed an exams attendance application and an admin dashboard for managing schedules, improving staff accountability and administrative efficiency",
-      "Built a secure, web-based Voting System for faculty elections, automating vote collection and providing real-time election monitoring and result analytics",
-      "Created a nomination platform with role-based authentication and multi-stage workflows, streamlining the nomination process for university elections",
-      "Designed admin and reviewer dashboards for managing nominations, with real-time notifications and analytics tools to enhance user management",
-      "Utilized Next.js, Prisma ORM, and MongoDB to build a scalable backend, with future plans for multi-institution deployment and machine learning integration",
+      "Developed an exam attendance application and admin dashboard for recording and managing invigilator sign-ins across exam sessions",
+      "Built a faculty election voting system with secure ballot submission, duplicate vote prevention, and real-time result tracking for university staff",
+      "Developed a nomination platform with four-tier role-based access (public users, nominators, reviewers, admins), a two-stage submission and review workflow, conflict-of-interest checks for reviewers, CSV and PDF report generation, and real-time notifications via Pusher",
     ],
   },
   {
@@ -60,10 +69,9 @@ export const experiences = [
     company: "BSystems Limited",
     period: "Oct 2022 - Jan 2023",
     responsibilities: [
-      "Developed and enhanced features for the admin dashboard of the PeoplesPay app, improving user interface and experience",
-      "Implemented user authentication, verification, and various admin functionalities including managing admins, customers, transactions, and e-levy records, ensuring data security and integrity",
-      "Redesigned UI components to enhance usability and visual appeal, leading to a more intuitive and engaging user experience",
-      "Created detailed technical documentation for the web application, facilitating better understanding and maintenance for future developers",
+      "Built and integrated minor features into the admin dashboard of the PeoplesPay app",
+      "Redesigned the platform's UI for responsiveness, addressing layout issues that affected usability across smaller screen sizes",
+      "Wrote technical documentation for the web application to support future development and onboarding",
     ],
   },
 ];

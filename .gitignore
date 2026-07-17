@@ -81,3 +81,13 @@ out
 
 # Cache directories
 .cache/
+
+# LaTeX build artifacts
+*.aux
+*.log
+*.out
+*.toc
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+texmf/

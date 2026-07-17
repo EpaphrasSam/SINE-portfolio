@@ -11,7 +11,6 @@
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
 \usepackage{tabularx}
-\usepackage{fontawesome}
 \usepackage{multicol}
 \setlength{\multicolsep}{-3.0pt}
 \setlength{\columnsep}{-1pt}
@@ -86,19 +85,19 @@
 %----------HEADING----------
 \begin{center}
     {\Large \scshape Isaac Epaphras Nana Sam} \\[2mm]
-    \footnotesize \raisebox{-0.1\height}
-    \faPhone\ \underline{+233 55 142 9980} ~ 
-    \faEnvelope\ \underline{isinesam@gmail.com} ~ 
-    \faGithub\ \href{https://github.com/EpaphrasSam}{github.com/EpaphrasSam} ~ 
-    \faLinkedin\ \href{https://www.linkedin.com/in/isaac-epaphras-nana-sam-b52116196/}{linkedin/isaac-epaphras-nana-sam} ~ 
-    \faGlobe\ \href{https://isaacsam.com}{isaacsam.com}
+    \footnotesize
+    \underline{+233 55 142 9980} ~$|$~
+    \underline{isinesam@gmail.com} ~$|$~
+    \href{https://github.com/EpaphrasSam}{github.com/EpaphrasSam} ~$|$~
+    \href{https://www.linkedin.com/in/isaac-epaphras-nana-sam-b52116196/}{linkedin/isaac-epaphras-nana-sam} ~$|$~
+    \href{https://isaacsam.com}{isaacsam.com}
     \vspace{8pt}
 \end{center}
 
 %-----------SUMMARY-----------
 \section{Summary}
 \resumeSubHeadingListStart
-\resumeItem{Full-stack Software Developer with a Bachelor's in Computer Engineering, specializing in TypeScript, React, Next.js, and React Native. Experienced in building scalable web and mobile applications with modern JavaScript frameworks and backend technologies. Delivered production systems across healthcare, fintech, and e-commerce sectors, focusing on performance, maintainability, and user-centric design.}
+\resumeItem{Full-stack Software Developer with 4+ years of experience and a BSc in Computer Engineering from KNUST. Works primarily in TypeScript, React, and Next.js, with production systems shipped across healthcare, fintech, and AI. Has delivered multi-portal web applications and backend APIs, and more recently Kubernetes-based evaluation environments for testing frontier AI models.}
 \resumeSubHeadingListEnd
 \vspace{-1pt}
 
@@ -106,14 +105,25 @@
 \section{Work Experience}
 \resumeSubHeadingListStart
 \resumeSubheading
+  {Bespoke Labs}{Apr 2026 -- Jul 2026}
+  {RL Environment Engineer (Contract)}{Remote}
+\resumeItemListStart
+  \resumeItem{Developed AI agent evaluation tasks for Nebula Aurora, a Kubernetes-based benchmarking platform that tests frontier AI models on real-world DevOps and SRE scenarios.}
+  \resumeItem{Wrote setup scripts that inject controlled failures into K3s clusters, simulating infrastructure incidents across CI/CD pipelines, service mesh configurations, and observability stacks.}
+  \resumeItem{Built Python graders with partial scoring logic to assess AI agent responses against actual system state, covering incident response, platform engineering, and cloud operations tasks.}
+  \resumeItem{Authored solution scripts as ground-truth references; each task had to be fully verifiable from observable system state alone.}
+\resumeItemListEnd
+\resumeItem{Technologies used: Python, Bash, Kubernetes (K3s), Docker.}
+
+\resumeSubheading
   {Gigsama LLC}{Mar 2025 -- Mar 2026}
   {Fullstack Developer}{Remote}
 \resumeItemListStart
   \resumeItem{Led R\&D initiatives, evaluating and implementing production tools (PostHog, Sentry, Zoho Desk) and building technical PoCs to validate EHR integrations before full implementation.}
-  \resumeItem{Architected and developed the complete frontend for Carex Scholar, a platform for managing youth behavioral health sessions and assessments, with responsive interfaces across multiple user portals.}
+  \resumeItem{Architected the Carex Scholar frontend across two role-based portals: an organization portal covering schedule management, scholar check-ins, group notes, and assessments; and a staff portal for organization oversight, assessment scheduling, and review workflows.}
   \resumeItem{Built automated scholar check-in, assessments, and group notes for scholar sessions, reducing administrative overhead.}
-  \resumeItem{Contributed to backend development, implementing API endpoints and business logic for the Scholar platform.}
-  \resumeItem{Ensured HIPAA compliance throughout the platform, safeguarding sensitive healthcare data and minimizing audit risks.}
+  \resumeItem{Built a proof of concept for insurance billing integration and contributed backend fixes and features to the Scholar API in Express.js and PostgreSQL.}
+  \resumeItem{Maintained HIPAA compliance across the platform, including data access controls and audit logging for sensitive healthcare records.}
 \resumeItemListEnd
 \resumeItem{Technologies used: Next.js, TypeScript, Express.js, PostgreSQL.}
 
@@ -121,24 +131,12 @@
   {Hurisoft}{Nov 2024 -- July 2025}
   {Fullstack Developer}{Remote}
 \resumeItemListStart
-  \resumeItem{Developed the landing page for iExchange, a P2P cryptocurrency trading platform, driving user acquisition with a modern, responsive UI.}
-  \resumeItem{Collaborated on iExchange's main trading application, building front-end components and integrating APIs for secure transactions.}
-  \resumeItem{Resolved bugs and optimized performance for Soccersm, enhancing user experience and platform reliability through targeted front-end improvements.}
-  \resumeItem{Enhanced Scrowton, an e-commerce marketplace, by adding features, fixing bugs, and maintaining the platform to support secure escrow-based transactions, including backend services.}
+  \resumeItem{Developed the landing page for iExchange, a P2P cryptocurrency trading platform, with a responsive layout focused on user acquisition and conversion.}
+  \resumeItem{Built the iExchange trading application, setting up the project architecture and developing core P2P trading flows, KYC verification, order management, dispute resolution, and an admin panel.}
+  \resumeItem{Resolved bugs and improved frontend performance for Soccersm, a sports prediction platform, reducing load times and stabilizing key user flows.}
 \resumeItemListEnd
 \resumeItem{Technologies used: Next.js, TypeScript, Express.js, Firebase.}
 
-\vspace*{1cm}
-\resumeSubheading
-  {KNUST School of Business}{Nov 2023 -- Nov 2024}
-  {Fullstack Developer}{Kumasi, Ghana}
-\resumeItemListStart
-  \resumeItem{Developed an exams attendance application and admin dashboard, improving staff accountability and administrative efficiency.}
-  \resumeItem{Built a secure web-based Voting System for faculty elections, automating vote collection and providing real-time analytics.}
-  \resumeItem{Developed a nomination platform with role-based authentication, streamlining the nomination process for university elections.}
-  \resumeItem{Designed admin dashboards for managing nominations, with real-time notifications and analytics to enhance user management.}
-\resumeItemListEnd
-\resumeItem{Technologies used: Next.js, TypeScript, Flask, MongoDB.}
 \resumeSubHeadingListEnd
 \vspace{-1pt}
 
@@ -157,23 +155,23 @@
   {\textbf{Crypto Payment Gateway - Dashboard \& Checkout}}{Vue 3, TypeScript}
 \resumeItemListStart
   \resumeItem{Built merchant dashboard in Vue 3 for monitoring crypto transactions, payouts, commissions, and configuration such as API keys and webhooks.}
-  \resumeItem{Implemented checkout flow that generates deposit addresses and tracks on-chain payments via backend APIs, enabling merchants to accept crypto payments securely.}
-  \resumeItem{Integrated wallet connectivity using Wagmi and Viem, ensuring a smooth payment experience across multiple networks.}
+  \resumeItem{Implemented checkout flow that generates deposit addresses, polls for on-chain payment confirmations via backend APIs, and updates order status on confirmation.}
+  \resumeItem{Integrated wallet connectivity using Wagmi and Viem to support payments across multiple chains.}
 \resumeItemListEnd
 
 \resumeProjectHeading
   {\textbf{BisaDoctor - Chronic Care Platform}}{Next.js, TypeScript, Express.js, Firebase}
 \resumeItemListStart
-  \resumeItem{Developed the Next.js marketing site for BisaDoctor, communicating the product value for chronic care and capturing leads from patients and clinicians.}
-  \resumeItem{Implemented backend API endpoints in Express.js for vitals, medications, chats, notes, and notifications, powering the mobile app experience.}
-  \resumeItem{Supported subscription and billing flows by integrating payment provider webhooks and withdrawal logic for clinicians.}
+  \resumeItem{Developed the Next.js marketing site for BisaDoctor, a chronic care platform, with lead capture forms targeting patients and clinicians.}
+  \resumeItem{Built Express.js API endpoints for vitals, medications, chats, notes, and notifications that power the BisaDoctor mobile app.}
+  \resumeItem{Built a doctor-facing web portal for credential submission and verification, and an admin panel for reviewing doctor registrations and managing platform content.}
 \resumeItemListEnd
 
 \resumeProjectHeading
   {\textbf{Braszy Clothing - E-commerce Application}}{Next.js, TypeScript, Prisma, MongoDB}
 \resumeItemListStart
   \resumeItem{Built full-stack e-commerce platform with user authentication and responsive storefront for browsing fashion products.}
-  \resumeItem{Implemented product search and filtering, shopping cart, and order tracking to support a complete online shopping experience.}
+  \resumeItem{Implemented product search and filtering, shopping cart, and order tracking.}
   \resumeItem{Integrated Stripe for secure payments and used Prisma with MongoDB for managing products, orders, and customer data.}
 \resumeItemListEnd
 \resumeSubHeadingListEnd
@@ -200,8 +198,8 @@
 \begin{itemize}[leftmargin=0.15in, label={}]
 \small{
 \item{\textbf{Languages}: JavaScript, TypeScript, Python, SQL, Java.}
-\item{\textbf{Libraries/Frameworks}: React, Next.js, Vue.js, React Native, Express.js, Flask, Spring Boot.}
-\item{\textbf{Developer Tools}: Git, Docker, AWS, Prisma, Firebase.}
+\item{\textbf{Libraries/Frameworks}: React, Next.js, Vue.js, React Native, Express.js.}
+\item{\textbf{Developer Tools}: Git, Docker, Kubernetes, AWS, Prisma, Firebase.}
 \item{\textbf{Testing}: Jest, Playwright.}
 \item{\textbf{Database}: PostgreSQL, MongoDB, MySQL, SQLite.}
 }

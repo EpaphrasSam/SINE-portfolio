@@ -44,12 +44,10 @@ export const projects: Project[] = [
     preview:
       "Onchain P2P trading platform with a marketing site and trading interface for seamless crypto–fiat exchange.",
     description: [
-      "IExchange is an innovative platform that bridges the gap between traditional finance and cryptocurrency through a secure peer-to-peer trading system.",
-      "The landing page features an engaging user interface that clearly communicates the platform's unique value proposition of easy crypto-to-cash conversions.",
-      "Interactive sections showcase the platform's key features including P2P trading capabilities and secure transaction processing.",
-      "The design incorporates smooth animations and transitions to create an engaging user experience while highlighting platform benefits.",
-      "A detailed section provides in-depth information about the platform's technology and security measures.",
-      "The responsive design ensures perfect presentation across all devices, with optimized performance and accessibility.",
+      "IExchange is a P2P cryptocurrency trading platform. The work covered two surfaces: a marketing site and the main trading application.",
+      "The marketing site explains the platform's core offering — crypto-to-cash conversions through peer-to-peer trades — with animated sections and a clear conversion-focused layout.",
+      "The trading application lets users post and respond to trade offers, with API integration for managing orders and wallet balances.",
+      "Both surfaces are built with Next.js, TypeScript, TailwindCSS, and Framer Motion.",
     ],
     type: "web",
     icon: (
@@ -115,7 +113,7 @@ export const projects: Project[] = [
       "BisaDoctor is a digital health platform for chronic care management, helping patients track vitals, medications, and connect with doctors remotely.",
       "The marketing site is a Next.js application that explains the product, showcases benefits, and collects leads through forms and waitlists.",
       "The backend API, built with TypeScript, Express, Firebase Auth, and Firestore, powers the mobile app with endpoints for vitals, medications, chats, notes, notifications, and statistics.",
-      "Subscription and billing flows integrate with a payment provider to manage plans, webhooks, and withdrawal flows for clinicians.",
+      "Built a doctor-facing web portal for credential submission and verification, and an admin panel for reviewing doctor registrations and managing platform content.",
     ],
     type: "web",
     icon: (
@@ -185,7 +183,6 @@ export const projects: Project[] = [
       "The application features geospatial incident tracking with interactive Leaflet maps and event reporting with comprehensive data capture.",
       "Situational analysis tools provide risk assessment scoring and comparative reporting to support crisis management decisions.",
       "It integrates with a separate backend API and supports role-based access for different user types.",
-      "Built with a responsive interface and modern React patterns for maintainability and performance.",
     ],
     type: "web",
     icon: (
@@ -204,7 +201,6 @@ export const projects: Project[] = [
       </svg>
     ),
     tech: ["Next.js", "TypeScript", "Leaflet", "Next-Auth", "SWR"],
-    url: "https://ewdh.nccrm.gov.gh/",
   },
   {
     id: "Hurisoft",
@@ -212,10 +208,10 @@ export const projects: Project[] = [
     preview:
       "Company website for Hurisoft, showcasing services, products, and thought-leadership content.",
     description: [
-      "The Hurisoft website presents the company’s services in AI, blockchain, and software development with a modern, animated UI.",
+      "The Hurisoft website presents the company’s services across AI, blockchain, and software development.",
       "It includes sections for service offerings, product highlights, testimonials, and a blog generated from structured content.",
       "Contact and newsletter forms integrate with external form providers to capture leads without a custom backend.",
-      "Built with Next.js, TailwindCSS, and Framer Motion to deliver a responsive, content-focused experience.",
+      "Built with Next.js, TailwindCSS, and Framer Motion.",
     ],
     type: "web",
     icon: (
@@ -241,15 +237,11 @@ export const projects: Project[] = [
     id: "Braszy",
     title: "Braszy Clothing E-commerce",
     preview:
-      "A modern e-commerce platform offering a seamless shopping experience for fashion enthusiasts.",
+      "Full-stack e-commerce platform for fashion retail, with product catalog, cart, Stripe checkout, and order management.",
     description: [
-      "Braszy is a cutting-edge e-commerce platform that redefines online fashion shopping with its modern and intuitive interface.",
-      "The platform features a dynamic product catalog with advanced filtering and search capabilities, making it easy for customers to find their perfect style.",
-      "Each product page includes detailed information, size guides, and high-quality images with zoom functionality for a better shopping experience.",
-      "The integrated cart and checkout system supports multiple payment methods through Stripe integration, ensuring secure transactions.",
-      "A sophisticated inventory management system helps track stock levels and automatically updates product availability.",
-      "The platform includes a customer account system where users can track orders, save favorite items, and manage their shopping preferences.",
-      "Built with performance in mind, the application uses modern web technologies to ensure fast loading times and smooth navigation.",
+      "Braszy is an e-commerce platform built with Next.js, Prisma, and MongoDB, covering the full shopping workflow from product browsing to checkout.",
+      "Products have dedicated pages with filtering and search. Orders go through a cart and Stripe-powered checkout, with inventory levels tracked per SKU.",
+      "Customer accounts store order history and saved items. Stripe handles payment processing and webhook-based order confirmation.",
     ],
     type: "web",
     icon: (
@@ -269,36 +261,6 @@ export const projects: Project[] = [
     ),
     tech: ["Next.js", "TypeScript", "Prisma", "TailwindCSS"],
     url: "https://braszyclothing.com",
-  },
-  {
-    id: "Sucoff",
-    title: "Sucoff Ventures",
-    preview:
-      "Corporate website for Sucoff Ventures with an animated, responsive UI.",
-    description: [
-      "Sucoff Ventures is a corporate website built to showcase the company's presence and services with a modern, polished design.",
-      "The site features an animated and responsive layout using Framer Motion and HeroUI for smooth transitions and clear visual hierarchy.",
-      "Built with Next.js and React for fast performance and a strong developer experience.",
-      "The design emphasizes clarity and professionalism while remaining engaging for visitors.",
-    ],
-    type: "web",
-    icon: (
-      <svg
-        className="w-6 h-6"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={2}
-          d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-        />
-      </svg>
-    ),
-    tech: ["Next.js", "TypeScript", "TailwindCSS", "Framer Motion", "HeroUI"],
-    url: "https://sucoffventures.com/",
   },
   {
     id: "VerseCatch",
@@ -343,15 +305,12 @@ export const projects: Project[] = [
     id: "AgriLink",
     title: "AgriLink Web Application",
     preview:
-      "A revolutionary platform bridging the gap between farmers and consumers, enabling direct trade and communication.",
+      "Marketplace connecting farmers and consumers for direct agricultural trade, with real-time chat and a community forum.",
     description: [
-      "AgriLink is an innovative web platform designed to transform agricultural commerce by creating a direct connection between farmers and consumers.",
-      "The platform features a sophisticated marketplace where farmers can showcase their products, complete with detailed descriptions, pricing, and availability information.",
-      "Consumers can browse through various agricultural products, place orders, and communicate directly with farmers through an integrated real-time messaging system.",
-      "The application includes a robust review and rating system, helping build trust and transparency in the agricultural marketplace.",
-      "A dedicated Farmer Portal enables agricultural producers to manage their product listings, track orders, and analyze their sales performance through intuitive dashboards.",
-      "The Community Forum facilitates knowledge sharing and discussions about agricultural practices, market trends, and sustainable farming methods.",
-      "Built with modern web technologies, the platform offers a responsive design that works seamlessly across all devices.",
+      "AgriLink is a marketplace connecting farmers with consumers for direct agricultural trade, cutting out the intermediary.",
+      "Farmers list products with pricing and availability. Consumers browse, place orders, and message sellers directly through a built-in real-time chat system.",
+      "A review and rating system covers both buyers and sellers. A community forum supports discussions on farming practices and market trends.",
+      "Farmers get a dedicated portal to manage listings, track orders, and review sales data. Built with Next.js, Prisma, and Pusher for real-time messaging.",
     ],
     type: "web",
     icon: (
@@ -376,15 +335,11 @@ export const projects: Project[] = [
     id: "Threads",
     title: "Threads Social Platform",
     preview:
-      "A modern social platform enabling users to share thoughts, engage in discussions, and build connections.",
+      "Social platform with threaded posts, comments, and likes, built with Next.js and Prisma.",
     description: [
-      "Threads is a social networking platform built with modern web technologies, focusing on user engagement and content sharing.",
-      "Features a clean and intuitive user interface that makes it easy to create and interact with posts.",
-      "Implements core social features including post creation, comments, and user interactions.",
-      "Users can engage with content through likes and comments, fostering meaningful discussions.",
-      "Built with responsive design principles ensuring a seamless experience across all devices.",
-      "Incorporates user authentication for secure access and personalized experiences.",
-      "Utilizes modern web technologies for efficient data management and real-time updates.",
+      "Threads is a social platform built with Next.js and Prisma, covering the core loop of post creation, comments, and likes.",
+      "User authentication gates content creation. The feed supports nested replies and threaded discussions.",
+      "Built as a personal project to practice full-stack social features with a type-safe stack.",
     ],
     type: "web",
     icon: (
@@ -411,13 +366,9 @@ export const projects: Project[] = [
     preview:
       "A modern blogging platform with rich text editing, category organization, and interactive features.",
     description: [
-      "BlogoSphere is a feature-rich blogging platform built with modern web technologies.",
-      "Implements a comprehensive content management system with category-based organization and rich text editing.",
-      "Features user authentication and profile management for secure content creation and interaction.",
-      "Includes an interactive comment system allowing users to engage with blog content.",
-      "Incorporates view tracking to monitor post engagement and popularity.",
-      "Supports dark/light theme modes for enhanced user experience.",
-      "Built with responsive design principles for seamless viewing across all devices.",
+      "BlogoSphere is a blogging platform with a rich text editor and category-based post organization.",
+      "Posts track view counts and support a comment thread. User accounts handle content creation and profile management.",
+      "Includes dark/light theme support. Built with Next.js, Prisma, and TailwindCSS.",
     ],
     type: "web",
     icon: (
@@ -505,15 +456,12 @@ export const projects: Project[] = [
     id: "CampServe",
     title: "Campserve Mobile Application",
     preview:
-      "A comprehensive mobile platform connecting university students with essential campus services and local businesses.",
+      "Mobile app connecting university students with campus service providers for bookings, payments, and real-time chat.",
     description: [
-      "Campserve is a revolutionary mobile application designed to enhance campus life by connecting university students with various services and local businesses.",
-      "The app features an intuitive interface where students can discover and book services ranging from laundry and food delivery to academic tutoring.",
-      "Service providers can create profiles, list their services, and manage bookings through a dedicated business dashboard.",
-      "The platform includes a sophisticated rating and review system to maintain service quality and build trust within the campus community.",
-      "Real-time chat functionality enables smooth communication between service providers and students.",
-      "Integrated payment system supports multiple payment methods for secure and convenient transactions.",
-      "Location-based service discovery helps students find nearby service providers efficiently.",
+      "CampServe is a mobile app connecting university students with campus service providers — laundry, food, tutoring, and more.",
+      "Service providers manage their listings and bookings through a dedicated dashboard. Students browse nearby services, book, and pay through an integrated payment flow.",
+      "Real-time chat connects students with providers after booking. A rating system covers both sides of each transaction.",
+      "Location-based discovery surfaces providers close to the student's current position. Built with React Native and Flask.",
     ],
     type: "mobile",
     icon: (
@@ -538,15 +486,12 @@ export const projects: Project[] = [
     id: "BudgetBuddy",
     title: "BudgetBuddy Finance App",
     preview:
-      "A comprehensive personal finance management mobile app for expense tracking, budgeting, and financial goal setting.",
+      "Personal finance mobile app for expense tracking, budget alerts, and savings goal management.",
     description: [
-      "BudgetBuddy is an intuitive mobile application designed to help users take control of their personal finances.",
-      "Features an easy-to-use expense tracking system with automatic categorization and custom categories.",
-      "Implements budget management tools with real-time monitoring and spending alerts.",
-      "Provides visual analytics and reports to help users understand their spending patterns and financial health.",
-      "Includes goal-setting features for savings targets and financial milestones.",
-      "Offers secure user authentication and data storage for personal financial information.",
-      "Built with a responsive UI that adapts to different mobile devices and screen sizes.",
+      "BudgetBuddy is a personal finance app for tracking expenses, managing budgets, and setting savings goals.",
+      "Expenses are automatically categorized, with custom categories available. Budget caps trigger alerts when spending approaches the limit.",
+      "Visual charts break down spending by category and time period. Savings goals track progress toward user-defined targets.",
+      "Built with React Native, Expo, TypeScript, and Tamagui.",
     ],
     type: "mobile",
     icon: (
