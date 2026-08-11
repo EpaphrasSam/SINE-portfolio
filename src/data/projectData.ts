@@ -1,5 +1,5 @@
 // This file is auto-generated. Do not edit manually.
-// Generated on 2026-07-17T09:42:39.139Z
+// Generated on 2026-08-11T10:35:11.710Z
 
 export interface ProjectImages {
   images: string[];
@@ -8,25 +8,11 @@ export interface ProjectImages {
 }
 
 export const projectData: Record<string, ProjectImages> = {
-  "AgriLink": {
-    "images": [
-      "/images/projects/AgriLink/Screenshot 2024-11-14 004028.png"
-    ],
-    "logo": "/images/projects/AgriLink/logo.png",
-    "hasLogo": true
-  },
   "BisaDoctor": {
     "images": [
       "/images/projects/BisaDoctor/Screenshot 2026-03-11 100132.png"
     ],
     "logo": "/images/projects/BisaDoctor/logo.png",
-    "hasLogo": true
-  },
-  "BlogoSphere": {
-    "images": [
-      "/images/projects/BlogoSphere/Screenshot 2024-11-15 010329.png"
-    ],
-    "logo": "/images/projects/BlogoSphere/logo.png",
     "hasLogo": true
   },
   "Braszy": {
@@ -65,11 +51,6 @@ export const projectData: Record<string, ProjectImages> = {
     "logo": "",
     "hasLogo": false
   },
-  "DigiTechEdge": {
-    "images": [],
-    "logo": "/images/projects/DigiTechEdge/logo.png",
-    "hasLogo": true
-  },
   "Hurisoft": {
     "images": [
       "/images/projects/Hurisoft/Screenshot 2026-03-11 100243.png"
@@ -106,33 +87,12 @@ export const projectData: Record<string, ProjectImages> = {
     "logo": "/images/projects/Soccersm/logo.png",
     "hasLogo": true
   },
-  "Sucoff": {
-    "images": [
-      "/images/projects/Sucoff/Screenshot 2026-03-11 001901.png"
-    ],
-    "logo": "/images/projects/Sucoff/logo.png",
-    "hasLogo": true
-  },
-  "Threads": {
-    "images": [
-      "/images/projects/Threads/Screenshot 2024-11-15 005313.png"
-    ],
-    "logo": "/images/projects/Threads/logo.png",
-    "hasLogo": true
-  },
   "VerseCatch": {
     "images": [
       "/images/projects/VerseCatch/Screenshot 2026-03-11 002104.png"
     ],
     "logo": "",
     "hasLogo": false
-  },
-  "VoteSphere": {
-    "images": [
-      "/images/projects/VoteSphere/Screenshot 2024-11-15 023233.png"
-    ],
-    "logo": "/images/projects/VoteSphere/logo.png",
-    "hasLogo": true
   },
   "WeMoveManager": {
     "images": [

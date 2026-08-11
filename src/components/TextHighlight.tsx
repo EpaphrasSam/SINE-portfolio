@@ -20,7 +20,7 @@ export function TextHighlight({ text, highlight }: TextHighlightProps) {
           key={i}
           className={
             part.toLowerCase() === highlight.toLowerCase()
-              ? "bg-violet-200 dark:bg-violet-900/50 text-violet-900 dark:text-violet-100 rounded px-0.5"
+              ? "bg-accent/25 text-ink rounded-sm px-0.5"
               : ""
           }
         >
@@ -37,7 +37,7 @@ interface HighlightContainerProps {
 
 export function HighlightContainer({ children }: HighlightContainerProps) {
   const { activeSearch } = useSearch();
-  const scrollTimeout = React.useRef<NodeJS.Timeout>();
+  const scrollTimeout = React.useRef<NodeJS.Timeout | undefined>(undefined);
 
   React.useEffect(() => {
     if (activeSearch?.elementId) {

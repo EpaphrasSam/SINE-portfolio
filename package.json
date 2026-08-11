@@ -1,12 +1,12 @@
 {
   "name": "sine-portfolio",
-  "version": "0.1.0",
+  "version": "2.0.0",
   "private": true,
   "scripts": {
     "dev": "npm run generate-all && next dev",
     "build": "npm run generate-all && next build",
     "start": "next start",
-    "lint": "next lint",
+    "lint": "eslint .",
     "generate-all": "npm run generate-data && npm run generate-search",
     "generate-data": "ts-node --project tsconfig.node.json scripts/generateProjectData.ts",
     "generate-search": "ts-node --project tsconfig.node.json scripts/generateSearchData.ts",
@@ -16,31 +16,28 @@
     "@babel/parser": "^7.26.2",
     "@babel/traverse": "^7.25.9",
     "@babel/types": "^7.26.0",
-    "@headlessui/react": "^2.2.0",
-    "@nextui-org/react": "^2.2.9",
-    "@types/lodash": "^4.17.13",
-    "framer-motion": "^10.18.0",
+    "lenis": "^1.3.26",
     "lodash": "^4.17.21",
-    "next": "14.0.4",
-    "react": "^18",
-    "react-dom": "^18",
-    "sine-portfolio": "file:"
+    "motion": "^13.1.0",
+    "next": "^16.3.0",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8"
   },
   "devDependencies": {
     "@types/babel__traverse": "^7.20.6",
+    "@types/lodash": "^4.17.13",
     "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.4",
     "autoprefixer": "^10.0.1",
-    "eslint": "^8",
-    "eslint-config-next": "14.0.4",
+    "eslint": "^9.39.5",
+    "eslint-config-next": "^16.3.0",
     "postcss": "^8",
     "tailwindcss": "^3.3.0",
     "ts-node": "^10.9.2",
     "typescript": "^5"
   },
-  "main": "next.config.js",
-  "author": "",
+  "author": "Isaac Epaphras Nana Sam",
   "license": "ISC",
-  "description": ""
+  "description": "Personal portfolio — Isaac Epaphras Nana Sam"
 }

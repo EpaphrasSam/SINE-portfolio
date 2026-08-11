@@ -1,6 +1,6 @@
 "use client";
 
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence } from "motion/react";
 import Link from "next/link";
 import { TextHighlight } from "./TextHighlight";
 import { useSearch } from "../context/SearchContext";
@@ -144,7 +144,7 @@ export default function SearchResults({
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        className="text-center text-gray-600 dark:text-gray-400 py-8"
+        className="text-center text-ink-2 py-8"
       >
         Start typing to search...
       </motion.div>
@@ -156,7 +156,7 @@ export default function SearchResults({
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        className="text-center text-gray-600 dark:text-gray-400 py-8"
+        className="text-center text-ink-2 py-8"
       >
         No results found for &quot;{searchQuery}&quot;
       </motion.div>
@@ -169,7 +169,7 @@ export default function SearchResults({
       animate={{ opacity: 1 }}
       className="space-y-4 max-h-[60vh] overflow-y-auto"
     >
-      <div className="text-sm text-gray-600 dark:text-gray-400 mb-4">
+      <div className="text-sm text-ink-2 mb-4">
         Found {results.length} result{results.length !== 1 ? "s" : ""} for
         &quot;{searchQuery}&quot;
       </div>
@@ -197,16 +197,16 @@ export default function SearchResults({
                 <Link
                   href={result.path}
                   onClick={() => handleResultClick(result)}
-                  className="block p-4 rounded-lg bg-gray-50 dark:bg-zinc-800/50 hover:bg-violet-500/10 dark:hover:bg-violet-400/10 border border-gray-200 dark:border-zinc-700 hover:border-violet-500/50 dark:hover:border-violet-400/50 transition-all duration-150"
+                  className="block p-4 rounded-lg bg-raise hover:bg-accent-soft border border-rule hover:border-accent/50 transition-all duration-200"
                 >
                   <div className="flex items-center justify-between mb-2">
-                    <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
+                    <h3 className="text-lg font-semibold text-ink">
                       <TextHighlight
                         text={result.title}
                         highlight={searchQuery}
                       />
                     </h3>
-                    <span className="text-sm text-violet-500 dark:text-violet-400 px-2 py-1 rounded-full bg-violet-50 dark:bg-violet-900/20">
+                    <span className="text-sm text-accent px-2 py-1 rounded-full bg-accent-soft">
                       Page
                     </span>
                   </div>
@@ -228,23 +228,23 @@ export default function SearchResults({
                 <Link
                   href={result.path}
                   onClick={() => handleResultClick(result)}
-                  className="block p-4 rounded-lg bg-gray-50 dark:bg-zinc-800/50 hover:bg-violet-500/10 dark:hover:bg-violet-400/10 border border-gray-200 dark:border-zinc-700 hover:border-violet-500/50 dark:hover:border-violet-400/50 transition-all duration-150"
+                  className="block p-4 rounded-lg bg-raise hover:bg-accent-soft border border-rule hover:border-accent/50 transition-all duration-200"
                 >
-                  <div className="text-gray-900 dark:text-white">
+                  <div className="text-ink">
                     <div className="font-medium mb-2">
                       <TextHighlight
                         text={result.title}
                         highlight={searchQuery}
                       />
                     </div>
-                    <div className="text-sm text-gray-600 dark:text-gray-400">
+                    <div className="text-sm text-ink-2">
                       <TextHighlight
                         text={result.preview}
                         highlight={searchQuery}
                       />
                     </div>
                   </div>
-                  <div className="text-xs text-violet-500 dark:text-violet-400 mt-2">
+                  <div className="text-xs text-accent mt-2">
                     Found in {getPageName(result.path)}
                   </div>
                 </Link>

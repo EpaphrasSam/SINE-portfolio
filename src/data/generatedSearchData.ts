@@ -39,6 +39,18 @@ export const searchData: SearchResultType[] = [
     "preview": "Get in touch for collaboration opportunities"
   },
   {
+    "title": "About       Download CV",
+    "preview": "About       Download CV",
+    "path": "/",
+    "type": "content"
+  },
+  {
+    "title": "About",
+    "preview": "About",
+    "path": "/about",
+    "type": "content"
+  },
+  {
     "title": "Download CV",
     "preview": "Download CV",
     "path": "/",
@@ -51,117 +63,423 @@ export const searchData: SearchResultType[] = [
     "type": "content"
   },
   {
-    "title": "•",
-    "preview": "•",
+    "title": "Experience",
+    "preview": "Experience",
     "path": "/about",
     "type": "content"
   },
   {
-    "title": "About Me",
-    "preview": "Learn about my journey, experience, and what drives me as a developer.",
+    "title": "Education",
+    "preview": "Education",
+    "path": "/about",
+    "type": "content"
+  },
+  {
+    "title": "Contact",
+    "preview": "Contact",
+    "path": "/contact",
+    "type": "content"
+  },
+  {
+    "title": "Elsewhere",
+    "preview": "Elsewhere",
+    "path": "/contact",
+    "type": "content"
+  },
+  {
+    "title": "↗",
+    "preview": "↗",
+    "path": "/contact",
+    "type": "content"
+  },
+  {
+    "title": "CV   The full record — roles, dates, and everythin",
+    "preview": "CV   The full record — roles, dates, and everything not on this site.  Download CV (PDF) ↗",
     "path": "/",
     "type": "content"
   },
   {
-    "title": "My Projects",
-    "preview": "Explore my portfolio of web and mobile applications.",
+    "title": "CV",
+    "preview": "CV",
+    "path": "/contact",
+    "type": "content"
+  },
+  {
+    "title": "The full record — roles, dates, and everything not",
+    "preview": "The full record — roles, dates, and everything not on this site.  Download CV (PDF) ↗",
     "path": "/",
     "type": "content"
   },
   {
-    "title": "Skills & Tech",
-    "preview": "Discover my technical expertise and the technologies I work with.",
+    "title": "The full record — roles, dates, and everything not",
+    "preview": "The full record — roles, dates, and everything not on this site.",
     "path": "/",
     "type": "content"
   },
   {
-    "title": "Get in Touch",
-    "preview": "Let's connect and discuss potential collaborations.",
+    "title": "The full record — roles, dates, and everything not",
+    "preview": "The full record — roles, dates, and everything not on this site.",
+    "path": "/contact",
+    "type": "content"
+  },
+  {
+    "title": "Download CV (PDF) ↗",
+    "preview": "Download CV (PDF) ↗",
     "path": "/",
     "type": "content"
   },
   {
-    "title": "View Projects  Get in Touch                       ",
-    "preview": "View Projects  Get in Touch                                            Get in Touch  View GitHub            Let's Talk",
+    "title": "Download CV (PDF) ↗",
+    "preview": "Download CV (PDF) ↗",
+    "path": "/contact",
+    "type": "content"
+  },
+  {
+    "title": "Available for work       Building software for    ",
+    "preview": "Available for work       Building software for      Four years of production systems where being wrong has consequences —\n            regulated patient records, live funds moving between strangers, and\n            infrastructure that has to stay standing.   See the work     Download CV",
     "path": "/",
     "type": "content"
   },
   {
-    "title": "View Projects  Get in Touch",
-    "preview": "View Projects  Get in Touch",
+    "title": "Available for work",
+    "preview": "Available for work",
     "path": "/",
     "type": "content"
   },
   {
-    "title": "View Projects",
-    "preview": "View Projects",
+    "title": "Available for work",
+    "preview": "Available for work",
     "path": "/",
     "type": "content"
   },
   {
-    "title": "View Projects",
-    "preview": "View Projects",
+    "title": "Building software for",
+    "preview": "Building software for",
     "path": "/",
     "type": "content"
   },
   {
-    "title": "Get in Touch",
-    "preview": "Get in Touch",
+    "title": "Building software for",
+    "preview": "Building software for",
     "path": "/",
     "type": "content"
   },
   {
-    "title": "Get in Touch",
-    "preview": "Get in Touch",
+    "title": "Four years of production systems where being wrong",
+    "preview": "Four years of production systems where being wrong has consequences —\n            regulated patient records, live funds moving between strangers, and\n            infrastructure that has to stay standing.",
     "path": "/",
     "type": "content"
   },
   {
-    "title": "Featured Projects",
-    "preview": "Some of my recent web applications that I'm proud of",
+    "title": "Four years of production systems where being wrong",
+    "preview": "Four years of production systems where being wrong has consequences —\n            regulated patient records, live funds moving between strangers, and\n            infrastructure that has to stay standing.",
     "path": "/",
     "type": "content"
   },
   {
-    "title": "Skills Overview",
-    "preview": "My technical expertise and tools I work with",
+    "title": "See the work     Download CV",
+    "preview": "See the work     Download CV",
     "path": "/",
     "type": "content"
   },
   {
-    "title": "Explore My Portfolio",
-    "preview": "Navigate through different sections to learn more about my work and expertise",
+    "title": "See the work",
+    "preview": "See the work",
     "path": "/",
     "type": "content"
   },
   {
-    "title": "Get in Touch  View GitHub",
-    "preview": "Get in Touch  View GitHub",
+    "title": "See the work",
+    "preview": "See the work",
     "path": "/",
     "type": "content"
   },
   {
-    "title": "Let's Work Together",
-    "preview": "I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.",
+    "title": "Download CV",
+    "preview": "Download CV",
     "path": "/",
     "type": "content"
   },
   {
-    "title": "View GitHub",
-    "preview": "View GitHub",
+    "title": "Download CV",
+    "preview": "Download CV",
     "path": "/",
     "type": "content"
   },
   {
-    "title": "View GitHub",
-    "preview": "View GitHub",
+    "title": "Selected work   Four systems, built where being wr",
+    "preview": "Selected work   Four systems, built where being wrong has consequences.        Everything else  View all 12 projects",
+    "path": "/",
+    "type": "content",
+    "elementId": "work"
+  },
+  {
+    "title": "Selected work   Four systems, built where being wr",
+    "preview": "Selected work   Four systems, built where being wrong has consequences.        Everything else  View all 12 projects",
+    "path": "/#work",
+    "type": "content",
+    "elementId": "work"
+  },
+  {
+    "title": "Selected work   Four systems, built where being wr",
+    "preview": "Selected work   Four systems, built where being wrong has consequences.",
+    "path": "/#work",
+    "type": "content",
+    "elementId": "work"
+  },
+  {
+    "title": "Selected work",
+    "preview": "Selected work",
+    "path": "/#work",
+    "type": "content",
+    "elementId": "work"
+  },
+  {
+    "title": "Selected work",
+    "preview": "Selected work",
+    "path": "/",
+    "type": "content",
+    "elementId": "work"
+  },
+  {
+    "title": "Four systems, built where being wrong has conseque",
+    "preview": "Four systems, built where being wrong has consequences.",
+    "path": "/#work",
+    "type": "content",
+    "elementId": "work"
+  },
+  {
+    "title": "Four systems, built where being wrong has conseque",
+    "preview": "Four systems, built where being wrong has consequences.",
+    "path": "/",
+    "type": "content",
+    "elementId": "work"
+  },
+  {
+    "title": "Everything else  View all 12 projects",
+    "preview": "Everything else  View all 12 projects",
+    "path": "/#work",
+    "type": "content",
+    "elementId": "work"
+  },
+  {
+    "title": "Everything else",
+    "preview": "Everything else",
+    "path": "/#work",
+    "type": "content",
+    "elementId": "work"
+  },
+  {
+    "title": "Everything else",
+    "preview": "Everything else",
+    "path": "/",
+    "type": "content",
+    "elementId": "work"
+  },
+  {
+    "title": "View all 12 projects",
+    "preview": "View all 12 projects",
+    "path": "/#work",
+    "type": "content",
+    "elementId": "work"
+  },
+  {
+    "title": "View all 12 projects",
+    "preview": "View all 12 projects",
+    "path": "/",
+    "type": "content",
+    "elementId": "work"
+  },
+  {
+    "title": "Experience",
+    "preview": "Experience",
     "path": "/",
     "type": "content"
   },
   {
-    "title": "Let's Talk",
-    "preview": "Let's Talk",
+    "title": "Capabilities",
+    "preview": "Capabilities",
     "path": "/",
+    "type": "content"
+  },
+  {
+    "title": "Capabilities",
+    "preview": "Capabilities",
+    "path": "/",
+    "type": "content"
+  },
+  {
+    "title": "Open to engineering roles.  If the work above is t",
+    "preview": "Open to engineering roles.  If the work above is the kind of thing your team is building, I’d\n              like to hear about it.   Get in touch  GitHub  LinkedIn",
+    "path": "/",
+    "type": "content"
+  },
+  {
+    "title": "Open to engineering roles.",
+    "preview": "Open to engineering roles.",
+    "path": "/",
+    "type": "content"
+  },
+  {
+    "title": "Open to engineering roles.",
+    "preview": "Open to engineering roles.",
+    "path": "/",
+    "type": "content"
+  },
+  {
+    "title": "If the work above is the kind of thing your team i",
+    "preview": "If the work above is the kind of thing your team is building, I’d\n              like to hear about it.",
+    "path": "/",
+    "type": "content"
+  },
+  {
+    "title": "If the work above is the kind of thing your team i",
+    "preview": "If the work above is the kind of thing your team is building, I’d\n              like to hear about it.",
+    "path": "/",
+    "type": "content"
+  },
+  {
+    "title": "Get in touch  GitHub  LinkedIn",
+    "preview": "Get in touch  GitHub  LinkedIn",
+    "path": "/",
+    "type": "content"
+  },
+  {
+    "title": "Get in touch",
+    "preview": "Get in touch",
+    "path": "/",
+    "type": "content"
+  },
+  {
+    "title": "Get in touch",
+    "preview": "Get in touch",
+    "path": "/",
+    "type": "content"
+  },
+  {
+    "title": "GitHub",
+    "preview": "GitHub",
+    "path": "/",
+    "type": "content"
+  },
+  {
+    "title": "LinkedIn",
+    "preview": "LinkedIn",
+    "path": "/",
+    "type": "content"
+  },
+  {
+    "title": "Projects      projects across fintech, healthcare,",
+    "preview": "Projects      projects across fintech, healthcare,\n            government and consumer. Four have full case studies.",
+    "path": "/",
+    "type": "content"
+  },
+  {
+    "title": "Projects",
+    "preview": "Projects",
+    "path": "/projects",
+    "type": "content"
+  },
+  {
+    "title": "projects across fintech, healthcare,\n            g",
+    "preview": "projects across fintech, healthcare,\n            government and consumer. Four have full case studies.",
+    "path": "/",
+    "type": "content"
+  },
+  {
+    "title": "projects across fintech, healthcare,\n            g",
+    "preview": "projects across fintech, healthcare,\n            government and consumer. Four have full case studies.",
+    "path": "/projects",
+    "type": "content"
+  },
+  {
+    "title": "Web —    Mobile —",
+    "preview": "Web —    Mobile —",
+    "path": "/",
+    "type": "content"
+  },
+  {
+    "title": "Web —",
+    "preview": "Web —",
+    "path": "/projects",
+    "type": "content"
+  },
+  {
+    "title": "Mobile —",
+    "preview": "Mobile —",
+    "path": "/projects",
+    "type": "content"
+  },
+  {
+    "title": "Skills     Grouped by what they are for rather tha",
+    "preview": "Skills     Grouped by what they are for rather than rated out of five.",
+    "path": "/",
+    "type": "content"
+  },
+  {
+    "title": "Skills",
+    "preview": "Skills",
+    "path": "/skills",
+    "type": "content"
+  },
+  {
+    "title": "Grouped by what they are for rather than rated out",
+    "preview": "Grouped by what they are for rather than rated out of five.",
+    "path": "/",
+    "type": "content"
+  },
+  {
+    "title": "Grouped by what they are for rather than rated out",
+    "preview": "Grouped by what they are for rather than rated out of five.",
+    "path": "/skills",
+    "type": "content"
+  },
+  {
+    "title": "← All projects                                    ",
+    "preview": "← All projects                                     Next project   →",
+    "path": "/",
+    "type": "content"
+  },
+  {
+    "title": "← All projects",
+    "preview": "← All projects",
+    "path": "/",
+    "type": "content"
+  },
+  {
+    "title": "← All projects",
+    "preview": "← All projects",
+    "path": "/work/[slug]",
+    "type": "content"
+  },
+  {
+    "title": "↗",
+    "preview": "↗",
+    "path": "/work/[slug]",
+    "type": "content"
+  },
+  {
+    "title": "Next project   →",
+    "preview": "Next project   →",
+    "path": "/",
+    "type": "content"
+  },
+  {
+    "title": "Next project",
+    "preview": "Next project",
+    "path": "/",
+    "type": "content"
+  },
+  {
+    "title": "Next project",
+    "preview": "Next project",
+    "path": "/work/[slug]",
+    "type": "content"
+  },
+  {
+    "title": "→",
+    "preview": "→",
+    "path": "/work/[slug]",
     "type": "content"
   },
   {
@@ -179,18 +497,18 @@ export const searchData: SearchResultType[] = [
     "elementId": "IExchange"
   },
   {
-    "title": "Crypto Payment Gateway",
-    "preview": "Dashboard and checkout experiences for processing crypto payments through a unified gateway. (Vue 3, TypeScript, Vite)",
-    "path": "/projects#CPG",
+    "title": "NCCRM DataHub",
+    "preview": "Government crisis response platform with geospatial incident tracking and situational analysis. (Next.js, TypeScript, Leaflet)",
+    "path": "/projects#NCCRM",
     "type": "content",
-    "elementId": "CPG"
+    "elementId": "NCCRM"
   },
   {
-    "title": "Crypto Payment Gateway",
-    "preview": "Dashboard and checkout experiences for processing crypto payments through a unified gateway. (Vue 3, TypeScript, Vite)",
+    "title": "NCCRM DataHub",
+    "preview": "Government crisis response platform with geospatial incident tracking and situational analysis. (Next.js, TypeScript, Leaflet)",
     "path": "/",
     "type": "content",
-    "elementId": "CPG"
+    "elementId": "NCCRM"
   },
   {
     "title": "BisaDoctor Chronic Care Platform",
@@ -221,18 +539,18 @@ export const searchData: SearchResultType[] = [
     "elementId": "Soccersm"
   },
   {
-    "title": "NCCRM DataHub",
-    "preview": "Government crisis response platform with geospatial incident tracking and situational analysis. (Next.js, TypeScript, Leaflet)",
-    "path": "/projects#NCCRM",
+    "title": "Crypto Payment Gateway",
+    "preview": "Dashboard and checkout experiences for processing crypto payments through a unified gateway. (Vue 3, TypeScript, Vite)",
+    "path": "/projects#CPG",
     "type": "content",
-    "elementId": "NCCRM"
+    "elementId": "CPG"
   },
   {
-    "title": "NCCRM DataHub",
-    "preview": "Government crisis response platform with geospatial incident tracking and situational analysis. (Next.js, TypeScript, Leaflet)",
+    "title": "Crypto Payment Gateway",
+    "preview": "Dashboard and checkout experiences for processing crypto payments through a unified gateway. (Vue 3, TypeScript, Vite)",
     "path": "/",
     "type": "content",
-    "elementId": "NCCRM"
+    "elementId": "CPG"
   },
   {
     "title": "Hurisoft Website",
@@ -250,31 +568,17 @@ export const searchData: SearchResultType[] = [
   },
   {
     "title": "Braszy Clothing E-commerce",
-    "preview": "A modern e-commerce platform offering a seamless shopping experience for fashion enthusiasts. (Next.js, TypeScript, Prisma)",
+    "preview": "Full-stack e-commerce platform for fashion retail, with product catalog, cart, Stripe checkout, and order management. (Next.js, TypeScript, Prisma)",
     "path": "/projects#Braszy",
     "type": "content",
     "elementId": "Braszy"
   },
   {
     "title": "Braszy Clothing E-commerce",
-    "preview": "A modern e-commerce platform offering a seamless shopping experience for fashion enthusiasts. (Next.js, TypeScript, Prisma)",
+    "preview": "Full-stack e-commerce platform for fashion retail, with product catalog, cart, Stripe checkout, and order management. (Next.js, TypeScript, Prisma)",
     "path": "/",
     "type": "content",
     "elementId": "Braszy"
-  },
-  {
-    "title": "Sucoff Ventures",
-    "preview": "Corporate website for Sucoff Ventures with an animated, responsive UI. (Next.js, TypeScript, TailwindCSS)",
-    "path": "/projects#Sucoff",
-    "type": "content",
-    "elementId": "Sucoff"
-  },
-  {
-    "title": "Sucoff Ventures",
-    "preview": "Corporate website for Sucoff Ventures with an animated, responsive UI. (Next.js, TypeScript, TailwindCSS)",
-    "path": "/",
-    "type": "content",
-    "elementId": "Sucoff"
   },
   {
     "title": "Verse Catch",
@@ -289,62 +593,6 @@ export const searchData: SearchResultType[] = [
     "path": "/",
     "type": "content",
     "elementId": "VerseCatch"
-  },
-  {
-    "title": "AgriLink Web Application",
-    "preview": "A revolutionary platform bridging the gap between farmers and consumers, enabling direct trade and communication. (Next.js, TypeScript, Prisma)",
-    "path": "/projects#AgriLink",
-    "type": "content",
-    "elementId": "AgriLink"
-  },
-  {
-    "title": "AgriLink Web Application",
-    "preview": "A revolutionary platform bridging the gap between farmers and consumers, enabling direct trade and communication. (Next.js, TypeScript, Prisma)",
-    "path": "/",
-    "type": "content",
-    "elementId": "AgriLink"
-  },
-  {
-    "title": "Threads Social Platform",
-    "preview": "A modern social platform enabling users to share thoughts, engage in discussions, and build connections. (Next.js, TypeScript, Prisma)",
-    "path": "/projects#Threads",
-    "type": "content",
-    "elementId": "Threads"
-  },
-  {
-    "title": "Threads Social Platform",
-    "preview": "A modern social platform enabling users to share thoughts, engage in discussions, and build connections. (Next.js, TypeScript, Prisma)",
-    "path": "/",
-    "type": "content",
-    "elementId": "Threads"
-  },
-  {
-    "title": "BlogoSphere",
-    "preview": "A modern blogging platform with rich text editing, category organization, and interactive features. (Next.js, TypeScript, Prisma)",
-    "path": "/projects#BlogoSphere",
-    "type": "content",
-    "elementId": "BlogoSphere"
-  },
-  {
-    "title": "BlogoSphere",
-    "preview": "A modern blogging platform with rich text editing, category organization, and interactive features. (Next.js, TypeScript, Prisma)",
-    "path": "/",
-    "type": "content",
-    "elementId": "BlogoSphere"
-  },
-  {
-    "title": "VoteSphere",
-    "preview": "A voting platform for running secure, transparent polls and elections with real-time results. (Next.js, TypeScript, Prisma)",
-    "path": "/projects#VoteSphere",
-    "type": "content",
-    "elementId": "VoteSphere"
-  },
-  {
-    "title": "VoteSphere",
-    "preview": "A voting platform for running secure, transparent polls and elections with real-time results. (Next.js, TypeScript, Prisma)",
-    "path": "/",
-    "type": "content",
-    "elementId": "VoteSphere"
   },
   {
     "title": "MoMoXpress Calculator",
@@ -362,14 +610,14 @@ export const searchData: SearchResultType[] = [
   },
   {
     "title": "Campserve Mobile Application",
-    "preview": "A comprehensive mobile platform connecting university students with essential campus services and local businesses. (React Native, Flask, PostgreSQL)",
+    "preview": "Mobile app connecting university students with campus service providers for bookings, payments, and real-time chat. (React Native, Flask, PostgreSQL)",
     "path": "/projects#CampServe",
     "type": "content",
     "elementId": "CampServe"
   },
   {
     "title": "BudgetBuddy Finance App",
-    "preview": "A comprehensive personal finance management mobile app for expense tracking, budgeting, and financial goal setting. (React Native, Expo, TypeScript)",
+    "preview": "Personal finance mobile app for expense tracking, budget alerts, and savings goal management. (React Native, Expo, TypeScript)",
     "path": "/projects#BudgetBuddy",
     "type": "content",
     "elementId": "BudgetBuddy"
@@ -481,14 +729,14 @@ export const searchData: SearchResultType[] = [
   },
   {
     "title": "Fullstack Developer at Gigsama LLC",
-    "preview": "Fullstack Developer - Gigsama LLC. Mar 2025 - Mar 2026. Led R&D initiatives, evaluating and implementing production tools (PostHog, Sentry, Zoho Desk) and building technical PoCs to validate EHR integrations before full implementation Architected and developed the complete frontend for Carex Scholar, a platform for managing youth behavioral health sessions and assessments, with responsive interfaces across multiple user portals Built automated scholar check-in, assessments, and group notes for scholar sessions, reducing administrative overhead by 60% Contributed to backend development, implementing API endpoints and business logic for the Scholar platform Ensured HIPAA compliance throughout the platform, safeguarding sensitive healthcare data and minimizing audit risks",
+    "preview": "Fullstack Developer - Gigsama LLC. Mar 2025 - Mar 2026. Led R&D initiatives, evaluating and implementing production tools (PostHog, Sentry, Zoho Desk) and building technical PoCs to validate EHR integrations before full implementation Architected the Carex Scholar frontend across two role-based portals: an organization portal covering schedule management, scholar check-ins, group notes, and assessments; and a staff portal for organization oversight, assessment scheduling, and review workflows Built automated scholar check-in, assessments, and group notes for scholar sessions, reducing administrative overhead Built a proof of concept for insurance billing integration and contributed backend fixes and features to the Scholar API in Express.js and PostgreSQL Maintained HIPAA compliance across the platform, including data access controls and audit logging for sensitive healthcare records",
     "path": "/about",
     "type": "content",
     "elementId": "experience-carex"
   },
   {
     "title": "Fullstack Developer at Gigsama LLC",
-    "preview": "Fullstack Developer - Gigsama LLC. Mar 2025 - Mar 2026. Led R&D initiatives, evaluating and implementing production tools (PostHog, Sentry, Zoho Desk) and building technical PoCs to validate EHR integrations before full implementation Architected and developed the complete frontend for Carex Scholar, a platform for managing youth behavioral health sessions and assessments, with responsive interfaces across multiple user portals Built automated scholar check-in, assessments, and group notes for scholar sessions, reducing administrative overhead by 60% Contributed to backend development, implementing API endpoints and business logic for the Scholar platform Ensured HIPAA compliance throughout the platform, safeguarding sensitive healthcare data and minimizing audit risks",
+    "preview": "Fullstack Developer - Gigsama LLC. Mar 2025 - Mar 2026. Led R&D initiatives, evaluating and implementing production tools (PostHog, Sentry, Zoho Desk) and building technical PoCs to validate EHR integrations before full implementation Architected the Carex Scholar frontend across two role-based portals: an organization portal covering schedule management, scholar check-ins, group notes, and assessments; and a staff portal for organization oversight, assessment scheduling, and review workflows Built automated scholar check-in, assessments, and group notes for scholar sessions, reducing administrative overhead Built a proof of concept for insurance billing integration and contributed backend fixes and features to the Scholar API in Express.js and PostgreSQL Maintained HIPAA compliance across the platform, including data access controls and audit logging for sensitive healthcare records",
     "path": "/",
     "type": "content",
     "elementId": "experience-carex"
@@ -537,364 +785,308 @@ export const searchData: SearchResultType[] = [
   },
   {
     "title": "Fullstack Developer - Gigsama LLC",
-    "preview": "Architected and developed the complete frontend for Carex Scholar, a platform for managing youth behavioral health sessions and assessments, with responsive interfaces across multiple user portals",
+    "preview": "Architected the Carex Scholar frontend across two role-based portals: an organization portal covering schedule management, scholar check-ins, group notes, and assessments; and a staff portal for organization oversight, assessment scheduling, and review workflows",
     "path": "/about",
     "type": "content",
     "elementId": "experience-carex"
   },
   {
     "title": "Fullstack Developer - Gigsama LLC",
-    "preview": "Architected and developed the complete frontend for Carex Scholar, a platform for managing youth behavioral health sessions and assessments, with responsive interfaces across multiple user portals",
+    "preview": "Architected the Carex Scholar frontend across two role-based portals: an organization portal covering schedule management, scholar check-ins, group notes, and assessments; and a staff portal for organization oversight, assessment scheduling, and review workflows",
     "path": "/",
     "type": "content",
     "elementId": "experience-carex"
   },
   {
     "title": "Fullstack Developer - Gigsama LLC",
-    "preview": "Built automated scholar check-in, assessments, and group notes for scholar sessions, reducing administrative overhead by 60%",
+    "preview": "Built automated scholar check-in, assessments, and group notes for scholar sessions, reducing administrative overhead",
     "path": "/about",
     "type": "content",
     "elementId": "experience-carex"
   },
   {
     "title": "Fullstack Developer - Gigsama LLC",
-    "preview": "Built automated scholar check-in, assessments, and group notes for scholar sessions, reducing administrative overhead by 60%",
+    "preview": "Built automated scholar check-in, assessments, and group notes for scholar sessions, reducing administrative overhead",
     "path": "/",
     "type": "content",
     "elementId": "experience-carex"
   },
   {
     "title": "Fullstack Developer - Gigsama LLC",
-    "preview": "Contributed to backend development, implementing API endpoints and business logic for the Scholar platform",
+    "preview": "Built a proof of concept for insurance billing integration and contributed backend fixes and features to the Scholar API in Express.js and PostgreSQL",
     "path": "/about",
     "type": "content",
     "elementId": "experience-carex"
   },
   {
     "title": "Fullstack Developer - Gigsama LLC",
-    "preview": "Contributed to backend development, implementing API endpoints and business logic for the Scholar platform",
+    "preview": "Built a proof of concept for insurance billing integration and contributed backend fixes and features to the Scholar API in Express.js and PostgreSQL",
     "path": "/",
     "type": "content",
     "elementId": "experience-carex"
   },
   {
     "title": "Fullstack Developer - Gigsama LLC",
-    "preview": "Ensured HIPAA compliance throughout the platform, safeguarding sensitive healthcare data and minimizing audit risks",
+    "preview": "Maintained HIPAA compliance across the platform, including data access controls and audit logging for sensitive healthcare records",
     "path": "/about",
     "type": "content",
     "elementId": "experience-carex"
   },
   {
     "title": "Fullstack Developer - Gigsama LLC",
-    "preview": "Ensured HIPAA compliance throughout the platform, safeguarding sensitive healthcare data and minimizing audit risks",
+    "preview": "Maintained HIPAA compliance across the platform, including data access controls and audit logging for sensitive healthcare records",
     "path": "/",
     "type": "content",
     "elementId": "experience-carex"
   },
   {
     "title": "Fullstack Developer at Hurisoft",
-    "preview": "Fullstack Developer - Hurisoft. Nov 2024 - July 2025. Developed the landing page for iExchange, a P2P cryptocurrency trading platform, driving user acquisition with a modern, responsive UI Collaborated on iExchange's main trading application, building front-end components and integrating APIs for secure transactions Resolved bugs and optimized performance for Soccersm, enhancing user experience and platform reliability through targeted front-end improvements Enhanced Scrowton, an e-commerce marketplace, by adding features, fixing bugs, and maintaining the platform to support secure escrow-based transactions",
+    "preview": "Fullstack Developer - Hurisoft. Nov 2024 - July 2025. Developed the landing page for iExchange, a P2P cryptocurrency trading platform, with a responsive layout focused on user acquisition and conversion Built the iExchange trading application, setting up the project architecture and developing core P2P trading flows, KYC verification, order management, dispute resolution, and an admin panel Resolved bugs and improved frontend performance for Soccersm, a sports prediction platform, reducing load times and stabilizing key user flows",
     "path": "/about",
     "type": "content",
     "elementId": "experience-frontend"
   },
   {
     "title": "Fullstack Developer at Hurisoft",
-    "preview": "Fullstack Developer - Hurisoft. Nov 2024 - July 2025. Developed the landing page for iExchange, a P2P cryptocurrency trading platform, driving user acquisition with a modern, responsive UI Collaborated on iExchange's main trading application, building front-end components and integrating APIs for secure transactions Resolved bugs and optimized performance for Soccersm, enhancing user experience and platform reliability through targeted front-end improvements Enhanced Scrowton, an e-commerce marketplace, by adding features, fixing bugs, and maintaining the platform to support secure escrow-based transactions",
+    "preview": "Fullstack Developer - Hurisoft. Nov 2024 - July 2025. Developed the landing page for iExchange, a P2P cryptocurrency trading platform, with a responsive layout focused on user acquisition and conversion Built the iExchange trading application, setting up the project architecture and developing core P2P trading flows, KYC verification, order management, dispute resolution, and an admin panel Resolved bugs and improved frontend performance for Soccersm, a sports prediction platform, reducing load times and stabilizing key user flows",
     "path": "/",
     "type": "content",
     "elementId": "experience-frontend"
   },
   {
     "title": "Hurisoft",
-    "preview": "Fullstack Developer position at Hurisoft. Nov 2024 - July 2025. Developed the landing page for iExchange, a P2P cryptocurrency trading platform, driving user acquisition with a modern, responsive UI",
+    "preview": "Fullstack Developer position at Hurisoft. Nov 2024 - July 2025. Developed the landing page for iExchange, a P2P cryptocurrency trading platform, with a responsive layout focused on user acquisition and conversion",
     "path": "/about",
     "type": "content",
     "elementId": "experience-frontend"
   },
   {
     "title": "Hurisoft",
-    "preview": "Fullstack Developer position at Hurisoft. Nov 2024 - July 2025. Developed the landing page for iExchange, a P2P cryptocurrency trading platform, driving user acquisition with a modern, responsive UI",
+    "preview": "Fullstack Developer position at Hurisoft. Nov 2024 - July 2025. Developed the landing page for iExchange, a P2P cryptocurrency trading platform, with a responsive layout focused on user acquisition and conversion",
     "path": "/",
     "type": "content",
     "elementId": "experience-frontend"
   },
   {
     "title": "Fullstack Developer",
-    "preview": "Fullstack Developer at Hurisoft. Nov 2024 - July 2025. Developed the landing page for iExchange, a P2P cryptocurrency trading platform, driving user acquisition with a modern, responsive UI",
+    "preview": "Fullstack Developer at Hurisoft. Nov 2024 - July 2025. Developed the landing page for iExchange, a P2P cryptocurrency trading platform, with a responsive layout focused on user acquisition and conversion",
     "path": "/about",
     "type": "content",
     "elementId": "experience-frontend"
   },
   {
     "title": "Fullstack Developer",
-    "preview": "Fullstack Developer at Hurisoft. Nov 2024 - July 2025. Developed the landing page for iExchange, a P2P cryptocurrency trading platform, driving user acquisition with a modern, responsive UI",
+    "preview": "Fullstack Developer at Hurisoft. Nov 2024 - July 2025. Developed the landing page for iExchange, a P2P cryptocurrency trading platform, with a responsive layout focused on user acquisition and conversion",
     "path": "/",
     "type": "content",
     "elementId": "experience-frontend"
   },
   {
     "title": "Fullstack Developer - Hurisoft",
-    "preview": "Developed the landing page for iExchange, a P2P cryptocurrency trading platform, driving user acquisition with a modern, responsive UI",
+    "preview": "Developed the landing page for iExchange, a P2P cryptocurrency trading platform, with a responsive layout focused on user acquisition and conversion",
     "path": "/about",
     "type": "content",
     "elementId": "experience-frontend"
   },
   {
     "title": "Fullstack Developer - Hurisoft",
-    "preview": "Developed the landing page for iExchange, a P2P cryptocurrency trading platform, driving user acquisition with a modern, responsive UI",
+    "preview": "Developed the landing page for iExchange, a P2P cryptocurrency trading platform, with a responsive layout focused on user acquisition and conversion",
     "path": "/",
     "type": "content",
     "elementId": "experience-frontend"
   },
   {
     "title": "Fullstack Developer - Hurisoft",
-    "preview": "Collaborated on iExchange's main trading application, building front-end components and integrating APIs for secure transactions",
+    "preview": "Built the iExchange trading application, setting up the project architecture and developing core P2P trading flows, KYC verification, order management, dispute resolution, and an admin panel",
     "path": "/about",
     "type": "content",
     "elementId": "experience-frontend"
   },
   {
     "title": "Fullstack Developer - Hurisoft",
-    "preview": "Collaborated on iExchange's main trading application, building front-end components and integrating APIs for secure transactions",
+    "preview": "Built the iExchange trading application, setting up the project architecture and developing core P2P trading flows, KYC verification, order management, dispute resolution, and an admin panel",
     "path": "/",
     "type": "content",
     "elementId": "experience-frontend"
   },
   {
     "title": "Fullstack Developer - Hurisoft",
-    "preview": "Resolved bugs and optimized performance for Soccersm, enhancing user experience and platform reliability through targeted front-end improvements",
+    "preview": "Resolved bugs and improved frontend performance for Soccersm, a sports prediction platform, reducing load times and stabilizing key user flows",
     "path": "/about",
     "type": "content",
     "elementId": "experience-frontend"
   },
   {
     "title": "Fullstack Developer - Hurisoft",
-    "preview": "Resolved bugs and optimized performance for Soccersm, enhancing user experience and platform reliability through targeted front-end improvements",
-    "path": "/",
-    "type": "content",
-    "elementId": "experience-frontend"
-  },
-  {
-    "title": "Fullstack Developer - Hurisoft",
-    "preview": "Enhanced Scrowton, an e-commerce marketplace, by adding features, fixing bugs, and maintaining the platform to support secure escrow-based transactions",
-    "path": "/about",
-    "type": "content",
-    "elementId": "experience-frontend"
-  },
-  {
-    "title": "Fullstack Developer - Hurisoft",
-    "preview": "Enhanced Scrowton, an e-commerce marketplace, by adding features, fixing bugs, and maintaining the platform to support secure escrow-based transactions",
+    "preview": "Resolved bugs and improved frontend performance for Soccersm, a sports prediction platform, reducing load times and stabilizing key user flows",
     "path": "/",
     "type": "content",
     "elementId": "experience-frontend"
   },
   {
     "title": "Fullstack Developer at KNUST School of Business",
-    "preview": "Fullstack Developer - KNUST School of Business. Nov 2023 - Nov 2024. Developed an exams attendance application and an admin dashboard for managing schedules, improving staff accountability and administrative efficiency Built a secure, web-based Voting System for faculty elections, automating vote collection and providing real-time election monitoring and result analytics Created a nomination platform with role-based authentication and multi-stage workflows, streamlining the nomination process for university elections Designed admin and reviewer dashboards for managing nominations, with real-time notifications and analytics tools to enhance user management Utilized Next.js, Prisma ORM, and MongoDB to build a scalable backend, with future plans for multi-institution deployment and machine learning integration",
+    "preview": "Fullstack Developer - KNUST School of Business. Nov 2023 - Nov 2024. Developed an exam attendance application and admin dashboard for recording and managing invigilator sign-ins across exam sessions Built a faculty election voting system with secure ballot submission, duplicate vote prevention, and real-time result tracking for university staff Developed a nomination platform with four-tier role-based access (public users, nominators, reviewers, admins), a two-stage submission and review workflow, conflict-of-interest checks for reviewers, CSV and PDF report generation, and real-time notifications via Pusher",
     "path": "/about",
     "type": "content",
     "elementId": "experience-fullstack"
   },
   {
     "title": "Fullstack Developer at KNUST School of Business",
-    "preview": "Fullstack Developer - KNUST School of Business. Nov 2023 - Nov 2024. Developed an exams attendance application and an admin dashboard for managing schedules, improving staff accountability and administrative efficiency Built a secure, web-based Voting System for faculty elections, automating vote collection and providing real-time election monitoring and result analytics Created a nomination platform with role-based authentication and multi-stage workflows, streamlining the nomination process for university elections Designed admin and reviewer dashboards for managing nominations, with real-time notifications and analytics tools to enhance user management Utilized Next.js, Prisma ORM, and MongoDB to build a scalable backend, with future plans for multi-institution deployment and machine learning integration",
+    "preview": "Fullstack Developer - KNUST School of Business. Nov 2023 - Nov 2024. Developed an exam attendance application and admin dashboard for recording and managing invigilator sign-ins across exam sessions Built a faculty election voting system with secure ballot submission, duplicate vote prevention, and real-time result tracking for university staff Developed a nomination platform with four-tier role-based access (public users, nominators, reviewers, admins), a two-stage submission and review workflow, conflict-of-interest checks for reviewers, CSV and PDF report generation, and real-time notifications via Pusher",
     "path": "/",
     "type": "content",
     "elementId": "experience-fullstack"
   },
   {
     "title": "KNUST School of Business",
-    "preview": "Fullstack Developer position at KNUST School of Business. Nov 2023 - Nov 2024. Developed an exams attendance application and an admin dashboard for managing schedules, improving staff accountability and administrative efficiency",
+    "preview": "Fullstack Developer position at KNUST School of Business. Nov 2023 - Nov 2024. Developed an exam attendance application and admin dashboard for recording and managing invigilator sign-ins across exam sessions",
     "path": "/about",
     "type": "content",
     "elementId": "experience-fullstack"
   },
   {
     "title": "KNUST School of Business",
-    "preview": "Fullstack Developer position at KNUST School of Business. Nov 2023 - Nov 2024. Developed an exams attendance application and an admin dashboard for managing schedules, improving staff accountability and administrative efficiency",
+    "preview": "Fullstack Developer position at KNUST School of Business. Nov 2023 - Nov 2024. Developed an exam attendance application and admin dashboard for recording and managing invigilator sign-ins across exam sessions",
     "path": "/",
     "type": "content",
     "elementId": "experience-fullstack"
   },
   {
     "title": "Fullstack Developer",
-    "preview": "Fullstack Developer at KNUST School of Business. Nov 2023 - Nov 2024. Developed an exams attendance application and an admin dashboard for managing schedules, improving staff accountability and administrative efficiency",
+    "preview": "Fullstack Developer at KNUST School of Business. Nov 2023 - Nov 2024. Developed an exam attendance application and admin dashboard for recording and managing invigilator sign-ins across exam sessions",
     "path": "/about",
     "type": "content",
     "elementId": "experience-fullstack"
   },
   {
     "title": "Fullstack Developer",
-    "preview": "Fullstack Developer at KNUST School of Business. Nov 2023 - Nov 2024. Developed an exams attendance application and an admin dashboard for managing schedules, improving staff accountability and administrative efficiency",
+    "preview": "Fullstack Developer at KNUST School of Business. Nov 2023 - Nov 2024. Developed an exam attendance application and admin dashboard for recording and managing invigilator sign-ins across exam sessions",
     "path": "/",
     "type": "content",
     "elementId": "experience-fullstack"
   },
   {
     "title": "Fullstack Developer - KNUST School of Business",
-    "preview": "Developed an exams attendance application and an admin dashboard for managing schedules, improving staff accountability and administrative efficiency",
+    "preview": "Developed an exam attendance application and admin dashboard for recording and managing invigilator sign-ins across exam sessions",
     "path": "/about",
     "type": "content",
     "elementId": "experience-fullstack"
   },
   {
     "title": "Fullstack Developer - KNUST School of Business",
-    "preview": "Developed an exams attendance application and an admin dashboard for managing schedules, improving staff accountability and administrative efficiency",
+    "preview": "Developed an exam attendance application and admin dashboard for recording and managing invigilator sign-ins across exam sessions",
     "path": "/",
     "type": "content",
     "elementId": "experience-fullstack"
   },
   {
     "title": "Fullstack Developer - KNUST School of Business",
-    "preview": "Built a secure, web-based Voting System for faculty elections, automating vote collection and providing real-time election monitoring and result analytics",
+    "preview": "Built a faculty election voting system with secure ballot submission, duplicate vote prevention, and real-time result tracking for university staff",
     "path": "/about",
     "type": "content",
     "elementId": "experience-fullstack"
   },
   {
     "title": "Fullstack Developer - KNUST School of Business",
-    "preview": "Built a secure, web-based Voting System for faculty elections, automating vote collection and providing real-time election monitoring and result analytics",
+    "preview": "Built a faculty election voting system with secure ballot submission, duplicate vote prevention, and real-time result tracking for university staff",
     "path": "/",
     "type": "content",
     "elementId": "experience-fullstack"
   },
   {
     "title": "Fullstack Developer - KNUST School of Business",
-    "preview": "Created a nomination platform with role-based authentication and multi-stage workflows, streamlining the nomination process for university elections",
+    "preview": "Developed a nomination platform with four-tier role-based access (public users, nominators, reviewers, admins), a two-stage submission and review workflow, conflict-of-interest checks for reviewers, CSV and PDF report generation, and real-time notifications via Pusher",
     "path": "/about",
     "type": "content",
     "elementId": "experience-fullstack"
   },
   {
     "title": "Fullstack Developer - KNUST School of Business",
-    "preview": "Created a nomination platform with role-based authentication and multi-stage workflows, streamlining the nomination process for university elections",
-    "path": "/",
-    "type": "content",
-    "elementId": "experience-fullstack"
-  },
-  {
-    "title": "Fullstack Developer - KNUST School of Business",
-    "preview": "Designed admin and reviewer dashboards for managing nominations, with real-time notifications and analytics tools to enhance user management",
-    "path": "/about",
-    "type": "content",
-    "elementId": "experience-fullstack"
-  },
-  {
-    "title": "Fullstack Developer - KNUST School of Business",
-    "preview": "Designed admin and reviewer dashboards for managing nominations, with real-time notifications and analytics tools to enhance user management",
-    "path": "/",
-    "type": "content",
-    "elementId": "experience-fullstack"
-  },
-  {
-    "title": "Fullstack Developer - KNUST School of Business",
-    "preview": "Utilized Next.js, Prisma ORM, and MongoDB to build a scalable backend, with future plans for multi-institution deployment and machine learning integration",
-    "path": "/about",
-    "type": "content",
-    "elementId": "experience-fullstack"
-  },
-  {
-    "title": "Fullstack Developer - KNUST School of Business",
-    "preview": "Utilized Next.js, Prisma ORM, and MongoDB to build a scalable backend, with future plans for multi-institution deployment and machine learning integration",
+    "preview": "Developed a nomination platform with four-tier role-based access (public users, nominators, reviewers, admins), a two-stage submission and review workflow, conflict-of-interest checks for reviewers, CSV and PDF report generation, and real-time notifications via Pusher",
     "path": "/",
     "type": "content",
     "elementId": "experience-fullstack"
   },
   {
     "title": "Software Engineer Intern, Frontend Developer at BSystems Limited",
-    "preview": "Software Engineer Intern, Frontend Developer - BSystems Limited. Oct 2022 - Jan 2023. Developed and enhanced features for the admin dashboard of the PeoplesPay app, improving user interface and experience Implemented user authentication, verification, and various admin functionalities including managing admins, customers, transactions, and e-levy records, ensuring data security and integrity Redesigned UI components to enhance usability and visual appeal, leading to a more intuitive and engaging user experience Created detailed technical documentation for the web application, facilitating better understanding and maintenance for future developers",
+    "preview": "Software Engineer Intern, Frontend Developer - BSystems Limited. Oct 2022 - Jan 2023. Built and integrated minor features into the admin dashboard of the PeoplesPay app Redesigned the platform's UI for responsiveness, addressing layout issues that affected usability across smaller screen sizes Wrote technical documentation for the web application to support future development and onboarding",
     "path": "/about",
     "type": "content",
     "elementId": "experience-intern"
   },
   {
     "title": "Software Engineer Intern, Frontend Developer at BSystems Limited",
-    "preview": "Software Engineer Intern, Frontend Developer - BSystems Limited. Oct 2022 - Jan 2023. Developed and enhanced features for the admin dashboard of the PeoplesPay app, improving user interface and experience Implemented user authentication, verification, and various admin functionalities including managing admins, customers, transactions, and e-levy records, ensuring data security and integrity Redesigned UI components to enhance usability and visual appeal, leading to a more intuitive and engaging user experience Created detailed technical documentation for the web application, facilitating better understanding and maintenance for future developers",
+    "preview": "Software Engineer Intern, Frontend Developer - BSystems Limited. Oct 2022 - Jan 2023. Built and integrated minor features into the admin dashboard of the PeoplesPay app Redesigned the platform's UI for responsiveness, addressing layout issues that affected usability across smaller screen sizes Wrote technical documentation for the web application to support future development and onboarding",
     "path": "/",
     "type": "content",
     "elementId": "experience-intern"
   },
   {
     "title": "BSystems Limited",
-    "preview": "Software Engineer Intern, Frontend Developer position at BSystems Limited. Oct 2022 - Jan 2023. Developed and enhanced features for the admin dashboard of the PeoplesPay app, improving user interface and experience",
+    "preview": "Software Engineer Intern, Frontend Developer position at BSystems Limited. Oct 2022 - Jan 2023. Built and integrated minor features into the admin dashboard of the PeoplesPay app",
     "path": "/about",
     "type": "content",
     "elementId": "experience-intern"
   },
   {
     "title": "BSystems Limited",
-    "preview": "Software Engineer Intern, Frontend Developer position at BSystems Limited. Oct 2022 - Jan 2023. Developed and enhanced features for the admin dashboard of the PeoplesPay app, improving user interface and experience",
+    "preview": "Software Engineer Intern, Frontend Developer position at BSystems Limited. Oct 2022 - Jan 2023. Built and integrated minor features into the admin dashboard of the PeoplesPay app",
     "path": "/",
     "type": "content",
     "elementId": "experience-intern"
   },
   {
     "title": "Software Engineer Intern, Frontend Developer",
-    "preview": "Software Engineer Intern, Frontend Developer at BSystems Limited. Oct 2022 - Jan 2023. Developed and enhanced features for the admin dashboard of the PeoplesPay app, improving user interface and experience",
+    "preview": "Software Engineer Intern, Frontend Developer at BSystems Limited. Oct 2022 - Jan 2023. Built and integrated minor features into the admin dashboard of the PeoplesPay app",
     "path": "/about",
     "type": "content",
     "elementId": "experience-intern"
   },
   {
     "title": "Software Engineer Intern, Frontend Developer",
-    "preview": "Software Engineer Intern, Frontend Developer at BSystems Limited. Oct 2022 - Jan 2023. Developed and enhanced features for the admin dashboard of the PeoplesPay app, improving user interface and experience",
+    "preview": "Software Engineer Intern, Frontend Developer at BSystems Limited. Oct 2022 - Jan 2023. Built and integrated minor features into the admin dashboard of the PeoplesPay app",
     "path": "/",
     "type": "content",
     "elementId": "experience-intern"
   },
   {
     "title": "Software Engineer Intern, Frontend Developer - BSystems Limited",
-    "preview": "Developed and enhanced features for the admin dashboard of the PeoplesPay app, improving user interface and experience",
+    "preview": "Built and integrated minor features into the admin dashboard of the PeoplesPay app",
     "path": "/about",
     "type": "content",
     "elementId": "experience-intern"
   },
   {
     "title": "Software Engineer Intern, Frontend Developer - BSystems Limited",
-    "preview": "Developed and enhanced features for the admin dashboard of the PeoplesPay app, improving user interface and experience",
+    "preview": "Built and integrated minor features into the admin dashboard of the PeoplesPay app",
     "path": "/",
     "type": "content",
     "elementId": "experience-intern"
   },
   {
     "title": "Software Engineer Intern, Frontend Developer - BSystems Limited",
-    "preview": "Implemented user authentication, verification, and various admin functionalities including managing admins, customers, transactions, and e-levy records, ensuring data security and integrity",
+    "preview": "Redesigned the platform's UI for responsiveness, addressing layout issues that affected usability across smaller screen sizes",
     "path": "/about",
     "type": "content",
     "elementId": "experience-intern"
   },
   {
     "title": "Software Engineer Intern, Frontend Developer - BSystems Limited",
-    "preview": "Implemented user authentication, verification, and various admin functionalities including managing admins, customers, transactions, and e-levy records, ensuring data security and integrity",
+    "preview": "Redesigned the platform's UI for responsiveness, addressing layout issues that affected usability across smaller screen sizes",
     "path": "/",
     "type": "content",
     "elementId": "experience-intern"
   },
   {
     "title": "Software Engineer Intern, Frontend Developer - BSystems Limited",
-    "preview": "Redesigned UI components to enhance usability and visual appeal, leading to a more intuitive and engaging user experience",
+    "preview": "Wrote technical documentation for the web application to support future development and onboarding",
     "path": "/about",
     "type": "content",
     "elementId": "experience-intern"
   },
   {
     "title": "Software Engineer Intern, Frontend Developer - BSystems Limited",
-    "preview": "Redesigned UI components to enhance usability and visual appeal, leading to a more intuitive and engaging user experience",
-    "path": "/",
-    "type": "content",
-    "elementId": "experience-intern"
-  },
-  {
-    "title": "Software Engineer Intern, Frontend Developer - BSystems Limited",
-    "preview": "Created detailed technical documentation for the web application, facilitating better understanding and maintenance for future developers",
-    "path": "/about",
-    "type": "content",
-    "elementId": "experience-intern"
-  },
-  {
-    "title": "Software Engineer Intern, Frontend Developer - BSystems Limited",
-    "preview": "Created detailed technical documentation for the web application, facilitating better understanding and maintenance for future developers",
+    "preview": "Wrote technical documentation for the web application to support future development and onboarding",
     "path": "/",
     "type": "content",
     "elementId": "experience-intern"
@@ -957,14 +1149,14 @@ export const searchData: SearchResultType[] = [
   },
   {
     "title": "Programming Languages",
-    "preview": "Programming Languages:\nJavaScript - Advanced web and mobile application development\nTypeScript - Type-safe application development with modern features\nPython - Backend development and data processing\nSQL - Database design and optimization\nJava - Backend services with Spring Boot",
+    "preview": "Programming Languages:\nJavaScript - Advanced web and mobile application development\nTypeScript - Type-safe application development with modern features\nPython - Scripting, backend services, and AI evaluation environments\nSQL - Database design and optimization\nJava - Foundational knowledge of object-oriented programming and data structures",
     "path": "/skills",
     "type": "content",
     "elementId": "languages"
   },
   {
     "title": "Programming Languages",
-    "preview": "Programming Languages:\nJavaScript - Advanced web and mobile application development\nTypeScript - Type-safe application development with modern features\nPython - Backend development and data processing\nSQL - Database design and optimization\nJava - Backend services with Spring Boot",
+    "preview": "Programming Languages:\nJavaScript - Advanced web and mobile application development\nTypeScript - Type-safe application development with modern features\nPython - Scripting, backend services, and AI evaluation environments\nSQL - Database design and optimization\nJava - Foundational knowledge of object-oriented programming and data structures",
     "path": "/",
     "type": "content",
     "elementId": "languages"
@@ -999,14 +1191,14 @@ export const searchData: SearchResultType[] = [
   },
   {
     "title": "Python",
-    "preview": "Python - Backend development and data processing (Programming Languages)",
+    "preview": "Python - Scripting, backend services, and AI evaluation environments (Programming Languages)",
     "path": "/skills",
     "type": "content",
     "elementId": "languages"
   },
   {
     "title": "Python",
-    "preview": "Python - Backend development and data processing (Programming Languages)",
+    "preview": "Python - Scripting, backend services, and AI evaluation environments (Programming Languages)",
     "path": "/",
     "type": "content",
     "elementId": "languages"
@@ -1027,28 +1219,28 @@ export const searchData: SearchResultType[] = [
   },
   {
     "title": "Java",
-    "preview": "Java - Backend services with Spring Boot (Programming Languages)",
+    "preview": "Java - Foundational knowledge of object-oriented programming and data structures (Programming Languages)",
     "path": "/skills",
     "type": "content",
     "elementId": "languages"
   },
   {
     "title": "Java",
-    "preview": "Java - Backend services with Spring Boot (Programming Languages)",
+    "preview": "Java - Foundational knowledge of object-oriented programming and data structures (Programming Languages)",
     "path": "/",
     "type": "content",
     "elementId": "languages"
   },
   {
     "title": "Frameworks & Libraries",
-    "preview": "Frameworks & Libraries:\nReact - Building interactive user interfaces\nNext.js - Server-side rendering and static site generation\nVue.js - Progressive JavaScript framework\nExpress.js - RESTful API development\nFlask - Python web application framework\nReact Native - Cross-platform mobile development\nSpring Boot - Java-based REST API development",
+    "preview": "Frameworks & Libraries:\nReact - Building interactive user interfaces\nNext.js - Server-side rendering and static site generation\nVue.js - Progressive JavaScript framework\nExpress.js - RESTful API development\nReact Native - Cross-platform mobile development",
     "path": "/skills",
     "type": "content",
     "elementId": "frameworks"
   },
   {
     "title": "Frameworks & Libraries",
-    "preview": "Frameworks & Libraries:\nReact - Building interactive user interfaces\nNext.js - Server-side rendering and static site generation\nVue.js - Progressive JavaScript framework\nExpress.js - RESTful API development\nFlask - Python web application framework\nReact Native - Cross-platform mobile development\nSpring Boot - Java-based REST API development",
+    "preview": "Frameworks & Libraries:\nReact - Building interactive user interfaces\nNext.js - Server-side rendering and static site generation\nVue.js - Progressive JavaScript framework\nExpress.js - RESTful API development\nReact Native - Cross-platform mobile development",
     "path": "/",
     "type": "content",
     "elementId": "frameworks"
@@ -1110,20 +1302,6 @@ export const searchData: SearchResultType[] = [
     "elementId": "frameworks"
   },
   {
-    "title": "Flask",
-    "preview": "Flask - Python web application framework (Frameworks & Libraries)",
-    "path": "/skills",
-    "type": "content",
-    "elementId": "frameworks"
-  },
-  {
-    "title": "Flask",
-    "preview": "Flask - Python web application framework (Frameworks & Libraries)",
-    "path": "/",
-    "type": "content",
-    "elementId": "frameworks"
-  },
-  {
     "title": "React Native",
     "preview": "React Native - Cross-platform mobile development (Frameworks & Libraries)",
     "path": "/skills",
@@ -1133,20 +1311,6 @@ export const searchData: SearchResultType[] = [
   {
     "title": "React Native",
     "preview": "React Native - Cross-platform mobile development (Frameworks & Libraries)",
-    "path": "/",
-    "type": "content",
-    "elementId": "frameworks"
-  },
-  {
-    "title": "Spring Boot",
-    "preview": "Spring Boot - Java-based REST API development (Frameworks & Libraries)",
-    "path": "/skills",
-    "type": "content",
-    "elementId": "frameworks"
-  },
-  {
-    "title": "Spring Boot",
-    "preview": "Spring Boot - Java-based REST API development (Frameworks & Libraries)",
     "path": "/",
     "type": "content",
     "elementId": "frameworks"
@@ -1223,14 +1387,14 @@ export const searchData: SearchResultType[] = [
   },
   {
     "title": "Developer Tools",
-    "preview": "Developer Tools:\nGit - Version control and collaboration\nDocker - Containerization and deployment\nAWS - Cloud computing and services\nPrisma - Next-generation ORM\nFirebase - Backend-as-a-Service platform\nJest - JavaScript testing framework\nPlaywright - End-to-end testing framework",
+    "preview": "Developer Tools:\nGit - Version control and collaboration\nDocker - Containerization and deployment\nKubernetes - Container orchestration and infrastructure management\nPrisma - Next-generation ORM\nJest - JavaScript testing framework\nPlaywright - End-to-end testing framework",
     "path": "/skills",
     "type": "content",
     "elementId": "tools"
   },
   {
     "title": "Developer Tools",
-    "preview": "Developer Tools:\nGit - Version control and collaboration\nDocker - Containerization and deployment\nAWS - Cloud computing and services\nPrisma - Next-generation ORM\nFirebase - Backend-as-a-Service platform\nJest - JavaScript testing framework\nPlaywright - End-to-end testing framework",
+    "preview": "Developer Tools:\nGit - Version control and collaboration\nDocker - Containerization and deployment\nKubernetes - Container orchestration and infrastructure management\nPrisma - Next-generation ORM\nJest - JavaScript testing framework\nPlaywright - End-to-end testing framework",
     "path": "/",
     "type": "content",
     "elementId": "tools"
@@ -1264,15 +1428,15 @@ export const searchData: SearchResultType[] = [
     "elementId": "tools"
   },
   {
-    "title": "AWS",
-    "preview": "AWS - Cloud computing and services (Developer Tools)",
+    "title": "Kubernetes",
+    "preview": "Kubernetes - Container orchestration and infrastructure management (Developer Tools)",
     "path": "/skills",
     "type": "content",
     "elementId": "tools"
   },
   {
-    "title": "AWS",
-    "preview": "AWS - Cloud computing and services (Developer Tools)",
+    "title": "Kubernetes",
+    "preview": "Kubernetes - Container orchestration and infrastructure management (Developer Tools)",
     "path": "/",
     "type": "content",
     "elementId": "tools"
@@ -1287,20 +1451,6 @@ export const searchData: SearchResultType[] = [
   {
     "title": "Prisma",
     "preview": "Prisma - Next-generation ORM (Developer Tools)",
-    "path": "/",
-    "type": "content",
-    "elementId": "tools"
-  },
-  {
-    "title": "Firebase",
-    "preview": "Firebase - Backend-as-a-Service platform (Developer Tools)",
-    "path": "/skills",
-    "type": "content",
-    "elementId": "tools"
-  },
-  {
-    "title": "Firebase",
-    "preview": "Firebase - Backend-as-a-Service platform (Developer Tools)",
     "path": "/",
     "type": "content",
     "elementId": "tools"

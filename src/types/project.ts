@@ -1,3 +1,5 @@
+import type { ReactElement } from 'react';
+
 export type ProjectType = 'web' | 'mobile';
 
 export interface Project {
@@ -6,7 +8,7 @@ export interface Project {
   preview: string;
   description: string[];
   type: ProjectType;
-  icon: JSX.Element;
+  icon: ReactElement;
   tech: string[];
   url?: string; // Optional primary URL for the project
   urlLabel?: string; // Optional label for the primary URL (e.g. \ App\, \Site\)

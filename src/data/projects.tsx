@@ -72,15 +72,15 @@ export const projects: Project[] = [
     secondaryUrlLabel: "Marketing site",
   },
   {
-    id: "CPG",
-    title: "Crypto Payment Gateway",
+    id: "NCCRM",
+    title: "NCCRM DataHub",
     preview:
-      "Dashboard and checkout experiences for processing crypto payments through a unified gateway.",
+      "Government crisis response platform with geospatial incident tracking and situational analysis.",
     description: [
-      "Crypto Payment Gateway is a platform for merchants to accept and manage crypto payments across multiple chains.",
-      "The merchant dashboard provides overviews of transactions, payouts, commissions, and configuration such as API keys and webhooks.",
-      "The checkout experience lets customers pay invoices with crypto by connecting their wallets and sending on-chain payments to generated deposit addresses.",
-      "Both dashboard and checkout are built with Vue 3, Naive UI, and TypeScript, talking to a Go backend that handles wallets, reconciliation, and payouts.",
+      "NCCRM DataHub is a crisis response platform built for a government agency, used to record and analyze incident data.",
+      "The application features geospatial incident tracking with interactive Leaflet maps and event reporting with comprehensive data capture.",
+      "Situational analysis tools provide risk assessment scoring and comparative reporting to support crisis management decisions.",
+      "It integrates with a separate backend API and supports role-based access for different user types.",
     ],
     type: "web",
     icon: (
@@ -94,15 +94,11 @@ export const projects: Project[] = [
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth={2}
-          d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M5 20h14a2 2 0 002-2v-5a2 2 0 00-2-2h-3M5 20a2 2 0 01-2-2v-5a2 2 0 012-2h3m6-4h4"
+          d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"
         />
       </svg>
     ),
-    tech: ["Vue 3", "TypeScript", "Vite", "Naive UI", "Wagmi", "Viem"],
-    url: "https://cpg-checkout.web.app/",
-    urlLabel: "Checkout",
-    secondaryUrl: "https://cpg-dashboard.web.app/",
-    secondaryUrlLabel: "Dashboard",
+    tech: ["Next.js", "TypeScript", "Leaflet", "Next-Auth", "SWR"],
   },
   {
     id: "BisaDoctor",
@@ -174,15 +170,15 @@ export const projects: Project[] = [
     urlLabel: "Platform",
   },
   {
-    id: "NCCRM",
-    title: "NCCRM DataHub",
+    id: "CPG",
+    title: "Crypto Payment Gateway",
     preview:
-      "Government crisis response platform with geospatial incident tracking and situational analysis.",
+      "Dashboard and checkout experiences for processing crypto payments through a unified gateway.",
     description: [
-      "NCCRM DataHub is a crisis response platform built for a government agency, used to record and analyze incident data.",
-      "The application features geospatial incident tracking with interactive Leaflet maps and event reporting with comprehensive data capture.",
-      "Situational analysis tools provide risk assessment scoring and comparative reporting to support crisis management decisions.",
-      "It integrates with a separate backend API and supports role-based access for different user types.",
+      "Crypto Payment Gateway is a platform for merchants to accept and manage crypto payments across multiple chains.",
+      "The merchant dashboard provides overviews of transactions, payouts, commissions, and configuration such as API keys and webhooks.",
+      "The checkout experience lets customers pay invoices with crypto by connecting their wallets and sending on-chain payments to generated deposit addresses.",
+      "Both dashboard and checkout are built with Vue 3, Naive UI, and TypeScript, talking to a Go backend that handles wallets, reconciliation, and payouts.",
     ],
     type: "web",
     icon: (
@@ -196,11 +192,15 @@ export const projects: Project[] = [
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth={2}
-          d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"
+          d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M5 20h14a2 2 0 002-2v-5a2 2 0 00-2-2h-3M5 20a2 2 0 01-2-2v-5a2 2 0 012-2h3m6-4h4"
         />
       </svg>
     ),
-    tech: ["Next.js", "TypeScript", "Leaflet", "Next-Auth", "SWR"],
+    tech: ["Vue 3", "TypeScript", "Vite", "Naive UI", "Wagmi", "Viem"],
+    url: "https://cpg-checkout.web.app/",
+    urlLabel: "Checkout",
+    secondaryUrl: "https://cpg-dashboard.web.app/",
+    secondaryUrlLabel: "Dashboard",
   },
   {
     id: "Hurisoft",
@@ -300,124 +300,6 @@ export const projects: Project[] = [
       "Pusher",
     ],
     url: "https://verse-catch-pink.vercel.app",
-  },
-  {
-    id: "AgriLink",
-    title: "AgriLink Web Application",
-    preview:
-      "Marketplace connecting farmers and consumers for direct agricultural trade, with real-time chat and a community forum.",
-    description: [
-      "AgriLink is a marketplace connecting farmers with consumers for direct agricultural trade, cutting out the intermediary.",
-      "Farmers list products with pricing and availability. Consumers browse, place orders, and message sellers directly through a built-in real-time chat system.",
-      "A review and rating system covers both buyers and sellers. A community forum supports discussions on farming practices and market trends.",
-      "Farmers get a dedicated portal to manage listings, track orders, and review sales data. Built with Next.js, Prisma, and Pusher for real-time messaging.",
-    ],
-    type: "web",
-    icon: (
-      <svg
-        className="w-6 h-6"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={2}
-          d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-        />
-      </svg>
-    ),
-    tech: ["Next.js", "TypeScript", "Prisma", "Tailwind CSS", "Pusher"],
-    url: "https://agri-link.vercel.app",
-  },
-  {
-    id: "Threads",
-    title: "Threads Social Platform",
-    preview:
-      "Social platform with threaded posts, comments, and likes, built with Next.js and Prisma.",
-    description: [
-      "Threads is a social platform built with Next.js and Prisma, covering the core loop of post creation, comments, and likes.",
-      "User authentication gates content creation. The feed supports nested replies and threaded discussions.",
-      "Built as a personal project to practice full-stack social features with a type-safe stack.",
-    ],
-    type: "web",
-    icon: (
-      <svg
-        className="w-6 h-6"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={2}
-          d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z"
-        />
-      </svg>
-    ),
-    tech: ["Next.js", "TypeScript", "Prisma", "TailwindCSS"],
-    url: "https://threads-khaki-eight.vercel.app",
-  },
-  {
-    id: "BlogoSphere",
-    title: "BlogoSphere",
-    preview:
-      "A modern blogging platform with rich text editing, category organization, and interactive features.",
-    description: [
-      "BlogoSphere is a blogging platform with a rich text editor and category-based post organization.",
-      "Posts track view counts and support a comment thread. User accounts handle content creation and profile management.",
-      "Includes dark/light theme support. Built with Next.js, Prisma, and TailwindCSS.",
-    ],
-    type: "web",
-    icon: (
-      <svg
-        className="w-6 h-6"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={2}
-          d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9.5a2.5 2.5 0 00-2.5-2.5H15M9 11l3 3L9 17"
-        />
-      </svg>
-    ),
-    tech: ["Next.js", "TypeScript", "Prisma", "TailwindCSS"],
-    url: "https://blogosphere-umber.vercel.app",
-  },
-  {
-    id: "VoteSphere",
-    title: "VoteSphere",
-    preview:
-      "A voting platform for running secure, transparent polls and elections with real-time results.",
-    description: [
-      "VoteSphere is a web-based voting platform that enables organizations to run polls and elections with transparency and accountability.",
-      "Users can create elections, define candidates or options, and share voting links with participants.",
-      "The platform supports real-time result tracking and secure vote casting with validation to prevent duplicate votes.",
-      "Built with a clear, responsive interface so voters and organizers can manage and monitor elections easily.",
-    ],
-    type: "web",
-    icon: (
-      <svg
-        className="w-6 h-6"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={2}
-          d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"
-        />
-      </svg>
-    ),
-    tech: ["Next.js", "TypeScript", "Prisma"],
-    url: "https://vote-sphere.vercel.app",
   },
   {
     id: "MoMoXpress",

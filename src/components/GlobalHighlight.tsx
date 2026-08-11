@@ -16,7 +16,7 @@ export function useGlobalHighlight() {
         const regex = new RegExp(`(${activeSearch.query})`, 'gi');
         if (regex.test(text)) {
           const span = document.createElement('span');
-          span.innerHTML = text.replace(regex, '<span class="bg-violet-500/30 text-violet-200 px-1 rounded">$1</span>');
+          span.innerHTML = text.replace(regex, '<span class="bg-accent/25 text-ink px-1 rounded-sm">$1</span>');
           span.className = 'search-highlight-wrapper';
           node.parentNode?.replaceChild(span, node);
         }
