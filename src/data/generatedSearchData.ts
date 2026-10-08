@@ -136,7 +136,7 @@ export const searchData: SearchResultType[] = [
   },
   {
     "title": "Available for work       Building software for    ",
-    "preview": "Available for work       Building software for      Four years of production systems where being wrong has consequences —\n            regulated patient records, live funds moving between strangers, and\n            infrastructure that has to stay standing.   See the work     Download CV",
+    "preview": "Available for work       Building software for      Production systems since 2022, where being wrong has consequences:\n            regulated patient records, live funds moving between strangers, and\n            infrastructure that has to stay standing.   See the work     Download CV",
     "path": "/",
     "type": "content"
   },
@@ -165,14 +165,14 @@ export const searchData: SearchResultType[] = [
     "type": "content"
   },
   {
-    "title": "Four years of production systems where being wrong",
-    "preview": "Four years of production systems where being wrong has consequences —\n            regulated patient records, live funds moving between strangers, and\n            infrastructure that has to stay standing.",
+    "title": "Production systems since 2022, where being wrong h",
+    "preview": "Production systems since 2022, where being wrong has consequences:\n            regulated patient records, live funds moving between strangers, and\n            infrastructure that has to stay standing.",
     "path": "/",
     "type": "content"
   },
   {
-    "title": "Four years of production systems where being wrong",
-    "preview": "Four years of production systems where being wrong has consequences —\n            regulated patient records, live funds moving between strangers, and\n            infrastructure that has to stay standing.",
+    "title": "Production systems since 2022, where being wrong h",
+    "preview": "Production systems since 2022, where being wrong has consequences:\n            regulated patient records, live funds moving between strangers, and\n            infrastructure that has to stay standing.",
     "path": "/",
     "type": "content"
   },
@@ -207,22 +207,22 @@ export const searchData: SearchResultType[] = [
     "type": "content"
   },
   {
-    "title": "Selected work   Four systems, built where being wr",
-    "preview": "Selected work   Four systems, built where being wrong has consequences.        Everything else  View all 12 projects",
+    "title": "Selected work   Five systems, built where being wr",
+    "preview": "Selected work   Five systems, built where being wrong has consequences.        Everything else  View all 12 projects",
     "path": "/",
     "type": "content",
     "elementId": "work"
   },
   {
-    "title": "Selected work   Four systems, built where being wr",
-    "preview": "Selected work   Four systems, built where being wrong has consequences.        Everything else  View all 12 projects",
+    "title": "Selected work   Five systems, built where being wr",
+    "preview": "Selected work   Five systems, built where being wrong has consequences.        Everything else  View all 12 projects",
     "path": "/#work",
     "type": "content",
     "elementId": "work"
   },
   {
-    "title": "Selected work   Four systems, built where being wr",
-    "preview": "Selected work   Four systems, built where being wrong has consequences.",
+    "title": "Selected work   Five systems, built where being wr",
+    "preview": "Selected work   Five systems, built where being wrong has consequences.",
     "path": "/#work",
     "type": "content",
     "elementId": "work"
@@ -242,15 +242,15 @@ export const searchData: SearchResultType[] = [
     "elementId": "work"
   },
   {
-    "title": "Four systems, built where being wrong has conseque",
-    "preview": "Four systems, built where being wrong has consequences.",
+    "title": "Five systems, built where being wrong has conseque",
+    "preview": "Five systems, built where being wrong has consequences.",
     "path": "/#work",
     "type": "content",
     "elementId": "work"
   },
   {
-    "title": "Four systems, built where being wrong has conseque",
-    "preview": "Four systems, built where being wrong has consequences.",
+    "title": "Five systems, built where being wrong has conseque",
+    "preview": "Five systems, built where being wrong has consequences.",
     "path": "/",
     "type": "content",
     "elementId": "work"
@@ -483,15 +483,43 @@ export const searchData: SearchResultType[] = [
     "type": "content"
   },
   {
+    "title": "Workspace Global Client, Talent & Operations Platform",
+    "preview": "Three connected dashboards for a creative-talent marketplace: clients request work, talent delivers it, and an operations team runs everything in between. (React, TypeScript, TanStack Router)",
+    "path": "/projects#WorkspaceGlobal",
+    "type": "content",
+    "elementId": "WorkspaceGlobal"
+  },
+  {
+    "title": "Workspace Global Client, Talent & Operations Platform",
+    "preview": "Three connected dashboards for a creative-talent marketplace: clients request work, talent delivers it, and an operations team runs everything in between. (React, TypeScript, TanStack Router)",
+    "path": "/",
+    "type": "content",
+    "elementId": "WorkspaceGlobal"
+  },
+  {
+    "title": "Pure Relief Spa Booking, Store & CRM Platform",
+    "preview": "Operating system for a spa business: online and walk-in bookings, Paystack payments, an online store, loyalty and gift cards, and a staff CRM. (Next.js, TypeScript, Express.js)",
+    "path": "/projects#PRS",
+    "type": "content",
+    "elementId": "PRS"
+  },
+  {
+    "title": "Pure Relief Spa Booking, Store & CRM Platform",
+    "preview": "Operating system for a spa business: online and walk-in bookings, Paystack payments, an online store, loyalty and gift cards, and a staff CRM. (Next.js, TypeScript, Express.js)",
+    "path": "/",
+    "type": "content",
+    "elementId": "PRS"
+  },
+  {
     "title": "IExchange P2P Trading Platform",
-    "preview": "Onchain P2P trading platform with a marketing site and trading interface for seamless crypto–fiat exchange. (Next.js, Typescript, TailwindCSS)",
+    "preview": "On-chain P2P crypto trading platform with KYC, order management, dispute resolution, and a separate marketing site. (Next.js, TypeScript, TailwindCSS)",
     "path": "/projects#IExchange",
     "type": "content",
     "elementId": "IExchange"
   },
   {
     "title": "IExchange P2P Trading Platform",
-    "preview": "Onchain P2P trading platform with a marketing site and trading interface for seamless crypto–fiat exchange. (Next.js, Typescript, TailwindCSS)",
+    "preview": "On-chain P2P crypto trading platform with KYC, order management, dispute resolution, and a separate marketing site. (Next.js, TypeScript, TailwindCSS)",
     "path": "/",
     "type": "content",
     "elementId": "IExchange"
@@ -525,20 +553,6 @@ export const searchData: SearchResultType[] = [
     "elementId": "BisaDoctor"
   },
   {
-    "title": "Soccersm Sports Prediction Platform",
-    "preview": "AI-assisted sports prediction platform with challenge pools, leaderboards, and on-chain staking. (Next.js, TypeScript, TailwindCSS)",
-    "path": "/projects#Soccersm",
-    "type": "content",
-    "elementId": "Soccersm"
-  },
-  {
-    "title": "Soccersm Sports Prediction Platform",
-    "preview": "AI-assisted sports prediction platform with challenge pools, leaderboards, and on-chain staking. (Next.js, TypeScript, TailwindCSS)",
-    "path": "/",
-    "type": "content",
-    "elementId": "Soccersm"
-  },
-  {
     "title": "Crypto Payment Gateway",
     "preview": "Dashboard and checkout experiences for processing crypto payments through a unified gateway. (Vue 3, TypeScript, Vite)",
     "path": "/projects#CPG",
@@ -568,14 +582,14 @@ export const searchData: SearchResultType[] = [
   },
   {
     "title": "Braszy Clothing E-commerce",
-    "preview": "Full-stack e-commerce platform for fashion retail, with product catalog, cart, Stripe checkout, and order management. (Next.js, TypeScript, Prisma)",
+    "preview": "Live e-commerce store for a fashion brand, with a CMS-managed catalogue, guest and account checkout, Stripe payments, and an admin dashboard. (Next.js, TypeScript, Prisma)",
     "path": "/projects#Braszy",
     "type": "content",
     "elementId": "Braszy"
   },
   {
     "title": "Braszy Clothing E-commerce",
-    "preview": "Full-stack e-commerce platform for fashion retail, with product catalog, cart, Stripe checkout, and order management. (Next.js, TypeScript, Prisma)",
+    "preview": "Live e-commerce store for a fashion brand, with a CMS-managed catalogue, guest and account checkout, Stripe payments, and an admin dashboard. (Next.js, TypeScript, Prisma)",
     "path": "/",
     "type": "content",
     "elementId": "Braszy"
@@ -631,196 +645,252 @@ export const searchData: SearchResultType[] = [
   },
   {
     "title": "RL Environment Engineer at Bespoke Labs",
-    "preview": "RL Environment Engineer - Bespoke Labs. Apr 2026 - Jul 2026. Developed AI agent evaluation tasks for Nebula Aurora, a Kubernetes-based benchmarking platform that tests frontier AI models on real-world DevOps and SRE scenarios Wrote setup scripts that inject controlled failures into K3s clusters, simulating infrastructure incidents across CI/CD pipelines, service mesh configurations, and observability stacks Built Python graders with partial scoring logic to assess AI agent responses against actual system state, covering incident response, platform engineering, and cloud operations tasks Authored solution scripts as ground-truth references; each task had to be fully verifiable from observable system state alone",
+    "preview": "RL Environment Engineer - Bespoke Labs. Apr 2026 - Present. Developed AI agent evaluation tasks for Nebula Aurora, a Kubernetes-based benchmark that tests frontier AI models on real DevOps and SRE incidents Wrote setup scripts that inject controlled failures into K3s clusters, simulating incidents across CI/CD pipelines, service mesh configurations, and observability stacks Built Python graders with partial scoring that check agent responses against actual system state, plus ground-truth solution scripts; every task had to be verifiable from observable system state alone Annotated coding-agent trajectories to produce training data for agents' research and planning ability",
     "path": "/about",
     "type": "content",
     "elementId": "experience-bespoke"
   },
   {
     "title": "RL Environment Engineer at Bespoke Labs",
-    "preview": "RL Environment Engineer - Bespoke Labs. Apr 2026 - Jul 2026. Developed AI agent evaluation tasks for Nebula Aurora, a Kubernetes-based benchmarking platform that tests frontier AI models on real-world DevOps and SRE scenarios Wrote setup scripts that inject controlled failures into K3s clusters, simulating infrastructure incidents across CI/CD pipelines, service mesh configurations, and observability stacks Built Python graders with partial scoring logic to assess AI agent responses against actual system state, covering incident response, platform engineering, and cloud operations tasks Authored solution scripts as ground-truth references; each task had to be fully verifiable from observable system state alone",
+    "preview": "RL Environment Engineer - Bespoke Labs. Apr 2026 - Present. Developed AI agent evaluation tasks for Nebula Aurora, a Kubernetes-based benchmark that tests frontier AI models on real DevOps and SRE incidents Wrote setup scripts that inject controlled failures into K3s clusters, simulating incidents across CI/CD pipelines, service mesh configurations, and observability stacks Built Python graders with partial scoring that check agent responses against actual system state, plus ground-truth solution scripts; every task had to be verifiable from observable system state alone Annotated coding-agent trajectories to produce training data for agents' research and planning ability",
     "path": "/",
     "type": "content",
     "elementId": "experience-bespoke"
   },
   {
     "title": "Bespoke Labs",
-    "preview": "RL Environment Engineer position at Bespoke Labs. Apr 2026 - Jul 2026. Developed AI agent evaluation tasks for Nebula Aurora, a Kubernetes-based benchmarking platform that tests frontier AI models on real-world DevOps and SRE scenarios",
+    "preview": "RL Environment Engineer position at Bespoke Labs. Apr 2026 - Present. Developed AI agent evaluation tasks for Nebula Aurora, a Kubernetes-based benchmark that tests frontier AI models on real DevOps and SRE incidents",
     "path": "/about",
     "type": "content",
     "elementId": "experience-bespoke"
   },
   {
     "title": "Bespoke Labs",
-    "preview": "RL Environment Engineer position at Bespoke Labs. Apr 2026 - Jul 2026. Developed AI agent evaluation tasks for Nebula Aurora, a Kubernetes-based benchmarking platform that tests frontier AI models on real-world DevOps and SRE scenarios",
+    "preview": "RL Environment Engineer position at Bespoke Labs. Apr 2026 - Present. Developed AI agent evaluation tasks for Nebula Aurora, a Kubernetes-based benchmark that tests frontier AI models on real DevOps and SRE incidents",
     "path": "/",
     "type": "content",
     "elementId": "experience-bespoke"
   },
   {
     "title": "RL Environment Engineer",
-    "preview": "RL Environment Engineer at Bespoke Labs. Apr 2026 - Jul 2026. Developed AI agent evaluation tasks for Nebula Aurora, a Kubernetes-based benchmarking platform that tests frontier AI models on real-world DevOps and SRE scenarios",
+    "preview": "RL Environment Engineer at Bespoke Labs. Apr 2026 - Present. Developed AI agent evaluation tasks for Nebula Aurora, a Kubernetes-based benchmark that tests frontier AI models on real DevOps and SRE incidents",
     "path": "/about",
     "type": "content",
     "elementId": "experience-bespoke"
   },
   {
     "title": "RL Environment Engineer",
-    "preview": "RL Environment Engineer at Bespoke Labs. Apr 2026 - Jul 2026. Developed AI agent evaluation tasks for Nebula Aurora, a Kubernetes-based benchmarking platform that tests frontier AI models on real-world DevOps and SRE scenarios",
+    "preview": "RL Environment Engineer at Bespoke Labs. Apr 2026 - Present. Developed AI agent evaluation tasks for Nebula Aurora, a Kubernetes-based benchmark that tests frontier AI models on real DevOps and SRE incidents",
     "path": "/",
     "type": "content",
     "elementId": "experience-bespoke"
   },
   {
     "title": "RL Environment Engineer - Bespoke Labs",
-    "preview": "Developed AI agent evaluation tasks for Nebula Aurora, a Kubernetes-based benchmarking platform that tests frontier AI models on real-world DevOps and SRE scenarios",
+    "preview": "Developed AI agent evaluation tasks for Nebula Aurora, a Kubernetes-based benchmark that tests frontier AI models on real DevOps and SRE incidents",
     "path": "/about",
     "type": "content",
     "elementId": "experience-bespoke"
   },
   {
     "title": "RL Environment Engineer - Bespoke Labs",
-    "preview": "Developed AI agent evaluation tasks for Nebula Aurora, a Kubernetes-based benchmarking platform that tests frontier AI models on real-world DevOps and SRE scenarios",
+    "preview": "Developed AI agent evaluation tasks for Nebula Aurora, a Kubernetes-based benchmark that tests frontier AI models on real DevOps and SRE incidents",
     "path": "/",
     "type": "content",
     "elementId": "experience-bespoke"
   },
   {
     "title": "RL Environment Engineer - Bespoke Labs",
-    "preview": "Wrote setup scripts that inject controlled failures into K3s clusters, simulating infrastructure incidents across CI/CD pipelines, service mesh configurations, and observability stacks",
+    "preview": "Wrote setup scripts that inject controlled failures into K3s clusters, simulating incidents across CI/CD pipelines, service mesh configurations, and observability stacks",
     "path": "/about",
     "type": "content",
     "elementId": "experience-bespoke"
   },
   {
     "title": "RL Environment Engineer - Bespoke Labs",
-    "preview": "Wrote setup scripts that inject controlled failures into K3s clusters, simulating infrastructure incidents across CI/CD pipelines, service mesh configurations, and observability stacks",
+    "preview": "Wrote setup scripts that inject controlled failures into K3s clusters, simulating incidents across CI/CD pipelines, service mesh configurations, and observability stacks",
     "path": "/",
     "type": "content",
     "elementId": "experience-bespoke"
   },
   {
     "title": "RL Environment Engineer - Bespoke Labs",
-    "preview": "Built Python graders with partial scoring logic to assess AI agent responses against actual system state, covering incident response, platform engineering, and cloud operations tasks",
+    "preview": "Built Python graders with partial scoring that check agent responses against actual system state, plus ground-truth solution scripts; every task had to be verifiable from observable system state alone",
     "path": "/about",
     "type": "content",
     "elementId": "experience-bespoke"
   },
   {
     "title": "RL Environment Engineer - Bespoke Labs",
-    "preview": "Built Python graders with partial scoring logic to assess AI agent responses against actual system state, covering incident response, platform engineering, and cloud operations tasks",
+    "preview": "Built Python graders with partial scoring that check agent responses against actual system state, plus ground-truth solution scripts; every task had to be verifiable from observable system state alone",
     "path": "/",
     "type": "content",
     "elementId": "experience-bespoke"
   },
   {
     "title": "RL Environment Engineer - Bespoke Labs",
-    "preview": "Authored solution scripts as ground-truth references; each task had to be fully verifiable from observable system state alone",
+    "preview": "Annotated coding-agent trajectories to produce training data for agents' research and planning ability",
     "path": "/about",
     "type": "content",
     "elementId": "experience-bespoke"
   },
   {
     "title": "RL Environment Engineer - Bespoke Labs",
-    "preview": "Authored solution scripts as ground-truth references; each task had to be fully verifiable from observable system state alone",
+    "preview": "Annotated coding-agent trajectories to produce training data for agents' research and planning ability",
     "path": "/",
     "type": "content",
     "elementId": "experience-bespoke"
+  },
+  {
+    "title": "Frontend Engineer at Workspace Global",
+    "preview": "Frontend Engineer - Workspace Global. May 2026 - Oct 2026. Worked across all three apps of a client, operations, and talent platform through MVP delivery, and owned the client dashboard end to end Built the client dashboard's request submission and approval flow, deliverables and file previews, checkout, campaigns, brand documents, meeting booking, and help desk Built shared features used in all three apps, including real-time chat with channels and archived conversations, announcements and notifications, and auth flows with email verification and password rules Contributed to the shared UI and auth packages in a pnpm/Turborepo monorepo built on React, TanStack Router, and TanStack Query",
+    "path": "/about",
+    "type": "content",
+    "elementId": "experience-workspace"
+  },
+  {
+    "title": "Frontend Engineer at Workspace Global",
+    "preview": "Frontend Engineer - Workspace Global. May 2026 - Oct 2026. Worked across all three apps of a client, operations, and talent platform through MVP delivery, and owned the client dashboard end to end Built the client dashboard's request submission and approval flow, deliverables and file previews, checkout, campaigns, brand documents, meeting booking, and help desk Built shared features used in all three apps, including real-time chat with channels and archived conversations, announcements and notifications, and auth flows with email verification and password rules Contributed to the shared UI and auth packages in a pnpm/Turborepo monorepo built on React, TanStack Router, and TanStack Query",
+    "path": "/",
+    "type": "content",
+    "elementId": "experience-workspace"
+  },
+  {
+    "title": "Workspace Global",
+    "preview": "Frontend Engineer position at Workspace Global. May 2026 - Oct 2026. Worked across all three apps of a client, operations, and talent platform through MVP delivery, and owned the client dashboard end to end",
+    "path": "/about",
+    "type": "content",
+    "elementId": "experience-workspace"
+  },
+  {
+    "title": "Workspace Global",
+    "preview": "Frontend Engineer position at Workspace Global. May 2026 - Oct 2026. Worked across all three apps of a client, operations, and talent platform through MVP delivery, and owned the client dashboard end to end",
+    "path": "/",
+    "type": "content",
+    "elementId": "experience-workspace"
+  },
+  {
+    "title": "Frontend Engineer",
+    "preview": "Frontend Engineer at Workspace Global. May 2026 - Oct 2026. Worked across all three apps of a client, operations, and talent platform through MVP delivery, and owned the client dashboard end to end",
+    "path": "/about",
+    "type": "content",
+    "elementId": "experience-workspace"
+  },
+  {
+    "title": "Frontend Engineer",
+    "preview": "Frontend Engineer at Workspace Global. May 2026 - Oct 2026. Worked across all three apps of a client, operations, and talent platform through MVP delivery, and owned the client dashboard end to end",
+    "path": "/",
+    "type": "content",
+    "elementId": "experience-workspace"
+  },
+  {
+    "title": "Frontend Engineer - Workspace Global",
+    "preview": "Worked across all three apps of a client, operations, and talent platform through MVP delivery, and owned the client dashboard end to end",
+    "path": "/about",
+    "type": "content",
+    "elementId": "experience-workspace"
+  },
+  {
+    "title": "Frontend Engineer - Workspace Global",
+    "preview": "Worked across all three apps of a client, operations, and talent platform through MVP delivery, and owned the client dashboard end to end",
+    "path": "/",
+    "type": "content",
+    "elementId": "experience-workspace"
+  },
+  {
+    "title": "Frontend Engineer - Workspace Global",
+    "preview": "Built the client dashboard's request submission and approval flow, deliverables and file previews, checkout, campaigns, brand documents, meeting booking, and help desk",
+    "path": "/about",
+    "type": "content",
+    "elementId": "experience-workspace"
+  },
+  {
+    "title": "Frontend Engineer - Workspace Global",
+    "preview": "Built the client dashboard's request submission and approval flow, deliverables and file previews, checkout, campaigns, brand documents, meeting booking, and help desk",
+    "path": "/",
+    "type": "content",
+    "elementId": "experience-workspace"
+  },
+  {
+    "title": "Frontend Engineer - Workspace Global",
+    "preview": "Built shared features used in all three apps, including real-time chat with channels and archived conversations, announcements and notifications, and auth flows with email verification and password rules",
+    "path": "/about",
+    "type": "content",
+    "elementId": "experience-workspace"
+  },
+  {
+    "title": "Frontend Engineer - Workspace Global",
+    "preview": "Built shared features used in all three apps, including real-time chat with channels and archived conversations, announcements and notifications, and auth flows with email verification and password rules",
+    "path": "/",
+    "type": "content",
+    "elementId": "experience-workspace"
+  },
+  {
+    "title": "Frontend Engineer - Workspace Global",
+    "preview": "Contributed to the shared UI and auth packages in a pnpm/Turborepo monorepo built on React, TanStack Router, and TanStack Query",
+    "path": "/about",
+    "type": "content",
+    "elementId": "experience-workspace"
+  },
+  {
+    "title": "Frontend Engineer - Workspace Global",
+    "preview": "Contributed to the shared UI and auth packages in a pnpm/Turborepo monorepo built on React, TanStack Router, and TanStack Query",
+    "path": "/",
+    "type": "content",
+    "elementId": "experience-workspace"
   },
   {
     "title": "Fullstack Developer at Gigsama LLC",
-    "preview": "Fullstack Developer - Gigsama LLC. Mar 2025 - Mar 2026. Led R&D initiatives, evaluating and implementing production tools (PostHog, Sentry, Zoho Desk) and building technical PoCs to validate EHR integrations before full implementation Architected the Carex Scholar frontend across two role-based portals: an organization portal covering schedule management, scholar check-ins, group notes, and assessments; and a staff portal for organization oversight, assessment scheduling, and review workflows Built automated scholar check-in, assessments, and group notes for scholar sessions, reducing administrative overhead Built a proof of concept for insurance billing integration and contributed backend fixes and features to the Scholar API in Express.js and PostgreSQL Maintained HIPAA compliance across the platform, including data access controls and audit logging for sensitive healthcare records",
+    "preview": "Fullstack Developer - Gigsama LLC. Mar 2025 - Mar 2026. Built the Carex Scholar frontend across two role-based portals: an organization portal for schedules, scholar check-ins, group notes, and assessments, and a staff portal for organization oversight, assessment scheduling, and reviews Maintained HIPAA compliance across the platform, including data access controls and audit logging for sensitive healthcare records Led R&D on production tooling (PostHog, Sentry, Zoho Desk) and built proofs of concept for EHR and insurance billing integrations before full implementation Shipped backend features and fixes in the Scholar API with Express.js and PostgreSQL",
     "path": "/about",
     "type": "content",
     "elementId": "experience-carex"
   },
   {
     "title": "Fullstack Developer at Gigsama LLC",
-    "preview": "Fullstack Developer - Gigsama LLC. Mar 2025 - Mar 2026. Led R&D initiatives, evaluating and implementing production tools (PostHog, Sentry, Zoho Desk) and building technical PoCs to validate EHR integrations before full implementation Architected the Carex Scholar frontend across two role-based portals: an organization portal covering schedule management, scholar check-ins, group notes, and assessments; and a staff portal for organization oversight, assessment scheduling, and review workflows Built automated scholar check-in, assessments, and group notes for scholar sessions, reducing administrative overhead Built a proof of concept for insurance billing integration and contributed backend fixes and features to the Scholar API in Express.js and PostgreSQL Maintained HIPAA compliance across the platform, including data access controls and audit logging for sensitive healthcare records",
+    "preview": "Fullstack Developer - Gigsama LLC. Mar 2025 - Mar 2026. Built the Carex Scholar frontend across two role-based portals: an organization portal for schedules, scholar check-ins, group notes, and assessments, and a staff portal for organization oversight, assessment scheduling, and reviews Maintained HIPAA compliance across the platform, including data access controls and audit logging for sensitive healthcare records Led R&D on production tooling (PostHog, Sentry, Zoho Desk) and built proofs of concept for EHR and insurance billing integrations before full implementation Shipped backend features and fixes in the Scholar API with Express.js and PostgreSQL",
     "path": "/",
     "type": "content",
     "elementId": "experience-carex"
   },
   {
     "title": "Gigsama LLC",
-    "preview": "Fullstack Developer position at Gigsama LLC. Mar 2025 - Mar 2026. Led R&D initiatives, evaluating and implementing production tools (PostHog, Sentry, Zoho Desk) and building technical PoCs to validate EHR integrations before full implementation",
+    "preview": "Fullstack Developer position at Gigsama LLC. Mar 2025 - Mar 2026. Built the Carex Scholar frontend across two role-based portals: an organization portal for schedules, scholar check-ins, group notes, and assessments, and a staff portal for organization oversight, assessment scheduling, and reviews",
     "path": "/about",
     "type": "content",
     "elementId": "experience-carex"
   },
   {
     "title": "Gigsama LLC",
-    "preview": "Fullstack Developer position at Gigsama LLC. Mar 2025 - Mar 2026. Led R&D initiatives, evaluating and implementing production tools (PostHog, Sentry, Zoho Desk) and building technical PoCs to validate EHR integrations before full implementation",
+    "preview": "Fullstack Developer position at Gigsama LLC. Mar 2025 - Mar 2026. Built the Carex Scholar frontend across two role-based portals: an organization portal for schedules, scholar check-ins, group notes, and assessments, and a staff portal for organization oversight, assessment scheduling, and reviews",
     "path": "/",
     "type": "content",
     "elementId": "experience-carex"
   },
   {
     "title": "Fullstack Developer",
-    "preview": "Fullstack Developer at Gigsama LLC. Mar 2025 - Mar 2026. Led R&D initiatives, evaluating and implementing production tools (PostHog, Sentry, Zoho Desk) and building technical PoCs to validate EHR integrations before full implementation",
+    "preview": "Fullstack Developer at Gigsama LLC. Mar 2025 - Mar 2026. Built the Carex Scholar frontend across two role-based portals: an organization portal for schedules, scholar check-ins, group notes, and assessments, and a staff portal for organization oversight, assessment scheduling, and reviews",
     "path": "/about",
     "type": "content",
     "elementId": "experience-carex"
   },
   {
     "title": "Fullstack Developer",
-    "preview": "Fullstack Developer at Gigsama LLC. Mar 2025 - Mar 2026. Led R&D initiatives, evaluating and implementing production tools (PostHog, Sentry, Zoho Desk) and building technical PoCs to validate EHR integrations before full implementation",
+    "preview": "Fullstack Developer at Gigsama LLC. Mar 2025 - Mar 2026. Built the Carex Scholar frontend across two role-based portals: an organization portal for schedules, scholar check-ins, group notes, and assessments, and a staff portal for organization oversight, assessment scheduling, and reviews",
     "path": "/",
     "type": "content",
     "elementId": "experience-carex"
   },
   {
     "title": "Fullstack Developer - Gigsama LLC",
-    "preview": "Led R&D initiatives, evaluating and implementing production tools (PostHog, Sentry, Zoho Desk) and building technical PoCs to validate EHR integrations before full implementation",
+    "preview": "Built the Carex Scholar frontend across two role-based portals: an organization portal for schedules, scholar check-ins, group notes, and assessments, and a staff portal for organization oversight, assessment scheduling, and reviews",
     "path": "/about",
     "type": "content",
     "elementId": "experience-carex"
   },
   {
     "title": "Fullstack Developer - Gigsama LLC",
-    "preview": "Led R&D initiatives, evaluating and implementing production tools (PostHog, Sentry, Zoho Desk) and building technical PoCs to validate EHR integrations before full implementation",
-    "path": "/",
-    "type": "content",
-    "elementId": "experience-carex"
-  },
-  {
-    "title": "Fullstack Developer - Gigsama LLC",
-    "preview": "Architected the Carex Scholar frontend across two role-based portals: an organization portal covering schedule management, scholar check-ins, group notes, and assessments; and a staff portal for organization oversight, assessment scheduling, and review workflows",
-    "path": "/about",
-    "type": "content",
-    "elementId": "experience-carex"
-  },
-  {
-    "title": "Fullstack Developer - Gigsama LLC",
-    "preview": "Architected the Carex Scholar frontend across two role-based portals: an organization portal covering schedule management, scholar check-ins, group notes, and assessments; and a staff portal for organization oversight, assessment scheduling, and review workflows",
-    "path": "/",
-    "type": "content",
-    "elementId": "experience-carex"
-  },
-  {
-    "title": "Fullstack Developer - Gigsama LLC",
-    "preview": "Built automated scholar check-in, assessments, and group notes for scholar sessions, reducing administrative overhead",
-    "path": "/about",
-    "type": "content",
-    "elementId": "experience-carex"
-  },
-  {
-    "title": "Fullstack Developer - Gigsama LLC",
-    "preview": "Built automated scholar check-in, assessments, and group notes for scholar sessions, reducing administrative overhead",
-    "path": "/",
-    "type": "content",
-    "elementId": "experience-carex"
-  },
-  {
-    "title": "Fullstack Developer - Gigsama LLC",
-    "preview": "Built a proof of concept for insurance billing integration and contributed backend fixes and features to the Scholar API in Express.js and PostgreSQL",
-    "path": "/about",
-    "type": "content",
-    "elementId": "experience-carex"
-  },
-  {
-    "title": "Fullstack Developer - Gigsama LLC",
-    "preview": "Built a proof of concept for insurance billing integration and contributed backend fixes and features to the Scholar API in Express.js and PostgreSQL",
+    "preview": "Built the Carex Scholar frontend across two role-based portals: an organization portal for schedules, scholar check-ins, group notes, and assessments, and a staff portal for organization oversight, assessment scheduling, and reviews",
     "path": "/",
     "type": "content",
     "elementId": "experience-carex"
@@ -840,253 +910,253 @@ export const searchData: SearchResultType[] = [
     "elementId": "experience-carex"
   },
   {
-    "title": "Fullstack Developer at Hurisoft",
-    "preview": "Fullstack Developer - Hurisoft. Nov 2024 - July 2025. Developed the landing page for iExchange, a P2P cryptocurrency trading platform, with a responsive layout focused on user acquisition and conversion Built the iExchange trading application, setting up the project architecture and developing core P2P trading flows, KYC verification, order management, dispute resolution, and an admin panel Resolved bugs and improved frontend performance for Soccersm, a sports prediction platform, reducing load times and stabilizing key user flows",
+    "title": "Fullstack Developer - Gigsama LLC",
+    "preview": "Led R&D on production tooling (PostHog, Sentry, Zoho Desk) and built proofs of concept for EHR and insurance billing integrations before full implementation",
     "path": "/about",
     "type": "content",
-    "elementId": "experience-frontend"
+    "elementId": "experience-carex"
+  },
+  {
+    "title": "Fullstack Developer - Gigsama LLC",
+    "preview": "Led R&D on production tooling (PostHog, Sentry, Zoho Desk) and built proofs of concept for EHR and insurance billing integrations before full implementation",
+    "path": "/",
+    "type": "content",
+    "elementId": "experience-carex"
+  },
+  {
+    "title": "Fullstack Developer - Gigsama LLC",
+    "preview": "Shipped backend features and fixes in the Scholar API with Express.js and PostgreSQL",
+    "path": "/about",
+    "type": "content",
+    "elementId": "experience-carex"
+  },
+  {
+    "title": "Fullstack Developer - Gigsama LLC",
+    "preview": "Shipped backend features and fixes in the Scholar API with Express.js and PostgreSQL",
+    "path": "/",
+    "type": "content",
+    "elementId": "experience-carex"
   },
   {
     "title": "Fullstack Developer at Hurisoft",
-    "preview": "Fullstack Developer - Hurisoft. Nov 2024 - July 2025. Developed the landing page for iExchange, a P2P cryptocurrency trading platform, with a responsive layout focused on user acquisition and conversion Built the iExchange trading application, setting up the project architecture and developing core P2P trading flows, KYC verification, order management, dispute resolution, and an admin panel Resolved bugs and improved frontend performance for Soccersm, a sports prediction platform, reducing load times and stabilizing key user flows",
+    "preview": "Fullstack Developer - Hurisoft. Nov 2024 - Jul 2025. Built the iExchange P2P crypto trading app from scratch, setting up the architecture and building trading flows, KYC verification, order management, dispute resolution, and the admin panel Built the iExchange marketing site, a separate surface focused on user acquisition and conversion",
+    "path": "/about",
+    "type": "content",
+    "elementId": "experience-hurisoft"
+  },
+  {
+    "title": "Fullstack Developer at Hurisoft",
+    "preview": "Fullstack Developer - Hurisoft. Nov 2024 - Jul 2025. Built the iExchange P2P crypto trading app from scratch, setting up the architecture and building trading flows, KYC verification, order management, dispute resolution, and the admin panel Built the iExchange marketing site, a separate surface focused on user acquisition and conversion",
     "path": "/",
     "type": "content",
-    "elementId": "experience-frontend"
+    "elementId": "experience-hurisoft"
   },
   {
     "title": "Hurisoft",
-    "preview": "Fullstack Developer position at Hurisoft. Nov 2024 - July 2025. Developed the landing page for iExchange, a P2P cryptocurrency trading platform, with a responsive layout focused on user acquisition and conversion",
+    "preview": "Fullstack Developer position at Hurisoft. Nov 2024 - Jul 2025. Built the iExchange P2P crypto trading app from scratch, setting up the architecture and building trading flows, KYC verification, order management, dispute resolution, and the admin panel",
     "path": "/about",
     "type": "content",
-    "elementId": "experience-frontend"
+    "elementId": "experience-hurisoft"
   },
   {
     "title": "Hurisoft",
-    "preview": "Fullstack Developer position at Hurisoft. Nov 2024 - July 2025. Developed the landing page for iExchange, a P2P cryptocurrency trading platform, with a responsive layout focused on user acquisition and conversion",
+    "preview": "Fullstack Developer position at Hurisoft. Nov 2024 - Jul 2025. Built the iExchange P2P crypto trading app from scratch, setting up the architecture and building trading flows, KYC verification, order management, dispute resolution, and the admin panel",
     "path": "/",
     "type": "content",
-    "elementId": "experience-frontend"
+    "elementId": "experience-hurisoft"
   },
   {
     "title": "Fullstack Developer",
-    "preview": "Fullstack Developer at Hurisoft. Nov 2024 - July 2025. Developed the landing page for iExchange, a P2P cryptocurrency trading platform, with a responsive layout focused on user acquisition and conversion",
+    "preview": "Fullstack Developer at Hurisoft. Nov 2024 - Jul 2025. Built the iExchange P2P crypto trading app from scratch, setting up the architecture and building trading flows, KYC verification, order management, dispute resolution, and the admin panel",
     "path": "/about",
     "type": "content",
-    "elementId": "experience-frontend"
+    "elementId": "experience-hurisoft"
   },
   {
     "title": "Fullstack Developer",
-    "preview": "Fullstack Developer at Hurisoft. Nov 2024 - July 2025. Developed the landing page for iExchange, a P2P cryptocurrency trading platform, with a responsive layout focused on user acquisition and conversion",
+    "preview": "Fullstack Developer at Hurisoft. Nov 2024 - Jul 2025. Built the iExchange P2P crypto trading app from scratch, setting up the architecture and building trading flows, KYC verification, order management, dispute resolution, and the admin panel",
     "path": "/",
     "type": "content",
-    "elementId": "experience-frontend"
+    "elementId": "experience-hurisoft"
   },
   {
     "title": "Fullstack Developer - Hurisoft",
-    "preview": "Developed the landing page for iExchange, a P2P cryptocurrency trading platform, with a responsive layout focused on user acquisition and conversion",
+    "preview": "Built the iExchange P2P crypto trading app from scratch, setting up the architecture and building trading flows, KYC verification, order management, dispute resolution, and the admin panel",
     "path": "/about",
     "type": "content",
-    "elementId": "experience-frontend"
+    "elementId": "experience-hurisoft"
   },
   {
     "title": "Fullstack Developer - Hurisoft",
-    "preview": "Developed the landing page for iExchange, a P2P cryptocurrency trading platform, with a responsive layout focused on user acquisition and conversion",
+    "preview": "Built the iExchange P2P crypto trading app from scratch, setting up the architecture and building trading flows, KYC verification, order management, dispute resolution, and the admin panel",
     "path": "/",
     "type": "content",
-    "elementId": "experience-frontend"
+    "elementId": "experience-hurisoft"
   },
   {
     "title": "Fullstack Developer - Hurisoft",
-    "preview": "Built the iExchange trading application, setting up the project architecture and developing core P2P trading flows, KYC verification, order management, dispute resolution, and an admin panel",
+    "preview": "Built the iExchange marketing site, a separate surface focused on user acquisition and conversion",
     "path": "/about",
     "type": "content",
-    "elementId": "experience-frontend"
+    "elementId": "experience-hurisoft"
   },
   {
     "title": "Fullstack Developer - Hurisoft",
-    "preview": "Built the iExchange trading application, setting up the project architecture and developing core P2P trading flows, KYC verification, order management, dispute resolution, and an admin panel",
+    "preview": "Built the iExchange marketing site, a separate surface focused on user acquisition and conversion",
     "path": "/",
     "type": "content",
-    "elementId": "experience-frontend"
-  },
-  {
-    "title": "Fullstack Developer - Hurisoft",
-    "preview": "Resolved bugs and improved frontend performance for Soccersm, a sports prediction platform, reducing load times and stabilizing key user flows",
-    "path": "/about",
-    "type": "content",
-    "elementId": "experience-frontend"
-  },
-  {
-    "title": "Fullstack Developer - Hurisoft",
-    "preview": "Resolved bugs and improved frontend performance for Soccersm, a sports prediction platform, reducing load times and stabilizing key user flows",
-    "path": "/",
-    "type": "content",
-    "elementId": "experience-frontend"
+    "elementId": "experience-hurisoft"
   },
   {
     "title": "Fullstack Developer at KNUST School of Business",
-    "preview": "Fullstack Developer - KNUST School of Business. Nov 2023 - Nov 2024. Developed an exam attendance application and admin dashboard for recording and managing invigilator sign-ins across exam sessions Built a faculty election voting system with secure ballot submission, duplicate vote prevention, and real-time result tracking for university staff Developed a nomination platform with four-tier role-based access (public users, nominators, reviewers, admins), a two-stage submission and review workflow, conflict-of-interest checks for reviewers, CSV and PDF report generation, and real-time notifications via Pusher",
+    "preview": "Fullstack Developer - KNUST School of Business. Nov 2023 - Nov 2024. Built an exam attendance system with an admin dashboard for recording and managing invigilator sign-ins across exam sessions Built a staff election system with secure ballot submission, duplicate vote prevention, and real-time results Built a nomination platform with four-tier role-based access, a two-stage submission and review workflow, conflict-of-interest checks for reviewers, CSV and PDF reports, and real-time notifications",
     "path": "/about",
     "type": "content",
-    "elementId": "experience-fullstack"
+    "elementId": "experience-ksb"
   },
   {
     "title": "Fullstack Developer at KNUST School of Business",
-    "preview": "Fullstack Developer - KNUST School of Business. Nov 2023 - Nov 2024. Developed an exam attendance application and admin dashboard for recording and managing invigilator sign-ins across exam sessions Built a faculty election voting system with secure ballot submission, duplicate vote prevention, and real-time result tracking for university staff Developed a nomination platform with four-tier role-based access (public users, nominators, reviewers, admins), a two-stage submission and review workflow, conflict-of-interest checks for reviewers, CSV and PDF report generation, and real-time notifications via Pusher",
+    "preview": "Fullstack Developer - KNUST School of Business. Nov 2023 - Nov 2024. Built an exam attendance system with an admin dashboard for recording and managing invigilator sign-ins across exam sessions Built a staff election system with secure ballot submission, duplicate vote prevention, and real-time results Built a nomination platform with four-tier role-based access, a two-stage submission and review workflow, conflict-of-interest checks for reviewers, CSV and PDF reports, and real-time notifications",
     "path": "/",
     "type": "content",
-    "elementId": "experience-fullstack"
+    "elementId": "experience-ksb"
   },
   {
     "title": "KNUST School of Business",
-    "preview": "Fullstack Developer position at KNUST School of Business. Nov 2023 - Nov 2024. Developed an exam attendance application and admin dashboard for recording and managing invigilator sign-ins across exam sessions",
+    "preview": "Fullstack Developer position at KNUST School of Business. Nov 2023 - Nov 2024. Built an exam attendance system with an admin dashboard for recording and managing invigilator sign-ins across exam sessions",
     "path": "/about",
     "type": "content",
-    "elementId": "experience-fullstack"
+    "elementId": "experience-ksb"
   },
   {
     "title": "KNUST School of Business",
-    "preview": "Fullstack Developer position at KNUST School of Business. Nov 2023 - Nov 2024. Developed an exam attendance application and admin dashboard for recording and managing invigilator sign-ins across exam sessions",
+    "preview": "Fullstack Developer position at KNUST School of Business. Nov 2023 - Nov 2024. Built an exam attendance system with an admin dashboard for recording and managing invigilator sign-ins across exam sessions",
     "path": "/",
     "type": "content",
-    "elementId": "experience-fullstack"
+    "elementId": "experience-ksb"
   },
   {
     "title": "Fullstack Developer",
-    "preview": "Fullstack Developer at KNUST School of Business. Nov 2023 - Nov 2024. Developed an exam attendance application and admin dashboard for recording and managing invigilator sign-ins across exam sessions",
+    "preview": "Fullstack Developer at KNUST School of Business. Nov 2023 - Nov 2024. Built an exam attendance system with an admin dashboard for recording and managing invigilator sign-ins across exam sessions",
     "path": "/about",
     "type": "content",
-    "elementId": "experience-fullstack"
+    "elementId": "experience-ksb"
   },
   {
     "title": "Fullstack Developer",
-    "preview": "Fullstack Developer at KNUST School of Business. Nov 2023 - Nov 2024. Developed an exam attendance application and admin dashboard for recording and managing invigilator sign-ins across exam sessions",
+    "preview": "Fullstack Developer at KNUST School of Business. Nov 2023 - Nov 2024. Built an exam attendance system with an admin dashboard for recording and managing invigilator sign-ins across exam sessions",
     "path": "/",
     "type": "content",
-    "elementId": "experience-fullstack"
+    "elementId": "experience-ksb"
   },
   {
     "title": "Fullstack Developer - KNUST School of Business",
-    "preview": "Developed an exam attendance application and admin dashboard for recording and managing invigilator sign-ins across exam sessions",
+    "preview": "Built an exam attendance system with an admin dashboard for recording and managing invigilator sign-ins across exam sessions",
     "path": "/about",
     "type": "content",
-    "elementId": "experience-fullstack"
+    "elementId": "experience-ksb"
   },
   {
     "title": "Fullstack Developer - KNUST School of Business",
-    "preview": "Developed an exam attendance application and admin dashboard for recording and managing invigilator sign-ins across exam sessions",
+    "preview": "Built an exam attendance system with an admin dashboard for recording and managing invigilator sign-ins across exam sessions",
     "path": "/",
     "type": "content",
-    "elementId": "experience-fullstack"
+    "elementId": "experience-ksb"
   },
   {
     "title": "Fullstack Developer - KNUST School of Business",
-    "preview": "Built a faculty election voting system with secure ballot submission, duplicate vote prevention, and real-time result tracking for university staff",
+    "preview": "Built a staff election system with secure ballot submission, duplicate vote prevention, and real-time results",
     "path": "/about",
     "type": "content",
-    "elementId": "experience-fullstack"
+    "elementId": "experience-ksb"
   },
   {
     "title": "Fullstack Developer - KNUST School of Business",
-    "preview": "Built a faculty election voting system with secure ballot submission, duplicate vote prevention, and real-time result tracking for university staff",
+    "preview": "Built a staff election system with secure ballot submission, duplicate vote prevention, and real-time results",
     "path": "/",
     "type": "content",
-    "elementId": "experience-fullstack"
+    "elementId": "experience-ksb"
   },
   {
     "title": "Fullstack Developer - KNUST School of Business",
-    "preview": "Developed a nomination platform with four-tier role-based access (public users, nominators, reviewers, admins), a two-stage submission and review workflow, conflict-of-interest checks for reviewers, CSV and PDF report generation, and real-time notifications via Pusher",
+    "preview": "Built a nomination platform with four-tier role-based access, a two-stage submission and review workflow, conflict-of-interest checks for reviewers, CSV and PDF reports, and real-time notifications",
     "path": "/about",
     "type": "content",
-    "elementId": "experience-fullstack"
+    "elementId": "experience-ksb"
   },
   {
     "title": "Fullstack Developer - KNUST School of Business",
-    "preview": "Developed a nomination platform with four-tier role-based access (public users, nominators, reviewers, admins), a two-stage submission and review workflow, conflict-of-interest checks for reviewers, CSV and PDF report generation, and real-time notifications via Pusher",
+    "preview": "Built a nomination platform with four-tier role-based access, a two-stage submission and review workflow, conflict-of-interest checks for reviewers, CSV and PDF reports, and real-time notifications",
     "path": "/",
     "type": "content",
-    "elementId": "experience-fullstack"
+    "elementId": "experience-ksb"
   },
   {
-    "title": "Software Engineer Intern, Frontend Developer at BSystems Limited",
-    "preview": "Software Engineer Intern, Frontend Developer - BSystems Limited. Oct 2022 - Jan 2023. Built and integrated minor features into the admin dashboard of the PeoplesPay app Redesigned the platform's UI for responsiveness, addressing layout issues that affected usability across smaller screen sizes Wrote technical documentation for the web application to support future development and onboarding",
+    "title": "Software Engineer Intern at BSystems Limited",
+    "preview": "Software Engineer Intern - BSystems Limited. Oct 2022 - Jan 2023. Added features to the PeoplesPay admin dashboard and fixed responsive layout issues on smaller screens Wrote technical documentation for the web application to support onboarding and future development",
     "path": "/about",
     "type": "content",
     "elementId": "experience-intern"
   },
   {
-    "title": "Software Engineer Intern, Frontend Developer at BSystems Limited",
-    "preview": "Software Engineer Intern, Frontend Developer - BSystems Limited. Oct 2022 - Jan 2023. Built and integrated minor features into the admin dashboard of the PeoplesPay app Redesigned the platform's UI for responsiveness, addressing layout issues that affected usability across smaller screen sizes Wrote technical documentation for the web application to support future development and onboarding",
+    "title": "Software Engineer Intern at BSystems Limited",
+    "preview": "Software Engineer Intern - BSystems Limited. Oct 2022 - Jan 2023. Added features to the PeoplesPay admin dashboard and fixed responsive layout issues on smaller screens Wrote technical documentation for the web application to support onboarding and future development",
     "path": "/",
     "type": "content",
     "elementId": "experience-intern"
   },
   {
     "title": "BSystems Limited",
-    "preview": "Software Engineer Intern, Frontend Developer position at BSystems Limited. Oct 2022 - Jan 2023. Built and integrated minor features into the admin dashboard of the PeoplesPay app",
+    "preview": "Software Engineer Intern position at BSystems Limited. Oct 2022 - Jan 2023. Added features to the PeoplesPay admin dashboard and fixed responsive layout issues on smaller screens",
     "path": "/about",
     "type": "content",
     "elementId": "experience-intern"
   },
   {
     "title": "BSystems Limited",
-    "preview": "Software Engineer Intern, Frontend Developer position at BSystems Limited. Oct 2022 - Jan 2023. Built and integrated minor features into the admin dashboard of the PeoplesPay app",
+    "preview": "Software Engineer Intern position at BSystems Limited. Oct 2022 - Jan 2023. Added features to the PeoplesPay admin dashboard and fixed responsive layout issues on smaller screens",
     "path": "/",
     "type": "content",
     "elementId": "experience-intern"
   },
   {
-    "title": "Software Engineer Intern, Frontend Developer",
-    "preview": "Software Engineer Intern, Frontend Developer at BSystems Limited. Oct 2022 - Jan 2023. Built and integrated minor features into the admin dashboard of the PeoplesPay app",
+    "title": "Software Engineer Intern",
+    "preview": "Software Engineer Intern at BSystems Limited. Oct 2022 - Jan 2023. Added features to the PeoplesPay admin dashboard and fixed responsive layout issues on smaller screens",
     "path": "/about",
     "type": "content",
     "elementId": "experience-intern"
   },
   {
-    "title": "Software Engineer Intern, Frontend Developer",
-    "preview": "Software Engineer Intern, Frontend Developer at BSystems Limited. Oct 2022 - Jan 2023. Built and integrated minor features into the admin dashboard of the PeoplesPay app",
+    "title": "Software Engineer Intern",
+    "preview": "Software Engineer Intern at BSystems Limited. Oct 2022 - Jan 2023. Added features to the PeoplesPay admin dashboard and fixed responsive layout issues on smaller screens",
     "path": "/",
     "type": "content",
     "elementId": "experience-intern"
   },
   {
-    "title": "Software Engineer Intern, Frontend Developer - BSystems Limited",
-    "preview": "Built and integrated minor features into the admin dashboard of the PeoplesPay app",
+    "title": "Software Engineer Intern - BSystems Limited",
+    "preview": "Added features to the PeoplesPay admin dashboard and fixed responsive layout issues on smaller screens",
     "path": "/about",
     "type": "content",
     "elementId": "experience-intern"
   },
   {
-    "title": "Software Engineer Intern, Frontend Developer - BSystems Limited",
-    "preview": "Built and integrated minor features into the admin dashboard of the PeoplesPay app",
+    "title": "Software Engineer Intern - BSystems Limited",
+    "preview": "Added features to the PeoplesPay admin dashboard and fixed responsive layout issues on smaller screens",
     "path": "/",
     "type": "content",
     "elementId": "experience-intern"
   },
   {
-    "title": "Software Engineer Intern, Frontend Developer - BSystems Limited",
-    "preview": "Redesigned the platform's UI for responsiveness, addressing layout issues that affected usability across smaller screen sizes",
+    "title": "Software Engineer Intern - BSystems Limited",
+    "preview": "Wrote technical documentation for the web application to support onboarding and future development",
     "path": "/about",
     "type": "content",
     "elementId": "experience-intern"
   },
   {
-    "title": "Software Engineer Intern, Frontend Developer - BSystems Limited",
-    "preview": "Redesigned the platform's UI for responsiveness, addressing layout issues that affected usability across smaller screen sizes",
-    "path": "/",
-    "type": "content",
-    "elementId": "experience-intern"
-  },
-  {
-    "title": "Software Engineer Intern, Frontend Developer - BSystems Limited",
-    "preview": "Wrote technical documentation for the web application to support future development and onboarding",
-    "path": "/about",
-    "type": "content",
-    "elementId": "experience-intern"
-  },
-  {
-    "title": "Software Engineer Intern, Frontend Developer - BSystems Limited",
-    "preview": "Wrote technical documentation for the web application to support future development and onboarding",
+    "title": "Software Engineer Intern - BSystems Limited",
+    "preview": "Wrote technical documentation for the web application to support onboarding and future development",
     "path": "/",
     "type": "content",
     "elementId": "experience-intern"
@@ -1149,14 +1219,14 @@ export const searchData: SearchResultType[] = [
   },
   {
     "title": "Programming Languages",
-    "preview": "Programming Languages:\nJavaScript - Advanced web and mobile application development\nTypeScript - Type-safe application development with modern features\nPython - Scripting, backend services, and AI evaluation environments\nSQL - Database design and optimization\nJava - Foundational knowledge of object-oriented programming and data structures",
+    "preview": "Programming Languages:\nJavaScript - Advanced web and mobile application development\nTypeScript - Type-safe application development with modern features\nPython - Scripting, backend services, and AI evaluation environments\nSQL - Database design and optimization",
     "path": "/skills",
     "type": "content",
     "elementId": "languages"
   },
   {
     "title": "Programming Languages",
-    "preview": "Programming Languages:\nJavaScript - Advanced web and mobile application development\nTypeScript - Type-safe application development with modern features\nPython - Scripting, backend services, and AI evaluation environments\nSQL - Database design and optimization\nJava - Foundational knowledge of object-oriented programming and data structures",
+    "preview": "Programming Languages:\nJavaScript - Advanced web and mobile application development\nTypeScript - Type-safe application development with modern features\nPython - Scripting, backend services, and AI evaluation environments\nSQL - Database design and optimization",
     "path": "/",
     "type": "content",
     "elementId": "languages"
@@ -1213,20 +1283,6 @@ export const searchData: SearchResultType[] = [
   {
     "title": "SQL",
     "preview": "SQL - Database design and optimization (Programming Languages)",
-    "path": "/",
-    "type": "content",
-    "elementId": "languages"
-  },
-  {
-    "title": "Java",
-    "preview": "Java - Foundational knowledge of object-oriented programming and data structures (Programming Languages)",
-    "path": "/skills",
-    "type": "content",
-    "elementId": "languages"
-  },
-  {
-    "title": "Java",
-    "preview": "Java - Foundational knowledge of object-oriented programming and data structures (Programming Languages)",
     "path": "/",
     "type": "content",
     "elementId": "languages"

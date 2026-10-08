@@ -2,11 +2,11 @@ export const site = {
   name: 'Isaac Sam',
   fullName: 'Isaac Epaphras Nana Sam',
   mark: 'SINE',
-  role: 'Software Engineer',
+  role: 'Full-Stack Software Engineer',
   // Canonical origin — drives metadataBase, sitemap, robots and OG image URLs.
   url: 'https://isaacsam.com',
   claim:
-    'Four years building production systems where the constraints are real — HIPAA-compliant healthcare, live crypto trading infrastructure, a government crisis-response platform, and AI agent evaluation environments on Kubernetes.',
+    'Building production systems since 2022 where the constraints are real: HIPAA-compliant healthcare, live crypto trading infrastructure, a government crisis-response platform, and AI agent evaluation environments on Kubernetes.',
   summary:
     'Full-stack engineer working mostly in TypeScript, React and Next.js, equally comfortable on the backend. Systems shipped across healthcare, fintech, government and crypto.',
   cv: '/cv/Isaac_Sam_CV.pdf',

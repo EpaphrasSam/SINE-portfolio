@@ -39,15 +39,80 @@ export const projects: Project[] = [
   //   urlLabel: "Carex Scholar",
   // },
   {
+    id: "WorkspaceGlobal",
+    title: "Workspace Global Client, Talent & Operations Platform",
+    preview:
+      "Three connected dashboards for a creative-talent marketplace: clients request work, talent delivers it, and an operations team runs everything in between.",
+    description: [
+      "Workspace Global matches marketing teams with on-demand creative talent. The platform is three React apps in one monorepo: a client dashboard, a talent dashboard, and an internal operations dashboard.",
+      "I owned the client app: request submission and approval, deliverables and file previews, checkout, campaigns, brand documents, meeting booking, and the help desk.",
+      "I also built features used across all three apps, including real-time chat with channels and archived conversations, announcements and notifications, and auth flows with email verification and password rules, and worked in the operations and talent apps alongside two other frontend engineers.",
+      "Built with React, TypeScript, TanStack Router, TanStack Query, Tailwind CSS, and HeroUI in a pnpm/Turborepo monorepo, through to MVP delivery.",
+    ],
+    type: "web",
+    icon: (
+      <svg
+        className="w-6 h-6"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={2}
+          d="M4 5a1 1 0 011-1h4a1 1 0 011 1v4a1 1 0 01-1 1H5a1 1 0 01-1-1V5zm10 0a1 1 0 011-1h4a1 1 0 011 1v4a1 1 0 01-1 1h-4a1 1 0 01-1-1V5zM4 15a1 1 0 011-1h4a1 1 0 011 1v4a1 1 0 01-1 1H5a1 1 0 01-1-1v-4zm10 0a1 1 0 011-1h4a1 1 0 011 1v4a1 1 0 01-1 1h-4a1 1 0 01-1-1v-4z"
+        />
+      </svg>
+    ),
+    tech: ["React", "TypeScript", "TanStack Router", "TanStack Query", "Vite", "Turborepo"],
+    links: [
+      { label: "Client app", url: "https://client.theworkspaceglobal.com" },
+      { label: "Talent app", url: "https://talent.theworkspaceglobal.com" },
+      { label: "Operations app", url: "https://operations.theworkspaceglobal.com" },
+    ],
+  },
+  {
+    id: "PRS",
+    title: "Pure Relief Spa Booking, Store & CRM Platform",
+    preview:
+      "Operating system for a spa business: online and walk-in bookings, Paystack payments, an online store, loyalty and gift cards, and a staff CRM.",
+    description: [
+      "Pure Relief Spa is a full platform for a spa and wellness business in Ghana, replacing bookings taken over WhatsApp and recorded in a notebook.",
+      "The booking engine serves both online clients and the front desk. Availability is built from opening hours and existing bookings, and slot locks with Firestore transactions stop the same slot being sold twice.",
+      "Payments run through Paystack with signed webhook verification, covering booking deposits, store orders, and digital gift cards that can be redeemed in part across several purchases.",
+      "Clients earn loyalty points and referral rewards. Staff run the business from a CRM covering bookings, customers, inquiries, inventory, promotions, and SMS and email campaigns, with confirmations sent by SMS and email.",
+    ],
+    type: "web",
+    icon: (
+      <svg
+        className="w-6 h-6"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={2}
+          d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+        />
+      </svg>
+    ),
+    tech: ["Next.js", "TypeScript", "Express.js", "Firebase", "Paystack"],
+    url: "https://prs-frontend--prs-site.us-east4.hosted.app/",
+    urlLabel: "Platform",
+  },
+  {
     id: "IExchange",
     title: "IExchange P2P Trading Platform",
     preview:
-      "Onchain P2P trading platform with a marketing site and trading interface for seamless crypto–fiat exchange.",
+      "On-chain P2P crypto trading platform with KYC, order management, dispute resolution, and a separate marketing site.",
     description: [
-      "IExchange is a P2P cryptocurrency trading platform. The work covered two surfaces: a marketing site and the main trading application.",
-      "The marketing site explains the platform's core offering — crypto-to-cash conversions through peer-to-peer trades — with animated sections and a clear conversion-focused layout.",
-      "The trading application lets users post and respond to trade offers, with API integration for managing orders and wallet balances.",
-      "Both surfaces are built with Next.js, TypeScript, TailwindCSS, and Framer Motion.",
+      "IExchange is a P2P cryptocurrency trading platform where strangers trade crypto for cash. The work covered two surfaces: the trading application and a marketing site.",
+      "I set up the trading app's architecture and built its core flows: posting and responding to trade offers, KYC verification before a trade starts, order management while it runs, and dispute resolution when one side contests it.",
+      "An admin panel gives the team oversight of users, verifications, trades, and disputes.",
+      "The marketing site explains crypto-to-cash conversion through peer-to-peer trades, with animated sections and a layout focused on conversion. Both surfaces are built with Next.js, TypeScript, TailwindCSS, and Framer Motion.",
     ],
     type: "web",
     icon: (
@@ -65,7 +130,7 @@ export const projects: Project[] = [
         />
       </svg>
     ),
-    tech: ["Next.js", "Typescript", "TailwindCSS", "Framer Motion"],
+    tech: ["Next.js", "TypeScript", "TailwindCSS", "Framer Motion"],
     url: "https://app.iexchange.global/",
     urlLabel: "Trading app",
     secondaryUrl: "https://iexchange.global/",
@@ -98,7 +163,7 @@ export const projects: Project[] = [
         />
       </svg>
     ),
-    tech: ["Next.js", "TypeScript", "Leaflet", "Next-Auth", "SWR"],
+    tech: ["Next.js", "TypeScript", "Leaflet", "NextAuth", "SWR"],
   },
   {
     id: "BisaDoctor",
@@ -130,44 +195,6 @@ export const projects: Project[] = [
     tech: ["Next.js", "TypeScript", "TailwindCSS", "Express.js", "Firebase"],
     url: "https://bisadoctor.com/",
     urlLabel: "Marketing site",
-  },
-  {
-    id: "Soccersm",
-    title: "Soccersm Sports Prediction Platform",
-    preview:
-      "AI-assisted sports prediction platform with challenge pools, leaderboards, and on-chain staking.",
-    description: [
-      "Soccersm is a sports prediction platform where users can join challenge pools, view AI-generated prediction slips, and track leaderboards.",
-      "The frontend is built with Next.js, TailwindCSS, and React Query, integrating external sports data APIs for live fixtures, stats, and standings.",
-      "Web3 integrations with Thirdweb, Wagmi, and Viem allow users to connect wallets and participate in on-chain pools and reward flows.",
-      "Authentication combines wallet-based login, Firebase Auth, and Telegram-based quests to drive engagement.",
-    ],
-    type: "web",
-    icon: (
-      <svg
-        className="w-6 h-6"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={2}
-          d="M9.75 3a3.75 3.75 0 107.5 0 3.75 3.75 0 00-7.5 0zM4.5 21a6.75 6.75 0 0113.5 0M4.5 21h13.5"
-        />
-      </svg>
-    ),
-    tech: [
-      "Next.js",
-      "TypeScript",
-      "TailwindCSS",
-      "Thirdweb",
-      "Wagmi",
-      "Firebase",
-    ],
-    url: "https://soccersm.ai/",
-    urlLabel: "Platform",
   },
   {
     id: "CPG",
@@ -237,11 +264,12 @@ export const projects: Project[] = [
     id: "Braszy",
     title: "Braszy Clothing E-commerce",
     preview:
-      "Full-stack e-commerce platform for fashion retail, with product catalog, cart, Stripe checkout, and order management.",
+      "Live e-commerce store for a fashion brand, with a CMS-managed catalogue, guest and account checkout, Stripe payments, and an admin dashboard.",
     description: [
-      "Braszy is an e-commerce platform built with Next.js, Prisma, and MongoDB, covering the full shopping workflow from product browsing to checkout.",
-      "Products have dedicated pages with filtering and search. Orders go through a cart and Stripe-powered checkout, with inventory levels tracked per SKU.",
-      "Customer accounts store order history and saved items. Stripe handles payment processing and webhook-based order confirmation.",
+      "Braszy is a live e-commerce store for a fashion brand, covering the full path from browsing to checkout and order history.",
+      "Products, categories, and banners are managed in Sanity, with the editor embedded in the store's own admin area. Shoppers can filter by apparel type, price, stock, and new releases, and see prices converted into their local currency.",
+      "Checkout works for guests and signed-in customers, with each order saved in a single database transaction. Payments run through Stripe, with saved cards and coupon codes.",
+      "Customers verify their email with a one-time code, view and cancel orders, and download PDF invoices. Admins get a dashboard with sales statistics, an orders table, and top products.",
     ],
     type: "web",
     icon: (
@@ -259,7 +287,7 @@ export const projects: Project[] = [
         />
       </svg>
     ),
-    tech: ["Next.js", "TypeScript", "Prisma", "TailwindCSS"],
+    tech: ["Next.js", "TypeScript", "Prisma", "MongoDB", "Sanity", "Stripe", "TailwindCSS"],
     url: "https://braszyclothing.com",
   },
   {
@@ -268,11 +296,10 @@ export const projects: Project[] = [
     preview:
       "App that detects Bible verses in sermon audio using AI (Whisper, Gemini) and real-time updates.",
     description: [
-      "Verse Catch transcribes and detects Bible verse references in sermon or speech audio in real time.",
-      "The app uses OpenAI Whisper for transcription and Google Gemini for verse detection, with audio processed via the browser and backend APIs.",
-      "Real-time updates are delivered through Pusher so users see detected verses as the audio plays.",
-      "A SQLite database manages a large library of verses across translations to match and display references accurately.",
-      "Built with Next.js and TypeScript for a maintainable frontend and API, with a focus on clarity and performance.",
+      "Verse Catch listens to a sermon or talk and shows the Bible verses being referenced as they are spoken.",
+      "Audio is recorded in the browser in short chunks, transcribed with OpenAI Whisper, and stitched back into complete sentences before Google Gemini looks for explicit, implicit, and contextual verse references.",
+      "Every reference Gemini returns is checked against a verse database across several translations, so a verse the model invents never reaches the screen.",
+      "Detected verses are pushed to the browser in real time with Pusher. The database runs on SQLite in development and PostgreSQL in production.",
     ],
     type: "web",
     icon: (
@@ -290,15 +317,7 @@ export const projects: Project[] = [
         />
       </svg>
     ),
-    tech: [
-      "Next.js",
-      "TypeScript",
-      "Prisma",
-      "SQLite",
-      "OpenAI",
-      "Gemini",
-      "Pusher",
-    ],
+    tech: ["Next.js", "TypeScript", "Prisma", "PostgreSQL", "OpenAI Whisper", "Gemini", "Pusher"],
     url: "https://verse-catch-pink.vercel.app",
   },
   {
@@ -307,13 +326,10 @@ export const projects: Project[] = [
     preview:
       "A modern web application for calculating mobile money transfer charges across different telecommunications networks in Ghana.",
     description: [
-      "MoMoXpress is a specialized calculator tool designed to help users calculate mobile money transfer fees across Ghanaian telecom networks.",
-      "Features real-time fee calculations with automatic E-levy integration for accurate total cost estimation.",
-      "Implements smart validation for network-specific phone numbers ensuring accurate inputs for different providers.",
-      "Provides cross-network support allowing users to calculate fees across different mobile money providers.",
-      "Includes a newsletter subscription system for SMS updates about fee changes and new features.",
-      "Built with a modern, responsive interface that works seamlessly across all devices.",
-      "Utilizes custom validation rules for Ghanaian phone numbers by network provider.",
+      "MoMoXpress calculates mobile money transfer fees across Ghana's telecom networks, so users know the full cost before they send.",
+      "Fees are calculated in real time and include the E-levy automatically, across transfers within and between networks.",
+      "Phone numbers are validated against each network's prefixes, so the right fee schedule is applied to the right provider.",
+      "Users can subscribe to SMS updates when fees change. Built with Next.js, TypeScript, NextUI, and Framer Motion.",
     ],
     type: "web",
     icon: (
@@ -340,7 +356,7 @@ export const projects: Project[] = [
     preview:
       "Mobile app connecting university students with campus service providers for bookings, payments, and real-time chat.",
     description: [
-      "CampServe is a mobile app connecting university students with campus service providers — laundry, food, tutoring, and more.",
+      "CampServe is a mobile app connecting university students with campus service providers for laundry, food, tutoring, and more.",
       "Service providers manage their listings and bookings through a dedicated dashboard. Students browse nearby services, book, and pay through an integrated payment flow.",
       "Real-time chat connects students with providers after booking. A rating system covers both sides of each transaction.",
       "Location-based discovery surfaces providers close to the student's current position. Built with React Native and Flask.",

@@ -70,7 +70,7 @@ export default function Home() {
           </p>
 
           <p className="rise rise-3 mt-7 max-w-measure text-ink-2 text-pretty">
-            Four years of production systems where being wrong has consequences —
+            Production systems since 2022, where being wrong has consequences:
             regulated patient records, live funds moving between strangers, and
             infrastructure that has to stay standing.
           </p>
@@ -149,7 +149,7 @@ export default function Home() {
           <SectionLabel>Selected work</SectionLabel>
           <Reveal variant="mask">
             <h2 className="max-w-[20ch] text-h1">
-              Four systems, built where being wrong has consequences.
+              Five systems, built where being wrong has consequences.
             </h2>
           </Reveal>
         </div>

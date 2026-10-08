@@ -29,6 +29,7 @@ function generateProjectData() {
     
     const images = files
       .filter(file => file !== 'logo.png' && /\.(jpg|jpeg|png|gif)$/i.test(file))
+      .sort()
       .map(file => `/images/projects/${project}/${file}`);
 
     const hasLogo = files.includes('logo.png');

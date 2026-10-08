@@ -52,7 +52,6 @@ export const skills: Skill[] = [
         description: "Scripting, backend services, and AI evaluation environments",
       },
       { name: "SQL", description: "Database design and optimization" },
-      { name: "Java", description: "Foundational knowledge of object-oriented programming and data structures" },
     ],
   },
   {

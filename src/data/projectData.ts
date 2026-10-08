@@ -1,5 +1,5 @@
 // This file is auto-generated. Do not edit manually.
-// Generated on 2026-08-11T10:35:11.710Z
+// Generated on 2026-10-08T07:32:00.287Z
 
 export interface ProjectImages {
   images: string[];
@@ -80,6 +80,13 @@ export const projectData: Record<string, ProjectImages> = {
     "logo": "/images/projects/NCCRM/logo.png",
     "hasLogo": true
   },
+  "PRS": {
+    "images": [
+      "/images/projects/PRS/Screenshot 2026-10-08 062900.jpg"
+    ],
+    "logo": "",
+    "hasLogo": false
+  },
   "Soccersm": {
     "images": [
       "/images/projects/Soccersm/Screenshot 2026-03-11 095641.png"
@@ -100,5 +107,15 @@ export const projectData: Record<string, ProjectImages> = {
     ],
     "logo": "/images/projects/WeMoveManager/logo.png",
     "hasLogo": true
+  },
+  "WorkspaceGlobal": {
+    "images": [
+      "/images/projects/WorkspaceGlobal/01 Client request.jpg",
+      "/images/projects/WorkspaceGlobal/02 Client home.jpg",
+      "/images/projects/WorkspaceGlobal/03 Ops dashboard.jpg",
+      "/images/projects/WorkspaceGlobal/04 Talent dashboard.jpg"
+    ],
+    "logo": "",
+    "hasLogo": false
   }
 };

@@ -6,6 +6,7 @@ import { TextHighlight } from '../TextHighlight';
 import { Reveal } from '../Reveal';
 import { MagneticCard } from './MagneticCard';
 import type { Project } from '../../types/project';
+import { getProjectLinks } from '../../lib/projectLinks';
 
 /**
  * Editorial project rows — image always visible, alternating side for rhythm.
@@ -127,15 +128,15 @@ export function ProjectIndex({
                   >
                     {isOpen ? '— Close details' : '+ Full detail'}
                   </button>
-                  {project.showUrl !== false && project.url && (
+                  {getProjectLinks(project)[0] && (
                     <a
-                      href={project.url}
+                      href={getProjectLinks(project)[0].url}
                       target="_blank"
                       rel="noopener noreferrer"
                       data-cursor="Visit"
                       className="link-underline text-sm"
                     >
-                      {project.urlLabel ?? 'Visit'} ↗
+                      {getProjectLinks(project)[0].label} ↗
                     </a>
                   )}
                 </div>
@@ -164,16 +165,21 @@ export function ProjectIndex({
                       ))}
                     </ul>
 
-                    {project.showUrl !== false && project.secondaryUrl && (
-                      <a
-                        href={project.secondaryUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        data-cursor="Visit"
-                        className="link-underline inline-block pt-2 text-sm"
-                      >
-                        {project.secondaryUrlLabel ?? 'Secondary'} ↗
-                      </a>
+                    {getProjectLinks(project).length > 1 && (
+                      <div className="flex flex-wrap gap-x-6 gap-y-2 pt-2">
+                        {getProjectLinks(project).slice(1).map((link) => (
+                          <a
+                            key={link.url}
+                            href={link.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            data-cursor="Visit"
+                            className="link-underline inline-block text-sm"
+                          >
+                            {link.label} ↗
+                          </a>
+                        ))}
+                      </div>
                     )}
                   </div>
 

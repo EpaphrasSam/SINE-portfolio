@@ -9,7 +9,7 @@ export function SiteFooter() {
           <div>
             <Mark size={26} className="mb-4 text-accent" />
             <p className="max-w-xs text-sm text-ink-2">
-              {site.fullName} — {site.role}. Currently open to new work.
+              {site.fullName}, {site.role}. Currently open to new work.
             </p>
           </div>
 

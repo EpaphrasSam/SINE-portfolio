@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { Reveal } from '../../../components/Reveal';
 import { workEntries, getWork } from '../../../data/work';
+import { getProjectLinks } from '../../../lib/projectLinks';
 
 export function generateStaticParams() {
   return workEntries.map((e) => ({ slug: e.slug }));
@@ -59,7 +60,7 @@ export default async function WorkPage({
   const { project, detail, images } = entry;
   const index = workEntries.findIndex((e) => e.slug === entry.slug);
   const next = workEntries[(index + 1) % workEntries.length];
-  const showLinks = project.showUrl !== false;
+  const links = getProjectLinks(project);
 
   return (
     <article>
@@ -86,30 +87,20 @@ export default async function WorkPage({
             {detail.period && <Fact label="Period" value={detail.period} />}
           </dl>
 
-          {showLinks && (project.url || project.secondaryUrl) && (
+          {links.length > 0 && (
             <div className="rise rise-4 mt-8 flex flex-wrap gap-x-7 gap-y-3">
-              {project.url && (
+              {links.map((link) => (
                 <a
-                  href={project.url}
+                  key={link.url}
+                  href={link.url}
                   target="_blank"
                   rel="noopener noreferrer"
                   data-cursor="Visit"
                   className="link-underline text-sm"
                 >
-                  {project.urlLabel ?? 'Visit'} ↗
+                  {link.label} ↗
                 </a>
-              )}
-              {project.secondaryUrl && (
-                <a
-                  href={project.secondaryUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  data-cursor="Visit"
-                  className="link-underline text-sm"
-                >
-                  {project.secondaryUrlLabel ?? 'Secondary'} ↗
-                </a>
-              )}
+              ))}
             </div>
           )}
         </div>
