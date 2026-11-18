@@ -1,5 +1,5 @@
 export const summary = [
-  "I'm a full-stack software developer, building production software since 2022. I studied Computer Engineering at KNUST, graduating with First Class Honours.",
+  "I'm a full-stack software developer building production software. I studied Computer Engineering at KNUST, graduating with First Class Honours.",
   "Most of my work is in TypeScript, React, and Next.js, with Node.js, Express, and PostgreSQL on the backend. I've shipped systems across healthcare, fintech, crypto, and AI, from multi-portal web apps and backend APIs to evaluation environments that test AI agents on real Kubernetes infrastructure.",
   "I tend to gravitate toward work where the constraints are real: regulated environments, government systems, live financial infrastructure. Outside of client work, I build things on the side, mostly web tools and experiments.",
 ];
@@ -15,26 +15,30 @@ export const education = {
 export const experiences = [
   {
     id: "experience-bespoke",
-    title: "RL Environment Engineer",
+    title: "AI Task Creation Specialist → Reviewer",
     company: "Bespoke Labs",
-    period: "Apr 2026 - Present",
+    period: "Apr 2026 - Oct 2026",
     responsibilities: [
-      "Developed AI agent evaluation tasks for Nebula Aurora, a Kubernetes-based benchmark that tests frontier AI models on real DevOps and SRE incidents",
+      "Designed and authored Kubernetes, DevOps, and SRE benchmark tasks for Nebula Aurora, a benchmark that tests frontier AI models on real infrastructure incidents, across the full lifecycle: concept research, task design, Dockerfile environments, reference solutions, validation, and post-rollout audit",
       "Wrote setup scripts that inject controlled failures into K3s clusters, simulating incidents across CI/CD pipelines, service mesh configurations, and observability stacks",
-      "Built Python graders with partial scoring that check agent responses against actual system state, plus ground-truth solution scripts; every task had to be verifiable from observable system state alone",
-      "Annotated coding-agent trajectories to produce training data for agents' research and planning ability",
+      "Built Python graders with partial scoring that check agent solutions against actual system state, including edge cases and failure modes; every task had to be verifiable from observable system state alone",
+      "Designed anti-shortcut and decoy mechanisms into tasks to prevent reward hacking and false-positive completions",
+      "Applied a formal quality-control spec with critical and error-level checks across design, grader, setup, and rollout stages, using real agent runs to decide whether to ship, harden, or redesign each task",
+      "Built a reusable prompt template that standardised task creation across DevOps and Kubernetes concepts",
+      "Promoted to Reviewer: reviewed benchmark tasks written by other authors against the project's quality standards and revised them where needed",
+      "Annotated and arbitrated coding-agent trajectories against a milestone rubric to produce training data on agents' research and planning ability",
     ],
   },
   {
     id: "experience-workspace",
-    title: "Frontend Engineer",
+    title: "Frontend Developer",
     company: "Workspace Global",
     period: "May 2026 - Oct 2026",
     responsibilities: [
       "Worked across all three apps of a client, operations, and talent platform through MVP delivery, and owned the client dashboard end to end",
       "Built the client dashboard's request submission and approval flow, deliverables and file previews, checkout, campaigns, brand documents, meeting booking, and help desk",
       "Built shared features used in all three apps, including real-time chat with channels and archived conversations, announcements and notifications, and auth flows with email verification and password rules",
-      "Contributed to the shared UI and auth packages in a pnpm/Turborepo monorepo built on React, TanStack Router, and TanStack Query",
+      "Worked in a three-person frontend team, contributing to the shared UI and auth packages in a pnpm/Turborepo monorepo built on React, TanStack Router, TanStack Query, and Zod",
     ],
   },
   {

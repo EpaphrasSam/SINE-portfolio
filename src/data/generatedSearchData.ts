@@ -136,7 +136,7 @@ export const searchData: SearchResultType[] = [
   },
   {
     "title": "Available for work       Building software for    ",
-    "preview": "Available for work       Building software for      Production systems since 2022, where being wrong has consequences:\n            regulated patient records, live funds moving between strangers, and\n            infrastructure that has to stay standing.   See the work     Download CV",
+    "preview": "Available for work       Building software for      Production systems where being wrong has consequences:\n            regulated patient records, live funds moving between strangers, and\n            infrastructure that has to stay standing.   See the work     Download CV",
     "path": "/",
     "type": "content"
   },
@@ -165,14 +165,14 @@ export const searchData: SearchResultType[] = [
     "type": "content"
   },
   {
-    "title": "Production systems since 2022, where being wrong h",
-    "preview": "Production systems since 2022, where being wrong has consequences:\n            regulated patient records, live funds moving between strangers, and\n            infrastructure that has to stay standing.",
+    "title": "Production systems where being wrong has consequen",
+    "preview": "Production systems where being wrong has consequences:\n            regulated patient records, live funds moving between strangers, and\n            infrastructure that has to stay standing.",
     "path": "/",
     "type": "content"
   },
   {
-    "title": "Production systems since 2022, where being wrong h",
-    "preview": "Production systems since 2022, where being wrong has consequences:\n            regulated patient records, live funds moving between strangers, and\n            infrastructure that has to stay standing.",
+    "title": "Production systems where being wrong has consequen",
+    "preview": "Production systems where being wrong has consequences:\n            regulated patient records, live funds moving between strangers, and\n            infrastructure that has to stay standing.",
     "path": "/",
     "type": "content"
   },
@@ -644,197 +644,253 @@ export const searchData: SearchResultType[] = [
     "elementId": "WeMoveManager"
   },
   {
-    "title": "RL Environment Engineer at Bespoke Labs",
-    "preview": "RL Environment Engineer - Bespoke Labs. Apr 2026 - Present. Developed AI agent evaluation tasks for Nebula Aurora, a Kubernetes-based benchmark that tests frontier AI models on real DevOps and SRE incidents Wrote setup scripts that inject controlled failures into K3s clusters, simulating incidents across CI/CD pipelines, service mesh configurations, and observability stacks Built Python graders with partial scoring that check agent responses against actual system state, plus ground-truth solution scripts; every task had to be verifiable from observable system state alone Annotated coding-agent trajectories to produce training data for agents' research and planning ability",
+    "title": "AI Task Creation Specialist → Reviewer at Bespoke Labs",
+    "preview": "AI Task Creation Specialist → Reviewer - Bespoke Labs. Apr 2026 - Oct 2026. Designed and authored Kubernetes, DevOps, and SRE benchmark tasks for Nebula Aurora, a benchmark that tests frontier AI models on real infrastructure incidents, across the full lifecycle: concept research, task design, Dockerfile environments, reference solutions, validation, and post-rollout audit Wrote setup scripts that inject controlled failures into K3s clusters, simulating incidents across CI/CD pipelines, service mesh configurations, and observability stacks Built Python graders with partial scoring that check agent solutions against actual system state, including edge cases and failure modes; every task had to be verifiable from observable system state alone Designed anti-shortcut and decoy mechanisms into tasks to prevent reward hacking and false-positive completions Applied a formal quality-control spec with critical and error-level checks across design, grader, setup, and rollout stages, using real agent runs to decide whether to ship, harden, or redesign each task Built a reusable prompt template that standardised task creation across DevOps and Kubernetes concepts Promoted to Reviewer: reviewed benchmark tasks written by other authors against the project's quality standards and revised them where needed Annotated and arbitrated coding-agent trajectories against a milestone rubric to produce training data on agents' research and planning ability",
     "path": "/about",
     "type": "content",
     "elementId": "experience-bespoke"
   },
   {
-    "title": "RL Environment Engineer at Bespoke Labs",
-    "preview": "RL Environment Engineer - Bespoke Labs. Apr 2026 - Present. Developed AI agent evaluation tasks for Nebula Aurora, a Kubernetes-based benchmark that tests frontier AI models on real DevOps and SRE incidents Wrote setup scripts that inject controlled failures into K3s clusters, simulating incidents across CI/CD pipelines, service mesh configurations, and observability stacks Built Python graders with partial scoring that check agent responses against actual system state, plus ground-truth solution scripts; every task had to be verifiable from observable system state alone Annotated coding-agent trajectories to produce training data for agents' research and planning ability",
+    "title": "AI Task Creation Specialist → Reviewer at Bespoke Labs",
+    "preview": "AI Task Creation Specialist → Reviewer - Bespoke Labs. Apr 2026 - Oct 2026. Designed and authored Kubernetes, DevOps, and SRE benchmark tasks for Nebula Aurora, a benchmark that tests frontier AI models on real infrastructure incidents, across the full lifecycle: concept research, task design, Dockerfile environments, reference solutions, validation, and post-rollout audit Wrote setup scripts that inject controlled failures into K3s clusters, simulating incidents across CI/CD pipelines, service mesh configurations, and observability stacks Built Python graders with partial scoring that check agent solutions against actual system state, including edge cases and failure modes; every task had to be verifiable from observable system state alone Designed anti-shortcut and decoy mechanisms into tasks to prevent reward hacking and false-positive completions Applied a formal quality-control spec with critical and error-level checks across design, grader, setup, and rollout stages, using real agent runs to decide whether to ship, harden, or redesign each task Built a reusable prompt template that standardised task creation across DevOps and Kubernetes concepts Promoted to Reviewer: reviewed benchmark tasks written by other authors against the project's quality standards and revised them where needed Annotated and arbitrated coding-agent trajectories against a milestone rubric to produce training data on agents' research and planning ability",
     "path": "/",
     "type": "content",
     "elementId": "experience-bespoke"
   },
   {
     "title": "Bespoke Labs",
-    "preview": "RL Environment Engineer position at Bespoke Labs. Apr 2026 - Present. Developed AI agent evaluation tasks for Nebula Aurora, a Kubernetes-based benchmark that tests frontier AI models on real DevOps and SRE incidents",
+    "preview": "AI Task Creation Specialist → Reviewer position at Bespoke Labs. Apr 2026 - Oct 2026. Designed and authored Kubernetes, DevOps, and SRE benchmark tasks for Nebula Aurora, a benchmark that tests frontier AI models on real infrastructure incidents, across the full lifecycle: concept research, task design, Dockerfile environments, reference solutions, validation, and post-rollout audit",
     "path": "/about",
     "type": "content",
     "elementId": "experience-bespoke"
   },
   {
     "title": "Bespoke Labs",
-    "preview": "RL Environment Engineer position at Bespoke Labs. Apr 2026 - Present. Developed AI agent evaluation tasks for Nebula Aurora, a Kubernetes-based benchmark that tests frontier AI models on real DevOps and SRE incidents",
+    "preview": "AI Task Creation Specialist → Reviewer position at Bespoke Labs. Apr 2026 - Oct 2026. Designed and authored Kubernetes, DevOps, and SRE benchmark tasks for Nebula Aurora, a benchmark that tests frontier AI models on real infrastructure incidents, across the full lifecycle: concept research, task design, Dockerfile environments, reference solutions, validation, and post-rollout audit",
     "path": "/",
     "type": "content",
     "elementId": "experience-bespoke"
   },
   {
-    "title": "RL Environment Engineer",
-    "preview": "RL Environment Engineer at Bespoke Labs. Apr 2026 - Present. Developed AI agent evaluation tasks for Nebula Aurora, a Kubernetes-based benchmark that tests frontier AI models on real DevOps and SRE incidents",
+    "title": "AI Task Creation Specialist → Reviewer",
+    "preview": "AI Task Creation Specialist → Reviewer at Bespoke Labs. Apr 2026 - Oct 2026. Designed and authored Kubernetes, DevOps, and SRE benchmark tasks for Nebula Aurora, a benchmark that tests frontier AI models on real infrastructure incidents, across the full lifecycle: concept research, task design, Dockerfile environments, reference solutions, validation, and post-rollout audit",
     "path": "/about",
     "type": "content",
     "elementId": "experience-bespoke"
   },
   {
-    "title": "RL Environment Engineer",
-    "preview": "RL Environment Engineer at Bespoke Labs. Apr 2026 - Present. Developed AI agent evaluation tasks for Nebula Aurora, a Kubernetes-based benchmark that tests frontier AI models on real DevOps and SRE incidents",
+    "title": "AI Task Creation Specialist → Reviewer",
+    "preview": "AI Task Creation Specialist → Reviewer at Bespoke Labs. Apr 2026 - Oct 2026. Designed and authored Kubernetes, DevOps, and SRE benchmark tasks for Nebula Aurora, a benchmark that tests frontier AI models on real infrastructure incidents, across the full lifecycle: concept research, task design, Dockerfile environments, reference solutions, validation, and post-rollout audit",
     "path": "/",
     "type": "content",
     "elementId": "experience-bespoke"
   },
   {
-    "title": "RL Environment Engineer - Bespoke Labs",
-    "preview": "Developed AI agent evaluation tasks for Nebula Aurora, a Kubernetes-based benchmark that tests frontier AI models on real DevOps and SRE incidents",
+    "title": "AI Task Creation Specialist → Reviewer - Bespoke Labs",
+    "preview": "Designed and authored Kubernetes, DevOps, and SRE benchmark tasks for Nebula Aurora, a benchmark that tests frontier AI models on real infrastructure incidents, across the full lifecycle: concept research, task design, Dockerfile environments, reference solutions, validation, and post-rollout audit",
     "path": "/about",
     "type": "content",
     "elementId": "experience-bespoke"
   },
   {
-    "title": "RL Environment Engineer - Bespoke Labs",
-    "preview": "Developed AI agent evaluation tasks for Nebula Aurora, a Kubernetes-based benchmark that tests frontier AI models on real DevOps and SRE incidents",
+    "title": "AI Task Creation Specialist → Reviewer - Bespoke Labs",
+    "preview": "Designed and authored Kubernetes, DevOps, and SRE benchmark tasks for Nebula Aurora, a benchmark that tests frontier AI models on real infrastructure incidents, across the full lifecycle: concept research, task design, Dockerfile environments, reference solutions, validation, and post-rollout audit",
     "path": "/",
     "type": "content",
     "elementId": "experience-bespoke"
   },
   {
-    "title": "RL Environment Engineer - Bespoke Labs",
+    "title": "AI Task Creation Specialist → Reviewer - Bespoke Labs",
     "preview": "Wrote setup scripts that inject controlled failures into K3s clusters, simulating incidents across CI/CD pipelines, service mesh configurations, and observability stacks",
     "path": "/about",
     "type": "content",
     "elementId": "experience-bespoke"
   },
   {
-    "title": "RL Environment Engineer - Bespoke Labs",
+    "title": "AI Task Creation Specialist → Reviewer - Bespoke Labs",
     "preview": "Wrote setup scripts that inject controlled failures into K3s clusters, simulating incidents across CI/CD pipelines, service mesh configurations, and observability stacks",
     "path": "/",
     "type": "content",
     "elementId": "experience-bespoke"
   },
   {
-    "title": "RL Environment Engineer - Bespoke Labs",
-    "preview": "Built Python graders with partial scoring that check agent responses against actual system state, plus ground-truth solution scripts; every task had to be verifiable from observable system state alone",
+    "title": "AI Task Creation Specialist → Reviewer - Bespoke Labs",
+    "preview": "Built Python graders with partial scoring that check agent solutions against actual system state, including edge cases and failure modes; every task had to be verifiable from observable system state alone",
     "path": "/about",
     "type": "content",
     "elementId": "experience-bespoke"
   },
   {
-    "title": "RL Environment Engineer - Bespoke Labs",
-    "preview": "Built Python graders with partial scoring that check agent responses against actual system state, plus ground-truth solution scripts; every task had to be verifiable from observable system state alone",
+    "title": "AI Task Creation Specialist → Reviewer - Bespoke Labs",
+    "preview": "Built Python graders with partial scoring that check agent solutions against actual system state, including edge cases and failure modes; every task had to be verifiable from observable system state alone",
     "path": "/",
     "type": "content",
     "elementId": "experience-bespoke"
   },
   {
-    "title": "RL Environment Engineer - Bespoke Labs",
-    "preview": "Annotated coding-agent trajectories to produce training data for agents' research and planning ability",
+    "title": "AI Task Creation Specialist → Reviewer - Bespoke Labs",
+    "preview": "Designed anti-shortcut and decoy mechanisms into tasks to prevent reward hacking and false-positive completions",
     "path": "/about",
     "type": "content",
     "elementId": "experience-bespoke"
   },
   {
-    "title": "RL Environment Engineer - Bespoke Labs",
-    "preview": "Annotated coding-agent trajectories to produce training data for agents' research and planning ability",
+    "title": "AI Task Creation Specialist → Reviewer - Bespoke Labs",
+    "preview": "Designed anti-shortcut and decoy mechanisms into tasks to prevent reward hacking and false-positive completions",
     "path": "/",
     "type": "content",
     "elementId": "experience-bespoke"
   },
   {
-    "title": "Frontend Engineer at Workspace Global",
-    "preview": "Frontend Engineer - Workspace Global. May 2026 - Oct 2026. Worked across all three apps of a client, operations, and talent platform through MVP delivery, and owned the client dashboard end to end Built the client dashboard's request submission and approval flow, deliverables and file previews, checkout, campaigns, brand documents, meeting booking, and help desk Built shared features used in all three apps, including real-time chat with channels and archived conversations, announcements and notifications, and auth flows with email verification and password rules Contributed to the shared UI and auth packages in a pnpm/Turborepo monorepo built on React, TanStack Router, and TanStack Query",
+    "title": "AI Task Creation Specialist → Reviewer - Bespoke Labs",
+    "preview": "Applied a formal quality-control spec with critical and error-level checks across design, grader, setup, and rollout stages, using real agent runs to decide whether to ship, harden, or redesign each task",
+    "path": "/about",
+    "type": "content",
+    "elementId": "experience-bespoke"
+  },
+  {
+    "title": "AI Task Creation Specialist → Reviewer - Bespoke Labs",
+    "preview": "Applied a formal quality-control spec with critical and error-level checks across design, grader, setup, and rollout stages, using real agent runs to decide whether to ship, harden, or redesign each task",
+    "path": "/",
+    "type": "content",
+    "elementId": "experience-bespoke"
+  },
+  {
+    "title": "AI Task Creation Specialist → Reviewer - Bespoke Labs",
+    "preview": "Built a reusable prompt template that standardised task creation across DevOps and Kubernetes concepts",
+    "path": "/about",
+    "type": "content",
+    "elementId": "experience-bespoke"
+  },
+  {
+    "title": "AI Task Creation Specialist → Reviewer - Bespoke Labs",
+    "preview": "Built a reusable prompt template that standardised task creation across DevOps and Kubernetes concepts",
+    "path": "/",
+    "type": "content",
+    "elementId": "experience-bespoke"
+  },
+  {
+    "title": "AI Task Creation Specialist → Reviewer - Bespoke Labs",
+    "preview": "Promoted to Reviewer: reviewed benchmark tasks written by other authors against the project's quality standards and revised them where needed",
+    "path": "/about",
+    "type": "content",
+    "elementId": "experience-bespoke"
+  },
+  {
+    "title": "AI Task Creation Specialist → Reviewer - Bespoke Labs",
+    "preview": "Promoted to Reviewer: reviewed benchmark tasks written by other authors against the project's quality standards and revised them where needed",
+    "path": "/",
+    "type": "content",
+    "elementId": "experience-bespoke"
+  },
+  {
+    "title": "AI Task Creation Specialist → Reviewer - Bespoke Labs",
+    "preview": "Annotated and arbitrated coding-agent trajectories against a milestone rubric to produce training data on agents' research and planning ability",
+    "path": "/about",
+    "type": "content",
+    "elementId": "experience-bespoke"
+  },
+  {
+    "title": "AI Task Creation Specialist → Reviewer - Bespoke Labs",
+    "preview": "Annotated and arbitrated coding-agent trajectories against a milestone rubric to produce training data on agents' research and planning ability",
+    "path": "/",
+    "type": "content",
+    "elementId": "experience-bespoke"
+  },
+  {
+    "title": "Frontend Developer at Workspace Global",
+    "preview": "Frontend Developer - Workspace Global. May 2026 - Oct 2026. Worked across all three apps of a client, operations, and talent platform through MVP delivery, and owned the client dashboard end to end Built the client dashboard's request submission and approval flow, deliverables and file previews, checkout, campaigns, brand documents, meeting booking, and help desk Built shared features used in all three apps, including real-time chat with channels and archived conversations, announcements and notifications, and auth flows with email verification and password rules Worked in a three-person frontend team, contributing to the shared UI and auth packages in a pnpm/Turborepo monorepo built on React, TanStack Router, TanStack Query, and Zod",
     "path": "/about",
     "type": "content",
     "elementId": "experience-workspace"
   },
   {
-    "title": "Frontend Engineer at Workspace Global",
-    "preview": "Frontend Engineer - Workspace Global. May 2026 - Oct 2026. Worked across all three apps of a client, operations, and talent platform through MVP delivery, and owned the client dashboard end to end Built the client dashboard's request submission and approval flow, deliverables and file previews, checkout, campaigns, brand documents, meeting booking, and help desk Built shared features used in all three apps, including real-time chat with channels and archived conversations, announcements and notifications, and auth flows with email verification and password rules Contributed to the shared UI and auth packages in a pnpm/Turborepo monorepo built on React, TanStack Router, and TanStack Query",
+    "title": "Frontend Developer at Workspace Global",
+    "preview": "Frontend Developer - Workspace Global. May 2026 - Oct 2026. Worked across all three apps of a client, operations, and talent platform through MVP delivery, and owned the client dashboard end to end Built the client dashboard's request submission and approval flow, deliverables and file previews, checkout, campaigns, brand documents, meeting booking, and help desk Built shared features used in all three apps, including real-time chat with channels and archived conversations, announcements and notifications, and auth flows with email verification and password rules Worked in a three-person frontend team, contributing to the shared UI and auth packages in a pnpm/Turborepo monorepo built on React, TanStack Router, TanStack Query, and Zod",
     "path": "/",
     "type": "content",
     "elementId": "experience-workspace"
   },
   {
     "title": "Workspace Global",
-    "preview": "Frontend Engineer position at Workspace Global. May 2026 - Oct 2026. Worked across all three apps of a client, operations, and talent platform through MVP delivery, and owned the client dashboard end to end",
+    "preview": "Frontend Developer position at Workspace Global. May 2026 - Oct 2026. Worked across all three apps of a client, operations, and talent platform through MVP delivery, and owned the client dashboard end to end",
     "path": "/about",
     "type": "content",
     "elementId": "experience-workspace"
   },
   {
     "title": "Workspace Global",
-    "preview": "Frontend Engineer position at Workspace Global. May 2026 - Oct 2026. Worked across all three apps of a client, operations, and talent platform through MVP delivery, and owned the client dashboard end to end",
+    "preview": "Frontend Developer position at Workspace Global. May 2026 - Oct 2026. Worked across all three apps of a client, operations, and talent platform through MVP delivery, and owned the client dashboard end to end",
     "path": "/",
     "type": "content",
     "elementId": "experience-workspace"
   },
   {
-    "title": "Frontend Engineer",
-    "preview": "Frontend Engineer at Workspace Global. May 2026 - Oct 2026. Worked across all three apps of a client, operations, and talent platform through MVP delivery, and owned the client dashboard end to end",
+    "title": "Frontend Developer",
+    "preview": "Frontend Developer at Workspace Global. May 2026 - Oct 2026. Worked across all three apps of a client, operations, and talent platform through MVP delivery, and owned the client dashboard end to end",
     "path": "/about",
     "type": "content",
     "elementId": "experience-workspace"
   },
   {
-    "title": "Frontend Engineer",
-    "preview": "Frontend Engineer at Workspace Global. May 2026 - Oct 2026. Worked across all three apps of a client, operations, and talent platform through MVP delivery, and owned the client dashboard end to end",
+    "title": "Frontend Developer",
+    "preview": "Frontend Developer at Workspace Global. May 2026 - Oct 2026. Worked across all three apps of a client, operations, and talent platform through MVP delivery, and owned the client dashboard end to end",
     "path": "/",
     "type": "content",
     "elementId": "experience-workspace"
   },
   {
-    "title": "Frontend Engineer - Workspace Global",
+    "title": "Frontend Developer - Workspace Global",
     "preview": "Worked across all three apps of a client, operations, and talent platform through MVP delivery, and owned the client dashboard end to end",
     "path": "/about",
     "type": "content",
     "elementId": "experience-workspace"
   },
   {
-    "title": "Frontend Engineer - Workspace Global",
+    "title": "Frontend Developer - Workspace Global",
     "preview": "Worked across all three apps of a client, operations, and talent platform through MVP delivery, and owned the client dashboard end to end",
     "path": "/",
     "type": "content",
     "elementId": "experience-workspace"
   },
   {
-    "title": "Frontend Engineer - Workspace Global",
+    "title": "Frontend Developer - Workspace Global",
     "preview": "Built the client dashboard's request submission and approval flow, deliverables and file previews, checkout, campaigns, brand documents, meeting booking, and help desk",
     "path": "/about",
     "type": "content",
     "elementId": "experience-workspace"
   },
   {
-    "title": "Frontend Engineer - Workspace Global",
+    "title": "Frontend Developer - Workspace Global",
     "preview": "Built the client dashboard's request submission and approval flow, deliverables and file previews, checkout, campaigns, brand documents, meeting booking, and help desk",
     "path": "/",
     "type": "content",
     "elementId": "experience-workspace"
   },
   {
-    "title": "Frontend Engineer - Workspace Global",
+    "title": "Frontend Developer - Workspace Global",
     "preview": "Built shared features used in all three apps, including real-time chat with channels and archived conversations, announcements and notifications, and auth flows with email verification and password rules",
     "path": "/about",
     "type": "content",
     "elementId": "experience-workspace"
   },
   {
-    "title": "Frontend Engineer - Workspace Global",
+    "title": "Frontend Developer - Workspace Global",
     "preview": "Built shared features used in all three apps, including real-time chat with channels and archived conversations, announcements and notifications, and auth flows with email verification and password rules",
     "path": "/",
     "type": "content",
     "elementId": "experience-workspace"
   },
   {
-    "title": "Frontend Engineer - Workspace Global",
-    "preview": "Contributed to the shared UI and auth packages in a pnpm/Turborepo monorepo built on React, TanStack Router, and TanStack Query",
+    "title": "Frontend Developer - Workspace Global",
+    "preview": "Worked in a three-person frontend team, contributing to the shared UI and auth packages in a pnpm/Turborepo monorepo built on React, TanStack Router, TanStack Query, and Zod",
     "path": "/about",
     "type": "content",
     "elementId": "experience-workspace"
   },
   {
-    "title": "Frontend Engineer - Workspace Global",
-    "preview": "Contributed to the shared UI and auth packages in a pnpm/Turborepo monorepo built on React, TanStack Router, and TanStack Query",
+    "title": "Frontend Developer - Workspace Global",
+    "preview": "Worked in a three-person frontend team, contributing to the shared UI and auth packages in a pnpm/Turborepo monorepo built on React, TanStack Router, TanStack Query, and Zod",
     "path": "/",
     "type": "content",
     "elementId": "experience-workspace"

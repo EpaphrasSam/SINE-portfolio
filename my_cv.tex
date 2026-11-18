@@ -14,7 +14,7 @@
 \usepackage{multicol}
 \setlength{\multicolsep}{-3.0pt}
 \setlength{\columnsep}{-1pt}
-\usepackage[margin=1.4cm]{geometry}
+\usepackage[left=1.4cm,right=1.4cm,top=1.2cm,bottom=1.2cm]{geometry}
 
 \pagestyle{fancy}
 \fancyhf{}
@@ -84,7 +84,8 @@
 
 %----------HEADING----------
 \begin{center}
-    {\Large \scshape Isaac Epaphras Nana Sam} \\[2mm]
+    {\Large \scshape Isaac Epaphras Nana Sam} \\[1mm]
+    {\small Full-Stack Software Engineer} \\[2mm]
     \footnotesize
     \underline{+233 55 142 9980} ~$|$~
     \underline{isinesam@gmail.com} ~$|$~
@@ -97,7 +98,7 @@
 %-----------SUMMARY-----------
 \section{Summary}
 \resumeSubHeadingListStart
-\resumeItem{Full-stack software developer with 4+ years of experience and a First Class BSc in Computer Engineering from KNUST. Works mainly in TypeScript, React, and Next.js, with Node.js, Express, and PostgreSQL on the backend. Has shipped production systems in healthcare, fintech, and AI, including multi-portal web applications, backend APIs, and Kubernetes-based evaluation environments for AI agents.}
+\resumeItem{Software Engineer with 5 years of experience building production full-stack systems in TypeScript, React, Next.js, Node.js, Express, and PostgreSQL. Has shipped work across healthcare, fintech, and government, including HIPAA-compliant multi-portal platforms, a P2P crypto exchange, a multi-chain payment gateway, and a national crisis response platform. Adept at owning products end to end, building secure access control, audit logging, and real-time features, and designing evaluation tasks and graders that test AI agents on real engineering work.}
 \resumeSubHeadingListEnd
 \vspace{-1pt}
 
@@ -105,40 +106,51 @@
 \section{Work Experience}
 \resumeSubHeadingListStart
 \resumeSubheading
-  {Bespoke Labs}{Apr 2026 -- Present}
-  {RL Environment Engineer (Contract)}{Remote}
+  {Bespoke Labs}{Apr 2026 -- Oct 2026}
+  {AI Task Creation Specialist $\rightarrow$ Reviewer (Contractor)}{Remote}
 \resumeItemListStart
-  \resumeItem{Developed AI agent evaluation tasks for Nebula Aurora, a Kubernetes-based benchmark that tests frontier AI models on real DevOps and SRE incidents, with setup scripts that inject controlled failures into K3s clusters.}
-  \resumeItem{Built Python graders with partial scoring that check agent responses against actual system state, plus ground-truth solution scripts for each task.}
-  \resumeItem{Annotated coding-agent trajectories to produce training data for agents' research and planning ability.}
+  \resumeItem{Designed and authored Kubernetes, DevOps, and SRE benchmark tasks for Nebula Aurora across the full lifecycle: concept research, task design, Dockerfile environments with setup scripts that inject controlled failures into K3s clusters, reference solutions, validation, and post-rollout audit.}
+  \resumeItem{Built Python graders with partial scoring that check agent solutions against actual system state, including edge cases and failure modes.}
+  \resumeItem{Designed anti-shortcut and decoy mechanisms into tasks to prevent reward hacking and false-positive completions.}
+  \resumeItem{Applied a formal quality-control spec with critical and error-level checks across design, grader, setup, and rollout stages, using real agent runs to decide whether to ship, harden, or redesign each task.}
+  \resumeItem{Built a reusable prompt template that standardised task creation across DevOps and Kubernetes concepts.}
+  \resumeItem{Promoted to Reviewer: reviewed benchmark tasks written by other authors against the project's quality standards and revised them where needed.}
+  \resumeItem{Annotated and arbitrated coding-agent trajectories against a milestone rubric to produce training data on agents' research and planning ability.}
 \resumeItemListEnd
 \resumeItem{Technologies used: Python, Bash, Kubernetes (K3s), Docker.}
 
 \resumeSubheading
   {Workspace Global}{May 2026 -- Oct 2026}
-  {Frontend Engineer (Contract)}{Remote}
+  {Frontend Developer (Contract)}{Remote}
 \resumeItemListStart
-  \resumeItem{Worked across all three apps of a client, operations, and talent platform through MVP delivery, and owned the client dashboard: request submission and approval, deliverables, checkout, campaigns, and meeting booking.}
-  \resumeItem{Built shared features used in all three apps, including real-time chat, notifications, and auth flows.}
-  \resumeItem{Contributed to the shared UI and auth packages in a pnpm/Turborepo monorepo.}
+  \resumeItem{Owned the client dashboard of a three-app platform (client, operations, and talent) through MVP delivery: request submission and approval, deliverables, checkout, campaigns, meeting booking, and the help desk.}
+  \resumeItem{Built shared features used across all three apps, including real-time chat, notifications, and auth flows.}
+  \resumeItem{Worked in a three-person frontend team on a shared pnpm/Turborepo monorepo, contributing to the shared UI and auth packages.}
+  \resumeItem{Built typed data fetching and routing with TanStack Query and Router, with Zod schema validation.}
 \resumeItemListEnd
-\resumeItem{Technologies used: React, TypeScript, TanStack Router/Query, Vite.}
+\resumeItem{Technologies used: React, TypeScript, TanStack Router/Query, Vite, Tailwind CSS, Zod.}
 
 \resumeSubheading
   {Gigsama LLC}{Mar 2025 -- Mar 2026}
   {Fullstack Developer}{Remote}
 \resumeItemListStart
-  \resumeItem{Built the Carex Scholar frontend across organization and staff portals, covering scheduling, check-ins, group notes, and assessments, with HIPAA access controls and audit logging.}
-  \resumeItem{Led R\&D on production tooling (PostHog, Sentry, Zoho Desk) and built proofs of concept for EHR and insurance billing integrations.}
+  \resumeItem{Built the Carex Scholar frontend across organisation and staff portals, covering scheduling, check-ins, group notes, and assessments.}
+  \resumeItem{Implemented HIPAA access controls and audit logging across both portals.}
   \resumeItem{Shipped backend features and fixes in the Scholar API.}
+  \resumeItem{Led R\&D on production tooling, bringing in PostHog for product analytics, Sentry for error monitoring, and Zoho Desk for support.}
+  \resumeItem{Built proofs of concept for EHR and insurance billing integrations.}
 \resumeItemListEnd
-\resumeItem{Technologies used: Next.js, TypeScript, Express.js, PostgreSQL.}
+\resumeItem{Technologies used: Next.js, TypeScript, React Query, NextAuth, React Hook Form, Express.js, PostgreSQL.}
 
+\pagebreak
 \resumeSubheading
   {Hurisoft}{Nov 2024 -- Jul 2025}
   {Fullstack Developer}{Remote}
 \resumeItemListStart
-  \resumeItem{Built the iExchange P2P crypto trading app from scratch: trading flows, KYC, order management, dispute resolution, and the admin panel, plus its marketing site.}
+  \resumeItem{Set up the architecture and built the iExchange P2P crypto trading platform from scratch, frontend and backend.}
+  \resumeItem{Implemented trading flows and order management between buyers and sellers.}
+  \resumeItem{Built KYC verification and dispute resolution workflows.}
+  \resumeItem{Built the admin panel for managing users, orders, and disputes, plus the marketing site.}
 \resumeItemListEnd
 \resumeItem{Technologies used: Next.js, TypeScript, Express.js, Firebase.}
 
@@ -147,14 +159,17 @@
   {Fullstack Developer}{Kumasi, Ghana}
 \resumeItemListStart
   \resumeItem{Built an exam attendance system with an admin dashboard for invigilator sign-ins.}
-  \resumeItem{Built a staff election system and a nomination platform with four-tier role-based access and a two-stage review workflow.}
+  \resumeItem{Built a staff election system for faculty elections.}
+  \resumeItem{Built a nomination platform with four-tier role-based access and a two-stage review workflow.}
 \resumeItemListEnd
 
 \resumeSubheading
   {BSystems Limited}{Oct 2022 -- Jan 2023}
   {Software Engineer Intern}{Ghana}
 \resumeItemListStart
-  \resumeItem{Added features to the PeoplesPay admin dashboard and fixed responsive layout issues on smaller screens.}
+  \resumeItem{Added features to the PeoplesPay admin dashboard.}
+  \resumeItem{Fixed responsive layout issues on smaller screens.}
+  \resumeItem{Wrote technical documentation for the web app to support onboarding and future development.}
 \resumeItemListEnd
 
 \resumeSubHeadingListEnd
@@ -164,10 +179,10 @@
 \section{Projects}
 \resumeSubHeadingListStart
 \resumeProjectHeading
-  {\textbf{Pure Relief Spa - Booking, Store \& CRM Platform}}{Next.js, TypeScript, Express.js, Firebase}
+  {\textbf{Pure Relief Spa - Booking, Store \& CRM Platform}}{Next.js, TypeScript, Express.js, Firebase, Paystack}
 \resumeItemListStart
-  \resumeItem{Built the booking engine for online and walk-in bookings, with slot locks and Firestore transactions to prevent double bookings, Paystack payments with signed webhooks, and SMS and email confirmations.}
-  \resumeItem{Built the online store, loyalty points and referrals, gift cards with partial redemption, and a staff CRM covering bookings, customers, inquiries, inventory, and SMS campaigns.}
+  \resumeItem{Built a full platform for a spa business, with a booking engine for online and walk-in clients that prevents double bookings using slot locks and Firestore transactions, and Paystack payments verified by signed webhooks.}
+  \resumeItem{Built the online store, gift cards, loyalty programme, and a staff CRM for bookings, customers, inventory, and campaigns, with SMS and email confirmations and CI deploys to Firebase.}
 \resumeItemListEnd
 
 \resumeProjectHeading
@@ -178,17 +193,17 @@
 \resumeItemListEnd
 
 \resumeProjectHeading
-  {\textbf{BisaDoctor - Chronic Care Platform}}{Next.js, TypeScript, Express.js, Firebase}
-\resumeItemListStart
-  \resumeItem{Built Express.js API endpoints for vitals, medications, chats, notes, and notifications that power the mobile app.}
-  \resumeItem{Built a doctor portal for credential verification, an admin panel for reviewing registrations, and the marketing site.}
-\resumeItemListEnd
-
-\resumeProjectHeading
   {\textbf{Crypto Payment Gateway - Dashboard \& Checkout}}{Vue 3, TypeScript}
 \resumeItemListStart
   \resumeItem{Built the merchant dashboard for crypto transactions, payouts, commissions, API keys, and webhooks.}
-  \resumeItem{Implemented a multi-chain checkout that generates deposit addresses, connects wallets via Wagmi and Viem, and tracks on-chain confirmations.}
+  \resumeItem{Implemented a multi-chain checkout that generates deposit addresses, connects wallets via Wagmi and Viem, and tracks on-chain confirmations, integrated with a Go backend handling wallets, reconciliation, and payouts.}
+\resumeItemListEnd
+
+\resumeProjectHeading
+  {\textbf{BisaDoctor - Chronic Care Platform}}{Next.js, TypeScript, Express.js, Firebase}
+\resumeItemListStart
+  \resumeItem{Built Express.js API endpoints for vitals, medications, chats, notes, and notifications for the BisaDoctor mobile app.}
+  \resumeItem{Built a doctor portal for credential verification, an admin panel for reviewing registrations, and the marketing site.}
 \resumeItemListEnd
 \resumeSubHeadingListEnd
 \vspace{-1pt}
@@ -204,13 +219,14 @@
 
 %-----------TECHNICAL SKILLS-----------
 \section{Technical Skills}
-\begin{itemize}[leftmargin=0.15in, label={}]
+\begin{itemize}[leftmargin=0.15in, label={}, itemsep=-1pt]
 \small{
-\item{\textbf{Languages}: TypeScript, JavaScript, Python, SQL.}
-\item{\textbf{Libraries/Frameworks}: React, Next.js, Node.js, Express.js, Vue.js, React Native, Tailwind CSS.}
+\item{\textbf{Languages}: TypeScript, JavaScript, Python, SQL, Java.}
+\item{\textbf{Frameworks}: React, Next.js, Node.js, Express.js, Vue.js, React Native, TanStack Query/Router, Tailwind CSS.}
 \item{\textbf{Developer Tools}: Git, Docker, Kubernetes, AWS, Prisma, Firebase.}
 \item{\textbf{Testing}: Jest, Vitest, Playwright.}
 \item{\textbf{Databases}: PostgreSQL, MongoDB, MySQL, SQLite.}
+\item{\textbf{AI Evaluation \& Benchmarking}: benchmark task design, graders and verifiers, reference solutions, anti-reward-hacking design, agent trajectory annotation.}
 }
 \end{itemize}
 \vspace{-5pt}

@@ -70,7 +70,7 @@ export default function Home() {
           </p>
 
           <p className="rise rise-3 mt-7 max-w-measure text-ink-2 text-pretty">
-            Production systems since 2022, where being wrong has consequences:
+            Production systems where being wrong has consequences:
             regulated patient records, live funds moving between strangers, and
             infrastructure that has to stay standing.
           </p>
