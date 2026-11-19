@@ -110,8 +110,7 @@ export const projects: Project[] = [
       "On-chain P2P crypto trading platform with KYC, order management, dispute resolution, and a separate marketing site.",
     description: [
       "IExchange is a P2P cryptocurrency trading platform where strangers trade crypto for cash. The work covered two surfaces: the trading application and a marketing site.",
-      "I set up the trading app's architecture and built its core flows: posting and responding to trade offers, KYC verification before a trade starts, order management while it runs, and dispute resolution when one side contests it.",
-      "An admin panel gives the team oversight of users, verifications, trades, and disputes.",
+      "I set up the trading app's frontend architecture and built its core flows: posting and responding to trade offers, KYC verification before a trade starts, order management while it runs, and dispute resolution when one side contests it.",
       "The marketing site explains crypto-to-cash conversion through peer-to-peer trades, with animated sections and a layout focused on conversion. Both surfaces are built with Next.js, TypeScript, TailwindCSS, and Framer Motion.",
     ],
     type: "web",

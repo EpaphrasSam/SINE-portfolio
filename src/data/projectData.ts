@@ -1,5 +1,5 @@
 // This file is auto-generated. Do not edit manually.
-// Generated on 2026-10-08T07:32:00.287Z
+// Generated on 2026-11-19T15:37:35.002Z
 
 export interface ProjectImages {
   images: string[];
@@ -29,6 +29,14 @@ export const projectData: Record<string, ProjectImages> = {
     "logo": "/images/projects/BudgetBuddy/logo.png",
     "hasLogo": true
   },
+  "CPG": {
+    "images": [
+      "/images/projects/CPG/Screenshot 2026-03-11 100401.png",
+      "/images/projects/CPG/Screenshot 2026-03-11 101633.png"
+    ],
+    "logo": "",
+    "hasLogo": false
+  },
   "CampServe": {
     "images": [
       "/images/projects/CampServe/Screenshot 2024-11-14 010207.png"
@@ -42,14 +50,6 @@ export const projectData: Record<string, ProjectImages> = {
     ],
     "logo": "/images/projects/CarexScholar/logo.png",
     "hasLogo": true
-  },
-  "CPG": {
-    "images": [
-      "/images/projects/CPG/Screenshot 2026-03-11 100401.png",
-      "/images/projects/CPG/Screenshot 2026-03-11 101633.png"
-    ],
-    "logo": "",
-    "hasLogo": false
   },
   "Hurisoft": {
     "images": [

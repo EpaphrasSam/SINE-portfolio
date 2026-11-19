@@ -64,12 +64,11 @@ const details: Record<string, WorkDetail> = {
     constraint:
       "Strangers moving real money between each other. Every trade needs an identity check before it starts, an escrow-shaped flow while it runs, and an adjudication path when one side disputes it. None of those are features you can add later. They shape the data model from the first commit.",
     owned: [
-      'Set up the project architecture for the trading application',
+      'Built the marketing site, a separate surface focused on conversion',
+      'Set up the frontend architecture for the trading application',
       'Built the core P2P trading flows: posting and responding to trade offers',
       'Built KYC verification and order management',
       'Built the dispute resolution flow',
-      'Built the admin panel',
-      'Built the marketing site, a separate surface focused on conversion',
     ],
   },
   CPG: {

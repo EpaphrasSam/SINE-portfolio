@@ -59,8 +59,8 @@ export const experiences = [
     company: "Hurisoft",
     period: "Nov 2024 - Jul 2025",
     responsibilities: [
-      "Built the iExchange P2P crypto trading app from scratch, setting up the architecture and building trading flows, KYC verification, order management, dispute resolution, and the admin panel",
       "Built the iExchange marketing site, a separate surface focused on user acquisition and conversion",
+      "Set up the frontend architecture and built the iExchange P2P crypto trading app from scratch, including trading flows, KYC verification, order management, and dispute resolution",
     ],
   },
   {

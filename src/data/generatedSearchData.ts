@@ -995,56 +995,42 @@ export const searchData: SearchResultType[] = [
   },
   {
     "title": "Fullstack Developer at Hurisoft",
-    "preview": "Fullstack Developer - Hurisoft. Nov 2024 - Jul 2025. Built the iExchange P2P crypto trading app from scratch, setting up the architecture and building trading flows, KYC verification, order management, dispute resolution, and the admin panel Built the iExchange marketing site, a separate surface focused on user acquisition and conversion",
+    "preview": "Fullstack Developer - Hurisoft. Nov 2024 - Jul 2025. Built the iExchange marketing site, a separate surface focused on user acquisition and conversion Set up the frontend architecture and built the iExchange P2P crypto trading app from scratch, including trading flows, KYC verification, order management, and dispute resolution",
     "path": "/about",
     "type": "content",
     "elementId": "experience-hurisoft"
   },
   {
     "title": "Fullstack Developer at Hurisoft",
-    "preview": "Fullstack Developer - Hurisoft. Nov 2024 - Jul 2025. Built the iExchange P2P crypto trading app from scratch, setting up the architecture and building trading flows, KYC verification, order management, dispute resolution, and the admin panel Built the iExchange marketing site, a separate surface focused on user acquisition and conversion",
+    "preview": "Fullstack Developer - Hurisoft. Nov 2024 - Jul 2025. Built the iExchange marketing site, a separate surface focused on user acquisition and conversion Set up the frontend architecture and built the iExchange P2P crypto trading app from scratch, including trading flows, KYC verification, order management, and dispute resolution",
     "path": "/",
     "type": "content",
     "elementId": "experience-hurisoft"
   },
   {
     "title": "Hurisoft",
-    "preview": "Fullstack Developer position at Hurisoft. Nov 2024 - Jul 2025. Built the iExchange P2P crypto trading app from scratch, setting up the architecture and building trading flows, KYC verification, order management, dispute resolution, and the admin panel",
+    "preview": "Fullstack Developer position at Hurisoft. Nov 2024 - Jul 2025. Built the iExchange marketing site, a separate surface focused on user acquisition and conversion",
     "path": "/about",
     "type": "content",
     "elementId": "experience-hurisoft"
   },
   {
     "title": "Hurisoft",
-    "preview": "Fullstack Developer position at Hurisoft. Nov 2024 - Jul 2025. Built the iExchange P2P crypto trading app from scratch, setting up the architecture and building trading flows, KYC verification, order management, dispute resolution, and the admin panel",
+    "preview": "Fullstack Developer position at Hurisoft. Nov 2024 - Jul 2025. Built the iExchange marketing site, a separate surface focused on user acquisition and conversion",
     "path": "/",
     "type": "content",
     "elementId": "experience-hurisoft"
   },
   {
     "title": "Fullstack Developer",
-    "preview": "Fullstack Developer at Hurisoft. Nov 2024 - Jul 2025. Built the iExchange P2P crypto trading app from scratch, setting up the architecture and building trading flows, KYC verification, order management, dispute resolution, and the admin panel",
+    "preview": "Fullstack Developer at Hurisoft. Nov 2024 - Jul 2025. Built the iExchange marketing site, a separate surface focused on user acquisition and conversion",
     "path": "/about",
     "type": "content",
     "elementId": "experience-hurisoft"
   },
   {
     "title": "Fullstack Developer",
-    "preview": "Fullstack Developer at Hurisoft. Nov 2024 - Jul 2025. Built the iExchange P2P crypto trading app from scratch, setting up the architecture and building trading flows, KYC verification, order management, dispute resolution, and the admin panel",
-    "path": "/",
-    "type": "content",
-    "elementId": "experience-hurisoft"
-  },
-  {
-    "title": "Fullstack Developer - Hurisoft",
-    "preview": "Built the iExchange P2P crypto trading app from scratch, setting up the architecture and building trading flows, KYC verification, order management, dispute resolution, and the admin panel",
-    "path": "/about",
-    "type": "content",
-    "elementId": "experience-hurisoft"
-  },
-  {
-    "title": "Fullstack Developer - Hurisoft",
-    "preview": "Built the iExchange P2P crypto trading app from scratch, setting up the architecture and building trading flows, KYC verification, order management, dispute resolution, and the admin panel",
+    "preview": "Fullstack Developer at Hurisoft. Nov 2024 - Jul 2025. Built the iExchange marketing site, a separate surface focused on user acquisition and conversion",
     "path": "/",
     "type": "content",
     "elementId": "experience-hurisoft"
@@ -1059,6 +1045,20 @@ export const searchData: SearchResultType[] = [
   {
     "title": "Fullstack Developer - Hurisoft",
     "preview": "Built the iExchange marketing site, a separate surface focused on user acquisition and conversion",
+    "path": "/",
+    "type": "content",
+    "elementId": "experience-hurisoft"
+  },
+  {
+    "title": "Fullstack Developer - Hurisoft",
+    "preview": "Set up the frontend architecture and built the iExchange P2P crypto trading app from scratch, including trading flows, KYC verification, order management, and dispute resolution",
+    "path": "/about",
+    "type": "content",
+    "elementId": "experience-hurisoft"
+  },
+  {
+    "title": "Fullstack Developer - Hurisoft",
+    "preview": "Set up the frontend architecture and built the iExchange P2P crypto trading app from scratch, including trading flows, KYC verification, order management, and dispute resolution",
     "path": "/",
     "type": "content",
     "elementId": "experience-hurisoft"
